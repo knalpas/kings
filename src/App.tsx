@@ -71,7 +71,7 @@ export default function App() {
           </button>
         </div>
 
-        <div className="hint">Drag to pan · scroll to zoom · tap a name for details</div>
+        <div className="hint">Drag to pan · scroll to zoom · tap a portrait</div>
 
         <aside className="legend" aria-label="Dynasties">
           <div className="legend__title">{meta.label} · houses</div>

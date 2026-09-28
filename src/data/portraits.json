@@ -1,0 +1,430 @@
+{
+  "william-i": {
+    "src": "portraits/william-i.webp",
+    "wiki": "William_the_Conqueror"
+  },
+  "william-ii": {
+    "src": "portraits/william-ii.webp",
+    "wiki": "William_II_of_England"
+  },
+  "henry-i": {
+    "src": "portraits/henry-i.webp",
+    "wiki": "Henry_I_of_England"
+  },
+  "matilda": {
+    "src": "portraits/matilda.webp",
+    "wiki": "Empress_Matilda"
+  },
+  "stephen": {
+    "src": "portraits/stephen.webp",
+    "wiki": "Stephen,_King_of_England"
+  },
+  "henry-ii": {
+    "src": "portraits/henry-ii.webp",
+    "wiki": "Henry_II_of_England"
+  },
+  "richard-i": {
+    "src": "portraits/richard-i.webp",
+    "wiki": "Richard_I_of_England"
+  },
+  "john": {
+    "src": "portraits/john.webp",
+    "wiki": "John,_King_of_England"
+  },
+  "henry-iii": {
+    "src": "portraits/henry-iii.webp",
+    "wiki": "Henry_III_of_England"
+  },
+  "edward-i": {
+    "src": "portraits/edward-i.webp",
+    "wiki": "Edward_I_of_England"
+  },
+  "edward-ii": {
+    "src": "portraits/edward-ii.webp",
+    "wiki": "Edward_II_of_England"
+  },
+  "edward-iii": {
+    "src": "portraits/edward-iii.webp",
+    "wiki": "Edward_III_of_England"
+  },
+  "edward-black-prince": {
+    "src": "portraits/edward-black-prince.webp",
+    "wiki": "Edward_the_Black_Prince"
+  },
+  "john-of-gaunt": {
+    "src": "portraits/john-of-gaunt.webp",
+    "wiki": "John_of_Gaunt"
+  },
+  "edmund-langley": {
+    "src": "portraits/edmund-langley.webp",
+    "wiki": "Edmund_of_Langley,_1st_Duke_of_York"
+  },
+  "richard-ii": {
+    "src": "portraits/richard-ii.webp",
+    "wiki": "Richard_II_of_England"
+  },
+  "henry-iv": {
+    "src": "portraits/henry-iv.webp",
+    "wiki": "Henry_IV_of_England"
+  },
+  "henry-v": {
+    "src": "portraits/henry-v.webp",
+    "wiki": "Henry_V_of_England"
+  },
+  "henry-vi": {
+    "src": "portraits/henry-vi.webp",
+    "wiki": "Henry_VI_of_England"
+  },
+  "richard-conisburgh": {
+    "src": "portraits/richard-conisburgh.webp",
+    "wiki": "Richard_of_Conisburgh,_3rd_Earl_of_Cambridge"
+  },
+  "richard-york": {
+    "src": "portraits/richard-york.webp",
+    "wiki": "Richard_of_York,_3rd_Duke_of_York"
+  },
+  "edward-iv": {
+    "src": "portraits/edward-iv.webp",
+    "wiki": "Edward_IV"
+  },
+  "edward-v": {
+    "src": "portraits/edward-v.webp",
+    "wiki": "Edward_V"
+  },
+  "richard-iii": {
+    "src": "portraits/richard-iii.webp",
+    "wiki": "Richard_III_of_England"
+  },
+  "margaret-beaufort": {
+    "src": "portraits/margaret-beaufort.webp",
+    "wiki": "Lady_Margaret_Beaufort"
+  },
+  "henry-vii": {
+    "src": "portraits/henry-vii.webp",
+    "wiki": "Henry_VII_of_England"
+  },
+  "henry-viii": {
+    "src": "portraits/henry-viii.webp",
+    "wiki": "Henry_VIII"
+  },
+  "edward-vi": {
+    "src": "portraits/edward-vi.webp",
+    "wiki": "Edward_VI"
+  },
+  "mary-i": {
+    "src": "portraits/mary-i.webp",
+    "wiki": "Mary_I_of_England"
+  },
+  "elizabeth-i": {
+    "src": "portraits/elizabeth-i.webp",
+    "wiki": "Elizabeth_I"
+  },
+  "margaret-tudor": {
+    "src": "portraits/margaret-tudor.webp",
+    "wiki": "Margaret_Tudor"
+  },
+  "james-v-scots": {
+    "src": "portraits/james-v-scots.webp",
+    "wiki": "James_V_of_Scotland"
+  },
+  "mary-qos": {
+    "src": "portraits/mary-qos.webp",
+    "wiki": "Mary,_Queen_of_Scots"
+  },
+  "james-i": {
+    "src": "portraits/james-i.webp",
+    "wiki": "James_VI_and_I"
+  },
+  "charles-i": {
+    "src": "portraits/charles-i.webp",
+    "wiki": "Charles_I_of_England"
+  },
+  "charles-ii": {
+    "src": "portraits/charles-ii.webp",
+    "wiki": "Charles_II_of_England"
+  },
+  "james-ii": {
+    "src": "portraits/james-ii.webp",
+    "wiki": "James_II_of_England"
+  },
+  "mary-ii": {
+    "src": "portraits/mary-ii.webp",
+    "wiki": "Mary_II_of_England"
+  },
+  "william-iii": {
+    "src": "portraits/william-iii.webp",
+    "wiki": "William_III_of_England"
+  },
+  "anne": {
+    "src": "portraits/anne.webp",
+    "wiki": "Anne,_Queen_of_Great_Britain"
+  },
+  "sophia-hanover": {
+    "src": "portraits/sophia-hanover.webp",
+    "wiki": "Sophia_of_Hanover"
+  },
+  "george-i": {
+    "src": "portraits/george-i.webp",
+    "wiki": "George_I_of_Great_Britain"
+  },
+  "george-ii": {
+    "src": "portraits/george-ii.webp",
+    "wiki": "George_II_of_Great_Britain"
+  },
+  "frederick-wales": {
+    "src": "portraits/frederick-wales.webp",
+    "wiki": "Frederick,_Prince_of_Wales"
+  },
+  "george-iii": {
+    "src": "portraits/george-iii.webp",
+    "wiki": "George_III"
+  },
+  "george-iv": {
+    "src": "portraits/george-iv.webp",
+    "wiki": "George_IV"
+  },
+  "william-iv": {
+    "src": "portraits/william-iv.webp",
+    "wiki": "William_IV"
+  },
+  "edward-kent": {
+    "src": "portraits/edward-kent.webp",
+    "wiki": "Prince_Edward,_Duke_of_Kent_and_Strathearn"
+  },
+  "victoria": {
+    "src": "portraits/victoria.webp",
+    "wiki": "Queen_Victoria"
+  },
+  "edward-vii": {
+    "src": "portraits/edward-vii.webp",
+    "wiki": "Edward_VII"
+  },
+  "george-v": {
+    "src": "portraits/george-v.webp",
+    "wiki": "George_V"
+  },
+  "edward-viii": {
+    "src": "portraits/edward-viii.webp",
+    "wiki": "Edward_VIII"
+  },
+  "george-vi": {
+    "src": "portraits/george-vi.webp",
+    "wiki": "George_VI"
+  },
+  "elizabeth-ii": {
+    "src": "portraits/elizabeth-ii.webp",
+    "wiki": "Elizabeth_II"
+  },
+  "charles-iii": {
+    "src": "portraits/charles-iii.webp",
+    "wiki": "Charles_III"
+  },
+  "charlemagne": {
+    "src": "portraits/charlemagne.webp",
+    "wiki": "Charlemagne"
+  },
+  "louis-the-pious": {
+    "src": "portraits/louis-the-pious.webp",
+    "wiki": "Louis_the_Pious"
+  },
+  "charles-bald": {
+    "src": "portraits/charles-bald.webp",
+    "wiki": "Charles_the_Bald"
+  },
+  "hugh-capet": {
+    "src": "portraits/hugh-capet.webp",
+    "wiki": "Hugh_Capet"
+  },
+  "robert-ii": {
+    "src": "portraits/robert-ii.webp",
+    "wiki": "Robert_II_of_France"
+  },
+  "henri-i": {
+    "src": "portraits/henri-i.webp",
+    "wiki": "Henry_I_of_France"
+  },
+  "philippe-i": {
+    "src": "portraits/philippe-i.webp",
+    "wiki": "Philip_I_of_France"
+  },
+  "louis-vi": {
+    "src": "portraits/louis-vi.webp",
+    "wiki": "Louis_VI_of_France"
+  },
+  "louis-vii": {
+    "src": "portraits/louis-vii.webp",
+    "wiki": "Louis_VII_of_France"
+  },
+  "philippe-ii": {
+    "src": "portraits/philippe-ii.webp",
+    "wiki": "Philip_II_of_France"
+  },
+  "louis-viii": {
+    "src": "portraits/louis-viii.webp",
+    "wiki": "Louis_VIII_of_France"
+  },
+  "louis-ix": {
+    "src": "portraits/louis-ix.webp",
+    "wiki": "Louis_IX_of_France"
+  },
+  "philippe-iii": {
+    "src": "portraits/philippe-iii.webp",
+    "wiki": "Philip_III_of_France"
+  },
+  "philippe-iv": {
+    "src": "portraits/philippe-iv.webp",
+    "wiki": "Philip_IV_of_France"
+  },
+  "louis-x": {
+    "src": "portraits/louis-x.webp",
+    "wiki": "Louis_X_of_France"
+  },
+  "jean-i": {
+    "src": "portraits/jean-i.webp",
+    "wiki": "John_I_of_France"
+  },
+  "philippe-v": {
+    "src": "portraits/philippe-v.webp",
+    "wiki": "Philip_V_of_France"
+  },
+  "charles-iv": {
+    "src": "portraits/charles-iv.webp",
+    "wiki": "Charles_IV_of_France"
+  },
+  "charles-valois": {
+    "src": "portraits/charles-valois.webp",
+    "wiki": "Charles,_Count_of_Valois"
+  },
+  "philippe-vi": {
+    "src": "portraits/philippe-vi.webp",
+    "wiki": "Philip_VI_of_France"
+  },
+  "jean-ii": {
+    "src": "portraits/jean-ii.webp",
+    "wiki": "John_II_of_France"
+  },
+  "charles-v": {
+    "src": "portraits/charles-v.webp",
+    "wiki": "Charles_V_of_France"
+  },
+  "charles-vi": {
+    "src": "portraits/charles-vi.webp",
+    "wiki": "Charles_VI_of_France"
+  },
+  "charles-vii": {
+    "src": "portraits/charles-vii.webp",
+    "wiki": "Charles_VII_of_France"
+  },
+  "louis-xi": {
+    "src": "portraits/louis-xi.webp",
+    "wiki": "Louis_XI"
+  },
+  "charles-viii": {
+    "src": "portraits/charles-viii.webp",
+    "wiki": "Charles_VIII_of_France"
+  },
+  "louis-orleans": {
+    "src": "portraits/louis-orleans.webp",
+    "wiki": "Louis_I,_Duke_of_Orléans"
+  },
+  "louis-xii": {
+    "src": "portraits/louis-xii.webp",
+    "wiki": "Louis_XII"
+  },
+  "jean-angouleme": {
+    "src": "portraits/jean-angouleme.webp",
+    "wiki": "John,_Count_of_Angoulême"
+  },
+  "charles-angouleme": {
+    "src": "portraits/charles-angouleme.webp",
+    "wiki": "Charles,_Count_of_Angoulême"
+  },
+  "francois-i": {
+    "src": "portraits/francois-i.webp",
+    "wiki": "Francis_I_of_France"
+  },
+  "henri-ii-fr": {
+    "src": "portraits/henri-ii-fr.webp",
+    "wiki": "Henry_II_of_France"
+  },
+  "francois-ii": {
+    "src": "portraits/francois-ii.webp",
+    "wiki": "Francis_II_of_France"
+  },
+  "charles-ix": {
+    "src": "portraits/charles-ix.webp",
+    "wiki": "Charles_IX_of_France"
+  },
+  "henri-iii-fr": {
+    "src": "portraits/henri-iii-fr.webp",
+    "wiki": "Henry_III_of_France"
+  },
+  "louis-bourbon": {
+    "src": "portraits/louis-bourbon.webp",
+    "wiki": "Louis_I,_Duke_of_Bourbon"
+  },
+  "antoine-navarre": {
+    "src": "portraits/antoine-navarre.webp",
+    "wiki": "Antoine_of_Navarre"
+  },
+  "henri-iv": {
+    "src": "portraits/henri-iv.webp",
+    "wiki": "Henry_IV_of_France"
+  },
+  "louis-xiii": {
+    "src": "portraits/louis-xiii.webp",
+    "wiki": "Louis_XIII"
+  },
+  "louis-xiv": {
+    "src": "portraits/louis-xiv.webp",
+    "wiki": "Louis_XIV"
+  },
+  "louis-dauphin": {
+    "src": "portraits/louis-dauphin.webp",
+    "wiki": "Louis,_Grand_Dauphin"
+  },
+  "louis-burgundy": {
+    "src": "portraits/louis-burgundy.webp",
+    "wiki": "Louis,_Duke_of_Burgundy"
+  },
+  "louis-xv": {
+    "src": "portraits/louis-xv.webp",
+    "wiki": "Louis_XV"
+  },
+  "louis-dauphin-xv": {
+    "src": "portraits/louis-dauphin-xv.webp",
+    "wiki": "Louis,_Dauphin_of_France_(1729–1765)"
+  },
+  "louis-xvi": {
+    "src": "portraits/louis-xvi.webp",
+    "wiki": "Louis_XVI"
+  },
+  "louis-xvii": {
+    "src": "portraits/louis-xvii.webp",
+    "wiki": "Louis_XVII"
+  },
+  "louis-xviii": {
+    "src": "portraits/louis-xviii.webp",
+    "wiki": "Louis_XVIII"
+  },
+  "charles-x": {
+    "src": "portraits/charles-x.webp",
+    "wiki": "Charles_X_of_France"
+  },
+  "louis-philippe": {
+    "src": "portraits/louis-philippe.webp",
+    "wiki": "Louis_Philippe_I"
+  },
+  "napoleon-i": {
+    "src": "portraits/napoleon-i.webp",
+    "wiki": "Napoleon"
+  },
+  "napoleon-ii": {
+    "src": "portraits/napoleon-ii.webp",
+    "wiki": "Napoleon_II"
+  },
+  "napoleon-iii": {
+    "src": "portraits/napoleon-iii.webp",
+    "wiki": "Napoleon_III"
+  }
+}

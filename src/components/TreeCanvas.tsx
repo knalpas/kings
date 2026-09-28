@@ -3,7 +3,8 @@ import { select } from 'd3-selection'
 import { zoom, zoomIdentity, type ZoomBehavior, type ZoomTransform } from 'd3-zoom'
 import 'd3-transition'
 import type { DynastyStyle, Person } from '../types'
-import { layoutTree, reignLabel } from '../lib/tree'
+import { layoutTree, linkPath, NODE_R, reignLabel } from '../lib/tree'
+import { portraitSrc } from '../data/portraits'
 
 type Props = {
   people: Person[]
@@ -19,15 +20,10 @@ type Props = {
   } | null>
 }
 
-const NODE_W = 118
-const NODE_H = 44
-
-function linkPath(
-  s: { x: number; y: number },
-  t: { x: number; y: number },
-): string {
-  const mid = (s.y + t.y) / 2
-  return `M${s.x},${s.y}C${s.x},${mid} ${t.x},${mid} ${t.x},${t.y}`
+function initials(name: string): string {
+  const parts = name.replace(/,/g, '').split(/\s+/).filter(Boolean)
+  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase()
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
 }
 
 export function TreeCanvas({
@@ -52,7 +48,7 @@ export function TreeCanvas({
     if (!svg || !g) return
 
     const z = zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.2, 2.8])
+      .scaleExtent([0.18, 2.6])
       .on('zoom', (event) => {
         transformRef.current = event.transform
         select(g).attr('transform', event.transform.toString())
@@ -62,44 +58,25 @@ export function TreeCanvas({
     const sel = select(svg)
     sel.call(z)
 
-    zoomRef.current = {
-      zoomIn: () => sel.transition().duration(280).call(z.scaleBy, 1.35),
-      zoomOut: () => sel.transition().duration(280).call(z.scaleBy, 1 / 1.35),
-      reset: () => fit(),
-    }
-
-    function fit(targetId?: string | null) {
+    function fit() {
       const el = svgRef.current
       if (!el || !zoomBehavior.current) return
       const { width: tw, height: th } = laid
       const vw = el.clientWidth || 800
       const vh = el.clientHeight || 600
-      const scale = Math.min(1.15, Math.max(0.28, Math.min((vw - 40) / tw, (vh - 40) / th) * 0.92))
-
-      let tx = (vw - tw * scale) / 2
-      let ty = (vh - th * scale) / 2 + 10
-
-      if (targetId) {
-        const node = laid.nodes.find((n) => n.data.id === targetId)
-        if (node) {
-          const focusScale = Math.min(1.4, Math.max(scale, 0.85))
-          tx = vw / 2 - node.x * focusScale
-          ty = vh / 2 - node.y * focusScale
-          select(el)
-            .transition()
-            .duration(500)
-            .call(
-              zoomBehavior.current.transform,
-              zoomIdentity.translate(tx, ty).scale(focusScale),
-            )
-          return
-        }
-      }
-
+      const scale = Math.min(1.05, Math.max(0.22, Math.min((vw - 48) / tw, (vh - 48) / th) * 0.9))
+      const tx = (vw - tw * scale) / 2
+      const ty = (vh - th * scale) / 2 + 8
       select(el)
         .transition()
-        .duration(450)
+        .duration(500)
         .call(zoomBehavior.current.transform, zoomIdentity.translate(tx, ty).scale(scale))
+    }
+
+    zoomRef.current = {
+      zoomIn: () => sel.transition().duration(280).call(z.scaleBy, 1.3),
+      zoomOut: () => sel.transition().duration(280).call(z.scaleBy, 1 / 1.3),
+      reset: () => fit(),
     }
 
     fit()
@@ -108,8 +85,6 @@ export function TreeCanvas({
       sel.on('.zoom', null)
       zoomRef.current = null
     }
-    // Refit when the kingdom/people set changes
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [laid, zoomRef])
 
   useEffect(() => {
@@ -119,12 +94,12 @@ export function TreeCanvas({
     const el = svgRef.current
     const vw = el.clientWidth || 800
     const vh = el.clientHeight || 600
-    const scale = Math.min(1.5, Math.max(transformRef.current.k, 0.9))
+    const scale = Math.min(1.45, Math.max(transformRef.current.k, 0.85))
     const tx = vw / 2 - node.x * scale
     const ty = vh / 2 - node.y * scale
     select(el)
       .transition()
-      .duration(550)
+      .duration(560)
       .call(zoomBehavior.current.transform, zoomIdentity.translate(tx, ty).scale(scale))
   }, [focusId, focusSeq, laid])
 
@@ -137,28 +112,61 @@ export function TreeCanvas({
       onClick={() => onSelect(null)}
     >
       <defs>
-        <filter id="nodeShadow" x="-20%" y="-20%" width="140%" height="140%">
-          <feDropShadow dx="0" dy="2" stdDeviation="2" floodOpacity="0.2" />
+        <filter id="medallionGlow" x="-40%" y="-40%" width="180%" height="180%">
+          <feDropShadow dx="0" dy="4" stdDeviation="5" floodColor="#000" floodOpacity="0.45" />
         </filter>
+        <filter id="linkSoft" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="0.4" result="b" />
+          <feMerge>
+            <feMergeNode in="b" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+        {laid.nodes.map((n) => {
+          const id = n.data.id
+          return (
+            <clipPath key={`clip-${id}`} id={`clip-${id}`}>
+              <circle r={NODE_R - 5} />
+            </clipPath>
+          )
+        })}
+        <radialGradient id="salonGlow" cx="50%" cy="35%" r="65%">
+          <stop offset="0%" stopColor="#5a2a24" stopOpacity="0.55" />
+          <stop offset="55%" stopColor="#2a1814" stopOpacity="0.35" />
+          <stop offset="100%" stopColor="#120c0a" stopOpacity="0" />
+        </radialGradient>
       </defs>
+
+      <rect width="100%" height="100%" fill="url(#salonGlow)" pointerEvents="none" />
+
       <g ref={gRef}>
-        {laid.links.map((l) => (
-          <path
-            key={`${l.source.data.id}-${l.target.data.id}`}
-            className="tree-link"
-            d={linkPath(
-              { x: l.source.x, y: l.source.y },
-              { x: l.target.x, y: l.target.y },
-            )}
-          />
-        ))}
+        {laid.links.map((l) => {
+          const child = l.target.data.person!
+          const color = dynasties.get(child.dynasty)?.color ?? '#c9a256'
+          const dimmed = selectedId != null && selectedId !== child.id && selectedId !== l.source.data.id
+          return (
+            <path
+              key={`${l.source.data.id}-${l.target.data.id}`}
+              className={`tree-link${dimmed ? ' is-dimmed' : ''}`}
+              d={linkPath(
+                { x: l.source.x, y: l.source.y },
+                { x: l.target.x, y: l.target.y },
+              )}
+              stroke={color}
+            />
+          )
+        })}
+
         {laid.nodes.map((n) => {
           const person = n.data.person!
-          const color = dynasties.get(person.dynasty)?.color ?? '#8e2b25'
+          const color = dynasties.get(person.dynasty)?.color ?? '#c9a256'
           const isSelected = selectedId === person.id
           const isLink = person.reigning === false
           const dimmed = selectedId != null && !isSelected
           const reign = reignLabel(person)
+          const src = portraitSrc(person.id)
+          const r = isLink ? NODE_R - 4 : NODE_R
+
           return (
             <g
               key={person.id}
@@ -169,29 +177,65 @@ export function TreeCanvas({
                 onSelect(person.id)
               }}
             >
-              <rect
-                className={`tree-node__plate${isLink ? ' is-link-fill' : ''}`}
-                x={-NODE_W / 2}
-                y={-NODE_H / 2}
-                width={NODE_W}
-                height={NODE_H}
-                rx={2}
-                ry={2}
+              {/* House-colored outer ring / gilt rim */}
+              <circle className="tree-node__halo" r={r + 7} fill={color} opacity={isSelected ? 0.55 : 0.22} />
+              <circle
+                className="tree-node__ring"
+                r={r + 2}
+                fill="none"
                 stroke={color}
+                strokeWidth={isSelected ? 4.5 : 3.2}
+                strokeDasharray={isLink ? '5 4' : undefined}
+                filter="url(#medallionGlow)"
               />
-              <circle className="tree-node__dot" cx={-NODE_W / 2 + 10} cy={0} r={4.5} fill={color} />
-              <text className="tree-node__name" y={reign ? -4 : 4}>
+              <circle className="tree-node__rim" r={r} fill="#1a120e" stroke="#e6c878" strokeWidth={1.4} />
+
+              {src ? (
+                <image
+                  href={src}
+                  x={-(r - 5)}
+                  y={-(r - 5)}
+                  width={(r - 5) * 2}
+                  height={(r - 5) * 2}
+                  clipPath={`url(#clip-${person.id})`}
+                  preserveAspectRatio="xMidYMid slice"
+                />
+              ) : (
+                <g>
+                  <circle r={r - 5} fill="#2c2118" />
+                  <text className="tree-node__mono" textAnchor="middle" dy="0.35em">
+                    {initials(person.shortName)}
+                  </text>
+                </g>
+              )}
+
+              {/* Soft vignette over portrait */}
+              <circle
+                r={r - 5}
+                fill="url(#portraitVignette)"
+                style={{ pointerEvents: 'none' }}
+                opacity={0.35}
+              />
+
+              <text className="tree-node__name" y={r + 16}>
                 {person.shortName}
               </text>
-              {reign && (
-                <text className="tree-node__reign" y={12}>
-                  {reign}
+              {(reign || isLink) && (
+                <text className="tree-node__reign" y={r + 30}>
+                  {reign || '—'}
                 </text>
               )}
             </g>
           )
         })}
       </g>
+
+      <defs>
+        <radialGradient id="portraitVignette" cx="50%" cy="40%" r="60%">
+          <stop offset="55%" stopColor="#000" stopOpacity="0" />
+          <stop offset="100%" stopColor="#000" stopOpacity="0.55" />
+        </radialGradient>
+      </defs>
     </svg>
   )
 }

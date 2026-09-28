@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import type { Kingdom, Person } from '../types'
 import { kingdomMeta, peopleFor } from '../data'
+import { portraitSrc } from '../data/portraits'
 
 type Props = {
   kingdom: Kingdom
@@ -39,23 +40,33 @@ export function SearchBox({ kingdom, onPick }: Props) {
       />
       {results.length > 0 && (
         <div className="search__results" role="listbox">
-          {results.map((p) => (
-            <button
-              key={p.id}
-              type="button"
-              role="option"
-              onClick={() => {
-                onPick(p.id)
-                setQ('')
-              }}
-            >
-              <strong>{p.name}</strong>
-              <span>
-                {p.title}
-                {p.reignStart != null ? ` · ${p.reignStart}` : ''}
-              </span>
-            </button>
-          ))}
+          {results.map((p) => {
+            const src = portraitSrc(p.id)
+            return (
+              <button
+                key={p.id}
+                type="button"
+                role="option"
+                onClick={() => {
+                  onPick(p.id)
+                  setQ('')
+                }}
+              >
+                {src ? (
+                  <img className="search__thumb" src={src} alt="" />
+                ) : (
+                  <span className="search__thumb" />
+                )}
+                <span>
+                  <strong>{p.name}</strong>
+                  <span>
+                    {p.title}
+                    {p.reignStart != null ? ` · ${p.reignStart}` : ''}
+                  </span>
+                </span>
+              </button>
+            )
+          })}
         </div>
       )}
     </div>

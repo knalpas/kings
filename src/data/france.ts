@@ -1,12 +1,12 @@
 import type { DynastyStyle, Person } from '../types'
 
 export const franceDynasties: DynastyStyle[] = [
-  { id: 'carolingian', label: 'Carolingian', color: '#4a5c3a' },
-  { id: 'capetian', label: 'Capetian', color: '#8e2b25' },
-  { id: 'valois', label: 'Valois', color: '#6b2a4a' },
-  { id: 'bourbon', label: 'Bourbon', color: '#3d4a7a' },
-  { id: 'orleans', label: 'Orléans', color: '#5a6b3e' },
-  { id: 'bonaparte', label: 'Bonaparte', color: '#1f3a5f' },
+  { id: 'carolingian', label: 'Carolingian', color: '#7a8f4e' },
+  { id: 'capetian', label: 'Capetian', color: '#c23b32' },
+  { id: 'valois', label: 'Valois', color: '#9b3d6e' },
+  { id: 'bourbon', label: 'Bourbon', color: '#3f5ea8' },
+  { id: 'orleans', label: 'Orléans', color: '#6f8f45' },
+  { id: 'bonaparte', label: 'Bonaparte', color: '#2c3e6b' },
 ]
 
 /** Kings (and linking princes) of France from Hugh Capet, plus Charlemagne as deep root. */
@@ -450,7 +450,7 @@ export const francePeople: Person[] = [
     death: 1465,
     reigning: false,
     summary: 'Poet-duke captured at Agincourt; father of Louis XII.',
-    wikipedia: 'Charles,_Duke_of_Orléans',
+    wikipedia: 'Charles_I,_Duke_of_Orléans',
   },
   {
     id: 'louis-xii',

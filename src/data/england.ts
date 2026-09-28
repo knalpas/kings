@@ -1,16 +1,16 @@
 import type { DynastyStyle, Person } from '../types'
 
 export const englandDynasties: DynastyStyle[] = [
-  { id: 'norman', label: 'Norman', color: '#5c6b4a' },
-  { id: 'blois', label: 'Blois', color: '#6b5a3e' },
-  { id: 'angevin', label: 'Angevin / Plantagenet', color: '#8e2b25' },
-  { id: 'lancaster', label: 'Lancaster', color: '#6b2a3a' },
-  { id: 'york', label: 'York', color: '#3d5a7a' },
-  { id: 'tudor', label: 'Tudor', color: '#8a3a2a' },
-  { id: 'stuart', label: 'Stuart', color: '#4a3f6b' },
-  { id: 'orange', label: 'Orange', color: '#9a6b2a' },
-  { id: 'hanover', label: 'Hanover', color: '#2f4f4f' },
-  { id: 'windsor', label: 'Windsor', color: '#1f3a5f' },
+  { id: 'norman', label: 'Norman', color: '#7a8f52' },
+  { id: 'blois', label: 'Blois', color: '#a67c52' },
+  { id: 'angevin', label: 'Plantagenet', color: '#c23b32' },
+  { id: 'lancaster', label: 'Lancaster', color: '#d45b6c' },
+  { id: 'york', label: 'York', color: '#4a78b8' },
+  { id: 'tudor', label: 'Tudor', color: '#a82828' },
+  { id: 'stuart', label: 'Stuart', color: '#7a5ea8' },
+  { id: 'orange', label: 'Orange', color: '#d4922e' },
+  { id: 'hanover', label: 'Hanover', color: '#3d8a78' },
+  { id: 'windsor', label: 'Windsor', color: '#2a5088' },
 ]
 
 /** English (and later British) monarchs from the Conquest, with linking ancestors. */
