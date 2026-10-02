@@ -25,6 +25,9 @@ export type Person = {
 export type DynastyStyle = {
   id: string
   label: string
+  /** Accent for rings / succession highlights. */
   color: string
+  /** Pastel horizontal band fill (poster style). */
+  bandFill: string
   ink?: string
 }

@@ -1,9 +1,11 @@
 import type { DynastyStyle, Kingdom, Person } from '../types'
 import { englandDynasties, englandPeople } from './england'
+import { wessexPeople } from './england-wessex'
 import { franceDynasties, francePeople } from './france'
 
 export function peopleFor(kingdom: Kingdom): Person[] {
-  return kingdom === 'france' ? francePeople : englandPeople
+  if (kingdom === 'france') return francePeople
+  return [...wessexPeople, ...englandPeople]
 }
 
 export function dynastiesFor(kingdom: Kingdom): DynastyStyle[] {
@@ -27,7 +29,7 @@ export const kingdomMeta: Record<
   england: {
     label: 'England',
     labelFr: 'Angleterre',
-    subtitle: 'From the Conquest to the present',
-    subtitleFr: 'De la Conquête à nos jours',
+    subtitle: 'From Wessex to the House of Windsor',
+    subtitleFr: 'Du Wessex à la maison Windsor',
   },
 }

@@ -139,6 +139,10 @@
     "src": "portraits/charles-i.webp",
     "wiki": "Charles_I_of_England"
   },
+  "cromwell": {
+    "src": "portraits/cromwell.webp",
+    "wiki": "Oliver_Cromwell"
+  },
   "charles-ii": {
     "src": "portraits/charles-ii.webp",
     "wiki": "Charles_II_of_England"
@@ -326,6 +330,10 @@
   "louis-orleans": {
     "src": "portraits/louis-orleans.webp",
     "wiki": "Louis_I,_Duke_of_Orléans"
+  },
+  "charles-orleans": {
+    "src": "portraits/charles-orleans.webp",
+    "wiki": "Charles_I,_Duke_of_Orléans"
   },
   "louis-xii": {
     "src": "portraits/louis-xii.webp",

@@ -1,12 +1,12 @@
 import type { DynastyStyle, Person } from '../types'
 
 export const franceDynasties: DynastyStyle[] = [
-  { id: 'carolingian', label: 'Carolingian', color: '#7a8f4e' },
-  { id: 'capetian', label: 'Capetian', color: '#c23b32' },
-  { id: 'valois', label: 'Valois', color: '#9b3d6e' },
-  { id: 'bourbon', label: 'Bourbon', color: '#3f5ea8' },
-  { id: 'orleans', label: 'Orléans', color: '#6f8f45' },
-  { id: 'bonaparte', label: 'Bonaparte', color: '#2c3e6b' },
+  { id: 'carolingian', label: 'Maison carolingienne', color: '#7a8f4e', bandFill: '#e8edc8' },
+  { id: 'capetian', label: 'Maison capétienne', color: '#c23b32', bandFill: '#ffc8c8' },
+  { id: 'valois', label: 'Maison de Valois', color: '#9b3d6e', bandFill: '#f0c8e0' },
+  { id: 'bourbon', label: 'Maison de Bourbon', color: '#3f5ea8', bandFill: '#c8d8f8' },
+  { id: 'orleans', label: "Maison d'Orléans", color: '#6f8f45', bandFill: '#d8eec8' },
+  { id: 'bonaparte', label: 'Maison Bonaparte', color: '#2c3e6b', bandFill: '#c8d4f0' },
 ]
 
 /** Kings (and linking princes) of France from Hugh Capet, plus Charlemagne as deep root. */

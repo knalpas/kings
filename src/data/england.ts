@@ -1,16 +1,20 @@
 import type { DynastyStyle, Person } from '../types'
 
 export const englandDynasties: DynastyStyle[] = [
-  { id: 'norman', label: 'Norman', color: '#7a8f52' },
-  { id: 'blois', label: 'Blois', color: '#a67c52' },
-  { id: 'angevin', label: 'Plantagenet', color: '#c23b32' },
-  { id: 'lancaster', label: 'Lancaster', color: '#d45b6c' },
-  { id: 'york', label: 'York', color: '#4a78b8' },
-  { id: 'tudor', label: 'Tudor', color: '#a82828' },
-  { id: 'stuart', label: 'Stuart', color: '#7a5ea8' },
-  { id: 'orange', label: 'Orange', color: '#d4922e' },
-  { id: 'hanover', label: 'Hanover', color: '#3d8a78' },
-  { id: 'windsor', label: 'Windsor', color: '#2a5088' },
+  { id: 'wessex', label: 'Maison de Wessex', color: '#b86a2e', bandFill: '#f6d5b8' },
+  { id: 'danish', label: 'Maison du Danemark', color: '#8a6a2a', bandFill: '#ffe9a8' },
+  { id: 'norman', label: 'Maison des Normands', color: '#8a7a20', bandFill: '#fff6b0' },
+  { id: 'blois', label: 'Maison de Blois', color: '#9a7040', bandFill: '#fff0c8' },
+  { id: 'angevin', label: 'Maison Plantagenêt', color: '#c43b32', bandFill: '#ffb8c6' },
+  { id: 'lancaster', label: 'Maison de Lancastre', color: '#5a9a40', bandFill: '#c8eeb8' },
+  { id: 'york', label: "Maison d'York", color: '#7a9a30', bandFill: '#e5f5a8' },
+  { id: 'tudor', label: 'Maison Tudor', color: '#7a4a9a', bandFill: '#ddd6f3' },
+  { id: 'stuart', label: 'Maison Stuart', color: '#3a6a9a', bandFill: '#b3d4f5' },
+  { id: 'interregnum', label: 'Interrègne', color: '#666', bandFill: '#d6dce6' },
+  { id: 'orange', label: "Maison d'Orange", color: '#c4842a', bandFill: '#ffe4b8' },
+  { id: 'hanover', label: 'Maison de Hanovre', color: '#b86a2e', bandFill: '#f6d5b8' },
+  { id: 'saxe-coburg', label: 'Maison de Saxe-Cobourg-Gotha', color: '#a84a7a', bandFill: '#f0c8dc' },
+  { id: 'windsor', label: 'Maison Windsor', color: '#2a7a9a', bandFill: '#c9eef5' },
 ]
 
 /** English (and later British) monarchs from the Conquest, with linking ancestors. */
@@ -572,6 +576,23 @@ export const englandPeople: Person[] = [
     wikipedia: 'Charles_I_of_England',
   },
   {
+    id: 'cromwell',
+    name: 'Oliver Cromwell',
+    shortName: 'Cromwell',
+    title: 'Lord Protector',
+    dynasty: 'interregnum',
+    parentId: null,
+    reignStart: 1653,
+    reignEnd: 1658,
+    birth: 1599,
+    death: 1658,
+    reigning: false,
+    summary:
+      'Led the Commonwealth after Charles I’s execution. Not a crowned king, but the effective ruler of England until the Restoration.',
+    notable: ['Commonwealth', 'Protectorate'],
+    wikipedia: 'Oliver_Cromwell',
+  },
+  {
     id: 'charles-ii',
     name: 'Charles II',
     shortName: 'Charles II',
@@ -797,7 +818,7 @@ export const englandPeople: Person[] = [
     name: 'Edward VII',
     shortName: 'Edward VII',
     title: 'King of the United Kingdom',
-    dynasty: 'windsor',
+    dynasty: 'saxe-coburg',
     parentId: 'victoria',
     reignStart: 1901,
     reignEnd: 1910,

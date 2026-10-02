@@ -264,10 +264,7 @@ a {
   position: relative;
   min-height: 0;
   overflow: hidden;
-  background:
-    radial-gradient(ellipse 90% 70% at 50% 20%, rgba(90, 40, 34, 0.55), transparent 60%),
-    radial-gradient(ellipse 60% 50% at 80% 80%, rgba(40, 55, 80, 0.2), transparent 50%),
-    linear-gradient(180deg, #3a1e1a 0%, var(--salon) 40%, var(--salon-deep) 100%);
+  background: #f3ece0;
 }
 
 .tree-canvas {
@@ -283,14 +280,39 @@ a {
 
 .tree-link {
   fill: none;
-  stroke-width: 1.8;
-  stroke-opacity: 0.55;
   stroke-linecap: round;
+  stroke-linejoin: round;
   transition: stroke-opacity 0.3s var(--ease);
 }
 
+.tree-link--genealogy {
+  stroke: #2a2520;
+  stroke-width: 1.15;
+  stroke-opacity: 0.72;
+}
+
+.tree-link--succession {
+  stroke: #d4213d;
+  stroke-width: 3.2;
+  stroke-opacity: 0.92;
+}
+
 .tree-link.is-dimmed {
-  stroke-opacity: 0.12;
+  stroke-opacity: 0.14;
+}
+
+.dynasty-band__fill {
+  stroke: rgba(0, 0, 0, 0.04);
+  stroke-width: 1;
+}
+
+.dynasty-band__label {
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 600;
+  fill: rgba(28, 21, 16, 0.72);
+  letter-spacing: 0.04em;
+  pointer-events: none;
 }
 
 .tree-node {
@@ -299,58 +321,39 @@ a {
 }
 
 .tree-node.is-dimmed {
-  opacity: 0.22;
+  opacity: 0.35;
 }
 
 .tree-node.is-link {
-  opacity: 0.88;
+  opacity: 0.92;
 }
 
-.tree-node.is-dimmed.is-link {
-  opacity: 0.18;
-}
-
-.tree-node__halo {
-  transition: opacity 0.3s var(--ease);
-}
-
-.tree-node:hover .tree-node__halo {
-  opacity: 0.45 !important;
-}
-
-.tree-node.is-selected .tree-node__halo {
-  opacity: 0.65 !important;
+.tree-node.is-selected .tree-node__ring {
+  filter: drop-shadow(0 0 6px rgba(212, 33, 61, 0.45));
 }
 
 .tree-node__name {
-  font-family: var(--display);
-  font-size: 12.5px;
+  font-family: var(--text);
+  font-size: 10.5px;
   font-weight: 600;
-  fill: #f3e6c8;
+  fill: #1c1510;
   text-anchor: middle;
   pointer-events: none;
-  letter-spacing: 0.02em;
-  paint-order: stroke;
-  stroke: rgba(18, 12, 10, 0.75);
-  stroke-width: 3px;
 }
 
 .tree-node__reign {
   font-family: var(--text);
-  font-size: 10px;
-  fill: rgba(232, 210, 168, 0.72);
+  font-size: 9px;
+  fill: #5a4c3a;
   text-anchor: middle;
   pointer-events: none;
-  paint-order: stroke;
-  stroke: rgba(18, 12, 10, 0.65);
-  stroke-width: 2.5px;
 }
 
-.tree-node__mono {
+.tree-node__silhouette {
   font-family: var(--display);
-  font-size: 16px;
-  fill: var(--gold-soft);
-  letter-spacing: 0.06em;
+  font-size: 11px;
+  fill: #6a5846;
+  letter-spacing: 0.04em;
 }
 
 /* ── Zoom controls ──────────────────────────────────────── */
@@ -370,9 +373,9 @@ a {
   height: 42px;
   display: grid;
   place-items: center;
-  background: rgba(22, 16, 12, 0.72);
-  border: 1px solid rgba(212, 181, 106, 0.45);
-  color: var(--gold-soft);
+  background: rgba(255, 252, 245, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: var(--ink);
   font-family: var(--display);
   font-size: 1.3rem;
   border-radius: 50%;
@@ -394,14 +397,14 @@ a {
   transform: translateX(-50%);
   z-index: 12;
   padding: 8px 16px;
-  background: rgba(18, 12, 10, 0.72);
-  color: var(--gold-soft);
+  background: rgba(255, 252, 245, 0.9);
+  color: var(--ink-soft);
   font-size: 0.88rem;
   letter-spacing: 0.04em;
-  border: 1px solid rgba(212, 181, 106, 0.28);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 999px;
   pointer-events: none;
-  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   animation: fadeHint 0.7s var(--ease) both, fadeOut 0.8s ease 4.2s forwards;
 }
 
@@ -429,12 +432,12 @@ a {
   z-index: 12;
   max-width: min(300px, 72vw);
   padding: 12px 14px;
-  background: rgba(22, 16, 12, 0.78);
-  border: 1px solid rgba(212, 181, 106, 0.35);
+  background: rgba(255, 252, 245, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 14px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
   backdrop-filter: blur(10px);
-  color: var(--paper);
+  color: var(--ink);
 }
 
 .legend__title {
@@ -442,7 +445,7 @@ a {
   font-size: 0.88rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold-soft);
+  color: var(--ink-soft);
   margin-bottom: 8px;
 }
 
@@ -460,14 +463,14 @@ a {
   align-items: center;
   gap: 7px;
   font-size: 0.78rem;
-  color: rgba(247, 239, 224, 0.72);
+  color: var(--ink-soft);
 }
 
 .legend__swatch {
   width: 11px;
   height: 11px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(240, 217, 160, 0.35);
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
 }
 
 /* ── Detail panel ───────────────────────────────────────── */

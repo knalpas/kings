@@ -6,7 +6,7 @@ import { TreeCanvas } from './components/TreeCanvas'
 import { DetailPanel } from './components/DetailPanel'
 
 export default function App() {
-  const [kingdom, setKingdom] = useState<Kingdom>('france')
+  const [kingdom, setKingdom] = useState<Kingdom>('england')
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [focusId, setFocusId] = useState<string | null>(null)
   const [focusSeq, setFocusSeq] = useState(0)
@@ -78,7 +78,7 @@ export default function App() {
           <ul className="legend__list">
             {dynastyList.map((d) => (
               <li key={d.id}>
-                <span className="legend__swatch" style={{ background: d.color }} />
+                <span className="legend__swatch" style={{ background: d.bandFill }} />
                 {d.label}
               </li>
             ))}
