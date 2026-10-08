@@ -3,20 +3,14 @@ import { select } from 'd3-selection'
 import { zoom, zoomIdentity, type ZoomBehavior, type ZoomTransform } from 'd3-zoom'
 import 'd3-transition'
 import type { DynastyStyle, Person } from '../types'
-import {
-  computeDynastyBands,
-  genealogyLinkPath,
-  layoutTree,
-  NODE_R,
-  reignLabel,
-  successionLinkPath,
-} from '../lib/tree'
+import { genealogyLinkPath, LABEL_BLOCK, layoutTree, NODE_RX, NODE_RY, reignLabel } from '../lib/tree'
 import { successionChain } from '../lib/succession'
 import { portraitSrc } from '../data/portraits'
 
 type Props = {
   people: Person[]
   dynasties: Map<string, DynastyStyle>
+  chartTitle: string
   selectedId: string | null
   focusId: string | null
   focusSeq: number
@@ -37,6 +31,7 @@ function initials(name: string): string {
 export function TreeCanvas({
   people,
   dynasties,
+  chartTitle,
   selectedId,
   focusId,
   focusSeq,
@@ -49,17 +44,12 @@ export function TreeCanvas({
   const transformRef = useRef<ZoomTransform>(zoomIdentity)
 
   const laid = useMemo(() => layoutTree(people), [people])
-  const bands = useMemo(
-    () => computeDynastyBands(laid.nodes, dynasties, laid.width),
-    [laid, dynasties],
-  )
   const succession = useMemo(() => successionChain(people), [people])
-
-  const posById = useMemo(() => {
-    const m = new Map<string, { x: number; y: number }>()
-    for (const n of laid.nodes) m.set(n.data.id, { x: n.x, y: n.y })
-    return m
-  }, [laid])
+  const order = useMemo(() => {
+    const map = new Map<string, number>()
+    succession.forEach((person, index) => map.set(person.id, index + 1))
+    return map
+  }, [succession])
 
   useEffect(() => {
     const svg = svgRef.current
@@ -80,12 +70,11 @@ export function TreeCanvas({
     function fit() {
       const el = svgRef.current
       if (!el || !zoomBehavior.current) return
-      const { width: tw, height: th } = laid
       const vw = el.clientWidth || 800
-      const vh = el.clientHeight || 600
-      const scale = Math.min(1, Math.max(0.1, Math.min((vw - 24) / tw, (vh - 24) / th) * 0.96))
-      const tx = (vw - tw * scale) / 2
-      const ty = 8
+      // Open on a readable passage of the plate, not a postage-stamp of the whole chart.
+      const scale = vw < 720 ? 0.62 : 0.78
+      const tx = 28
+      const ty = 18
       select(el)
         .transition()
         .duration(500)
@@ -122,93 +111,61 @@ export function TreeCanvas({
       .call(zoomBehavior.current.transform, zoomIdentity.translate(tx, ty).scale(scale))
   }, [focusId, focusSeq, laid])
 
-  const innerR = NODE_R - 2
+  const clipRx = NODE_RX - 2.2
+  const clipRy = NODE_RY - 2.2
 
   return (
     <svg
       ref={svgRef}
       className="tree-canvas"
       role="img"
-      aria-label="Zoomable royal family tree"
+      aria-label={`Zoomable genealogy of the ${chartTitle}`}
       onClick={() => onSelect(null)}
     >
       <defs>
-        <marker
-          id="succ-arrow"
-          markerWidth="9"
-          markerHeight="9"
-          refX="8"
-          refY="4.5"
-          orient="auto"
-          markerUnits="strokeWidth"
-        >
-          <path d="M0,0 L9,4.5 L0,9 z" fill="#d4213d" />
-        </marker>
         {laid.nodes.map((n) => (
           <clipPath key={`clip-${n.data.id}`} id={`clip-${n.data.id}`}>
-            <circle r={innerR - 1} />
+            <ellipse rx={clipRx} ry={clipRy} />
           </clipPath>
         ))}
       </defs>
 
       <g ref={gRef}>
-        {/* Dynasty colour bands */}
-        {bands.map((b) => (
-          <g key={b.dynastyId} className="dynasty-band">
-            <rect
-              className="dynasty-band__fill"
-              x={0}
-              y={b.y0}
-              width={laid.width}
-              height={b.y1 - b.y0}
-              fill={b.fill}
-            />
-            <text className="dynasty-band__label" x={14} y={b.y0 + 22}>
-              {b.label}
-            </text>
-          </g>
-        ))}
+        <rect className="plate" x={0} y={0} width={laid.width} height={laid.height} />
+        <rect className="plate-frame" x={18} y={16} width={laid.width - 36} height={laid.height - 32} />
+        <rect className="plate-frame plate-frame--inner" x={23} y={21} width={laid.width - 46} height={laid.height - 42} />
 
-        {/* Black genealogical lines */}
+        <text className="chart-kicker" x={48} y={48}>
+          A genealogical chart
+        </text>
+        <text className="chart-title" x={48} y={82}>
+          {chartTitle}
+        </text>
+        <text className="chart-note" x={48} y={106}>
+          Fine lines show descent. Carmine numerals show the order of accession.
+        </text>
+        <text className="chart-note" x={48} y={laid.height - 36}>
+          Sceptre · genealogies of the French and English crowns
+        </text>
+
         {laid.links.map((l) => (
           <path
             key={`gen-${l.source.data.id}-${l.target.data.id}`}
-            className="tree-link tree-link--genealogy"
-            d={genealogyLinkPath(
-              { x: l.source.x, y: l.source.y },
-              { x: l.target.x, y: l.target.y },
-            )}
+            className="tree-link"
+            d={genealogyLinkPath({ x: l.source.x, y: l.source.y }, { x: l.target.x, y: l.target.y })}
           />
         ))}
 
-        {/* Red succession path */}
-        {succession.slice(0, -1).map((monarch, i) => {
-          const next = succession[i + 1]
-          const a = posById.get(monarch.id)
-          const b = posById.get(next.id)
-          if (!a || !b) return null
-          const dimmed =
-            selectedId != null && selectedId !== monarch.id && selectedId !== next.id
-          return (
-            <path
-              key={`succ-${monarch.id}-${next.id}`}
-              className={`tree-link tree-link--succession${dimmed ? ' is-dimmed' : ''}`}
-              d={successionLinkPath(a, b)}
-              markerEnd="url(#succ-arrow)"
-            />
-          )
-        })}
-
-        {/* Portrait nodes */}
         {laid.nodes.map((n) => {
           const person = n.data.person!
           const house = dynasties.get(person.dynasty)
-          const ring = house?.color ?? '#333'
+          const ink = house?.color ?? '#3a3128'
           const isSelected = selectedId === person.id
           const isLink = person.reigning === false
           const dimmed = selectedId != null && !isSelected
           const reign = reignLabel(person)
           const src = portraitSrc(person.id)
+          const numeral = order.get(person.id)
 
           return (
             <g
@@ -220,40 +177,60 @@ export function TreeCanvas({
                 onSelect(person.id)
               }}
             >
-              <circle
+              <ellipse
                 className="tree-node__ring"
-                r={NODE_R}
-                fill="#fff"
-                stroke={ring}
-                strokeWidth={isSelected ? 3 : 2}
-                strokeDasharray={isLink ? '3 2' : undefined}
+                rx={NODE_RX}
+                ry={NODE_RY}
+                fill="#f7f3ea"
+                stroke={isSelected ? '#8c2f2a' : ink}
+                strokeWidth={isSelected ? 2.1 : 1.15}
+                strokeDasharray={isLink ? '2.2 1.8' : undefined}
+              />
+              <ellipse
+                className="tree-node__ring-inner"
+                rx={NODE_RX - 3.2}
+                ry={NODE_RY - 3.2}
+                fill="none"
+                stroke={ink}
+                strokeWidth={0.45}
+                strokeOpacity={0.7}
               />
 
               {src ? (
                 <image
                   href={src}
-                  x={-(innerR - 1)}
-                  y={-(innerR - 1)}
-                  width={(innerR - 1) * 2}
-                  height={(innerR - 1) * 2}
+                  x={-clipRx}
+                  y={-clipRy}
+                  width={clipRx * 2}
+                  height={clipRy * 2}
                   clipPath={`url(#clip-${person.id})`}
                   preserveAspectRatio="xMidYMid slice"
                 />
               ) : (
-                <g>
-                  <circle r={innerR - 1} fill="#e8e0d4" />
-                  <text className="tree-node__silhouette" textAnchor="middle" dy="0.35em">
-                    {initials(person.shortName)}
+                <text className="tree-node__silhouette" textAnchor="middle" dy="0.35em">
+                  {initials(person.shortName)}
+                </text>
+              )}
+
+              {numeral != null && (
+                <g className="tree-node__badge" transform={`translate(${NODE_RX - 2},${-NODE_RY + 5})`}>
+                  <circle r={8} fill="#f7f3ea" stroke="#8c2f2a" strokeWidth={0.7} />
+                  <text textAnchor="middle" dy="0.35em">
+                    {numeral}
                   </text>
                 </g>
               )}
 
-              <text className="tree-node__name" y={NODE_R + 14}>
+              <text className="tree-node__name" y={NODE_RY + 15}>
                 {person.shortName}
               </text>
-              {reign && (
-                <text className="tree-node__reign" y={NODE_R + 26}>
+              {reign ? (
+                <text className="tree-node__reign" y={NODE_RY + 28}>
                   {reign}
+                </text>
+              ) : (
+                <text className="tree-node__reign" y={NODE_RY + LABEL_BLOCK - 8}>
+                  {isLink ? 'ancestor' : ''}
                 </text>
               )}
             </g>

@@ -1,5 +1,5 @@
 import { hierarchy, tree, type HierarchyPointNode } from 'd3-hierarchy'
-import type { DynastyStyle, Person } from '../types'
+import type { Person } from '../types'
 
 export type TreeNode = {
   id: string
@@ -9,10 +9,13 @@ export type TreeNode = {
 
 const ROOT_ID = '__root__'
 
-/** Compact portrait circle (poster charts). */
-export const NODE_R = 20
-export const NODE_GAP_X = 210
-export const NODE_GAP_Y = 96
+/** Oval portrait medallion, as on an engraved plate. */
+export const NODE_RX = 18
+export const NODE_RY = 23
+/** Space reserved under each medallion for the name and dates. */
+export const LABEL_BLOCK = 34
+export const NODE_GAP_X = 168
+export const NODE_GAP_Y = 156
 
 export function buildForest(people: Person[]): TreeNode {
   const byId = new Map(people.map((p) => [p.id, p]))
@@ -63,26 +66,18 @@ export type LaidOut = {
   height: number
 }
 
-export type DynastyBand = {
-  dynastyId: string
-  y0: number
-  y1: number
-  label: string
-  fill: string
-}
-
 export function layoutTree(people: Person[]): LaidOut {
   const rootData = buildForest(people)
   const root = hierarchy(rootData)
   const layout = tree<TreeNode>()
     .nodeSize([NODE_GAP_X, NODE_GAP_Y])
-    .separation((a, b) => (a.parent === b.parent ? 1.05 : 1.35))
+    .separation((a, b) => (a.parent === b.parent ? 1.12 : 1.45))
   const laid = layout(root)
 
-  // Stack separate bloodlines vertically (poster charts read top → bottom).
+  // Stack separate bloodlines one under another so the plate reads downward.
   const forestRoots = (laid.children ?? []).slice()
   let cursorY = 0
-  const COMPONENT_GAP_Y = NODE_GAP_Y * 1.6
+  const COMPONENT_GAP_Y = NODE_GAP_Y * 0.85
   for (const component of forestRoots) {
     const desc = component.descendants()
     const ys = desc.map((d) => d.y)
@@ -99,8 +94,6 @@ export function layoutTree(people: Person[]): LaidOut {
     .filter((l) => l.source.data.id !== ROOT_ID)
     .map((l) => ({ source: l.source, target: l.target }))
 
-  for (const n of visible) n.y -= NODE_GAP_Y
-
   let minX = Infinity
   let maxX = -Infinity
   let minY = Infinity
@@ -112,80 +105,32 @@ export function layoutTree(people: Person[]): LaidOut {
     maxY = Math.max(maxY, n.y)
   }
 
-  const padX = 140
-  const padY = 110
+  const padX = 96
+  const padTop = 156
+  const padBottom = 78
   for (const n of visible) {
     n.x = n.x - minX + padX
-    n.y = n.y - minY + padY
+    n.y = n.y - minY + padTop
   }
 
   return {
     nodes: visible,
     links,
     width: maxX - minX + padX * 2,
-    height: maxY - minY + padY * 2 + 60,
+    height: maxY - minY + padTop + padBottom,
   }
 }
 
-export function computeDynastyBands(
-  nodes: HierarchyPointNode<TreeNode>[],
-  dynasties: Map<string, DynastyStyle>,
-  chartWidth: number,
-): DynastyBand[] {
-  const ranges = new Map<string, { min: number; max: number }>()
-  for (const n of nodes) {
-    const p = n.data.person!
-    const d = p.dynasty
-    const r = ranges.get(d) ?? { min: Infinity, max: -Infinity }
-    r.min = Math.min(r.min, n.y)
-    r.max = Math.max(r.max, n.y)
-    ranges.set(d, r)
-  }
-
-  const pad = 52
-  const bands: DynastyBand[] = []
-  for (const [dynastyId, range] of ranges) {
-    const style = dynasties.get(dynastyId)
-    if (!style) continue
-    bands.push({
-      dynastyId,
-      y0: range.min - pad,
-      y1: range.max + pad,
-      label: style.label,
-      fill: style.bandFill,
-    })
-  }
-  bands.sort((a, b) => a.y0 - b.y0)
-
-  // Merge overlapping bands of same fill slightly - keep separate stripes
-  void chartWidth
-  return bands
-}
-
-/** Genealogical connector (thin black), T-shaped like classic charts. */
+/** Fine genealogical rule, dropping clear of the caption under each portrait. */
 export function genealogyLinkPath(
   s: { x: number; y: number },
   t: { x: number; y: number },
-  r = NODE_R,
 ): string {
-  const y0 = s.y + r + 4
-  const y1 = t.y - r - 4
+  const y0 = s.y + NODE_RY + LABEL_BLOCK
+  const y1 = t.y - NODE_RY - 8
   const mid = (y0 + y1) / 2
   if (Math.abs(s.x - t.x) < 2) return `M${s.x},${y0}V${y1}`
   return `M${s.x},${y0}V${mid}H${t.x}V${y1}`
-}
-
-/** Bold red succession arrow between two monarchs. */
-export function successionLinkPath(
-  s: { x: number; y: number },
-  t: { x: number; y: number },
-  r = NODE_R,
-): string {
-  const y0 = s.y + r + 6
-  const y1 = t.y - r - 6
-  const midY = (y0 + y1) / 2
-  const bend = (t.x - s.x) * 0.15
-  return `M${s.x},${y0}C${s.x + bend},${midY} ${t.x - bend},${midY} ${t.x},${y1}`
 }
 
 export function reignLabel(p: Person): string {

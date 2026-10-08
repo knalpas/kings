@@ -38,8 +38,9 @@ export default function App() {
     <div className="app">
       <header className="header">
         <div className="brand">
+          <div className="brand__kicker">Genealogical charts</div>
           <div className="brand__name">Sceptre</div>
-          <div className="brand__tag">Trees of the French &amp; English crowns</div>
+          <div className="brand__tag">{meta.subtitle}</div>
         </div>
         <div className="header__controls">
           <KingdomToggle kingdom={kingdom} onChange={switchKingdom} />
@@ -52,6 +53,7 @@ export default function App() {
           key={kingdom}
           people={people}
           dynasties={dynasties}
+          chartTitle={meta.chartTitle}
           selectedId={selectedId}
           focusId={focusId}
           focusSeq={focusSeq}
@@ -71,14 +73,14 @@ export default function App() {
           </button>
         </div>
 
-        <div className="hint">Drag to pan · scroll to zoom · tap a portrait</div>
+        <div className="hint">Drag to move · scroll to enlarge · select a portrait</div>
 
         <aside className="legend" aria-label="Dynasties">
-          <div className="legend__title">{meta.label} · houses</div>
+          <div className="legend__title">Houses</div>
           <ul className="legend__list">
             {dynastyList.map((d) => (
               <li key={d.id}>
-                <span className="legend__swatch" style={{ background: d.bandFill }} />
+                <span className="legend__swatch" style={{ background: d.color }} />
                 {d.label}
               </li>
             ))}

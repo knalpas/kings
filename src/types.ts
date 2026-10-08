@@ -25,9 +25,9 @@ export type Person = {
 export type DynastyStyle = {
   id: string
   label: string
-  /** Accent for rings / succession highlights. */
+  /** Engraved ink used for the portrait frame. */
   color: string
-  /** Pastel horizontal band fill (poster style). */
+  /** Pale wash kept for the printed legend. */
   bandFill: string
   ink?: string
 }

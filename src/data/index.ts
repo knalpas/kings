@@ -16,20 +16,15 @@ export function dynastyMap(kingdom: Kingdom): Map<string, DynastyStyle> {
   return new Map(dynastiesFor(kingdom).map((d) => [d.id, d]))
 }
 
-export const kingdomMeta: Record<
-  Kingdom,
-  { label: string; labelFr: string; subtitle: string; subtitleFr: string }
-> = {
+export const kingdomMeta: Record<Kingdom, { label: string; subtitle: string; chartTitle: string }> = {
   france: {
     label: 'France',
-    labelFr: 'France',
-    subtitle: 'From Hugh Capet to the last crowns',
-    subtitleFr: 'D’Hugues Capet aux dernières couronnes',
+    subtitle: 'From Charlemagne to the Second Empire',
+    chartTitle: 'Kings of France',
   },
   england: {
     label: 'England',
-    labelFr: 'Angleterre',
-    subtitle: 'From Wessex to the House of Windsor',
-    subtitleFr: 'Du Wessex à la maison Windsor',
+    subtitle: 'From Alfred the Great to the House of Windsor',
+    chartTitle: 'Kings of England',
   },
 }

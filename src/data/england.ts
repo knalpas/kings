@@ -1,20 +1,20 @@
 import type { DynastyStyle, Person } from '../types'
 
 export const englandDynasties: DynastyStyle[] = [
-  { id: 'wessex', label: 'Maison de Wessex', color: '#b86a2e', bandFill: '#f6d5b8' },
-  { id: 'danish', label: 'Maison du Danemark', color: '#8a6a2a', bandFill: '#ffe9a8' },
-  { id: 'norman', label: 'Maison des Normands', color: '#8a7a20', bandFill: '#fff6b0' },
-  { id: 'blois', label: 'Maison de Blois', color: '#9a7040', bandFill: '#fff0c8' },
-  { id: 'angevin', label: 'Maison Plantagenêt', color: '#c43b32', bandFill: '#ffb8c6' },
-  { id: 'lancaster', label: 'Maison de Lancastre', color: '#5a9a40', bandFill: '#c8eeb8' },
-  { id: 'york', label: "Maison d'York", color: '#7a9a30', bandFill: '#e5f5a8' },
-  { id: 'tudor', label: 'Maison Tudor', color: '#7a4a9a', bandFill: '#ddd6f3' },
-  { id: 'stuart', label: 'Maison Stuart', color: '#3a6a9a', bandFill: '#b3d4f5' },
-  { id: 'interregnum', label: 'Interrègne', color: '#666', bandFill: '#d6dce6' },
-  { id: 'orange', label: "Maison d'Orange", color: '#c4842a', bandFill: '#ffe4b8' },
-  { id: 'hanover', label: 'Maison de Hanovre', color: '#b86a2e', bandFill: '#f6d5b8' },
-  { id: 'saxe-coburg', label: 'Maison de Saxe-Cobourg-Gotha', color: '#a84a7a', bandFill: '#f0c8dc' },
-  { id: 'windsor', label: 'Maison Windsor', color: '#2a7a9a', bandFill: '#c9eef5' },
+  { id: 'wessex', label: 'House of Wessex', color: '#8a5428', bandFill: '#efe2d4' },
+  { id: 'danish', label: 'House of Denmark', color: '#6e5528', bandFill: '#efe6d2' },
+  { id: 'norman', label: 'House of Normandy', color: '#6e6840', bandFill: '#e8e6d4' },
+  { id: 'blois', label: 'House of Blois', color: '#8a6244', bandFill: '#efe4d6' },
+  { id: 'angevin', label: 'House of Plantagenet', color: '#8c3832', bandFill: '#f0ddd8' },
+  { id: 'lancaster', label: 'House of Lancaster', color: '#3d6840', bandFill: '#dde8d8' },
+  { id: 'york', label: 'House of York', color: '#5e6838', bandFill: '#e6ead6' },
+  { id: 'tudor', label: 'House of Tudor', color: '#5a3c70', bandFill: '#e6deee' },
+  { id: 'stuart', label: 'House of Stuart', color: '#2c4e74', bandFill: '#dce6f0' },
+  { id: 'interregnum', label: 'Commonwealth', color: '#5c5852', bandFill: '#e4e2dc' },
+  { id: 'orange', label: 'House of Orange', color: '#8a5828', bandFill: '#f0e4d4' },
+  { id: 'hanover', label: 'House of Hanover', color: '#8a5428', bandFill: '#efe2d4' },
+  { id: 'saxe-coburg', label: 'House of Saxe-Coburg and Gotha', color: '#743850', bandFill: '#f0dce4' },
+  { id: 'windsor', label: 'House of Windsor', color: '#1e5c70', bandFill: '#d8eaf0' },
 ]
 
 /** English (and later British) monarchs from the Conquest, with linking ancestors. */
