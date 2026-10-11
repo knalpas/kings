@@ -9,7 +9,7 @@
         "note": "Rois saxons de l'Ouest qui forgea un royaume anglais unifié au cours des guerres contre les Vikings."
       },
       "denmark": {
-        "label": "Maison du Danemark",
+        "label": "Maison de Danemark",
         "note": "Conquérants danois qui gouvernèrent l'Angleterre au sein d'un empire de la mer du Nord, de 1013 à 1042."
       },
       "godwin": {
@@ -668,7 +668,7 @@
       "henry-viii": {
         "name": "Henri VIII",
         "title": "Roi d'Angleterre et d'Irlande",
-        "summary": "Il rompit avec Rome pour annuler son premier mariage, se fit chef suprême de l'Église d'Angleterre et dissout les monastères.",
+        "summary": "Il rompit avec Rome pour annuler son premier mariage, se proclama chef suprême de l'Église d'Angleterre et dissolut les monastères.",
         "wikipedia": "Henri_VIII",
         "spouses": [
           "Catherine d'Aragon",
@@ -741,7 +741,7 @@
         ]
       },
       "mary-i": {
-        "name": "Marie Ière",
+        "name": "Marie Ire",
         "title": "Reine d'Angleterre et d'Irlande",
         "summary": "Elle rétablit le catholicisme et fit brûler environ 280 protestants pour hérésie. Calais, dernière possession française de l'Angleterre, tomba en 1558.",
         "wikipedia": "Marie_Ière_(reine_d'Angleterre)",

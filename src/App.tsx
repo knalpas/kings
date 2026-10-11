@@ -7,14 +7,35 @@ import { Chart, type ChartApi } from './components/Chart'
 import { Header } from './components/Header'
 import { HouseRail } from './components/HouseRail'
 import { DetailDrawer } from './components/DetailDrawer'
+import { LocaleProvider } from './i18n/locale'
+import { localizeKingdom } from './i18n/localize'
+import { isLocale, type Locale } from './i18n/types'
+import { ui } from './i18n/ui'
 
 const DRAWER_W = 420
 
-function readHash(): { kingdom: Kingdom; id: string | null } {
-  const [, k, id] = window.location.hash.split('/')
-  const kingdom = kingdomOrder.includes(k as Kingdom) ? (k as Kingdom) : 'england'
+function browserLocale(): Locale {
+  try {
+    const stored = localStorage.getItem('kings-locale')
+    if (isLocale(stored ?? '')) return stored as Locale
+  } catch {
+    /* ignore */
+  }
+  return typeof navigator !== 'undefined' && navigator.language.toLowerCase().startsWith('fr') ? 'fr' : 'en'
+}
+
+function readHash(): { locale: Locale; kingdom: Kingdom; id: string | null } {
+  const parts = window.location.hash.replace(/^#\/?/, '').split('/').filter(Boolean)
+  let locale = browserLocale()
+  let rest = parts
+  if (isLocale(parts[0])) {
+    locale = parts[0]
+    rest = parts.slice(1)
+  }
+  const kingdom = kingdomOrder.includes(rest[0] as Kingdom) ? (rest[0] as Kingdom) : 'england'
+  const id = rest[1]
   const valid = id && kingdoms[kingdom].people.some((p) => p.id === id)
-  return { kingdom, id: valid ? id : null }
+  return { locale, kingdom, id: valid ? id : null }
 }
 
 function useWide() {
@@ -31,6 +52,7 @@ function useWide() {
 
 export default function App() {
   const initial = useMemo(() => readHash(), [])
+  const [locale, setLocale] = useState<Locale>(initial.locale)
   const [kingdom, setKingdom] = useState<Kingdom>(initial.kingdom)
   const [selectedId, setSelectedId] = useState<string | null>(initial.id)
   const [houseFocus, setHouseFocus] = useState<string | null>(null)
@@ -39,21 +61,54 @@ export default function App() {
   const api = useRef<ChartApi>(null)
   const wide = useWide()
 
-  const data = kingdoms[kingdom]
-  const layout = useMemo(() => computeLayout(data.people, data.houses, data.gaps), [data])
+  const base = kingdoms[kingdom]
+  const structure = useMemo(() => computeLayout(base.people, base.houses, base.gaps), [base])
+  const data = useMemo(() => localizeKingdom(base, locale), [base, locale])
+  const layout = useMemo(() => {
+    const byId = new Map(data.people.map((p) => [p.id, p]))
+    const houseById = new Map(data.houses.map((h) => [h.id, h]))
+    const gapLabel = new Map(data.gaps.map((g) => [`${g.start}-${g.end}`, g.label]))
+    return {
+      ...structure,
+      nodes: structure.nodes.map((n) => ({ ...n, person: byId.get(n.id)! })),
+      byId: new Map(structure.nodes.map((n) => [n.id, { ...n, person: byId.get(n.id)! }])),
+      chain: structure.chain.map((p) => byId.get(p.id)!),
+      bands: structure.bands.map((b) => ({
+        ...b,
+        label: b.kind === 'gap' ? (gapLabel.get(`${b.start}-${b.end}`) ?? b.label) : (houseById.get(b.houseId!)?.label ?? b.label),
+      })),
+    }
+  }, [structure, data])
+
   const houses = useMemo(() => new Map(data.houses.map((h) => [h.id, h])), [data])
   const index = useMemo(() => new Map(data.people.map((p) => [p.id, p])), [data])
   const selected = selectedId ? index.get(selectedId) ?? null : null
+  const kingdomLabels = useMemo(
+    () => ({ england: ui[locale].england, france: ui[locale].france }) satisfies Record<Kingdom, string>,
+    [locale],
+  )
+
+  const writeHash = useCallback((nextLocale: Locale, nextKingdom: Kingdom, nextId: string | null) => {
+    const hash = nextId ? `#/${nextLocale}/${nextKingdom}/${nextId}` : `#/${nextLocale}/${nextKingdom}`
+    if (window.location.hash !== hash) history.replaceState(null, '', hash)
+  }, [])
 
   useEffect(() => {
-    const hash = selectedId ? `#/${kingdom}/${selectedId}` : `#/${kingdom}`
-    if (window.location.hash !== hash) history.replaceState(null, '', hash)
-    document.title = selected ? `${selected.name} · Sceptre` : `${data.title} · Sceptre`
-  }, [kingdom, selectedId, selected, data.title])
+    writeHash(locale, kingdom, selectedId)
+    document.documentElement.lang = locale
+    try {
+      localStorage.setItem('kings-locale', locale)
+    } catch {
+      /* ignore */
+    }
+    const brand = ui[locale].brand
+    document.title = selected ? `${selected.name} · ${brand}` : `${data.title} · ${brand}`
+  }, [locale, kingdom, selectedId, selected, data.title, writeHash])
 
   useEffect(() => {
     const onHash = () => {
       const h = readHash()
+      setLocale(h.locale)
       setKingdom(h.kingdom)
       setSelectedId(h.id)
       if (h.id) requestAnimationFrame(() => api.current?.focus(h.id!))
@@ -73,6 +128,11 @@ export default function App() {
     setHouseFocus(null)
   }
 
+  const switchLocale = (l: Locale) => {
+    if (l === locale) return
+    setLocale(l)
+  }
+
   const go = useCallback((id: string) => {
     setSelectedId(id)
     requestAnimationFrame(() => api.current?.focus(id))
@@ -85,8 +145,8 @@ export default function App() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      const t = e.target as HTMLElement
-      if (/INPUT|TEXTAREA|SELECT/.test(t.tagName)) return
+      const el = e.target as HTMLElement
+      if (/INPUT|TEXTAREA|SELECT/.test(el.tagName)) return
       if (e.key === 'Escape') {
         if (selectedId) setSelectedId(null)
         else setHouseFocus(null)
@@ -109,79 +169,84 @@ export default function App() {
   }, [selectedId, selected, layout, go])
 
   const inset = selected && wide ? DRAWER_W : 0
+  const t = ui[locale]
 
   return (
-    <div className="app">
-      <Header
-        kingdom={kingdom}
-        people={data.people}
-        houses={houses}
-        showSuccession={showSuccession}
-        onKingdom={switchKingdom}
-        onPick={go}
-        onToggleSuccession={() => setShowSuccession((s) => !s)}
-      />
-      <div className="workspace">
-        <HouseRail
-          layout={layout}
-          houses={data.houses}
-          viewport={viewport}
-          houseFocus={houseFocus}
-          onHouseFocus={setHouseFocus}
-          onScrollToYear={(y, animate) => api.current?.scrollToYear(y, animate)}
+    <LocaleProvider locale={locale}>
+      <div className="app">
+        <Header
+          kingdom={kingdom}
+          people={data.people}
+          houses={houses}
+          showSuccession={showSuccession}
+          kingdomLabels={kingdomLabels}
+          onKingdom={switchKingdom}
+          onLocale={switchLocale}
+          onPick={go}
+          onToggleSuccession={() => setShowSuccession((s) => !s)}
         />
-        <main className="stage">
-          <Chart
-            key={kingdom}
-            kingdom={kingdom}
+        <div className="workspace">
+          <HouseRail
             layout={layout}
-            houses={houses}
-            title={data.title}
-            subtitle={data.subtitle}
-            selectedId={selectedId}
-            houseFocus={houseFocus}
-            showSuccession={showSuccession}
-            rightInset={inset}
-            bottomInset={selected && !wide ? Math.round(window.innerHeight * 0.64) - 60 : 0}
+            houses={data.houses}
             viewport={viewport}
-            onSelect={selectFromChart}
+            houseFocus={houseFocus}
             onHouseFocus={setHouseFocus}
-            apiRef={api}
+            onScrollToYear={(y, animate) => api.current?.scrollToYear(y, animate)}
           />
-          <div className="zoom" style={{ right: inset + 20 }} aria-label="Zoom controls">
-            <button type="button" onClick={() => api.current?.zoomBy(1.35)} aria-label="Zoom in" title="Zoom in (+)">
-              <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
-                <path d="M10 4v12M4 10h12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-              </svg>
-            </button>
-            <button type="button" onClick={() => api.current?.zoomBy(1 / 1.35)} aria-label="Zoom out" title="Zoom out (−)">
-              <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
-                <path d="M4 10h12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-              </svg>
-            </button>
-            <button type="button" onClick={() => api.current?.fit()} aria-label="Reset view" title="Reset view (0)">
-              <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
-                <path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" />
-              </svg>
-            </button>
-          </div>
-          {selected && (
-            <DetailDrawer
+          <main className="stage">
+            <Chart
+              key={kingdom}
               kingdom={kingdom}
-              person={selected}
-              people={data.people}
-              index={index}
+              layout={layout}
               houses={houses}
-              chain={layout.chain}
-              gaps={data.gaps}
+              title={data.title}
+              subtitle={data.subtitle}
+              selectedId={selectedId}
               houseFocus={houseFocus}
-              onSelect={go}
+              showSuccession={showSuccession}
+              rightInset={inset}
+              bottomInset={selected && !wide ? Math.round(window.innerHeight * 0.64) - 60 : 0}
+              viewport={viewport}
+              onSelect={selectFromChart}
               onHouseFocus={setHouseFocus}
-              onClose={() => setSelectedId(null)}
+              apiRef={api}
             />
-          )}
-        </main>
+            <div className="zoom" style={{ right: inset + 20 }} aria-label="Zoom">
+              <button type="button" onClick={() => api.current?.zoomBy(1.35)} aria-label={t.zoomIn} title={`${t.zoomIn} (+)`}>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
+                  <path d="M10 4v12M4 10h12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                </svg>
+              </button>
+              <button type="button" onClick={() => api.current?.zoomBy(1 / 1.35)} aria-label={t.zoomOut} title={`${t.zoomOut} (−)`}>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
+                  <path d="M4 10h12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                </svg>
+              </button>
+              <button type="button" onClick={() => api.current?.fit()} aria-label={t.resetView} title={`${t.resetView} (0)`}>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
+                  <path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" />
+                </svg>
+              </button>
+            </div>
+            {selected && (
+              <DetailDrawer
+                kingdom={kingdom}
+                person={selected}
+                people={data.people}
+                index={index}
+                houses={houses}
+                chain={layout.chain}
+                gaps={data.gaps}
+                houseFocus={houseFocus}
+                onSelect={go}
+                onHouseFocus={setHouseFocus}
+                onClose={() => setSelectedId(null)}
+              />
+            )}
+          </main>
+        </div>
       </div>
-    </div>
+    </LocaleProvider>
   )
 }

@@ -1,5 +1,6 @@
 import { CURRENT_YEAR, PX_PER_YEAR, bandAt, type Layout } from '../lib/layout'
 import { useViewport, type Viewport } from '../lib/viewport'
+import { useLocale } from '../i18n/locale'
 
 export const RULER_W = 64
 
@@ -16,6 +17,7 @@ export function TimeOverlay({
   houseFocus: string | null
   onHouseFocus: (id: string | null) => void
 }) {
+  const { t: ui } = useLocale()
   const { transform: t, height } = useViewport(viewport)
   if (!height) return null
 
@@ -62,7 +64,7 @@ export function TimeOverlay({
           style={{ left: RULER_W + 16, ['--house' as string]: current.color }}
           onClick={() => current.houseId && onHouseFocus(houseFocus === current.houseId ? null : current.houseId)}
           disabled={current.kind === 'gap'}
-          title={current.kind === 'gap' ? undefined : 'Highlight this house'}
+          title={current.kind === 'gap' ? undefined : ui.highlightHouse}
         >
           <span className="era__year">{Math.round(midYear)}</span>
           <span className="era__swatch" />

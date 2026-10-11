@@ -6,6 +6,7 @@ import type { House, Kingdom } from '../types'
 import type { ChartNode, Layout } from '../lib/layout'
 import { useViewport, type Viewport } from '../lib/viewport'
 import { reignText, lifeText } from '../lib/genealogy'
+import { useLocale } from '../i18n/locale'
 import { initials, portraitSrc } from '../data/portraits'
 import { TimeOverlay, RULER_W } from './TimeOverlay'
 
@@ -53,6 +54,7 @@ export function Chart({
   onHouseFocus,
   apiRef,
 }: Props) {
+  const { t } = useLocale()
   const wrapRef = useRef<HTMLDivElement>(null)
   const svgRef = useRef<SVGSVGElement>(null)
   const gRef = useRef<SVGGElement>(null)
@@ -92,7 +94,7 @@ export function Chart({
       if (duration === 0) select(svg).call(z.transform, t)
       else select(svg).transition().duration(duration).call(z.transform, t)
     },
-    [layout, firstMonarch],
+    [layout.width, firstMonarch?.x],
   )
 
   useImperativeHandle(
@@ -186,7 +188,7 @@ export function Chart({
       ro.disconnect()
       sel.on('.zoom', null)
     }
-  }, [layout, viewport, fit])
+  }, [layout.width, layout.height, layout.minYear, layout.maxYear, viewport, fit])
 
   const lineage = useMemo(() => {
     if (!selectedId) return null
@@ -213,7 +215,7 @@ export function Chart({
         className="chart__svg"
         data-lod="near"
         role="application"
-        aria-label={`${title}: zoomable genealogical chart`}
+        aria-label={t.chartAria(title)}
         onClick={() => onSelect(null)}
       >
         <defs>
@@ -381,7 +383,8 @@ const NodeMark = memo(function NodeMark({
   const { person, r, monarch } = node
   const src = portraitSrc(kingdom, person.id)
   const label = person.short ?? person.name
-  const years = monarch ? reignText(person) : lifeText(person)
+  const { locale } = useLocale()
+  const years = monarch ? reignText(person, locale) : lifeText(person, locale)
   const inner = r - (monarch ? 4 : 3)
   return (
     <g
@@ -460,9 +463,10 @@ function HoverCard({
   house?: House
   viewport: Viewport
 }) {
-  const { transform: t } = useViewport(viewport)
-  const x = t.applyX(node.x)
-  const y = t.applyY(node.y) - node.r * t.k - 14
+  const { transform } = useViewport(viewport)
+  const { locale, t } = useLocale()
+  const x = transform.applyX(node.x)
+  const y = transform.applyY(node.y) - node.r * transform.k - 14
   const p = node.person
   const src = portraitSrc(kingdom, p.id)
   return (
@@ -475,8 +479,8 @@ function HoverCard({
           {house?.label}
         </div>
         <div className="hovercard__meta">
-          {p.reign ? `Reigned ${reignText(p)}` : lifeText(p)}
-          {!p.reign && ' · did not reign'}
+          {p.reign ? `${t.reigned} ${reignText(p, locale)}` : lifeText(p, locale)}
+          {!p.reign && ` · ${t.didNotReign}`}
         </div>
       </div>
     </div>

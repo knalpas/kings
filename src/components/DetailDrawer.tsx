@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react'
 import type { House, Interval, Kingdom, Person } from '../types'
 import { initials, portraitSrc } from '../data/portraits'
-import { ageLabel, children, kinship, lifeText, possessive, reignLength, reignText, yearText } from '../lib/genealogy'
+import { ageLabel, children, kinship, lifeText, reignLength, reignText, relationPhrase, yearText } from '../lib/genealogy'
+import { useLocale } from '../i18n/locale'
+import { wikiUrl } from '../i18n/localize'
 
 type Props = {
   kingdom: Kingdom
@@ -18,6 +20,7 @@ type Props = {
 }
 
 export function DetailDrawer({ kingdom, person: p, people, index, houses, chain, gaps, houseFocus, onSelect, onHouseFocus, onClose }: Props) {
+  const { locale, t } = useLocale()
   const scrollRef = useRef<HTMLDivElement>(null)
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: 0 })
@@ -38,28 +41,24 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
       ? gaps.find((g) => g.start >= prev.reign![1]! - 1 && g.end <= p.reign![0] + 1)
       : undefined
 
-  const relation = (other: Person) => {
-    const k = kinship(p.id, other.id, index)
-    if (!k) return 'no blood relation shown'
-    return `${possessive(p)} ${k}`
-  }
+  const relation = (other: Person) => relationPhrase(p, kinship(p.id, other.id, index, locale), locale, t.noRelation)
 
-  const acceededAge = p.reign ? ageLabel(p, p.reign[0]) : ''
-  const diedAge = p.died != null ? ageLabel(p, p.died) : ''
+  const acceededAge = p.reign ? ageLabel(p, p.reign[0], locale) : ''
+  const diedAge = p.died != null ? ageLabel(p, p.died, locale) : ''
 
   return (
-    <aside className="drawer" style={{ ['--house' as string]: color }} aria-label={`About ${p.name}`}>
+    <aside className="drawer" style={{ ['--house' as string]: color }} aria-label={t.about(p.name)}>
       <div className="drawer__bar">
         <div className="drawer__nav">
-          <button type="button" className="icon-btn" disabled={!prev} onClick={() => prev && onSelect(prev.id)} aria-label="Previous monarch" title="Previous monarch (←)">
+          <button type="button" className="icon-btn" disabled={!prev} onClick={() => prev && onSelect(prev.id)} aria-label={t.previousMonarch} title={`${t.previousMonarch} (←)`}>
             <Chevron dir="left" />
           </button>
-          <button type="button" className="icon-btn" disabled={!next} onClick={() => next && onSelect(next.id)} aria-label="Next monarch" title="Next monarch (→)">
+          <button type="button" className="icon-btn" disabled={!next} onClick={() => next && onSelect(next.id)} aria-label={t.nextMonarch} title={`${t.nextMonarch} (→)`}>
             <Chevron dir="right" />
           </button>
-          {ordinal != null && <span className="drawer__count">Monarch {ordinal} of {chain.filter((c) => !c.protector).length}</span>}
+          {ordinal != null && <span className="drawer__count">{t.monarchOf(ordinal, chain.filter((c) => !c.protector).length)}</span>}
         </div>
-        <button type="button" className="icon-btn" onClick={onClose} aria-label="Close" title="Close (Esc)">
+        <button type="button" className="icon-btn" onClick={onClose} aria-label={t.close} title={`${t.close} (Esc)`}>
           <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
             <path d="M5 5l10 10M15 5L5 15" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
           </svg>
@@ -69,14 +68,14 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
       <div className="drawer__scroll" ref={scrollRef}>
         <header className="drawer__head">
           <div className="drawer__portrait">
-            {src ? <img src={src} alt={`Portrait of ${p.name}`} /> : <span className="drawer__monogram">{initials(p.name)}</span>}
+            {src ? <img src={src} alt={t.portraitOf(p.name)} /> : <span className="drawer__monogram">{initials(p.name)}</span>}
           </div>
           <div className="drawer__headtext">
             <button
               type="button"
               className={`house-chip${houseFocus === p.house ? ' is-active' : ''}`}
               onClick={() => onHouseFocus(houseFocus === p.house ? null : p.house)}
-              title="Highlight this house on the chart"
+              title={t.highlightHouse}
             >
               <span className="house-chip__swatch" />
               {house?.label}
@@ -91,54 +90,50 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
           {p.reign ? (
             <>
               <div className="fact fact--wide">
-                <dt>{p.protector ? 'Lord Protector' : 'Reigned'}</dt>
+                <dt>{p.protector ? t.lordProtector : t.reigned}</dt>
                 <dd>
-                  {reignText(p)}
-                  <small>{reignLength(p)}</small>
+                  {reignText(p, locale)}
+                  <small>{reignLength(p, locale)}</small>
                 </dd>
               </div>
               <div className="fact">
-                <dt>Age at accession</dt>
+                <dt>{t.ageAtAccession}</dt>
                 <dd>{acceededAge || '—'}</dd>
               </div>
             </>
           ) : (
             <div className="fact fact--wide">
-              <dt>Status</dt>
-              <dd className="fact__muted">Did not reign. Shown to trace the royal line.</dd>
+              <dt>{t.status}</dt>
+              <dd className="fact__muted">{t.didNotReignStatus}</dd>
             </div>
           )}
           <div className="fact">
-            <dt>Born</dt>
-            <dd>{yearText(p.born, p.bornCirca)}</dd>
+            <dt>{t.born}</dt>
+            <dd>{yearText(p.born, p.bornCirca, locale)}</dd>
           </div>
           <div className="fact">
-            <dt>Died</dt>
+            <dt>{t.died}</dt>
             <dd>
-              {p.died ?? (p.born != null ? 'Living' : '—')}
-              {diedAge && <small>aged {diedAge}</small>}
+              {p.died ?? (p.born != null ? t.living : '—')}
+              {diedAge && <small>{t.aged(diedAge)}</small>}
             </dd>
           </div>
         </dl>
 
         {p.reign && (prev || next) && (
           <section className="section">
-            <h3>Succession</h3>
+            <h3>{t.succession}</h3>
             {p.accession && <p className="accession">{p.accession}</p>}
-            {interregnum && (
-              <p className="interregnum">
-                Preceded by an interregnum: {interregnum.label}, {interregnum.start}–{interregnum.end}.
-              </p>
-            )}
+            {interregnum && <p className="interregnum">{t.interregnum(interregnum.label, interregnum.start, interregnum.end)}</p>}
             <div className="succ">
-              {prev && <PersonCard kingdom={kingdom} label="Preceded by" person={prev} relation={relation(prev)} color={houses.get(prev.house)?.color} onSelect={onSelect} />}
-              {next && <PersonCard kingdom={kingdom} label="Succeeded by" person={next} relation={relation(next)} color={houses.get(next.house)?.color} onSelect={onSelect} />}
+              {prev && <PersonCard kingdom={kingdom} label={t.precededBy} person={prev} relation={relation(prev)} color={houses.get(prev.house)?.color} onSelect={onSelect} />}
+              {next && <PersonCard kingdom={kingdom} label={t.succeededBy} person={next} relation={relation(next)} color={houses.get(next.house)?.color} onSelect={onSelect} />}
             </div>
           </section>
         )}
 
         <section className="section">
-          <h3>{p.reign ? 'The reign' : 'Life'}</h3>
+          <h3>{p.reign ? t.theReign : t.life}</h3>
           <p className="summary">{p.summary}</p>
           {p.events && p.events.length > 0 && (
             <ul className="events">
@@ -150,17 +145,17 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
         </section>
 
         <section className="section">
-          <h3>Family</h3>
+          <h3>{t.family}</h3>
           <div className="family">
             {parent && (
               <div className="family__row">
-                <div className="family__label">{p.distant ? 'Descended from' : parent.female ? 'Mother' : 'Father'}</div>
+                <div className="family__label">{p.distant ? t.descendedFrom : parent.female ? t.mother : t.father}</div>
                 <PersonLink kingdom={kingdom} person={parent} color={houses.get(parent.house)?.color} onSelect={onSelect} />
               </div>
             )}
             {kids.length > 0 && (
               <div className="family__row">
-                <div className="family__label">{kids.length === 1 ? 'Child on chart' : 'Children on chart'}</div>
+                <div className="family__label">{kids.length === 1 ? t.childOnChart : t.childrenOnChart}</div>
                 <div className="family__links">
                   {kids.map((k) => (
                     <PersonLink key={k.id} kingdom={kingdom} person={k} color={houses.get(k.house)?.color} onSelect={onSelect} distant={k.distant} />
@@ -170,16 +165,16 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
             )}
             {p.spouses && p.spouses.length > 0 && (
               <div className="family__row">
-                <div className="family__label">{p.spouses.length === 1 ? 'Spouse' : 'Spouses'}</div>
+                <div className="family__label">{p.spouses.length === 1 ? t.spouse : t.spouses}</div>
                 <div className="family__spouses">{p.spouses.join(' · ')}</div>
               </div>
             )}
-            {!parent && kids.length === 0 && !p.spouses?.length && <p className="fact__muted">No family links on this chart.</p>}
+            {!parent && kids.length === 0 && !p.spouses?.length && <p className="fact__muted">{t.noFamily}</p>}
           </div>
         </section>
 
-        <a className="wiki" href={`https://en.wikipedia.org/wiki/${encodeURIComponent(p.wikipedia).replace(/%2C/g, ',')}`} target="_blank" rel="noreferrer">
-          Read more on Wikipedia
+        <a className="wiki" href={wikiUrl(p, locale)} target="_blank" rel="noreferrer">
+          {t.wikipedia}
           <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
             <path d="M6 3h7v7M13 3L4 12" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
           </svg>
@@ -240,14 +235,15 @@ function PersonLink({
   onSelect: (id: string) => void
   distant?: boolean
 }) {
+  const { locale, t } = useLocale()
   return (
     <button type="button" className="plink" onClick={() => onSelect(person.id)}>
       <Avatar kingdom={kingdom} person={person} color={color} size={28} />
       <span className="plink__text">
         <span className="plink__name">{person.name}</span>
         <span className="plink__meta">
-          {person.reign ? reignText(person) : lifeText(person)}
-          {distant && ' · line abridged'}
+          {person.reign ? reignText(person, locale) : lifeText(person, locale)}
+          {distant && ` · ${t.lineAbridged}`}
         </span>
       </span>
     </button>

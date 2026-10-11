@@ -1,20 +1,37 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { House, Kingdom, Person } from '../types'
-import { kingdomOrder, kingdoms } from '../data'
+import { kingdomOrder } from '../data'
 import { initials, portraitSrc } from '../data/portraits'
 import { lifeText, reignText } from '../lib/genealogy'
+import { useLocale } from '../i18n/locale'
+import type { Locale } from '../i18n/types'
+import { houseShortLabel } from '../i18n/localize'
 
 type Props = {
   kingdom: Kingdom
   people: Person[]
   houses: Map<string, House>
   showSuccession: boolean
+  kingdomLabels: Record<Kingdom, string>
   onKingdom: (k: Kingdom) => void
+  onLocale: (l: Locale) => void
   onPick: (id: string) => void
   onToggleSuccession: () => void
 }
 
-export function Header({ kingdom, people, houses, showSuccession, onKingdom, onPick, onToggleSuccession }: Props) {
+export function Header({
+  kingdom,
+  people,
+  houses,
+  showSuccession,
+  kingdomLabels,
+  onKingdom,
+  onLocale,
+  onPick,
+  onToggleSuccession,
+}: Props) {
+  const { locale, t } = useLocale()
+
   return (
     <header className="topbar">
       <div className="brand">
@@ -23,30 +40,38 @@ export function Header({ kingdom, people, houses, showSuccession, onKingdom, onP
           <rect x="5" y="25" width="22" height="3" rx="1" fill="currentColor" />
         </svg>
         <div>
-          <div className="brand__name">Sceptre</div>
-          <div className="brand__tag">An atlas of royal succession</div>
+          <div className="brand__name">{t.brand}</div>
+          <div className="brand__tag">{t.tagline}</div>
         </div>
       </div>
 
-      <div className="seg" role="tablist" aria-label="Kingdom">
+      <div className="seg" role="tablist" aria-label={t.kingdomAria}>
         {kingdomOrder.map((k) => (
           <button key={k} type="button" role="tab" aria-selected={k === kingdom} className={k === kingdom ? 'is-on' : ''} onClick={() => onKingdom(k)}>
-            {kingdoms[k].label}
+            {kingdomLabels[k]}
           </button>
         ))}
       </div>
 
       <div className="topbar__tools">
         <Search kingdom={kingdom} people={people} houses={houses} onPick={onPick} />
-        <button type="button" className={`toggle${showSuccession ? ' is-on' : ''}`} aria-pressed={showSuccession} onClick={onToggleSuccession} title="Show the order of succession">
+        <button type="button" className={`toggle${showSuccession ? ' is-on' : ''}`} aria-pressed={showSuccession} onClick={onToggleSuccession} title={t.successionTitle}>
           <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true">
             <path d="M4 3c0 6 12 5 12 14" stroke="currentColor" strokeWidth="1.7" strokeDasharray="2 3" fill="none" strokeLinecap="round" />
             <circle cx="4" cy="3" r="2" fill="currentColor" />
             <circle cx="16" cy="17" r="2" fill="currentColor" />
           </svg>
-          <span>Succession</span>
+          <span>{t.succession}</span>
         </button>
         <Key />
+        <div className="lang" role="group" aria-label={t.language}>
+          <button type="button" className={locale === 'en' ? 'is-on' : ''} aria-pressed={locale === 'en'} onClick={() => onLocale('en')}>
+            {t.langEn}
+          </button>
+          <button type="button" className={locale === 'fr' ? 'is-on' : ''} aria-pressed={locale === 'fr'} onClick={() => onLocale('fr')}>
+            {t.langFr}
+          </button>
+        </div>
       </div>
     </header>
   )
@@ -61,6 +86,7 @@ function normalise(s: string) {
 }
 
 function Search({ kingdom, people, houses, onPick }: { kingdom: Kingdom; people: Person[]; houses: Map<string, House>; onPick: (id: string) => void }) {
+  const { locale, t } = useLocale()
   const [q, setQ] = useState('')
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(0)
@@ -110,8 +136,8 @@ function Search({ kingdom, people, houses, onPick }: { kingdom: Kingdom; people:
         ref={inputRef}
         type="search"
         value={q}
-        placeholder="Search monarchs"
-        aria-label="Search monarchs and ancestors"
+        placeholder={t.searchPlaceholder}
+        aria-label={t.searchAria}
         role="combobox"
         aria-expanded={open && results.length > 0}
         aria-controls="search-results"
@@ -159,7 +185,7 @@ function Search({ kingdom, people, houses, onPick }: { kingdom: Kingdom; people:
                   <span className="search__text">
                     <span className="search__name">{p.name}</span>
                     <span className="search__meta">
-                      {p.reign ? reignText(p) : `${lifeText(p)} · did not reign`} · {house?.label.replace(/^House of /, '')}
+                      {p.reign ? reignText(p, locale) : `${lifeText(p, locale)} · ${t.didNotReign}`} · {house ? houseShortLabel(house.label, locale) : ''}
                     </span>
                   </span>
                 </button>
@@ -173,6 +199,7 @@ function Search({ kingdom, people, houses, onPick }: { kingdom: Kingdom; people:
 }
 
 function Key() {
+  const { t } = useLocale()
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
   useEffect(() => {
@@ -187,11 +214,11 @@ function Key() {
   return (
     <div className="key" ref={ref}>
       <button type="button" className={`toggle${open ? ' is-on' : ''}`} aria-expanded={open} onClick={() => setOpen((o) => !o)}>
-        <span>How to read</span>
+        <span>{t.howToRead}</span>
       </button>
       {open && (
-        <div className="key__panel" role="dialog" aria-label="How to read the chart">
-          <p className="key__lede">Time runs downwards. Each monarch sits at the year of accession.</p>
+        <div className="key__panel" role="dialog" aria-label={t.howToReadAria}>
+          <p className="key__lede">{t.keyLede}</p>
           <ul>
             <li>
               <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
@@ -199,7 +226,7 @@ function Key() {
                 <rect x="13" y="27" width="14" height="10" rx="5" fill="#2d4f8f" />
               </svg>
               <span>
-                <b>Monarch.</b> The ring shows the royal house; the number is the place in the succession.
+                <b>{t.keyMonarch}</b> {t.keyMonarchBody}
               </span>
             </li>
             <li>
@@ -207,7 +234,7 @@ function Key() {
                 <circle cx="20" cy="20" r="9" fill="#fffdf8" stroke="#8a847a" strokeWidth="2" />
               </svg>
               <span>
-                <b>Ancestor.</b> Did not reign, but carried the claim to the throne.
+                <b>{t.keyAncestor}</b> {t.keyAncestorBody}
               </span>
             </li>
             <li>
@@ -215,7 +242,7 @@ function Key() {
                 <path d="M2 10h36" stroke="#6b6155" strokeWidth="1.6" />
               </svg>
               <span>
-                <b>Parent to child.</b>
+                <b>{t.keyParentChild}</b>
               </span>
             </li>
             <li>
@@ -223,7 +250,7 @@ function Key() {
                 <path d="M2 10h36" stroke="#6b6155" strokeWidth="1.6" strokeDasharray="4 4" />
               </svg>
               <span>
-                <b>Abridged descent.</b> Several generations are omitted.
+                <b>{t.keyDistant}</b> {t.keyDistantBody}
               </span>
             </li>
             <li>
@@ -231,7 +258,8 @@ function Key() {
                 <path d="M2 10h36" stroke="#b08a3e" strokeWidth="2" strokeDasharray="1 5" strokeLinecap="round" />
               </svg>
               <span>
-                <b>Order of succession</b>, when the Succession toggle is on.
+                <b>{t.keySuccession}</b>
+                {t.keySuccessionBody}
               </span>
             </li>
             <li>
@@ -245,14 +273,12 @@ function Key() {
                 <rect x="2" y="2" width="36" height="16" fill="url(#key-hatch)" />
               </svg>
               <span>
-                <b>No monarch</b>: republic or Commonwealth.
+                <b>{t.keyGap}</b>
+                {t.keyGapBody}
               </span>
             </li>
           </ul>
-          <p className="key__hint">
-            Scroll to move through time · <kbd>Ctrl</kbd> + scroll or pinch to zoom · drag to pan · <kbd>←</kbd> <kbd>→</kbd> step through the
-            succession
-          </p>
+          <p className="key__hint">{t.keyHint}</p>
         </div>
       )}
     </div>

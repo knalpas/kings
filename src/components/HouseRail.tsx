@@ -3,6 +3,8 @@ import type { House } from '../types'
 import type { Layout } from '../lib/layout'
 import { useViewport, type Viewport } from '../lib/viewport'
 import { CURRENT_YEAR } from '../lib/layout'
+import { useLocale } from '../i18n/locale'
+import { houseShortLabel } from '../i18n/localize'
 
 type Props = {
   layout: Layout
@@ -14,6 +16,7 @@ type Props = {
 }
 
 export function HouseRail({ layout, houses, viewport, houseFocus, onHouseFocus, onScrollToYear }: Props) {
+  const { t, locale } = useLocale()
   const entries = useMemo(() => {
     const byHouse = new Map<string, { start: number; end: number; monarchs: number }>()
     for (const p of layout.chain) {
@@ -31,14 +34,14 @@ export function HouseRail({ layout, houses, viewport, houseFocus, onHouseFocus, 
   }, [layout, houses])
 
   return (
-    <nav className="rail" aria-label="Royal houses">
+    <nav className="rail" aria-label={t.royalHouses}>
       <MiniMap layout={layout} viewport={viewport} houseFocus={houseFocus} onScrollToYear={onScrollToYear} />
       <div className="rail__list">
         <div className="rail__heading">
-          <span>Royal houses</span>
+          <span>{t.royalHouses}</span>
           {houseFocus && (
             <button type="button" className="rail__clear" onClick={() => onHouseFocus(null)}>
-              Show all
+              {t.showAll}
             </button>
           )}
         </div>
@@ -59,9 +62,9 @@ export function HouseRail({ layout, houses, viewport, houseFocus, onHouseFocus, 
                 >
                   <span className="house__swatch" />
                   <span className="house__body">
-                    <span className="house__name">{house.label.replace(/^House of /, '')}</span>
+                    <span className="house__name">{houseShortLabel(house.label, locale)}</span>
                     <span className="house__meta">
-                      {start}–{end >= CURRENT_YEAR ? 'present' : end} · {monarchs} {monarchs === 1 ? 'ruler' : 'rulers'}
+                      {start}–{end >= CURRENT_YEAR ? t.present : end} · {monarchs} {monarchs === 1 ? t.ruler : t.rulers}
                     </span>
                     {active && <span className="house__note">{house.note}</span>}
                   </span>
@@ -86,12 +89,13 @@ function MiniMap({
   houseFocus: string | null
   onScrollToYear: (year: number, animate?: boolean) => void
 }) {
+  const { t } = useLocale()
   const ref = useRef<HTMLDivElement>(null)
-  const { transform: t, height } = useViewport(viewport)
+  const { transform: tZoom, height } = useViewport(viewport)
   const span = layout.maxYear - layout.minYear
   const pct = (yr: number) => ((yr - layout.minYear) / span) * 100
-  const topYear = layout.yToYear(-t.y / t.k)
-  const bottomYear = layout.yToYear((height - t.y) / t.k)
+  const topYear = layout.yToYear(-tZoom.y / tZoom.k)
+  const bottomYear = layout.yToYear((height - tZoom.y) / tZoom.k)
   const winTop = Math.max(0, pct(topYear))
   const winBottom = Math.min(100, pct(bottomYear))
 
@@ -108,7 +112,7 @@ function MiniMap({
       ref={ref}
       className="minimap"
       role="slider"
-      aria-label="Scroll through time"
+      aria-label={t.scrollTime}
       aria-valuemin={layout.minYear}
       aria-valuemax={layout.maxYear}
       aria-valuenow={Math.round((topYear + bottomYear) / 2)}

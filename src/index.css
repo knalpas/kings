@@ -180,6 +180,38 @@ kbd {
   color: var(--gold);
 }
 
+/* ---------- Language ---------- */
+
+.lang {
+  display: flex;
+  padding: 2px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--card);
+}
+
+.lang button {
+  border: 0;
+  background: none;
+  min-width: 34px;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+
+.lang button:hover {
+  color: var(--ink);
+}
+
+.lang button.is-on {
+  background: var(--ink);
+  color: #fbf8f2;
+}
+
 /* ---------- Search ---------- */
 
 .search {
