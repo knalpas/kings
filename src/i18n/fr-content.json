@@ -356,7 +356,8 @@
         "events": [
           "Dame d'Angleterre, 1141",
           "Évasion d'Oxford, 1142"
-        ]
+        ],
+        "fate": "Désignée héritière par Henri Ier, mais le trône fut pris par Étienne"
       },
       "henry-ii": {
         "name": "Henri II",
@@ -475,7 +476,8 @@
         ],
         "events": [
           "Bataille de Poitiers, 1356"
-        ]
+        ],
+        "fate": "Mort un an avant son père, en 1376"
       },
       "john-of-gaunt": {
         "name": "Jean de Gand",
@@ -790,7 +792,8 @@
         "events": [
           "Abdication, 1567",
           "Exécutée à Fotheringhay, 1587"
-        ]
+        ],
+        "fate": "Exécutée à Fotheringhay, en 1587"
       },
       "james-i": {
         "name": "Jacques VI et Ier",
@@ -952,7 +955,8 @@
         ],
         "events": [
           "Acte d'établissement, 1701"
-        ]
+        ],
+        "fate": "Mort sept semaines avant la reine Anne, en 1714"
       },
       "george-i": {
         "name": "George Ier",
@@ -990,7 +994,8 @@
         "short": "Frédéric",
         "spouses": [
           "Augusta de Saxe-Gotha"
-        ]
+        ],
+        "fate": "Mort avant son père, en 1751"
       },
       "george-iii": {
         "name": "George III",
@@ -1139,6 +1144,349 @@
           "Accession, 8 septembre 2022",
           "Couronnement, 6 mai 2023"
         ]
+      },
+      "aethelwulf": {
+        "name": "Æthelwulf",
+        "title": "Roi de Wessex, 839–858",
+        "summary": "Père de quatre rois successifs de Wessex, dont Alfred. Il combattit les Danois et fit un pèlerinage à Rome avec le jeune Alfred en 855.",
+        "wikipedia": "Æthelwulf_de_Wessex",
+        "events": [
+          "Victoire sur les Danois à Aclea, 851",
+          "Pèlerinage à Rome, 855"
+        ]
+      },
+      "aethelflaed": {
+        "name": "Æthelflæd, dame des Merciens",
+        "short": "Æthelflæd",
+        "title": "Dame des Merciens",
+        "summary": "Fille aînée d'Alfred. Elle gouverna la Mercie après la mort de son époux, fortifia les villes et mena la guerre contre les Danois aux côtés de son frère Édouard.",
+        "wikipedia": "Æthelflæd",
+        "events": [
+          "Prise de Derby, 917",
+          "Soumission de Leicester et d'York, 918"
+        ]
+      },
+      "edward-exile": {
+        "name": "Édouard l'Exilé",
+        "title": "Ætheling d'Angleterre",
+        "fate": "Mort quelques jours après son retour en Angleterre comme héritier, en 1057",
+        "summary": "Fils d'Edmond Ironside, envoyé à l'étranger bébé par Cnut et élevé en Hongrie. Édouard le Confesseur le rappela comme héritier, mais il mourut presque à son arrivée à Londres.",
+        "wikipedia": "Édouard_l'Exilé"
+      },
+      "edgar-atheling": {
+        "name": "Edgar Ætheling",
+        "short": "Edgar Ætheling",
+        "title": "Proclamé roi d'Angleterre, 1066",
+        "fate": "Proclamé roi après Hastings, jamais couronné",
+        "summary": "Dernier mâle de la maison de Wessex. Le Witan le proclama roi après la mort d'Harold à Hastings, mais il se soumit à Guillaume à Berkhamsted avant d'être couronné.",
+        "wikipedia": "Edgar_Ætheling",
+        "events": [
+          "Proclamation comme roi, octobre 1066",
+          "Soumission à Berkhamsted, 1066",
+          "Révoltes dans le Nord, 1069–1070"
+        ]
+      },
+      "margaret-scotland": {
+        "name": "Marguerite d'Écosse",
+        "title": "Reine des Écossais",
+        "summary": "Sœur d'Edgar Ætheling et épouse de Malcolm III d'Écosse. Par sa fille Mathilde, le sang d'Alfred revint sur le trône anglais. Canonisée en 1250.",
+        "wikipedia": "Marguerite_d'Écosse_(sainte)",
+        "short": "Marguerite d'Écosse"
+      },
+      "matilda-scotland": {
+        "name": "Mathilde d'Écosse",
+        "title": "Reine d'Angleterre",
+        "summary": "Épouse d'Henri Ier. Son mariage unissait les rois normands à l'ancienne maison de Wessex : tout monarque anglais depuis Henri II descend d'Alfred le Grand.",
+        "wikipedia": "Mathilde_d'Écosse_(reine_d'Angleterre)"
+      },
+      "godwin": {
+        "name": "Godwin de Wessex",
+        "short": "Godwin",
+        "title": "Comte de Wessex",
+        "summary": "Le plus puissant noble d'Angleterre sous Cnut et Édouard le Confesseur. Il maria sa fille Édith au roi ; ses fils Harold et Tostig détenaient de grands comtés.",
+        "wikipedia": "Godwin_de_Wessex",
+        "events": [
+          "Exil et retour triomphal, 1051–1052"
+        ]
+      },
+      "edith-wessex": {
+        "name": "Édith de Wessex",
+        "title": "Reine d'Angleterre",
+        "summary": "Fille du comte Godwin et épouse d'Édouard le Confesseur. Le mariage resta sans enfant, ce qui laissa la succession ouverte en 1066 et fit d'Harold le beau-frère du roi.",
+        "wikipedia": "Édith_de_Wessex"
+      },
+      "tostig": {
+        "name": "Tostig Godwinson",
+        "short": "Tostig",
+        "title": "Comte de Northumbrie",
+        "fate": "Tué à Stamford Bridge, en 1066",
+        "summary": "Frère d'Harold II. Expulsé de Northumbrie en 1065, il rejoignit l'invasion du roi norvégien Harald Hardrada et fut tué à Stamford Bridge, trois semaines avant Hastings.",
+        "wikipedia": "Tostig_Godwinson",
+        "events": [
+          "Bataille de Stamford Bridge, 1066"
+        ]
+      },
+      "rollo": {
+        "name": "Rollon",
+        "title": "Comte de Rouen, fondateur de la Normandie",
+        "summary": "Chef viking à qui le roi franc Charles le Simple accorda des terres autour de Rouen en 911. Ses descendants devinrent ducs de Normandie.",
+        "wikipedia": "Rollon",
+        "events": [
+          "Traité de Saint-Clair-sur-Epte, 911"
+        ]
+      },
+      "william-longsword": {
+        "name": "Guillaume Longue-Épée",
+        "title": "Comte de Rouen",
+        "fate": "Assassiné en 942",
+        "summary": "Fils de Rollon. Il étendit la Normandie vers l'ouest jusqu'au Cotentin et fut assassiné lors d'une entrevue par des agents du comte de Flandre.",
+        "wikipedia": "Guillaume_Ier_Longue-Épée"
+      },
+      "richard-i-normandy": {
+        "name": "Richard Ier de Normandie",
+        "short": "Richard Ier de Normandie",
+        "title": "Duc de Normandie",
+        "summary": "Il gouverna la Normandie plus de cinquante ans. Père d'Emma de Normandie, par laquelle Guillaume le Conquérant revendiqua plus tard une parenté avec Édouard le Confesseur.",
+        "wikipedia": "Richard_Ier_de_Normandie"
+      },
+      "richard-ii-normandy": {
+        "name": "Richard II de Normandie",
+        "short": "Richard II de Normandie",
+        "title": "Duc de Normandie",
+        "summary": "Frère d'Emma. Il accueillit Æthelred et ses fils en Normandie pendant la conquête danoise de l'Angleterre.",
+        "wikipedia": "Richard_II_de_Normandie"
+      },
+      "emma": {
+        "name": "Emma de Normandie",
+        "title": "Reine d'Angleterre, de Danemark et de Norvège",
+        "summary": "Deux fois reine d'Angleterre : épouse d'Æthelred puis de Cnut, et mère des rois Harthacnut et Édouard le Confesseur. Sa naissance normande fut à l'origine de la revendication de Guillaume le Conquérant.",
+        "wikipedia": "Emma_de_Normandie",
+        "events": [
+          "Mariage avec Æthelred, 1002",
+          "Mariage avec Cnut, 1017"
+        ]
+      },
+      "robert-magnificent": {
+        "name": "Robert le Magnifique",
+        "short": "Robert Ier de Normandie",
+        "title": "Duc de Normandie",
+        "fate": "Mort au retour de Jérusalem, en 1035",
+        "summary": "Père de Guillaume le Conquérant par sa maîtresse Herleva. Il désigna l'enfant comme héritier avant de partir en pèlerinage et mourut sur le chemin du retour.",
+        "wikipedia": "Robert_Ier_de_Normandie"
+      },
+      "robert-curthose": {
+        "name": "Robert Courteheuse",
+        "title": "Duc de Normandie",
+        "fate": "Vaincu à Tinchebray, emprisonné vingt-huit ans",
+        "summary": "Fils aîné du Conquérant. Il hérita de la Normandie mais pas de l'Angleterre, partit à la première croisade et perdit le duché au profit de son frère Henri pendant son absence. Vaincu en 1106, il mourut prisonnier à Cardiff.",
+        "wikipedia": "Robert_Courteheuse",
+        "events": [
+          "Première croisade, 1096–1099",
+          "Bataille de Tinchebray, 1106"
+        ]
+      },
+      "richard-normandy": {
+        "name": "Richard de Normandie",
+        "title": "Fils de Guillaume le Conquérant",
+        "fate": "Tué à la chasse dans la New Forest",
+        "summary": "Second fils du Conquérant. Il mourut jeune dans un accident de chasse dans la New Forest, où son frère Guillaume Roux serait aussi tué en 1100.",
+        "wikipedia": "Richard_de_Normandie"
+      },
+      "william-adelin": {
+        "name": "Guillaume Adelin",
+        "title": "Duc de Normandie, héritier d'Angleterre",
+        "fate": "Noyé dans le naufrage de la Blanche-Nef, en 1120",
+        "summary": "Seul fils légitime d'Henri Ier. Sa mort dans le naufrage de la Blanche-Nef laissa Henri sans héritier mâle et ouvrit la guerre civile dite l'Anarchie.",
+        "wikipedia": "Guillaume_Adelin",
+        "events": [
+          "Naufrage de la Blanche-Nef, 1120"
+        ]
+      },
+      "geoffrey-anjou": {
+        "name": "Geoffroy Plantagenêt",
+        "short": "Geoffroy d'Anjou",
+        "title": "Comte d'Anjou, duc de Normandie",
+        "summary": "Époux de l'impératrice Mathilde. Il conquit la Normandie pendant l'Anarchie. La branche de genêt (planta genista) qu'il portait donna son nom à la dynastie.",
+        "wikipedia": "Geoffroy_V_d'Anjou"
+      },
+      "eleanor-aquitaine": {
+        "name": "Aliénor d'Aquitaine",
+        "title": "Reine de France, puis d'Angleterre",
+        "summary": "Duchesse d'Aquitaine en propre. D'abord mariée à Louis VII de France, elle épousa ensuite Henri II, apportant le sud-ouest de la France à la couronne anglaise. Mère de Richard Cœur de Lion et de Jean.",
+        "wikipedia": "Aliénor_d'Aquitaine"
+      },
+      "henry-young-king": {
+        "name": "Henri le Jeune",
+        "short": "Henri le Jeune",
+        "title": "Roi d'Angleterre (couronné comme co-roi)",
+        "fate": "Couronné en 1170, mort avant son père",
+        "summary": "Couronné du vivant de son père en 1170, il n'exerça jamais le pouvoir réel et se révolta à plusieurs reprises. Il mourut de dysenterie au cours d'une révolte ; la couronne passa à son frère Richard.",
+        "wikipedia": "Henri_le_Jeune"
+      },
+      "geoffrey-brittany": {
+        "name": "Geoffroy II de Bretagne",
+        "short": "Geoffroy de Bretagne",
+        "title": "Duc de Bretagne",
+        "fate": "Tué lors d'un tournoi, en 1186",
+        "summary": "Quatrième fils d'Henri II. Il mourut à Paris après un tournoi, laissant un fils posthume, Arthur.",
+        "wikipedia": "Geoffroy_II_de_Bretagne"
+      },
+      "arthur-brittany": {
+        "name": "Arthur de Bretagne",
+        "title": "Duc de Bretagne",
+        "fate": "Disparu sous la garde de Jean sans Terre, en 1203",
+        "summary": "Neveu de Richard Cœur de Lion et, pour beaucoup, son héritier légitime. Capturé par son oncle Jean, il disparut à Rouen et fut probablement assassiné.",
+        "wikipedia": "Arthur_Ier_de_Bretagne"
+      },
+      "isabella-france": {
+        "name": "Isabelle de France",
+        "title": "Reine d'Angleterre",
+        "summary": "Fille de Philippe IV de France. Avec Roger Mortimer, elle fit déposer son époux Édouard II. Par elle, Édouard III revendiqua la couronne de France, ce qui déclencha la guerre de Cent Ans.",
+        "wikipedia": "Isabelle_de_France_(reine_d'Angleterre)",
+        "events": [
+          "Déposition d'Édouard II, 1327"
+        ]
+      },
+      "edward-westminster": {
+        "name": "Édouard de Westminster",
+        "title": "Prince de Galles",
+        "fate": "Tué à Tewkesbury, en 1471",
+        "summary": "Seul fils d'Henri VI et dernier héritier de la maison de Lancastre. Il fut tué à la bataille de Tewkesbury, à dix-sept ans.",
+        "wikipedia": "Édouard_de_Westminster",
+        "events": [
+          "Bataille de Tewkesbury, 1471"
+        ]
+      },
+      "catherine-valois": {
+        "name": "Catherine de Valois",
+        "title": "Reine d'Angleterre",
+        "summary": "Fille de Charles VI de France, mariée à Henri V selon le traité de Troyes. Veuve, elle épousa secrètement le courtisan gallois Owen Tudor ; leur fils Edmond fut le père d'Henri VII.",
+        "wikipedia": "Catherine_de_Valois"
+      },
+      "edmund-tudor": {
+        "name": "Edmond Tudor",
+        "title": "Comte de Richmond",
+        "fate": "Mort de la peste avant la naissance de son fils",
+        "summary": "Fils de Catherine de Valois et d'Owen Tudor, demi-frère d'Henri VI. Il épousa Margaret Beaufort, alors âgée de douze ans, et mourut trois mois avant la naissance de leur fils, le futur Henri VII.",
+        "wikipedia": "Edmond_Tudor"
+      },
+      "george-clarence": {
+        "name": "George de Clarence",
+        "short": "George de Clarence",
+        "title": "Duc de Clarence",
+        "fate": "Exécuté à la Tour, en 1478",
+        "summary": "Frère d'Édouard IV et de Richard III. Il changea de camp pendant les guerres des Deux-Roses et fut exécuté pour trahison ; la tradition veut qu'il fut noyé dans une cuve de vin de Malvoisie.",
+        "wikipedia": "George_Plantagenêt"
+      },
+      "richard-shrewsbury": {
+        "name": "Richard de Shrewsbury",
+        "title": "Duc d'York",
+        "fate": "L'un des princes dans la Tour",
+        "summary": "Second fils d'Édouard IV. Avec son frère Édouard V, il fut logé à la Tour de Londres en 1483 et ne fut plus revu.",
+        "wikipedia": "Richard_de_Shrewsbury"
+      },
+      "elizabeth-york": {
+        "name": "Élisabeth d'York",
+        "title": "Reine d'Angleterre",
+        "summary": "Fille aînée d'Édouard IV. Son mariage avec Henri VII en 1486 unissait les maisons de Lancastre et d'York, symbolisées par la rose Tudor. Mère d'Henri VIII.",
+        "wikipedia": "Élisabeth_d'York",
+        "events": [
+          "Mariage avec Henri VII, 1486"
+        ]
+      },
+      "arthur-tudor": {
+        "name": "Arthur Tudor",
+        "short": "Arthur Tudor",
+        "title": "Prince de Galles",
+        "fate": "Mort à quinze ans, en 1502",
+        "summary": "Fils aîné d'Henri VII, marié à Catherine d'Aragon. Sa mort précoce fit de son frère Henri l'héritier ; les doutes d'Henri sur l'épouser, veuve de son frère, menèrent à la rupture avec Rome.",
+        "wikipedia": "Arthur_Tudor"
+      },
+      "henry-frederick": {
+        "name": "Henri-Frédéric Stuart",
+        "short": "Henri-Frédéric",
+        "title": "Prince de Galles",
+        "fate": "Mort de la fièvre typhoïde, en 1612",
+        "summary": "Fils aîné populaire de Jacques Ier, mécène des arts et des explorations. Sa mort à dix-huit ans laissa son frère cadet Charles comme héritier.",
+        "wikipedia": "Henri_Frédéric_Stuart"
+      },
+      "james-old-pretender": {
+        "name": "Jacques François Stuart",
+        "short": "le Vieux Prétendant",
+        "title": "Prétendant jacobite (« Jacques III »)",
+        "fate": "Exclu du trône ; mena la révolte jacobite de 1715",
+        "summary": "Fils de Jacques II, dont la naissance contribua à déclencher la Glorieuse Révolution. Reconnu roi par la France et le pape, il passa sa vie en exil.",
+        "wikipedia": "Jacques_François_Stuart",
+        "events": [
+          "Révolte jacobite, 1715"
+        ]
+      },
+      "charles-edward-stuart": {
+        "name": "Charles Édouard Stuart",
+        "short": "Bonnie Prince Charlie",
+        "title": "Prétendant jacobite (« Charles III »)",
+        "fate": "Vaincu à Culloden, en 1746",
+        "summary": "Il mena la révolte jacobite de 1745 jusqu'à Derby avant de battre en retraite. Sa défaite à Culloden mit fin à la cause Stuart.",
+        "wikipedia": "Charles_Édouard_Stuart",
+        "events": [
+          "Révolte jacobite, 1745",
+          "Bataille de Culloden, 1746"
+        ]
+      },
+      "william-gloucester": {
+        "name": "Guillaume de Gloucester",
+        "short": "Guillaume de Gloucester",
+        "title": "Duc de Gloucester",
+        "fate": "Mort à onze ans, en 1700",
+        "summary": "Le seul des nombreux enfants de la reine Anne à survivre au-delà de la petite enfance. Sa mort entraîna l'Acte d'établissement de 1701, qui transmettait la couronne aux Hanovre protestants.",
+        "wikipedia": "Guillaume_de_Gloucester"
+      },
+      "charlotte-wales": {
+        "name": "Charlotte de Galles",
+        "short": "Charlotte de Galles",
+        "title": "Fille du prince de Galles, héritière présomptive",
+        "fate": "Mort en couches, en 1817",
+        "summary": "Seule enfant de George IV et future reine attendue. Sa mort laissa George III sans petit-enfant légitime et incita ses fils à se marier ; Victoria naquit deux ans plus tard.",
+        "wikipedia": "Charlotte_de_Galles"
+      },
+      "albert": {
+        "name": "Albert de Saxe-Cobourg-Gotha",
+        "short": "le prince consort",
+        "title": "Prince consort",
+        "summary": "Prince allemand qui épousa Victoria en 1840. Il défendit la science et l'industrie, organisa la Grande Exposition et donna son nom de maison à leur fils Édouard VII.",
+        "wikipedia": "Albert_de_Saxe-Cobourg-Gotha",
+        "events": [
+          "Grande Exposition, 1851"
+        ]
+      },
+      "albert-victor": {
+        "name": "Albert Victor de Clarence",
+        "short": "Albert Victor",
+        "title": "Duc de Clarence et d'Avondale",
+        "fate": "Mort de la grippe, en 1892",
+        "summary": "Fils aîné d'Édouard VII. Il mourut quelques semaines après ses fiançailles avec Mary de Teck, qui épousa ensuite son frère, le futur George V.",
+        "wikipedia": "Albert_Victor_de_Clarence"
+      },
+      "philip": {
+        "name": "Philip Mountbatten",
+        "short": "le prince Philip",
+        "title": "Duc d'Édimbourg",
+        "summary": "Né prince de Grèce et de Danemark, il épousa la princesse Élisabeth en 1947 et fut le consort royal au plus long règne de l'histoire britannique.",
+        "wikipedia": "Philip_Mountbatten"
+      },
+      "william-wales": {
+        "name": "William, prince de Galles",
+        "short": "le prince William",
+        "title": "Prince de Galles, héritier apparent",
+        "summary": "Fils aîné de Charles III et de Diana, princesse de Galles. Héritier apparent depuis 2022.",
+        "wikipedia": "William,_prince_de_Galles"
+      },
+      "george-wales": {
+        "name": "George de Galles",
+        "short": "le prince George",
+        "title": "Second dans l'ordre de succession",
+        "summary": "Fils aîné du prince et de la princesse de Galles, second dans l'ordre de succession au trône.",
+        "wikipedia": "George_de_Galles"
       }
     }
   },
@@ -1933,7 +2281,8 @@
         "short": "Grand dauphin",
         "spouses": [
           "Marie-Anne-Victoire de Bavière"
-        ]
+        ],
+        "fate": "Mort avant son père, en 1711"
       },
       "philippe-regent": {
         "name": "Philippe II, duc d'Orléans",
@@ -1957,7 +2306,8 @@
         "short": "Duc de Bourgogne",
         "spouses": [
           "Marie-Adélaïde de Savoie"
-        ]
+        ],
+        "fate": "Mort de la rougeole, en 1712"
       },
       "louis-xv": {
         "name": "Louis XV",
@@ -1984,7 +2334,8 @@
         "spouses": [
           "Marie-Thérèse-Raphaëlle d'Espagne",
           "Marie-Josèphe de Saxe"
-        ]
+        ],
+        "fate": "Mort avant son père, en 1765"
       },
       "philippe-egalite": {
         "name": "Louis-Philippe II, duc d'Orléans",
@@ -2015,7 +2366,8 @@
         "name": "Louis XVII",
         "title": "Roi titulaire de France",
         "summary": "Reconnu roi par les royalistes après l'exécution de son père. Il mourut enfant prisonnier au Temple à Paris.",
-        "wikipedia": "Louis_XVII"
+        "wikipedia": "Louis_XVII",
+        "fate": "Mort en prison, en 1795"
       },
       "carlo-buonaparte": {
         "name": "Carlo Buonaparte",
@@ -2072,7 +2424,8 @@
         "name": "Napoléon II",
         "title": "Roi de Rome, duc de Reichstadt",
         "summary": "Empereur nominal pendant deux semaines après Waterloo. Il grandit à la cour d'Autriche et mourut de la tuberculose à 21 ans.",
-        "wikipedia": "Napoléon_II"
+        "wikipedia": "Napoléon_II",
+        "fate": "Proclamé empereur en 1815, sans jamais régner"
       },
       "charles-x": {
         "name": "Charles X",
@@ -2118,6 +2471,207 @@
           "Reconstruction de Paris",
           "Bataille de Sedan, 1870"
         ]
+      },
+      "carloman-i": {
+        "name": "Carloman Ier",
+        "title": "Roi des Francs",
+        "accession": "Partagea le royaume avec son frère Charlemagne à la mort de leur père.",
+        "summary": "Second fils de Pépin le Bref, il gouverna la moitié orientale du royaume franc. Ses relations avec Charlemagne furent tendues ; sa mort subite en 771 laissa Charlemagne seul roi.",
+        "wikipedia": "Carloman_Ier"
+      },
+      "lothair-i": {
+        "name": "Lothaire Ier",
+        "title": "Empereur, roi de Francie médiane",
+        "summary": "Fils aîné de Louis le Pieux. Au traité de Verdun en 843, il conserva le titre impérial et un royaume médian de la Frise à l'Italie, tandis que Charles le Chauve reçut la Francie occidentale, future France.",
+        "wikipedia": "Lothaire_Ier",
+        "events": [
+          "Bataille de Fontenoy, 841",
+          "Traité de Verdun, 843"
+        ]
+      },
+      "philip-co-king": {
+        "name": "Philippe de France",
+        "title": "Roi associé des Francs",
+        "fate": "Tué lorsque son cheval trébucha sur un cochon, en 1131",
+        "summary": "Fils aîné de Louis VI, couronné co-roi en 1129 selon la coutume capétienne. Il mourut après une chute de cheval à Paris ; son frère Louis VII fut couronné à sa place.",
+        "wikipedia": "Philippe_de_France_(1116-1131)"
+      },
+      "eleanor-aquitaine": {
+        "name": "Aliénor d'Aquitaine",
+        "title": "Reine de France, puis d'Angleterre",
+        "summary": "Duchesse d'Aquitaine en propre. Son mariage avec Louis VII fut annulé en 1152 ; elle épousa ensuite Henri d'Anjou, futur Henri II d'Angleterre, emportant l'Aquitaine avec elle.",
+        "wikipedia": "Aliénor_d'Aquitaine",
+        "events": [
+          "Deuxième croisade, 1147–1149",
+          "Annulation, 1152"
+        ]
+      },
+      "blanche-castile": {
+        "name": "Blanche de Castille",
+        "title": "Reine de France",
+        "summary": "Épouse de Louis VIII et deux fois régente pour son fils Louis IX : pendant sa minorité, puis de nouveau pendant sa croisade.",
+        "wikipedia": "Blanche_de_Castille"
+      },
+      "jeanne-navarre": {
+        "name": "Jeanne II de Navarre",
+        "short": "Jeanne de Navarre",
+        "title": "Reine de Navarre",
+        "fate": "Écartée de la couronne de France, en 1316",
+        "summary": "Seule enfant survivante de Louis X. En 1316, les barons donnèrent la couronne à son oncle Philippe V : première étape vers la règle, plus tard appelée loi salique, selon laquelle les femmes ne pouvaient hériter du trône de France.",
+        "wikipedia": "Jeanne_II_de_Navarre"
+      },
+      "isabella-france": {
+        "name": "Isabelle de France",
+        "title": "Reine d'Angleterre",
+        "summary": "Fille de Philippe IV et épouse d'Édouard II d'Angleterre. Quand ses frères moururent sans fils, son fils Édouard III revendiqua la couronne de France par elle, ce qui ouvrit la guerre de Cent Ans.",
+        "wikipedia": "Isabelle_de_France_(reine_d'Angleterre)",
+        "events": [
+          "Édouard III revendique la couronne de France, 1337"
+        ]
+      },
+      "louis-guyenne": {
+        "name": "Louis de Guyenne",
+        "short": "Louis de Guyenne",
+        "title": "Dauphin de France",
+        "fate": "Mort quelques semaines après Azincourt, en 1415",
+        "summary": "Fils aîné survivant de Charles VI, il gouverna pendant la folie de son père. Il mourut de dysenterie peu après la défaite d'Azincourt.",
+        "wikipedia": "Louis_de_Guyenne"
+      },
+      "catherine-valois": {
+        "name": "Catherine de Valois",
+        "title": "Reine d'Angleterre",
+        "summary": "Fille de Charles VI, mariée à Henri V d'Angleterre selon le traité de Troyes (1420), qui déshérita son frère le dauphin. Grand-mère d'Henri VII, premier roi Tudor.",
+        "wikipedia": "Catherine_de_Valois",
+        "events": [
+          "Traité de Troyes, 1420"
+        ]
+      },
+      "anne-brittany": {
+        "name": "Anne de Bretagne",
+        "title": "Duchesse de Bretagne, reine de France",
+        "summary": "Deux fois reine de France, épouse de Charles VIII puis de Louis XII. Ses mariages rapprochèrent le duché indépendant de Bretagne de la couronne française.",
+        "wikipedia": "Anne_de_Bretagne"
+      },
+      "claude-france": {
+        "name": "Claude de France",
+        "title": "Reine de France, duchesse de Bretagne",
+        "summary": "Fille de Louis XII et d'Anne de Bretagne, mariée à son cousin François Ier. Son héritage mena à l'union formelle de la Bretagne à la France en 1532.",
+        "wikipedia": "Claude_de_France"
+      },
+      "francis-dauphin": {
+        "name": "François de France",
+        "short": "le dauphin François",
+        "title": "Dauphin, duc de Bretagne",
+        "fate": "Mort subitement après une partie de paume, en 1536",
+        "summary": "Fils aîné de François Ier. Il mourut après avoir bu de l'eau froide à la suite d'une partie de paume ; un empoisonnement fut suspecté. Son frère devint Henri II.",
+        "wikipedia": "François_III_de_Bretagne"
+      },
+      "catherine-medici": {
+        "name": "Catherine de Médicis",
+        "title": "Reine de France",
+        "summary": "Épouse d'Henri II et mère de trois rois : François II, Charles IX et Henri III. Elle domina le gouvernement pendant les guerres de Religion.",
+        "wikipedia": "Catherine_de_Médicis",
+        "events": [
+          "Massacre de la Saint-Barthélemy, 1572"
+        ]
+      },
+      "margaret-valois": {
+        "name": "Marguerite de Valois",
+        "short": "la reine Margot",
+        "title": "Reine de France et de Navarre",
+        "summary": "Fille d'Henri II, mariée au protestant Henri de Navarre en 1572. Les noces furent suivies du massacre de la Saint-Barthélemy. Le mariage sans enfant fut annulé en 1599.",
+        "wikipedia": "Marguerite_de_Valois"
+      },
+      "marie-medici": {
+        "name": "Marie de Médicis",
+        "title": "Reine de France",
+        "summary": "Seconde épouse d'Henri IV et régente pour Louis XIII après l'assassinat d'Henri. Elle fut plus tard exilée après avoir comploté contre le cardinal de Richelieu.",
+        "wikipedia": "Marie_de_Médicis"
+      },
+      "anne-austria": {
+        "name": "Anne d'Autriche",
+        "title": "Reine de France",
+        "summary": "Épouse espagnole de Louis XIII, de la maison de Habsbourg. Régente pour le jeune Louis XIV, elle gouverna avec le cardinal Mazarin pendant la Fronde.",
+        "wikipedia": "Anne_d'Autriche"
+      },
+      "marie-antoinette": {
+        "name": "Marie-Antoinette",
+        "title": "Reine de France",
+        "fate": "Guillotinée, en 1793",
+        "summary": "Archiduchesse d'Autriche mariée à Louis XVI. Impopulaire à la cour et à Paris, elle fut jugée par le tribunal révolutionnaire et guillotinée neuf mois après son époux.",
+        "wikipedia": "Marie-Antoinette_d'Autriche"
+      },
+      "louis-joseph": {
+        "name": "Louis-Joseph de France",
+        "short": "le dauphin Louis-Joseph",
+        "title": "Dauphin de France",
+        "fate": "Mort de la tuberculose, en juin 1789",
+        "summary": "Fils aîné de Louis XVI. Il mourut un mois après l'ouverture des États généraux, laissant son frère cadet, le futur « Louis XVII », comme héritier.",
+        "wikipedia": "Louis-Joseph_de_France"
+      },
+      "duke-berry": {
+        "name": "Charles-Ferdinand d'Artois",
+        "short": "duc de Berry",
+        "title": "Duc de Berry",
+        "fate": "Assassiné à l'Opéra de Paris, en 1820",
+        "summary": "Second fils de Charles X et seul Bourbon de sa génération susceptible d'avoir des fils. Il fut poignardé devant l'Opéra ; son fils naquit sept mois plus tard.",
+        "wikipedia": "Charles-Ferdinand_d'Artois"
+      },
+      "henri-chambord": {
+        "name": "Henri d'Artois",
+        "short": "comte de Chambord",
+        "title": "Prétendant légitimiste (« Henri V »)",
+        "fate": "Refusa la couronne plutôt que d'accepter le drapeau tricolore, en 1873",
+        "summary": "L'enfant miracle né après l'assassinat de son père. En 1873, l'assemblée monarchiste lui offrit le trône, mais il exigea le drapeau blanc des Bourbons et l'occasion passa.",
+        "wikipedia": "Henri_V_(roi_de_France)"
+      },
+      "ferdinand-philippe": {
+        "name": "Ferdinand-Philippe d'Orléans",
+        "short": "Ferdinand-Philippe",
+        "title": "Prince royal de France",
+        "fate": "Tué dans un accident de voiture, en 1842",
+        "summary": "Héritier populaire et libéral de Louis-Philippe. Sa mort laissa un fils jeune comme héritier et affaiblit la monarchie de Juillet, qui s'effondra six ans plus tard.",
+        "wikipedia": "Ferdinand-Philippe_d'Orléans"
+      },
+      "josephine": {
+        "name": "Joséphine de Beauharnais",
+        "short": "Joséphine",
+        "title": "Impératrice des Français",
+        "summary": "Première épouse de Napoléon, couronnée impératrice en 1804. Le mariage fut dissous en 1810 faute d'héritier. Sa fille Hortense fut la mère de Napoléon III.",
+        "wikipedia": "Joséphine_de_Beauharnais",
+        "events": [
+          "Couronnement, 1804",
+          "Divorce, 1810"
+        ]
+      },
+      "hortense": {
+        "name": "Hortense de Beauharnais",
+        "short": "Hortense",
+        "title": "Reine de Hollande",
+        "summary": "Fille de Joséphine et épouse de Louis, frère de Napoléon, roi de Hollande. Son fils devint Napoléon III, unissant les lignées Beauharnais et Bonaparte.",
+        "wikipedia": "Hortense_de_Beauharnais"
+      },
+      "marie-louise": {
+        "name": "Marie-Louise d'Autriche",
+        "short": "Marie-Louise",
+        "title": "Impératrice des Français",
+        "summary": "Fille de l'empereur d'Autriche, mariée à Napoléon en 1810. Elle lui donna un héritier, le roi de Rome, et gouverna plus tard le duché de Parme.",
+        "wikipedia": "Marie-Louise_d'Autriche"
+      },
+      "eugenie": {
+        "name": "Eugénie de Montijo",
+        "short": "Eugénie",
+        "title": "Impératrice des Français",
+        "summary": "Épouse espagnole de Napoléon III et icône de mode. Elle fut régente en 1870 et s'exila en Angleterre après la chute de l'Empire.",
+        "wikipedia": "Eugénie_de_Montijo"
+      },
+      "prince-imperial": {
+        "name": "Louis-Napoléon",
+        "short": "le prince impérial",
+        "title": "Prince impérial",
+        "fate": "Tué pendant la guerre anglo-zouloue, en 1879",
+        "summary": "Seul fils de Napoléon III. En exil, il servit dans l'armée britannique et fut tué par des guerriers zoulous en Afrique du Sud, mettant fin aux espoirs bonapartistes.",
+        "wikipedia": "Louis-Napoléon_(prince_impérial)"
       }
     }
   }
