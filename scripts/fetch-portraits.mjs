@@ -1,39 +1,45 @@
-// Downloads each monarch's lead image from Wikipedia into public/portraits.
-import { readFile, writeFile, mkdir, rm } from 'node:fs/promises'
+// Downloads each person's lead image from Wikipedia into public/portraits.
+// Existing portraits are kept; pass --refresh to download everything again.
+import { readFile, writeFile, mkdir, access } from 'node:fs/promises'
 import path from 'node:path'
 
 const root = path.resolve(import.meta.dirname, '..')
-const UA = 'SceptreKings/1.0 (https://github.com/knalpas/kings; educational genealogy)'
+const UA = 'SceptreKings/2.0 (https://github.com/knalpas/kings; educational genealogy)'
+const refresh = process.argv.includes('--refresh')
 
-function parsePeople(source) {
+function parsePeople(kingdom, source) {
   const entries = []
-  for (const block of source.split(/\n  \{\n/)) {
-    const id = block.match(/^\s*id: '([^']+)'/)?.[1]
-    const wiki = block.match(/wikipedia: '([^']+)'/)?.[1]
-    if (id && wiki) entries.push({ id, wiki })
-  }
+  const re = /\n {4}id: '([^']+)',[\s\S]*?\n {4}wikipedia: '([^']+)'/g
+  let m
+  while ((m = re.exec(source))) entries.push({ key: `${kingdom}/${m[1]}`, wiki: m[2] })
   return entries
 }
 
 const entries = [
-  ...parsePeople(await readFile(path.join(root, 'src/data/england.ts'), 'utf8')),
-  ...parsePeople(await readFile(path.join(root, 'src/data/france.ts'), 'utf8')),
+  ...parsePeople('england', await readFile(path.join(root, 'src/data/england.ts'), 'utf8')),
+  ...parsePeople('france', await readFile(path.join(root, 'src/data/france.ts'), 'utf8')),
 ]
 
 const outDir = path.join(root, 'public/portraits')
-await rm(outDir, { recursive: true, force: true })
-await mkdir(outDir, { recursive: true })
+const jsonPath = path.join(root, 'src/data/portraits.json')
+await mkdir(path.join(outDir, 'england'), { recursive: true })
+await mkdir(path.join(outDir, 'france'), { recursive: true })
+
+let previous = {}
+try {
+  previous = JSON.parse(await readFile(jsonPath, 'utf8'))
+} catch {
+  previous = {}
+}
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
-function cleanUrl(u) {
-  if (!u) return null
+async function exists(file) {
   try {
-    const url = new URL(u)
-    // Drop tracking params; keep path only
-    return `${url.origin}${url.pathname}`
+    await access(file)
+    return true
   } catch {
-    return u.split('?')[0]
+    return false
   }
 }
 
@@ -42,7 +48,7 @@ async function get(url, as = 'json') {
     const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: '*/*' } })
     if (res.ok) return as === 'json' ? res.json() : Buffer.from(await res.arrayBuffer())
     if (res.status === 429 || res.status >= 500) {
-      await sleep(1200 * (attempt + 1))
+      await sleep(1500 * (attempt + 1))
       continue
     }
     throw new Error(`${res.status} ${url}`)
@@ -50,40 +56,43 @@ async function get(url, as = 'json') {
   throw new Error(`gave up ${url}`)
 }
 
-/** Build a Commons thumbnail URL from an original commons file URL. */
-function commonsSized(original, width = 440) {
+function cleanUrl(u) {
+  if (!u) return null
+  try {
+    const url = new URL(u)
+    return `${url.origin}${url.pathname}`
+  } catch {
+    return u.split('?')[0]
+  }
+}
+
+/** Commons thumbnail URL at a given width for an original Commons file URL. */
+function commonsSized(original, width) {
   const clean = cleanUrl(original)
   if (!clean || !clean.includes('/wikipedia/commons/')) return clean
-  // Already a thumb
-  if (clean.includes('/thumb/')) {
-    return clean.replace(/\/\d+px-/, `/${width}px-`)
-  }
-  // https://upload.wikimedia.org/wikipedia/commons/a/ab/File.jpg
-  // → .../commons/thumb/a/ab/File.jpg/440px-File.jpg
+  if (clean.includes('/thumb/')) return clean.replace(/\/\d+px-/, `/${width}px-`)
   const marker = '/wikipedia/commons/'
-  const i = clean.indexOf(marker)
-  const rest = clean.slice(i + marker.length) // a/ab/File.jpg
+  const rest = clean.slice(clean.indexOf(marker) + marker.length)
   const file = rest.split('/').pop()
   return `https://upload.wikimedia.org/wikipedia/commons/thumb/${rest}/${width}px-${file}`
 }
 
 const result = {}
-let ok = 0
-let fail = 0
+let fetched = 0
+let kept = 0
+let failed = 0
 
-for (const { id, wiki } of entries) {
+for (const { key: id, wiki } of entries) {
+  const webp = path.join(outDir, `${id}.webp`)
+  if (!refresh && previous[id]?.wiki === wiki && (await exists(webp))) {
+    result[id] = { src: `portraits/${id}.webp`, wiki }
+    kept++
+    continue
+  }
   try {
-    const summary = await get(
-      `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wiki)}`,
-    )
+    const summary = await get(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wiki)}`)
     const original = summary.originalimage?.source
-    const thumb = summary.thumbnail?.source
-    const candidates = [
-      commonsSized(original, 440),
-      cleanUrl(thumb),
-      cleanUrl(original),
-    ].filter(Boolean)
-
+    const candidates = [commonsSized(original, 500), cleanUrl(summary.thumbnail?.source), cleanUrl(original)].filter(Boolean)
     let buf = null
     let used = null
     for (const url of candidates) {
@@ -92,12 +101,12 @@ for (const { id, wiki } of entries) {
         used = url
         break
       } catch {
-        /* try next */
+        /* try the next candidate */
       }
     }
-    if (!buf || !used) {
-      console.log(`✗ ${id}: no downloadable image`)
-      fail++
+    if (!buf) {
+      console.log(`✗ ${id}: no image`)
+      failed++
       continue
     }
     const ext = /\.png$/i.test(used) ? 'png' : /\.gif$/i.test(used) ? 'gif' : /\.webp$/i.test(used) ? 'webp' : 'jpg'
@@ -105,13 +114,13 @@ for (const { id, wiki } of entries) {
     await writeFile(path.join(root, 'public', rel), buf)
     result[id] = { src: rel, wiki }
     console.log(`✓ ${id}`)
-    ok++
-    await sleep(60)
+    fetched++
+    await sleep(120)
   } catch (e) {
     console.log(`✗ ${id}: ${e.message}`)
-    fail++
+    failed++
   }
 }
 
-await writeFile(path.join(root, 'src/data/portraits.json'), JSON.stringify(result, null, 2) + '\n')
-console.log(`\nDone. ok=${ok} fail=${fail} total=${Object.keys(result).length}`)
+await writeFile(jsonPath, JSON.stringify(result, null, 2) + '\n')
+console.log(`\nfetched=${fetched} kept=${kept} failed=${failed} total=${Object.keys(result).length}`)

@@ -1,33 +1,54 @@
-export type Kingdom = 'france' | 'england'
+export type Kingdom = 'england' | 'france'
 
 export type Person = {
   id: string
-  /** Display name (regnal where applicable). */
   name: string
-  /** Short label on the tree node. */
-  shortName: string
+  /** Shorter caption for the chart when the full name is long. */
+  short?: string
   title: string
-  dynasty: string
-  /** Blood parent in this dataset (another person id), if known. */
-  parentId: string | null
-  reignStart?: number
-  reignEnd?: number
-  birth?: number
-  death?: number
+  house: string
+  parent: string | null
+  /** The parent link skips generations that are not drawn. */
+  distant?: boolean
+  /** Accession and end of reign; absent for ancestors who never reigned. */
+  reign?: [number, number | null]
+  /** Display text for interrupted reigns, e.g. "1422–1461, 1470–1471". */
+  reignText?: string
+  /** Heads of state who were not crowned (e.g. Lord Protector). */
+  protector?: boolean
+  born?: number
+  bornCirca?: boolean
+  died?: number
+  female?: boolean
   epithet?: string
-  /** False for non-reigning links needed to connect the tree. */
-  reigning?: boolean
+  /** How the crown was obtained, when not a plain inheritance. */
+  accession?: string
+  spouses?: string[]
   summary: string
-  notable?: string[]
-  wikipedia?: string
+  events?: string[]
+  wikipedia: string
 }
 
-export type DynastyStyle = {
+export type House = {
   id: string
   label: string
-  /** Engraved ink used for the portrait frame. */
   color: string
-  /** Pale wash kept for the printed legend. */
-  bandFill: string
-  ink?: string
+  note: string
+}
+
+export type Interval = {
+  start: number
+  end: number
+  label: string
+}
+
+export type KingdomData = {
+  id: Kingdom
+  label: string
+  title: string
+  subtitle: string
+  houses: House[]
+  people: Person[]
+  /** Periods without a monarch, shown as neutral bands. */
+  gaps: Interval[]
 }
