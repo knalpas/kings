@@ -1,0 +1,2124 @@
+{
+  "england": {
+    "label": "Angleterre",
+    "title": "Les rois et reines d'Angleterre",
+    "subtitle": "D'Alfred le Grand à Charles III, de 871 à nos jours",
+    "houses": {
+      "wessex": {
+        "label": "Maison de Wessex",
+        "note": "Rois saxons de l'Ouest qui forgea un royaume anglais unifié au cours des guerres contre les Vikings."
+      },
+      "denmark": {
+        "label": "Maison du Danemark",
+        "note": "Conquérants danois qui gouvernèrent l'Angleterre au sein d'un empire de la mer du Nord, de 1013 à 1042."
+      },
+      "godwin": {
+        "label": "Maison Godwin",
+        "note": "Famille des comtes de Wessex ; Harold II fut son seul roi."
+      },
+      "normandy": {
+        "label": "Maison de Normandie",
+        "note": "Ducs de Normandie qui prirent l'Angleterre par la conquête en 1066."
+      },
+      "blois": {
+        "label": "Maison de Blois",
+        "note": "Étienne, petit-fils du Conquérant par sa fille Adèle, comtesse de Blois."
+      },
+      "plantagenet": {
+        "label": "Maison Plantagenêt",
+        "note": "Dynastie angevine fondée par Henri II, fils de l'impératrice Mathilde et de Geoffroy d'Anjou."
+      },
+      "lancaster": {
+        "label": "Maison de Lancastre",
+        "note": "Branche plantagenêt issue de Jean de Gand. Emblème : la rose rouge."
+      },
+      "york": {
+        "label": "Maison d'York",
+        "note": "Branche plantagenêt issue d'Edmond de Langley. Emblème : la rose blanche."
+      },
+      "tudor": {
+        "label": "Maison de Tudor",
+        "note": "Dynastie galloise dont la revendication passait par les Beaufort ; elle unifia les roses en 1486."
+      },
+      "grey": {
+        "label": "Maison Grey",
+        "note": "Lady Jane Grey, arrière-petite-fille d'Henri VII, reine pendant neuf jours en 1553."
+      },
+      "stuart": {
+        "label": "Maison Stuart",
+        "note": "Rois d'Écosse qui héritèrent de l'Angleterre en 1603 par Margaret Tudor."
+      },
+      "cromwell": {
+        "label": "Le Protectorat",
+        "note": "Oliver et Richard Cromwell, lords protecteurs du Commonwealth."
+      },
+      "orange": {
+        "label": "Maison d'Orange-Nassau",
+        "note": "Guillaume III, stathouder des Pays-Bas et petit-fils de Charles Ier."
+      },
+      "hanover": {
+        "label": "Maison de Hanovre",
+        "note": "Électeurs allemands qui héritèrent du trône sous l'Acte d'établissement de 1701."
+      },
+      "saxe-coburg": {
+        "label": "Maison de Saxe-Cobourg et Gotha",
+        "note": "Maison du prince Albert, transmise à son fils Édouard VII."
+      },
+      "windsor": {
+        "label": "Maison de Windsor",
+        "note": "Nom adopté par George V en 1917, en remplacement de Saxe-Cobourg et Gotha."
+      }
+    },
+    "gaps": {
+      "1649-1653": "Commonwealth",
+      "1659-1660": "Commonwealth"
+    },
+    "people": {
+      "alfred": {
+        "name": "Alfred le Grand",
+        "title": "Roi de Wessex, roi des Anglo-Saxons",
+        "summary": "Il défendit le Wessex contre la Grande armée païenne, vainquit Guthrum à Edington et fit édifier un réseau de burhs fortifiés. Sa cour favorisa l'apprentissage et la prose anglaise.",
+        "wikipedia": "Alfred_le_Grand",
+        "short": "Alfred",
+        "epithet": "le Grand",
+        "accession": "Succéda à son frère Æthelred Ier de Wessex.",
+        "spouses": [
+          "Ealhswith"
+        ],
+        "events": [
+          "Bataille d'Edington, 878",
+          "Traité avec Guthrum",
+          "Système des burhs"
+        ]
+      },
+      "edward-elder": {
+        "name": "Édouard l'Ancien",
+        "title": "Roi des Anglo-Saxons",
+        "summary": "Avec sa sœur Æthelflæd, dame des Merciens, il reconquit le Danelaw méridional et soumit la Mercie à l'autorité du Wessex.",
+        "wikipedia": "Édouard_l'Ancien",
+        "spouses": [
+          "Ecgwynn",
+          "Ælfflæd",
+          "Eadgifu du Kent"
+        ],
+        "events": [
+          "Bataille de Tettenhall, 910",
+          "Conquête de l'Anglie de l'Est"
+        ]
+      },
+      "athelstan": {
+        "name": "Æthelstan",
+        "title": "Roi d'Angleterre",
+        "summary": "Il prit York en 927 et devint le premier roi à régner sur toute l'Angleterre. Sa victoire à Brunanburh en 937 confirma sa suprématie en Grande-Bretagne.",
+        "wikipedia": "Æthelstan",
+        "events": [
+          "Prise de York, 927",
+          "Bataille de Brunanburh, 937"
+        ]
+      },
+      "edmund-i": {
+        "name": "Edmond Ier",
+        "title": "Roi d'Angleterre",
+        "summary": "Il reprit les Cinq Bouroughs aux Norrois. Poignardé à mort à Pucklechurch par un voleur exilé.",
+        "wikipedia": "Edmond_Ier_(roi_d'Angleterre)",
+        "epithet": "le Magnifique",
+        "accession": "Succéda à son demi-frère Æthelstan.",
+        "spouses": [
+          "Ælfgifu de Shaftesbury",
+          "Æthelflæd de Damerham"
+        ],
+        "events": [
+          "Reprise des Cinq Bouroughs, 942"
+        ]
+      },
+      "eadred": {
+        "name": "Eadred",
+        "title": "Roi d'Angleterre",
+        "summary": "Il expulsa Éric Bloodaxe de York en 954, mettant fin au dernier royaume viking d'Angleterre. Il ne se maria jamais.",
+        "wikipedia": "Eadred",
+        "events": [
+          "Fin du royaume viking de York, 954"
+        ]
+      },
+      "eadwig": {
+        "name": "Eadwig",
+        "title": "Roi d'Angleterre",
+        "summary": "Il accéda au trône adolescent et se querella avec Dunstan. La Mercie et la Northumbrie se détachèrent pour son frère Edgar en 957.",
+        "wikipedia": "Eadwig",
+        "epithet": "le Beau",
+        "spouses": [
+          "Ælfgifu"
+        ]
+      },
+      "edgar": {
+        "name": "Edgar",
+        "title": "Roi d'Angleterre",
+        "summary": "Règne paisible de réforme monastique sous Dunstan. Son couronnement impérial à Bath en 973 influença les sacres anglais ultérieurs.",
+        "wikipedia": "Edgar_(roi_d'Angleterre)",
+        "epithet": "le Pacifique",
+        "spouses": [
+          "Æthelflæd",
+          "Wulfthryth",
+          "Ælfthryth"
+        ],
+        "events": [
+          "Couronnement à Bath, 973",
+          "Réforme bénédictine"
+        ]
+      },
+      "edward-martyr": {
+        "name": "Édouard le Martyr",
+        "title": "Roi d'Angleterre",
+        "summary": "Assassiné à Corfe, probablement par des partisans de son demi-frère Æthelred, puis vénéré comme saint.",
+        "wikipedia": "Édouard_le_Martyr"
+      },
+      "ethelred": {
+        "name": "Æthelred le Malavisé",
+        "title": "Roi d'Angleterre",
+        "summary": "Il paya d'immenses tributs de Danegeld lorsque les raids vikings reprirent. Chassé par Sweyn à la fourche en 1013, il revint à la mort de ce dernier. Son surnom signifie « mal conseillé ».",
+        "wikipedia": "Æthelred_le_Malavisé",
+        "short": "Æthelred II",
+        "epithet": "le Malavisé",
+        "spouses": [
+          "Ælfgifu d'York",
+          "Emma de Normandie"
+        ],
+        "events": [
+          "Massacre de la Saint-Brice, 1002",
+          "Exil en Normandie, 1013"
+        ],
+        "reignText": "978–1013, 1014–1016"
+      },
+      "sweyn": {
+        "name": "Sweyn à la fourche",
+        "title": "Roi du Danemark et d'Angleterre",
+        "summary": "Roi du Danemark qui conquit l'Angleterre en 1013 et fut proclamé roi, mais mourut cinq semaines plus tard.",
+        "wikipedia": "Sweyn_Ier",
+        "short": "Sweyn",
+        "accession": "Conquit l'Angleterre et chassa Æthelred en exil."
+      },
+      "edmund-ironside": {
+        "name": "Edmond Côte-de-fer",
+        "title": "Roi d'Angleterre",
+        "summary": "Il luttait à égalité avec Cnut ; après Assandun le royaume fut partagé entre eux. Il mourut quelques semaines plus tard.",
+        "wikipedia": "Edmond_II",
+        "short": "Edmond II",
+        "epithet": "Côte-de-fer",
+        "spouses": [
+          "Ealdgyth"
+        ],
+        "events": [
+          "Bataille d'Assandun, 1016"
+        ]
+      },
+      "cnut": {
+        "name": "Cnut le Grand",
+        "title": "Roi d'Angleterre, du Danemark et de Norvège",
+        "summary": "Il gouverna un empire de la mer du Nord et administra l'Angleterre par des comtes anglais. Il épousa Emma de Normandie, veuve d'Æthelred.",
+        "wikipedia": "Cnut",
+        "short": "Cnut",
+        "epithet": "le Grand",
+        "accession": "Prit l'ensemble du royaume à la mort d'Edmond Côte-de-fer selon leur traité.",
+        "spouses": [
+          "Ælfgifu de Northampton",
+          "Emma de Normandie"
+        ],
+        "events": [
+          "Empire de la mer du Nord",
+          "Pèlerinage à Rome, 1027"
+        ]
+      },
+      "harold-harefoot": {
+        "name": "Harold Harefoot",
+        "title": "Roi d'Angleterre",
+        "summary": "Régent à partir de 1035 pendant que son demi-frère Harthacnut restait au Danemark, puis roi à partir de 1037.",
+        "wikipedia": "Harold_Ier",
+        "short": "Harold Ier",
+        "epithet": "Harefoot"
+      },
+      "harthacnut": {
+        "name": "Harthacnut",
+        "title": "Roi d'Angleterre et du Danemark",
+        "summary": "Fils de Cnut et d'Emma. Impopulaire pour ses lourds impôts, il rappela son demi-frère Édouard et mourut lors d'un festin de noces.",
+        "wikipedia": "Harthacnut"
+      },
+      "edward-confessor": {
+        "name": "Édouard le Confesseur",
+        "title": "Roi d'Angleterre",
+        "summary": "Roi pieux qui fit reconstruire l'abbaye de Westminster. Il mourut sans enfant, laissant le trône disputé en 1066.",
+        "wikipedia": "Édouard_le_Confesseur",
+        "short": "Édouard le Confesseur",
+        "epithet": "le Confesseur",
+        "accession": "Restaura la maison de Wessex à la mort de son demi-frère Harthacnut.",
+        "spouses": [
+          "Édith de Wessex"
+        ],
+        "events": [
+          "Consécration de Westminster, 1065",
+          "Canonisation en 1161"
+        ]
+      },
+      "harold-ii": {
+        "name": "Harold Godwinson",
+        "title": "Roi d'Angleterre",
+        "summary": "Il vainquit Harald Hardrada à Stamford Bridge, puis périt à Hastings trois semaines plus tard. Dernier roi anglo-saxon couronné.",
+        "wikipedia": "Harold_II",
+        "short": "Harold II",
+        "accession": "Choisi par le Witan ; il était le beau-frère d'Édouard le Confesseur.",
+        "spouses": [
+          "Édith la Belle-Swan",
+          "Ealdgyth"
+        ],
+        "events": [
+          "Bataille de Stamford Bridge",
+          "Bataille de Hastings"
+        ]
+      },
+      "william-i": {
+        "name": "Guillaume le Conquérant",
+        "title": "Roi d'Angleterre, duc de Normandie",
+        "summary": "Il remplaça l'aristocratie anglaise par des seigneurs normands, fit édifier des châteaux et ordonna l'enquête du Domesday.",
+        "wikipedia": "Guillaume_le_Conquérant",
+        "short": "Guillaume Ier",
+        "epithet": "le Conquérant",
+        "accession": "Conquête : victoire à Hastings, couronné le jour de Noël 1066.",
+        "spouses": [
+          "Mathilde de Flandre"
+        ],
+        "events": [
+          "Bataille de Hastings, 1066",
+          "Harrying of the North",
+          "Domesday Book, 1086"
+        ]
+      },
+      "william-ii": {
+        "name": "Guillaume II",
+        "title": "Roi d'Angleterre",
+        "summary": "Il se querella avec l'archevêque Anselme et fut tué d'une flèche lors d'une chasse dans la New Forest. Il ne se maria jamais.",
+        "wikipedia": "Guillaume_II_(roi_d'Angleterre)",
+        "epithet": "Rufus",
+        "events": [
+          "Construction de Westminster Hall",
+          "Mort dans la New Forest"
+        ]
+      },
+      "henry-i": {
+        "name": "Henri Ier",
+        "title": "Roi d'Angleterre",
+        "summary": "Il renforça l'administration royale et l'Exchequer. La perte de son seul fils légitime dans le naufrage de la Blanche-Nef fit de sa fille Mathilde l'héritière.",
+        "wikipedia": "Henri_Ier_(roi_d'Angleterre)",
+        "epithet": "Beauclerc",
+        "accession": "S'empara du trésor à la mort de son frère Guillaume II, devant l'aîné Robert.",
+        "spouses": [
+          "Mathilde d'Écosse",
+          "Adélaïde de Louvain"
+        ],
+        "events": [
+          "Charte des libertés, 1100",
+          "Naufrage de la Blanche-Nef, 1120"
+        ]
+      },
+      "adela": {
+        "name": "Adèle de Normandie",
+        "title": "Comtesse de Blois",
+        "summary": "Fille du Conquérant, régente de Blois pendant la croisade de son époux et mère du roi Étienne.",
+        "wikipedia": "Adèle_de_Normandie",
+        "short": "Adèle",
+        "spouses": [
+          "Étienne-Henri, comte de Blois"
+        ]
+      },
+      "stephen": {
+        "name": "Étienne",
+        "title": "Roi d'Angleterre",
+        "summary": "Son conflit avec Mathilde devint la guerre civile connue sous le nom d'Anarchie. Le traité de Wallingford fit de son fils Henri son héritier.",
+        "wikipedia": "Étienne_(roi_d'Angleterre)",
+        "accession": "S'empara de la couronne avant sa cousine, l'impératrice Mathilde.",
+        "spouses": [
+          "Mathilde de Boulogne"
+        ],
+        "events": [
+          "L'Anarchie",
+          "Capturé à Lincoln, 1141",
+          "Traité de Wallingford, 1153"
+        ]
+      },
+      "matilda": {
+        "name": "Mathilde l'Emperesse",
+        "title": "Dame d'Angleterre",
+        "summary": "Héritière désignée d'Henri Ier. Elle exerça brièvement le pouvoir en 1141 sans être couronnée ; son fils devint Henri II.",
+        "wikipedia": "Mathilde_l'Impératrice",
+        "short": "Mathilde",
+        "spouses": [
+          "l'empereur Henri V",
+          "Geoffroy Plantagenêt, comte d'Anjou"
+        ],
+        "events": [
+          "Dame d'Angleterre, 1141",
+          "Évasion d'Oxford, 1142"
+        ]
+      },
+      "henry-ii": {
+        "name": "Henri II",
+        "title": "Roi d'Angleterre, duc de Normandie et d'Aquitaine",
+        "summary": "Il régnait de la frontière écossaise aux Pyrénées. Il réforma la common law, s'opposa mortellement à Thomas Becket et combattit ses propres fils.",
+        "wikipedia": "Henri_II_(roi_d'Angleterre)",
+        "epithet": "Court-manteau",
+        "accession": "Succéda à Étienne selon le traité de Wallingford.",
+        "spouses": [
+          "Aliénor d'Aquitaine"
+        ],
+        "events": [
+          "Assises de Clarendon, 1166",
+          "Meurtre de Becket, 1170",
+          "Invasion de l'Irlande, 1171"
+        ]
+      },
+      "richard-i": {
+        "name": "Richard Cœur de Lion",
+        "title": "Roi d'Angleterre",
+        "summary": "Roi croisé qui ne passa qu'environ six mois de son règne en Angleterre. Capturé au retour, il fut libéré moyennant une rançon énorme.",
+        "wikipedia": "Richard_Cœur_de_Lion",
+        "epithet": "Cœur de Lion",
+        "spouses": [
+          "Bérengère de Navarre"
+        ],
+        "events": [
+          "Troisième croisade",
+          "Captivité en Allemagne, 1192–1194",
+          "Château-Gaillard"
+        ]
+      },
+      "john": {
+        "name": "Jean sans Terre",
+        "title": "Roi d'Angleterre",
+        "summary": "Il perdit la Normandie face à Philippe II de France et fut contraint par ses barons d'accorder la Magna Carta en 1215.",
+        "wikipedia": "Jean_sans_Terre",
+        "epithet": "sans Terre",
+        "accession": "Succéda à son frère Richard Cœur de Lion au détriment de leur neveu Arthur de Bretagne.",
+        "spouses": [
+          "Isabelle de Gloucester",
+          "Isabelle d'Angoulême"
+        ],
+        "events": [
+          "Perte de la Normandie, 1204",
+          "Magna Carta, 1215",
+          "Première guerre des barons"
+        ]
+      },
+      "henry-iii": {
+        "name": "Henri III",
+        "title": "Roi d'Angleterre",
+        "summary": "Il accéda au trône à neuf ans. Il fit reconstruire l'abbaye de Westminster et combattit les barons réformateurs de Simon de Montfort lors de la deuxième guerre des barons.",
+        "wikipedia": "Henri_III_(roi_d'Angleterre)",
+        "spouses": [
+          "Éléonore de Provence"
+        ],
+        "events": [
+          "Provisions d'Oxford, 1258",
+          "Bataille de Lewes, 1264",
+          "Bataille d'Evesham, 1265"
+        ]
+      },
+      "edward-i": {
+        "name": "Édouard Ier",
+        "title": "Roi d'Angleterre",
+        "summary": "Il conquit le pays de Galles, fit la guerre en Écosse et convoqua le Model Parliament de 1295. Législateur prolifique.",
+        "wikipedia": "Édouard_Ier_(roi_d'Angleterre)",
+        "epithet": "Longshanks",
+        "spouses": [
+          "Éléonore de Castille",
+          "Marguerite de France"
+        ],
+        "events": [
+          "Conquête du pays de Galles, 1283",
+          "Model Parliament, 1295",
+          "Guerres d'indépendance écossaises"
+        ]
+      },
+      "edward-ii": {
+        "name": "Édouard II",
+        "title": "Roi d'Angleterre",
+        "summary": "Vaincu à Bannockburn. Ses favoris aliénèrent la noblesse ; sa reine Isabelle et Roger Mortimer le déposèrent en 1327.",
+        "wikipedia": "Édouard_II",
+        "spouses": [
+          "Isabelle de France"
+        ],
+        "events": [
+          "Bataille de Bannockburn, 1314",
+          "Déposition, 1327"
+        ]
+      },
+      "edward-iii": {
+        "name": "Édouard III",
+        "title": "Roi d'Angleterre, prétendant au trône de France",
+        "summary": "Il revendiqua la couronne de France par sa mère, ouvrant la guerre de Cent Ans. Il remporta Crécy et fonda l'ordre de la Jarretière.",
+        "wikipedia": "Édouard_III",
+        "accession": "Proclamé roi à la déposition de son père.",
+        "spouses": [
+          "Philippa de Hainaut"
+        ],
+        "events": [
+          "Bataille de Crécy, 1346",
+          "Peste noire, 1348",
+          "Ordre de la Jarretière"
+        ]
+      },
+      "black-prince": {
+        "name": "Édouard, le Prince Noir",
+        "title": "Prince de Galles",
+        "summary": "Vainqueur de Poitiers, il mourut un an avant son père. La couronne passa à son fils Richard II.",
+        "wikipedia": "Édouard_le_Prince_noir",
+        "short": "Le Prince Noir",
+        "spouses": [
+          "Jeanne de Kent"
+        ],
+        "events": [
+          "Bataille de Poitiers, 1356"
+        ]
+      },
+      "john-of-gaunt": {
+        "name": "Jean de Gand",
+        "title": "Duc de Lancastre",
+        "summary": "Le plus riche magnat d'Angleterre. Père d'Henri IV et, par ses enfants Beaufort, ancêtre des Tudor.",
+        "wikipedia": "Jean_de_Gand",
+        "spouses": [
+          "Blanche de Lancastre",
+          "Constance de Castille",
+          "Katherine Swynford"
+        ]
+      },
+      "edmund-langley": {
+        "name": "Edmond de Langley",
+        "title": "Duc d'York",
+        "summary": "Quatrième fils survivant d'Édouard III et fondateur de la maison d'York.",
+        "wikipedia": "Edmond_de_Langley",
+        "spouses": [
+          "Isabelle de Castille",
+          "Jeanne Holland"
+        ]
+      },
+      "richard-ii": {
+        "name": "Richard II",
+        "title": "Roi d'Angleterre",
+        "summary": "Il domina la révolte des paysans encore enfant. Son règne autocratique ultérieur se termina par une déposition par son cousin Henri Bolingbroke ; il mourut au château de Pontefract.",
+        "wikipedia": "Richard_II_(roi_d'Angleterre)",
+        "accession": "Succéda à son grand-père à l'âge de dix ans.",
+        "spouses": [
+          "Anne de Bohême",
+          "Isabelle de Valois"
+        ],
+        "events": [
+          "Révolte des paysans, 1381",
+          "Déposition, 1399"
+        ]
+      },
+      "henry-iv": {
+        "name": "Henri IV",
+        "title": "Roi d'Angleterre",
+        "summary": "Premier roi lancastrien. Son règne fut consacré à réprimer les révoltes des Percy et d'Owain Glyndŵr au pays de Galles.",
+        "wikipedia": "Henri_IV_(roi_d'Angleterre)",
+        "epithet": "Bolingbroke",
+        "accession": "Déposa son cousin Richard II.",
+        "spouses": [
+          "Marie de Bohun",
+          "Jeanne de Navarre"
+        ],
+        "events": [
+          "Soulèvement de Glyndŵr",
+          "Bataille de Shrewsbury, 1403"
+        ]
+      },
+      "henry-v": {
+        "name": "Henri V",
+        "title": "Roi d'Angleterre, héritier de France",
+        "summary": "Victorieux à Azincourt, il fut reconnu héritier du trône de France par le traité de Troyes. Il mourut de dysenterie deux mois avant Charles VI.",
+        "wikipedia": "Henri_V_(roi_d'Angleterre)",
+        "spouses": [
+          "Catherine de Valois"
+        ],
+        "events": [
+          "Bataille d'Azincourt, 1415",
+          "Traité de Troyes, 1420"
+        ]
+      },
+      "henry-vi": {
+        "name": "Henri VI",
+        "title": "Roi d'Angleterre, couronné roi de France",
+        "summary": "Il perdit la France et connut des crises mentales. Déposé par Édouard IV, brièvement restauré en 1470, il fut tué à la Tour en 1471.",
+        "wikipedia": "Henri_VI_(roi_d'Angleterre)",
+        "accession": "Succéda à l'âge de neuf mois.",
+        "spouses": [
+          "Marguerite d'Anjou"
+        ],
+        "events": [
+          "Fin de la guerre de Cent Ans, 1453",
+          "Guerre des Deux-Roses",
+          "Fondation d'Eton et du King's College"
+        ],
+        "reignText": "1422–1461, 1470–1471"
+      },
+      "john-beaufort-earl": {
+        "name": "Jean Beaufort, comte de Somerset",
+        "title": "Comte de Somerset",
+        "summary": "Fils aîné de Jean de Gand et de Katherine Swynford, légitimé en 1397. Ancêtre des Tudor.",
+        "wikipedia": "Jean_Beaufort_(1er_comte_de_Somerset)",
+        "short": "Jean Beaufort",
+        "spouses": [
+          "Margaret Holland"
+        ]
+      },
+      "john-beaufort-duke": {
+        "name": "Jean Beaufort, duc de Somerset",
+        "title": "Duc de Somerset",
+        "summary": "Commandant en France et père de lady Margaret Beaufort.",
+        "wikipedia": "Jean_Beaufort_(1er_duc_de_Somerset)",
+        "short": "Duc de Somerset",
+        "spouses": [
+          "Margaret Beauchamp de Bletsoe"
+        ]
+      },
+      "richard-conisburgh": {
+        "name": "Richard de Conisburgh",
+        "title": "Comte de Cambridge",
+        "summary": "Exécuté pour la conjuration de Southampton. Son mariage avec Anne Mortimer donna aux Yorkistes leur revendication majeure par Lionel d'Antioche.",
+        "wikipedia": "Richard_de_Conisburgh",
+        "spouses": [
+          "Anne de Mortimer"
+        ]
+      },
+      "richard-york": {
+        "name": "Richard, duc d'York",
+        "title": "Duc d'York, lord protecteur",
+        "summary": "Deux fois protecteur pendant les crises d'Henri VI. Il revendiqua le trône en 1460 et fut tué à Wakefield quelques semaines plus tard.",
+        "wikipedia": "Richard_d'York",
+        "short": "Duc d'York",
+        "spouses": [
+          "Cécile Neville"
+        ],
+        "events": [
+          "Acte d'accord, 1460",
+          "Bataille de Wakefield, 1460"
+        ]
+      },
+      "edward-iv": {
+        "name": "Édouard IV",
+        "title": "Roi d'Angleterre",
+        "summary": "Chassé brièvement par Warwick en 1470, il revint pour gagner Barnet et Tewkesbury et régna ensuite dans une paix relative.",
+        "wikipedia": "Édouard_IV",
+        "accession": "Déposa Henri VI après Mortimer's Cross et Towton.",
+        "spouses": [
+          "Élisabeth Woodville"
+        ],
+        "events": [
+          "Bataille de Towton, 1461",
+          "Batailles de Barnet et Tewkesbury, 1471"
+        ],
+        "reignText": "1461–1470, 1471–1483"
+      },
+      "edward-v": {
+        "name": "Édouard V",
+        "title": "Roi d'Angleterre",
+        "summary": "Roi enfant non couronné, l'un des princes de la Tour. Déclaré illégitime par son oncle et plus revu après 1483.",
+        "wikipedia": "Édouard_V",
+        "events": [
+          "Princes de la Tour"
+        ]
+      },
+      "richard-iii": {
+        "name": "Richard III",
+        "title": "Roi d'Angleterre",
+        "summary": "Dernier roi plantagenêt et dernier roi anglais à mourir au combat, à Bosworth. Ses restes furent retrouvés à Leicester en 2012.",
+        "wikipedia": "Richard_III",
+        "accession": "Prit le trône après que le Parlement eut déclaré ses neveux illégitimes (Titulus Regius).",
+        "spouses": [
+          "Anne Neville"
+        ],
+        "events": [
+          "Titulus Regius, 1484",
+          "Bataille de Bosworth, 1485"
+        ]
+      },
+      "margaret-beaufort": {
+        "name": "Margaret Beaufort",
+        "title": "Comtesse de Richmond et Derby",
+        "summary": "Elle mit Henri Tudor au monde à treize ans et intrigua pour son accession. Son sang lancastrien fondait la revendication des Tudor.",
+        "wikipedia": "Margaret_Beaufort",
+        "short": "Margaret Beaufort",
+        "spouses": [
+          "Edmond Tudor",
+          "Henry Stafford",
+          "Thomas Stanley"
+        ]
+      },
+      "henry-vii": {
+        "name": "Henri VII",
+        "title": "Roi d'Angleterre",
+        "summary": "Il épousa Élisabeth d'York pour unir Lancastre et York. Il écrasa les prétendants Simnel et Warbeck et laissa un trésor plein.",
+        "wikipedia": "Henri_VII_(roi_d'Angleterre)",
+        "accession": "Conquête : tua Richard III à Bosworth.",
+        "spouses": [
+          "Élisabeth d'York"
+        ],
+        "events": [
+          "Bataille de Bosworth, 1485",
+          "Bataille de Stoke, 1487"
+        ]
+      },
+      "henry-viii": {
+        "name": "Henri VIII",
+        "title": "Roi d'Angleterre et d'Irlande",
+        "summary": "Il rompit avec Rome pour annuler son premier mariage, se fit chef suprême de l'Église d'Angleterre et dissout les monastères.",
+        "wikipedia": "Henri_VIII",
+        "spouses": [
+          "Catherine d'Aragon",
+          "Anne Boleyn",
+          "Jane Seymour",
+          "Anne de Clèves",
+          "Catherine Howard",
+          "Catherine Parr"
+        ],
+        "events": [
+          "Acte de suprématie, 1534",
+          "Dissolution des monastères",
+          "Roi d'Irlande, 1542"
+        ]
+      },
+      "margaret-tudor": {
+        "name": "Margaret Tudor",
+        "title": "Reine d'Écosse",
+        "summary": "Fille aînée d'Henri VII. Son mariage avec Jacques IV introduisit les Stuart dans la succession anglaise.",
+        "wikipedia": "Margaret_Tudor",
+        "spouses": [
+          "Jacques IV d'Écosse",
+          "Archibald Douglas, comte d'Angus",
+          "Henry Stewart, lord Methven"
+        ]
+      },
+      "mary-tudor-france": {
+        "name": "Marie Tudor, reine de France",
+        "title": "Reine de France, duchesse de Suffolk",
+        "summary": "Jeune fille d'Henri VII, brièvement reine de France. Grand-mère de lady Jane Grey.",
+        "wikipedia": "Marie_Tudor_(reine_de_France)",
+        "short": "Marie Tudor",
+        "spouses": [
+          "Louis XII de France",
+          "Charles Brandon, duc de Suffolk"
+        ]
+      },
+      "frances-brandon": {
+        "name": "Frances Brandon",
+        "title": "Duchesse de Suffolk",
+        "summary": "Nièce d'Henri VIII et mère de lady Jane Grey.",
+        "wikipedia": "Frances_Brandon",
+        "spouses": [
+          "Henry Grey, duc de Suffolk",
+          "Adrian Stokes"
+        ]
+      },
+      "edward-vi": {
+        "name": "Édouard VI",
+        "title": "Roi d'Angleterre et d'Irlande",
+        "summary": "Roi à neuf ans, il gouverna par les protecteurs Somerset et Northumberland. Protestant convaincu, il tenta de léguer la couronne à lady Jane Grey.",
+        "wikipedia": "Édouard_VI",
+        "events": [
+          "Book of Common Prayer, 1549",
+          "Dispositif pour la succession"
+        ]
+      },
+      "jane-grey": {
+        "name": "Lady Jane Grey",
+        "title": "Reine d'Angleterre et d'Irlande (contestée)",
+        "summary": "Proclamée reine le 10 juillet 1553 et déposée neuf jours plus tard par Marie Ier. Elle fut exécutée en février 1554.",
+        "wikipedia": "Lady_Jane_Grey",
+        "short": "Jane",
+        "accession": "Désignée héritière par le testament d'Édouard VI au lieu de ses demi-sœurs.",
+        "spouses": [
+          "lord Guildford Dudley"
+        ],
+        "events": [
+          "La reine des neuf jours"
+        ]
+      },
+      "mary-i": {
+        "name": "Marie Ière",
+        "title": "Reine d'Angleterre et d'Irlande",
+        "summary": "Elle rétablit le catholicisme et fit brûler environ 280 protestants pour hérésie. Calais, dernière possession française de l'Angleterre, tomba en 1558.",
+        "wikipedia": "Marie_Ière_(reine_d'Angleterre)",
+        "accession": "Renversa lady Jane Grey avec le soutien populaire.",
+        "spouses": [
+          "Philippe II d'Espagne"
+        ],
+        "events": [
+          "Persécutions marianes",
+          "Perte de Calais, 1558"
+        ]
+      },
+      "elizabeth-i": {
+        "name": "Élisabeth Ire",
+        "title": "Reine d'Angleterre et d'Irlande",
+        "summary": "Elle établit l'Église d'Angleterre sur des bases durables et repoussa l'Invincible Armada. Son règne fut un âge d'or du théâtre et de l'exploration ; elle mourut sans se marier.",
+        "wikipedia": "Élisabeth_Ire",
+        "epithet": "la Reine vierge",
+        "events": [
+          "Règlement religieux élisabéthain, 1559",
+          "Invincible Armada, 1588"
+        ]
+      },
+      "james-v": {
+        "name": "Jacques V d'Écosse",
+        "title": "Roi des Écossais",
+        "summary": "Roi d'Écosse depuis 1513. Son seul enfant légitime survivant fut Marie, reine d'Écosse.",
+        "wikipedia": "Jacques_V",
+        "short": "Jacques V",
+        "spouses": [
+          "Madeleine de Valois",
+          "Marie de Guise"
+        ]
+      },
+      "mary-queen-of-scots": {
+        "name": "Marie Stuart",
+        "title": "Reine d'Écosse",
+        "summary": "Reine d'Écosse dès la petite enfance et brièvement reine de France. Contrainte d'abdiquer en 1567, elle s'enfuit en Angleterre et fut exécutée après la conjuration de Babington.",
+        "wikipedia": "Marie_Stuart",
+        "short": "Marie Stuart",
+        "spouses": [
+          "François II de France",
+          "Henry Stuart, lord Darnley",
+          "James Hepburn, comte de Bothwell"
+        ],
+        "events": [
+          "Abdication, 1567",
+          "Exécutée à Fotheringhay, 1587"
+        ]
+      },
+      "james-i": {
+        "name": "Jacques VI et Ier",
+        "title": "Roi d'Angleterre, d'Écosse et d'Irlande",
+        "summary": "Roi d'Écosse depuis 1567, il unifia les deux couronnes en sa personne. Il commandita la Bible du roi Jacques.",
+        "wikipedia": "Jacques_VI_et_Ier",
+        "short": "Jacques Ier",
+        "accession": "Hérita comme plus proche héritier d'Élisabeth Ire, arrière-arrière-petit-fils d'Henri VII.",
+        "spouses": [
+          "Anne de Danemark"
+        ],
+        "events": [
+          "Union des couronnes, 1603",
+          "Complot des poudres, 1605",
+          "Bible du roi Jacques, 1611"
+        ]
+      },
+      "elizabeth-stuart": {
+        "name": "Élisabeth Stuart, reine de Bohême",
+        "title": "Électrice palatine, reine de Bohême",
+        "summary": "Fille de Jacques Ier. L'hiver passé par son époux comme roi de Bohême ouvrit la guerre de Trente Ans. Mère de Sophie de Hanovre.",
+        "wikipedia": "Élisabeth_Stuart",
+        "short": "Élisabeth Stuart",
+        "epithet": "la Reine d'hiver",
+        "spouses": [
+          "Frédéric V, électeur palatin"
+        ]
+      },
+      "charles-i": {
+        "name": "Charles Ier",
+        "title": "Roi d'Angleterre, d'Écosse et d'Irlande",
+        "summary": "Il gouverna onze ans sans Parlement. Son conflit avec celui-ci mena à la guerre civile, à son procès et à son exécution en janvier 1649.",
+        "wikipedia": "Charles_Ier_(roi_d'Angleterre)",
+        "spouses": [
+          "Henriette Marie de France"
+        ],
+        "events": [
+          "Gouvernement personnel, 1629–1640",
+          "Guerre civile anglaise",
+          "Exécuté à Whitehall, 1649"
+        ]
+      },
+      "mary-princess-royal": {
+        "name": "Marie, princesse royale",
+        "title": "Princesse d'Orange",
+        "summary": "Fille aînée de Charles Ier et première à porter le titre de princesse royale. Mère de Guillaume III.",
+        "wikipedia": "Marie_Henriette_Stuart",
+        "short": "Marie, princesse royale",
+        "spouses": [
+          "Guillaume II, prince d'Orange"
+        ]
+      },
+      "cromwell": {
+        "name": "Oliver Cromwell",
+        "title": "Lord protecteur",
+        "summary": "Général parlementaire de la New Model Army qui signa l'arrêt de mort de Charles Ier. Il gouverna la république comme lord protecteur et refusa la couronne en 1657.",
+        "wikipedia": "Oliver_Cromwell",
+        "short": "Oliver Cromwell",
+        "accession": "Installé lord protecteur sous l'Instrument of Government.",
+        "spouses": [
+          "Elizabeth Bourchier"
+        ],
+        "events": [
+          "Bataille de Naseby, 1645",
+          "Conquête de l'Irlande, 1649–1650",
+          "Refus de la couronne, 1657"
+        ]
+      },
+      "richard-cromwell": {
+        "name": "Richard Cromwell",
+        "title": "Lord protecteur",
+        "summary": "Il succéda à son père mais manqua de soutien dans l'armée. Il démissionna en mai 1659, ouvrant la voie à la Restauration.",
+        "wikipedia": "Richard_Cromwell",
+        "spouses": [
+          "Dorothy Maijor"
+        ]
+      },
+      "charles-ii": {
+        "name": "Charles II",
+        "title": "Roi d'Angleterre, d'Écosse et d'Irlande",
+        "summary": "Sa cour de la Restauration fut célèbre pour son esprit et ses maîtresses. Son règne vit la grande peste et le grand incendie de Londres ; il n'eut pas d'enfants légitimes.",
+        "wikipedia": "Charles_II_(roi_d'Angleterre)",
+        "epithet": "le Joyeux",
+        "accession": "Restauré par le Parlement conventionnel en 1660.",
+        "spouses": [
+          "Catherine de Bragance"
+        ],
+        "events": [
+          "Restauration, 1660",
+          "Grande peste, 1665",
+          "Grand incendie de Londres, 1666"
+        ]
+      },
+      "james-ii": {
+        "name": "Jacques II et VII",
+        "title": "Roi d'Angleterre, d'Écosse et d'Irlande",
+        "summary": "Roi catholique dont les politiques et la naissance d'un fils catholique provoquèrent la Glorieuse Révolution. Il s'enfuit en France en 1688.",
+        "wikipedia": "Jacques_II",
+        "short": "Jacques II",
+        "spouses": [
+          "Anne Hyde",
+          "Marie de Modène"
+        ],
+        "events": [
+          "Rébellion de Monmouth, 1685",
+          "Glorieuse Révolution, 1688"
+        ]
+      },
+      "mary-ii": {
+        "name": "Marie II",
+        "title": "Reine d'Angleterre, d'Écosse et d'Irlande",
+        "summary": "Elle régna conjointement avec Guillaume III et gouverna pendant ses absences en campagne. Elle mourut de la variole à 32 ans.",
+        "wikipedia": "Marie_II",
+        "accession": "Reçut la couronne conjointement avec son époux après la fuite de son père.",
+        "spouses": [
+          "Guillaume III d'Orange"
+        ],
+        "events": [
+          "Bill of Rights, 1689"
+        ]
+      },
+      "william-iii": {
+        "name": "Guillaume III",
+        "title": "Roi d'Angleterre, d'Écosse et d'Irlande",
+        "summary": "Stathouder des Pays-Bas et grand adversaire de Louis XIV. Il accepta la Bill of Rights et vainquit Jacques II à la Boyne.",
+        "wikipedia": "Guillaume_III",
+        "epithet": "d'Orange",
+        "accession": "Envahit à l'invitation du Parlement et fut offert la couronne avec Marie.",
+        "spouses": [
+          "Marie II"
+        ],
+        "events": [
+          "Glorieuse Révolution, 1688",
+          "Bataille de la Boyne, 1690",
+          "Banque d'Angleterre, 1694"
+        ]
+      },
+      "anne": {
+        "name": "Anne",
+        "title": "Reine de Grande-Bretagne et d'Irlande",
+        "summary": "Dernière souveraine Stuart. Les actes d'union de 1707 firent d'elle la première souveraine de Grande-Bretagne. Aucune de ses dix-sept grossesses ne laissa un héritier survivant.",
+        "wikipedia": "Anne_(reine_de_Grande-Bretagne)",
+        "spouses": [
+          "le prince George de Danemark"
+        ],
+        "events": [
+          "Bataille de Blenheim, 1704",
+          "Actes d'union, 1707"
+        ]
+      },
+      "sophia": {
+        "name": "Sophie de Hanovre",
+        "title": "Électrice de Hanovre",
+        "summary": "Désignée héritière par l'Acte d'établissement comme descendante protestante la plus proche de Jacques Ier. Elle mourut sept semaines avant la reine Anne.",
+        "wikipedia": "Sophie_de_Hanovre",
+        "short": "Sophie",
+        "spouses": [
+          "Ernest-Auguste, électeur de Hanovre"
+        ],
+        "events": [
+          "Acte d'établissement, 1701"
+        ]
+      },
+      "george-i": {
+        "name": "George Ier",
+        "title": "Roi de Grande-Bretagne et d'Irlande",
+        "summary": "Électeur de Hanovre qui passa une grande partie de son règne sur le continent. Le gouvernement de cabinet se développa sous Robert Walpole.",
+        "wikipedia": "George_Ier_(roi_de_Grande-Bretagne)",
+        "accession": "Succéda sous l'Acte d'établissement, en écartant plus de cinquante parents catholiques.",
+        "spouses": [
+          "Sophie-Dorothée de Celle"
+        ],
+        "events": [
+          "Soulèvement jacobite, 1715",
+          "Bulle South Sea, 1720"
+        ]
+      },
+      "george-ii": {
+        "name": "George II",
+        "title": "Roi de Grande-Bretagne et d'Irlande",
+        "summary": "Dernier roi britannique à commander une armée au combat, à Dettingen en 1743. Son règne vit le dernier soulèvement jacobite et la guerre de Sept Ans.",
+        "wikipedia": "George_II_(roi_de_Grande-Bretagne)",
+        "spouses": [
+          "Caroline d'Ansbach"
+        ],
+        "events": [
+          "Bataille de Dettingen, 1743",
+          "Bataille de Culloden, 1746",
+          "Guerre de Sept Ans"
+        ]
+      },
+      "frederick": {
+        "name": "Frédéric, prince de Galles",
+        "title": "Prince de Galles",
+        "summary": "En mauvais termes avec ses parents, il mourut avant son père. La couronne passa à son fils George III.",
+        "wikipedia": "Frédéric_de_Galles",
+        "short": "Frédéric",
+        "spouses": [
+          "Augusta de Saxe-Gotha"
+        ]
+      },
+      "george-iii": {
+        "name": "George III",
+        "title": "Roi de Grande-Bretagne, puis du Royaume-Uni",
+        "summary": "Il perdit les colonies américaines, puis mena la Grande-Bretagne contre la France révolutionnaire et napoléonienne. Des maladies récurrentes entraînèrent la régence à partir de 1811.",
+        "wikipedia": "George_III",
+        "epithet": "George le fermier",
+        "accession": "Succéda à son grand-père George II.",
+        "spouses": [
+          "Charlotte de Mecklembourg-Strelitz"
+        ],
+        "events": [
+          "Indépendance américaine, 1783",
+          "Union avec l'Irlande, 1801",
+          "Régence, 1811"
+        ]
+      },
+      "george-iv": {
+        "name": "George IV",
+        "title": "Roi du Royaume-Uni",
+        "summary": "Prince régent à partir de 1811. Mécène somptueux de l'architecture, du pavillon de Brighton au palais de Buckingham.",
+        "wikipedia": "George_IV",
+        "spouses": [
+          "Caroline de Brunswick"
+        ],
+        "events": [
+          "Émancipation catholique, 1829"
+        ]
+      },
+      "william-iv": {
+        "name": "Guillaume IV",
+        "title": "Roi du Royaume-Uni",
+        "summary": "Ancien officier de marine. Son règne vit la grande loi de réforme et l'abolition de l'esclavage dans la majeure partie de l'Empire.",
+        "wikipedia": "Guillaume_IV",
+        "epithet": "le Roi marin",
+        "accession": "Succéda à son frère George IV.",
+        "spouses": [
+          "Adélaïde de Saxe-Meiningen"
+        ],
+        "events": [
+          "Reform Act, 1832",
+          "Abolition de l'esclavage, 1833"
+        ]
+      },
+      "edward-kent": {
+        "name": "Édouard-Auguste, duc de Kent",
+        "title": "Duc de Kent et de Strathearn",
+        "summary": "Quatrième fils de George III. Il mourut huit mois après la naissance de sa fille unique, Victoria.",
+        "wikipedia": "Édouard-Auguste_de_Kent",
+        "short": "Duc de Kent",
+        "spouses": [
+          "la princesse Victoria de Saxe-Cobourg-Saalfeld"
+        ]
+      },
+      "victoria": {
+        "name": "Victoria",
+        "title": "Reine du Royaume-Uni, impératrice des Indes",
+        "summary": "Elle régna à l'apogée de l'Empire britannique et de l'ère industrielle. Ses neuf enfants se marièrent dans les cours d'Europe.",
+        "wikipedia": "Victoria_(reine)",
+        "accession": "Succéda à son oncle Guillaume IV à dix-huit ans.",
+        "spouses": [
+          "le prince Albert de Saxe-Cobourg et Gotha"
+        ],
+        "events": [
+          "Grande Exposition, 1851",
+          "Impératrice des Indes, 1876",
+          "Jubilé de diamant, 1897"
+        ]
+      },
+      "edward-vii": {
+        "name": "Édouard VII",
+        "title": "Roi du Royaume-Uni, empereur des Indes",
+        "summary": "Héritier pendant près de soixante ans. Comme roi, il favorisa l'Entente cordiale avec la France.",
+        "wikipedia": "Édouard_VII",
+        "epithet": "le Façonneur de paix",
+        "spouses": [
+          "Alexandra de Danemark"
+        ],
+        "events": [
+          "Entente cordiale, 1904"
+        ]
+      },
+      "george-v": {
+        "name": "George V",
+        "title": "Roi du Royaume-Uni, empereur des Indes",
+        "summary": "Il régna pendant la Première Guerre mondiale et renomma la maison royale Windsor en 1917. Il inaugura le message de Noël royal en 1932.",
+        "wikipedia": "George_V",
+        "spouses": [
+          "Marie de Teck"
+        ],
+        "events": [
+          "Maison renommée Windsor, 1917",
+          "État libre d'Irlande, 1922",
+          "Premier message de Noël royal, 1932"
+        ]
+      },
+      "edward-viii": {
+        "name": "Édouard VIII",
+        "title": "Roi du Royaume-Uni, empereur des Indes",
+        "summary": "Il abdiqua après 326 jours, avant son couronnement, pour épouser Wallis Simpson. Il vécut ensuite comme duc de Windsor.",
+        "wikipedia": "Édouard_VIII",
+        "spouses": [
+          "Wallis Simpson"
+        ],
+        "events": [
+          "Abdication, décembre 1936"
+        ]
+      },
+      "george-vi": {
+        "name": "George VI",
+        "title": "Roi du Royaume-Uni",
+        "summary": "Roi réticent qui resta à Londres pendant le Blitz. Il vit l'indépendance de l'Inde et la fin du titre impérial.",
+        "wikipedia": "George_VI",
+        "accession": "Succéda à l'abdication de son frère.",
+        "spouses": [
+          "Élisabeth Bowes-Lyon"
+        ],
+        "events": [
+          "Seconde Guerre mondiale",
+          "Indépendance de l'Inde, 1947"
+        ]
+      },
+      "elizabeth-ii": {
+        "name": "Élisabeth II",
+        "title": "Reine du Royaume-Uni et des royaumes du Commonwealth",
+        "summary": "La monarque britannique au plus long règne, soixante-dix ans. Elle présida la décolonisation et le Commonwealth moderne.",
+        "wikipedia": "Élisabeth_II",
+        "spouses": [
+          "le prince Philip, duc d'Édimbourg"
+        ],
+        "events": [
+          "Couronnement, 1953",
+          "Jubilés d'argent, d'or, de diamant et de platine"
+        ]
+      },
+      "charles-iii": {
+        "name": "Charles III",
+        "title": "Roi du Royaume-Uni et des royaumes du Commonwealth",
+        "summary": "L'héritier apparent au plus long règne de l'histoire britannique, prince de Galles pendant 64 ans. Il fut couronné à l'abbaye de Westminster en mai 2023.",
+        "wikipedia": "Charles_III",
+        "spouses": [
+          "lady Diana Spencer",
+          "Camilla Parker Bowles"
+        ],
+        "events": [
+          "Accession, 8 septembre 2022",
+          "Couronnement, 6 mai 2023"
+        ]
+      }
+    }
+  },
+  "france": {
+    "label": "France",
+    "title": "Les rois et empereurs de France",
+    "subtitle": "De Pépin le Bref à Napoléon III, 751–1870",
+    "houses": {
+      "carolingian": {
+        "label": "Dynastie carolingienne",
+        "note": "Dynastie franque de Pépin le Bref et de Charlemagne ; rois de Francie occidentale jusqu'en 987."
+      },
+      "robertian": {
+        "label": "Robertiens",
+        "note": "Comtes de Paris issus de Robert le Fort ; ancêtres des Capétiens."
+      },
+      "bosonid": {
+        "label": "Bosonides",
+        "note": "Famille bourguignonne du roi Raoul, gendre de Robert Ier."
+      },
+      "capetian": {
+        "label": "Maison capétienne",
+        "note": "Capétiens directs, d'Hugues Capet à Charles IV (987–1328)."
+      },
+      "valois": {
+        "label": "Maison de Valois",
+        "note": "Branche cadette capétienne issue de Charles de Valois, fils de Philippe III (1328–1589)."
+      },
+      "bourbon": {
+        "label": "Maison de Bourbon",
+        "note": "Branche cadette capétienne issue de Robert de Clermont, fils de saint Louis."
+      },
+      "orleans": {
+        "label": "Maison d'Orléans",
+        "note": "Branche cadette des Bourbons fondée par Philippe, frère cadet de Louis XIV."
+      },
+      "bonaparte": {
+        "label": "Maison Bonaparte",
+        "note": "Famille corse des deux empereurs, Napoléon Ier et Napoléon III."
+      }
+    },
+    "gaps": {
+      "1792-1804": "Première République",
+      "1848-1852": "Deuxième République"
+    },
+    "people": {
+      "pepin": {
+        "name": "Pépin le Bref",
+        "title": "Roi des Francs",
+        "summary": "Maître du palais qui se fit roi et fut consacré par le pape Étienne II. Sa donation de territoires en Italie fonda les États pontificaux.",
+        "wikipedia": "Pépin_le_Bref",
+        "short": "Pépin",
+        "epithet": "le Bref",
+        "accession": "Déposa le dernier mérovingien, Childéric III, avec l'approbation du pape.",
+        "spouses": [
+          "Bertrade de Laon"
+        ],
+        "events": [
+          "Consécration à Saint-Denis, 754",
+          "Donation de Pépin, 756"
+        ]
+      },
+      "charlemagne": {
+        "name": "Charlemagne",
+        "title": "Roi des Francs, empereur",
+        "summary": "Il conquit les Lombards et les Saxons et fut couronné empereur à Rome le jour de Noël 800. Sa cour mena une renaissance de l'apprentissage.",
+        "wikipedia": "Charlemagne",
+        "epithet": "Charles le Grand",
+        "accession": "Partagea le royaume avec son frère Carloman jusqu'à la mort de ce dernier en 771.",
+        "spouses": [
+          "Désirée",
+          "Hildegarde",
+          "Fastrade",
+          "Luitgarde"
+        ],
+        "events": [
+          "Conquête des Lombards, 774",
+          "Couronnement impérial, 800",
+          "Renaissance carolingienne"
+        ]
+      },
+      "louis-pious": {
+        "name": "Louis le Pieux",
+        "title": "Roi des Francs, empereur",
+        "summary": "Seul fils légitime survivant de Charlemagne. Les guerres entre ses fils pour l'héritage déchirèrent l'empire.",
+        "wikipedia": "Louis_le_Pieux",
+        "epithet": "le Pieux",
+        "spouses": [
+          "Ermengarde de Hesbaye",
+          "Judith de Bavière"
+        ],
+        "events": [
+          "Ordinatio imperii, 817",
+          "Déposé et restauré, 833–834"
+        ]
+      },
+      "louis-german": {
+        "name": "Louis le Germanique",
+        "title": "Roi de Francie orientale",
+        "summary": "Reçut le royaume oriental à Verdun, noyau de l'Allemagne. Père de Charles le Gros.",
+        "wikipedia": "Louis_le_Germanique",
+        "spouses": [
+          "Hemma"
+        ]
+      },
+      "charles-bald": {
+        "name": "Charles le Chauve",
+        "title": "Roi de Francie occidentale, empereur",
+        "summary": "Premier roi de Francie occidentale, royaume qui devint la France. Couronné empereur en 875.",
+        "wikipedia": "Charles_II_le_Chauve",
+        "epithet": "le Chauve",
+        "accession": "Reçut la Francie occidentale par le traité de Verdun.",
+        "spouses": [
+          "Ermentrude d'Orléans",
+          "Richilde de Provence"
+        ],
+        "events": [
+          "Traité de Verdun, 843",
+          "Couronnement impérial, 875"
+        ]
+      },
+      "louis-stammerer": {
+        "name": "Louis le Bègue",
+        "title": "Roi de Francie occidentale",
+        "summary": "Roi maladif qui ne régna que dix-huit mois et concéda beaucoup de pouvoir à la noblesse.",
+        "wikipedia": "Louis_II_de_France",
+        "short": "Louis II",
+        "epithet": "le Bègue",
+        "spouses": [
+          "Ansgarde de Bourgogne",
+          "Adélaïde de Paris"
+        ]
+      },
+      "louis-iii": {
+        "name": "Louis III",
+        "title": "Roi de Francie occidentale",
+        "summary": "Il régna conjointement avec son frère Carloman. Il vainquit les Vikings à Saucourt et mourut après s'être cogné la tête contre un linteau.",
+        "wikipedia": "Louis_III_de_France",
+        "events": [
+          "Bataille de Saucourt, 881"
+        ]
+      },
+      "carloman-ii": {
+        "name": "Carloman II",
+        "title": "Roi de Francie occidentale",
+        "summary": "Co-roi avec Louis III, puis seul roi. Il mourut d'une blessure de chasse.",
+        "wikipedia": "Carloman_II"
+      },
+      "charles-fat": {
+        "name": "Charles le Gros",
+        "title": "Empereur, roi de Francie occidentale",
+        "summary": "Il réunissa brièvement l'empire de Charlemagne. Il racheta les Vikings assiégeant Paris et fut déposé en 887.",
+        "wikipedia": "Charles_le_Gros",
+        "epithet": "le Gros",
+        "accession": "Appelé par les nobles de Francie occidentale, en écartant l'enfant Charles le Simple.",
+        "spouses": [
+          "Richardis de Souabe"
+        ],
+        "events": [
+          "Siège de Paris, 885–886"
+        ]
+      },
+      "robert-strong": {
+        "name": "Robert le Fort",
+        "title": "Margrave de Neustrie",
+        "summary": "Magnat franc tué en combattant les Vikings à Brissarthe. Fondateur de la lignée robertienne et ancêtre des Capétiens.",
+        "wikipedia": "Robert_le_Fort"
+      },
+      "odo": {
+        "name": "Eudes",
+        "title": "Roi de Francie occidentale",
+        "summary": "Comte de Paris et héros de sa défense contre les Vikings. Premier roi non carolingien des Francs occidentaux.",
+        "wikipedia": "Eudes_de_France",
+        "accession": "Élu roi par les nobles après la déposition de Charles le Gros.",
+        "spouses": [
+          "Théodrate de Troyes"
+        ],
+        "events": [
+          "Défense de Paris, 885–886"
+        ]
+      },
+      "charles-simple": {
+        "name": "Charles le Simple",
+        "title": "Roi de Francie occidentale",
+        "summary": "Il concéda la Normandie au chef viking Rollon en 911. Déposé par ses nobles, il mourut prisonnier. Sa reine anglaise était fille d'Édouard l'Ancien.",
+        "wikipedia": "Charles_III_le_Simple",
+        "short": "Charles III",
+        "epithet": "le Simple",
+        "accession": "Restauré à la mort d'Eudes, comme Eudes l'avait convenu.",
+        "spouses": [
+          "Frédérune",
+          "Eadgifu de Wessex"
+        ],
+        "events": [
+          "Traité de Saint-Clair-sur-Epte, 911"
+        ]
+      },
+      "robert-i": {
+        "name": "Robert Ier",
+        "title": "Roi de Francie occidentale",
+        "summary": "Frère d'Eudes. Il fut tué à la bataille de Soissons, que son camp remporta.",
+        "wikipedia": "Robert_Ier_de_France",
+        "accession": "Élu par les nobles rebelles contre Charles le Simple.",
+        "spouses": [
+          "Béatrice de Vermandois"
+        ],
+        "events": [
+          "Bataille de Soissons, 923"
+        ]
+      },
+      "rudolph": {
+        "name": "Raoul",
+        "title": "Roi de Francie occidentale",
+        "summary": "Duc de Bourgogne qui passa son règne à combattre Vikings et grands rivaux.",
+        "wikipedia": "Raoul_de_France",
+        "accession": "Élu à la mort de son beau-père Robert Ier.",
+        "spouses": [
+          "Emma de France"
+        ]
+      },
+      "hugh-great": {
+        "name": "Hugues le Grand",
+        "title": "Duc des Francs",
+        "summary": "L'homme le plus puissant du royaume, qui fit et défît des rois sans prendre la couronne. Père d'Hugues Capet.",
+        "wikipedia": "Hugues_le_Grand",
+        "spouses": [
+          "Eadhild de Wessex",
+          "Hedwige de Saxe"
+        ]
+      },
+      "louis-iv": {
+        "name": "Louis IV",
+        "title": "Roi de Francie occidentale",
+        "summary": "Élevé en Angleterre, d'où son surnom. Il luttait tout son règne contre Hugues le Grand.",
+        "wikipedia": "Louis_IV_d'Outremer",
+        "epithet": "d'Outremer",
+        "accession": "Rappelé de l'exil à la cour de son oncle Æthelstan d'Angleterre.",
+        "spouses": [
+          "Gerberge de Saxe"
+        ]
+      },
+      "lothair": {
+        "name": "Lothaire",
+        "title": "Roi de Francie occidentale",
+        "summary": "Il combattit l'empereur Otton II pour la Lotharingie et faillit le capturer à Aix-la-Chapelle en 978.",
+        "wikipedia": "Lothaire_de_France",
+        "spouses": [
+          "Emma d'Italie"
+        ]
+      },
+      "louis-v": {
+        "name": "Louis V",
+        "title": "Roi de Francie occidentale",
+        "summary": "Dernier roi carolingien. Il mourut dans un accident de chasse après un an de règne, sans enfant.",
+        "wikipedia": "Louis_V_le_Fainéant",
+        "epithet": "le Fainéant",
+        "spouses": [
+          "Adélaïde-Blanche d'Anjou"
+        ]
+      },
+      "hugh-capet": {
+        "name": "Hugues Capet",
+        "title": "Roi des Francs",
+        "summary": "Fondateur de la dynastie capétienne, dont la lignée mâle et ses branches détint le trône de France pendant huit siècles. Il fit couronner son fils de son vivant.",
+        "wikipedia": "Hugues_Capet",
+        "accession": "Élu par les nobles à Senlis, en écartant le carolingien Charles de Lorraine.",
+        "spouses": [
+          "Adélaïde d'Aquitaine"
+        ],
+        "events": [
+          "Élection à Senlis, 987",
+          "Couronnement de Robert II, 987"
+        ]
+      },
+      "robert-ii": {
+        "name": "Robert II",
+        "title": "Roi des Francs",
+        "summary": "Roi savant et dévot, excommunié pour avoir épousé sa cousine Berthe. Il acquit le duché de Bourgogne.",
+        "wikipedia": "Robert_II_de_France",
+        "epithet": "le Pieux",
+        "spouses": [
+          "Rozala d'Italie",
+          "Berthe de Bourgogne",
+          "Constance d'Arles"
+        ]
+      },
+      "henry-i": {
+        "name": "Henri Ier",
+        "title": "Roi des Francs",
+        "summary": "Il combattit ses frères et Guillaume de Normandie. Sa reine russe, Anne de Kiev, donna à la dynastie le prénom Philippe.",
+        "wikipedia": "Henri_Ier_(roi_de_France)",
+        "spouses": [
+          "Mathilde de Frise",
+          "Anne de Kiev"
+        ]
+      },
+      "philip-i": {
+        "name": "Philippe Ier",
+        "title": "Roi des Francs",
+        "summary": "Excommunié pour avoir enlevé Bertrade de Montfort. Il ne prit pas part à la première croisade, partie pendant son règne.",
+        "wikipedia": "Philippe_Ier_(roi_de_France)",
+        "epithet": "l'Amoureux",
+        "spouses": [
+          "Berthe de Hollande",
+          "Bertrade de Montfort"
+        ],
+        "events": [
+          "Première croisade, 1096"
+        ]
+      },
+      "louis-vi": {
+        "name": "Louis VI",
+        "title": "Roi des Francs",
+        "summary": "Il dompta les barons pillards d'Île-de-France et gouverna avec le conseil de l'abbé Suger de Saint-Denis.",
+        "wikipedia": "Louis_VI_le_Gros",
+        "epithet": "le Gros",
+        "spouses": [
+          "Lucienne de Rochefort",
+          "Adélaïde de Maurienne"
+        ],
+        "events": [
+          "Abbé Suger",
+          "Première levée de l'oriflamme, 1124"
+        ]
+      },
+      "louis-vii": {
+        "name": "Louis VII",
+        "title": "Roi des Francs",
+        "summary": "Il mena la deuxième croisade. Son mariage avec Aliénor d'Aquitaine fut annulé, et elle épousa aussitôt le futur Henri II d'Angleterre.",
+        "wikipedia": "Louis_VII_le_Jeune",
+        "epithet": "le Jeune",
+        "spouses": [
+          "Aliénor d'Aquitaine",
+          "Constance de Castille",
+          "Adèle de Champagne"
+        ],
+        "events": [
+          "Deuxième croisade, 1147–1149",
+          "Annulation, 1152"
+        ]
+      },
+      "philip-ii": {
+        "name": "Philippe II Auguste",
+        "title": "Roi de France",
+        "summary": "Premier à se titrer roi de France. Il prit la Normandie et l'Anjou à Jean sans Terre et remporta la bataille décisive de Bouvines.",
+        "wikipedia": "Philippe_II_Auguste",
+        "short": "Philippe II Auguste",
+        "epithet": "Auguste",
+        "spouses": [
+          "Isabelle de Hainaut",
+          "Ingeborg de Danemark",
+          "Agnès de Méranie"
+        ],
+        "events": [
+          "Troisième croisade",
+          "Conquête de la Normandie, 1204",
+          "Bataille de Bouvines, 1214"
+        ]
+      },
+      "louis-viii": {
+        "name": "Louis VIII",
+        "title": "Roi de France",
+        "summary": "Appelé par les barons anglais, il fut proclamé roi à Londres en 1216. Comme roi de France, il rejoignit la croisade albigeoise.",
+        "wikipedia": "Louis_VIII_de_France",
+        "epithet": "le Lion",
+        "spouses": [
+          "Blanche de Castille"
+        ],
+        "events": [
+          "Invasion de l'Angleterre, 1216",
+          "Croisade albigeoise"
+        ]
+      },
+      "louis-ix": {
+        "name": "Louis IX",
+        "title": "Roi de France",
+        "summary": "Vénéré pour sa justice et sa piété. Il fit édifier la Sainte-Chapelle, mena deux croisades et mourut devant Tunis. Canonisé en 1297.",
+        "wikipedia": "Louis_IX",
+        "epithet": "Saint Louis",
+        "spouses": [
+          "Marguerite de Provence"
+        ],
+        "events": [
+          "Sainte-Chapelle, 1248",
+          "Septième croisade",
+          "Canonisation en 1297"
+        ]
+      },
+      "philip-iii": {
+        "name": "Philippe III",
+        "title": "Roi de France",
+        "summary": "Il succéda à Tunis à la mort de son père. Il mourut au retour d'une croisade manquée contre l'Aragon.",
+        "wikipedia": "Philippe_III_le_Hardi",
+        "epithet": "le Hardi",
+        "spouses": [
+          "Isabelle d'Aragon",
+          "Marie de Brabant"
+        ],
+        "events": [
+          "Croisade d'Aragon, 1285"
+        ]
+      },
+      "robert-clermont": {
+        "name": "Robert, comte de Clermont",
+        "title": "Comte de Clermont",
+        "summary": "Fils cadet de saint Louis. Son mariage avec l'héritière de Bourbon fonda la maison de Bourbon.",
+        "wikipedia": "Robert_de_Clermont",
+        "short": "Robert de Clermont",
+        "spouses": [
+          "Béatrice de Bourgogne, dame de Bourbon"
+        ]
+      },
+      "philip-iv": {
+        "name": "Philippe IV",
+        "title": "Roi de France et de Navarre",
+        "summary": "Il humilia le pape Boniface VIII, soumit la papauté à l'influence française et détruisit l'ordre du Temple. Ses trois fils devinrent rois.",
+        "wikipedia": "Philippe_IV_le_Bel",
+        "epithet": "le Bel",
+        "spouses": [
+          "Jeanne Ière de Navarre"
+        ],
+        "events": [
+          "Premiers États généraux, 1302",
+          "Suppression des Templiers, 1307–1314"
+        ]
+      },
+      "charles-valois": {
+        "name": "Charles, comte de Valois",
+        "title": "Comte de Valois",
+        "summary": "Fils, frère, oncle et père de rois, mais jamais roi lui-même. Fondateur de la maison de Valois.",
+        "wikipedia": "Charles_de_Valois",
+        "short": "Charles de Valois",
+        "spouses": [
+          "Marguerite d'Anjou",
+          "Catherine de Courtenay",
+          "Mahaut de Châtillon"
+        ]
+      },
+      "louis-bourbon": {
+        "name": "Louis Ier, duc de Bourbon",
+        "title": "Duc de Bourbon",
+        "summary": "Premier duc de Bourbon. Henri IV descendit de lui par les comtes de La Marche et de Vendôme.",
+        "wikipedia": "Louis_Ier_de_Bourbon",
+        "short": "Louis de Bourbon",
+        "spouses": [
+          "Marie d'Avesnes"
+        ]
+      },
+      "louis-x": {
+        "name": "Louis X",
+        "title": "Roi de France et de Navarre",
+        "summary": "Il ne régna que dix-huit mois et affranchit les serfs du domaine royal. Il mourut en laissant sa reine enceinte.",
+        "wikipedia": "Louis_X_le_Hutin",
+        "epithet": "le Hutin",
+        "spouses": [
+          "Marguerite de Bourgogne",
+          "Clémence de Hongrie"
+        ]
+      },
+      "john-i": {
+        "name": "Jean Ier",
+        "title": "Roi de France et de Navarre",
+        "summary": "Né roi et ne vécut que cinq jours, le plus court règne de l'histoire de France.",
+        "wikipedia": "Jean_Ier_le_Posthume",
+        "epithet": "le Posthume",
+        "accession": "Roi dès sa naissance, cinq mois après la mort de son père."
+      },
+      "philip-v": {
+        "name": "Philippe V",
+        "title": "Roi de France et de Navarre",
+        "summary": "Régent pour son neveu nourrisson, puis roi. Il ne laissa que des filles, exclues à leur tour.",
+        "wikipedia": "Philippe_V_le_Long",
+        "epithet": "le Long",
+        "accession": "Prit le trône au détriment de sa nièce Jeanne, établissant que les femmes ne pouvaient hériter.",
+        "spouses": [
+          "Jeanne II, comtesse de Bourgogne"
+        ]
+      },
+      "charles-iv": {
+        "name": "Charles IV",
+        "title": "Roi de France et de Navarre",
+        "summary": "Dernier des Capétiens directs. Sa mort sans fils mena à la succession des Valois et à la revendication de son neveu Édouard III d'Angleterre.",
+        "wikipedia": "Charles_IV_de_France",
+        "epithet": "le Bel",
+        "spouses": [
+          "Blanche de Bourgogne",
+          "Marie de Luxembourg",
+          "Jeanne d'Évreux"
+        ]
+      },
+      "philip-vi": {
+        "name": "Philippe VI",
+        "title": "Roi de France",
+        "summary": "Premier roi valois. Son règne vit l'ouverture de la guerre de Cent Ans, le désastre de Crécy et la peste noire.",
+        "wikipedia": "Philippe_VI_de_France",
+        "epithet": "le Fortuné",
+        "accession": "Choisi par les nobles français comme héritier mâle le plus proche, devant Édouard III d'Angleterre.",
+        "spouses": [
+          "Jeanne la Boiteuse de Bourgogne",
+          "Blanche de Navarre"
+        ],
+        "events": [
+          "Bataille de l'Écluse, 1340",
+          "Bataille de Crécy, 1346",
+          "Peste noire, 1348"
+        ]
+      },
+      "john-ii": {
+        "name": "Jean II",
+        "title": "Roi de France",
+        "summary": "Capturé par le Prince Noir à Poitiers. Il retourna en captivité à Londres lorsque sa rançon ne fut pas payée, et mourut là.",
+        "wikipedia": "Jean_II_le_Bon",
+        "epithet": "le Bon",
+        "spouses": [
+          "Bonne de Luxembourg",
+          "Jeanne Ière d'Auvergne"
+        ],
+        "events": [
+          "Bataille de Poitiers, 1356",
+          "Traité de Brétigny, 1360"
+        ]
+      },
+      "charles-v": {
+        "name": "Charles V",
+        "title": "Roi de France",
+        "summary": "Il évita les batailles rangées et, avec Bertrand du Guesclin, reprit la plupart des terres perdues face à l'Angleterre. Il fonda la bibliothèque royale.",
+        "wikipedia": "Charles_V_le_Sage",
+        "epithet": "le Sage",
+        "spouses": [
+          "Jeanne de Bourbon"
+        ],
+        "events": [
+          "Reconquête sous du Guesclin",
+          "Bibliothèque royale au Louvre"
+        ]
+      },
+      "charles-vi": {
+        "name": "Charles VI",
+        "title": "Roi de France",
+        "summary": "Il connut des crises de folie à partir de 1392. La guerre civile entre Armagnacs et Bourguignons permit à Henri V de gagner le traité de Troyes.",
+        "wikipedia": "Charles_VI_de_France",
+        "epithet": "le Fol",
+        "spouses": [
+          "Isabeau de Bavière"
+        ],
+        "events": [
+          "Bataille d'Azincourt, 1415",
+          "Traité de Troyes, 1420"
+        ]
+      },
+      "louis-orleans": {
+        "name": "Louis Ier, duc d'Orléans",
+        "title": "Duc d'Orléans",
+        "summary": "Frère de Charles VI. Son assassinat par les agents de Jean sans Peur, duc de Bourgogne, déclencha la guerre civile armagnaco-bourguignonne.",
+        "wikipedia": "Louis_Ier_d'Orléans",
+        "short": "Louis d'Orléans",
+        "spouses": [
+          "Valentina Visconti"
+        ]
+      },
+      "charles-vii": {
+        "name": "Charles VII",
+        "title": "Roi de France",
+        "summary": "Il reconquit son royaume et chassa les Anglais de toute la France sauf Calais, mettant fin à la guerre de Cent Ans.",
+        "wikipedia": "Charles_VII",
+        "epithet": "le Victorieux",
+        "accession": "Déshérité par le traité de Troyes ; couronné à Reims en 1429 avec Jeanne d'Arc à ses côtés.",
+        "spouses": [
+          "Marie d'Anjou"
+        ],
+        "events": [
+          "Siège d'Orléans, 1429",
+          "Couronnement à Reims, 1429",
+          "Bataille de Castillon, 1453"
+        ]
+      },
+      "charles-orleans": {
+        "name": "Charles, duc d'Orléans",
+        "title": "Duc d'Orléans",
+        "summary": "Capturé à Azincourt et détenu en Angleterre vingt-cinq ans, où il écrivit une grande partie de sa poésie. Père de Louis XII.",
+        "wikipedia": "Charles_d'Orléans",
+        "short": "Charles d'Orléans",
+        "spouses": [
+          "Isabelle de Valois",
+          "Bonne d'Armagnac",
+          "Marie de Clèves"
+        ]
+      },
+      "john-angouleme": {
+        "name": "Jean, comte d'Angoulême",
+        "title": "Comte d'Angoulême",
+        "summary": "Fils cadet de Louis d'Orléans, otage en Angleterre pendant trente-deux ans. Grand-père de François Ier.",
+        "wikipedia": "Jean_d'Angoulême",
+        "short": "Jean d'Angoulême",
+        "spouses": [
+          "Marguerite de Rohan"
+        ]
+      },
+      "louis-xi": {
+        "name": "Louis XI",
+        "title": "Roi de France",
+        "summary": "L'« universelle araignée », qui déjoua Charles le Téméraire de Bourgogne et rattacha la Bourgogne, l'Anjou et la Provence à la couronne.",
+        "wikipedia": "Louis_XI",
+        "epithet": "le Prudent",
+        "spouses": [
+          "Marguerite d'Écosse",
+          "Charlotte de Savoie"
+        ],
+        "events": [
+          "Ligue du bien public, 1465",
+          "Mort de Charles le Téméraire, 1477"
+        ]
+      },
+      "charles-angouleme": {
+        "name": "Charles, comte d'Angoulême",
+        "title": "Comte d'Angoulême",
+        "summary": "Père de François Ier et de Marguerite de Navarre.",
+        "wikipedia": "Charles_d'Angoulême",
+        "short": "Charles d'Angoulême",
+        "spouses": [
+          "Louise de Savoie"
+        ]
+      },
+      "charles-viii": {
+        "name": "Charles VIII",
+        "title": "Roi de France",
+        "summary": "Il envahit l'Italie en 1494 pour revendiquer Naples, ouvrant les guerres d'Italie. Il mourut après s'être cogné la tête contre un chambranle à Amboise.",
+        "wikipedia": "Charles_VIII",
+        "epithet": "l'Affable",
+        "spouses": [
+          "Anne de Bretagne"
+        ],
+        "events": [
+          "Début des guerres d'Italie, 1494"
+        ]
+      },
+      "louis-xii": {
+        "name": "Louis XII",
+        "title": "Roi de France",
+        "summary": "Il conquit Milan et combattit pour Naples. Populaire pour ses faibles impôts ; sa troisième épouse était la sœur d'Henri VIII.",
+        "wikipedia": "Louis_XII",
+        "epithet": "Père du peuple",
+        "accession": "Succéda à son cousin sans enfant Charles VIII comme héritier mâle aîné.",
+        "spouses": [
+          "Jeanne de France",
+          "Anne de Bretagne",
+          "Marie Tudor"
+        ],
+        "events": [
+          "Conquête de Milan, 1499"
+        ]
+      },
+      "francis-i": {
+        "name": "François Ier",
+        "title": "Roi de France",
+        "summary": "Roi de la Renaissance, vainqueur à Marignan, vaincu et capturé à Pavie, rival de Charles Quint et hôte de Léonard de Vinci en France.",
+        "wikipedia": "François_Ier",
+        "epithet": "Père et restaurateur des lettres",
+        "accession": "Succéda à son cousin et beau-père Louis XII.",
+        "spouses": [
+          "Claude de France",
+          "Éléonore d'Autriche"
+        ],
+        "events": [
+          "Bataille de Marignan, 1515",
+          "Camp du Drap d'or, 1520",
+          "Ordonnance de Villers-Cotterêts, 1539"
+        ]
+      },
+      "henry-ii": {
+        "name": "Henri II",
+        "title": "Roi de France",
+        "summary": "Il reprit Calais à l'Angleterre en 1558. Il fut tué par un éclat de lance lors d'un tournoi célébrant la paix de Cateau-Cambrésis.",
+        "wikipedia": "Henri_II_(roi_de_France)",
+        "spouses": [
+          "Catherine de Médicis"
+        ],
+        "events": [
+          "Prise de Calais, 1558",
+          "Paix de Cateau-Cambrésis, 1559"
+        ]
+      },
+      "francis-ii": {
+        "name": "François II",
+        "title": "Roi de France, roi consort d'Écosse",
+        "summary": "Époux de Marie Stuart. La famille de Guise gouverna en son nom ; il mourut au bout de dix-sept mois.",
+        "wikipedia": "François_II_(roi_de_France)",
+        "spouses": [
+          "Marie Stuart"
+        ],
+        "events": [
+          "Conjuration d'Amboise, 1560"
+        ]
+      },
+      "charles-ix": {
+        "name": "Charles IX",
+        "title": "Roi de France",
+        "summary": "Il accéda au trône à dix ans sous sa mère Catherine de Médicis. Les guerres de Religion atteignirent leur paroxysme au massacre de la Saint-Barthélemy.",
+        "wikipedia": "Charles_IX_(roi_de_France)",
+        "spouses": [
+          "Élisabeth d'Autriche"
+        ],
+        "events": [
+          "Massacre de la Saint-Barthélemy, 1572"
+        ]
+      },
+      "henry-iii": {
+        "name": "Henri III",
+        "title": "Roi de France, ancien roi de Pologne",
+        "summary": "Brièvement élu roi de Pologne. Il fit assassiner le duc de Guise et fut lui-même assassiné par un moine, dernier des Valois.",
+        "wikipedia": "Henri_III_(roi_de_France)",
+        "spouses": [
+          "Louise de Lorraine"
+        ],
+        "events": [
+          "Journée des barricades, 1588",
+          "Assassinat, 1589"
+        ]
+      },
+      "antoine": {
+        "name": "Antoine de Bourbon",
+        "title": "Roi de Navarre",
+        "summary": "Duc de Vendôme et roi de Navarre par mariage. Il descendait de Louis Ier de Bourbon sur six générations omises ici.",
+        "wikipedia": "Antoine_de_Bourbon",
+        "spouses": [
+          "Jeanne d'Albret, reine de Navarre"
+        ]
+      },
+      "henry-iv": {
+        "name": "Henri IV",
+        "title": "Roi de France et de Navarre",
+        "summary": "Chef protestant qui se convertit au catholicisme pour prendre Paris. L'édit de Nantes mit fin aux guerres de Religion ; il fut assassiné par Ravaillac.",
+        "wikipedia": "Henri_IV_(roi_de_France)",
+        "epithet": "le Grand",
+        "accession": "Succéda comme descendant mâle le plus proche de saint Louis, cousin très éloigné d'Henri III.",
+        "spouses": [
+          "Marguerite de Valois",
+          "Marie de Médicis"
+        ],
+        "events": [
+          "Conversion, 1593",
+          "Édit de Nantes, 1598",
+          "Assassinat, 1610"
+        ]
+      },
+      "louis-xiii": {
+        "name": "Louis XIII",
+        "title": "Roi de France et de Navarre",
+        "summary": "Il gouverna avec le cardinal de Richelieu, brisant la puissance militaire huguenote et engageant la France dans la guerre de Trente Ans.",
+        "wikipedia": "Louis_XIII",
+        "epithet": "le Juste",
+        "spouses": [
+          "Anne d'Autriche"
+        ],
+        "events": [
+          "Siège de La Rochelle, 1627–1628",
+          "Académie française, 1635"
+        ]
+      },
+      "louis-xiv": {
+        "name": "Louis XIV",
+        "title": "Roi de France et de Navarre",
+        "summary": "Il régna soixante-douze ans, le plus long règne d'un souverain européen. Il fit édifier Versailles, centralisa le pouvoir et révoqua l'édit de Nantes.",
+        "wikipedia": "Louis_XIV",
+        "epithet": "le Roi-Soleil",
+        "spouses": [
+          "Marie-Thérèse d'Espagne",
+          "Françoise d'Aubigné, marquise de Maintenon (secrètement)"
+        ],
+        "events": [
+          "La Fronde, 1648–1653",
+          "Cour installée à Versailles, 1682",
+          "Révocation de l'édit de Nantes, 1685"
+        ]
+      },
+      "philippe-orleans": {
+        "name": "Philippe Ier, duc d'Orléans",
+        "title": "Duc d'Orléans",
+        "summary": "Frère cadet de Louis XIV et fondateur de la maison d'Orléans. Sa première épouse était fille de Charles Ier d'Angleterre.",
+        "wikipedia": "Philippe_Ier_d'Orléans",
+        "short": "Philippe d'Orléans",
+        "spouses": [
+          "Henriette d'Angleterre",
+          "Élisabeth-Charlotte du Palatinat"
+        ]
+      },
+      "grand-dauphin": {
+        "name": "Louis, grand dauphin",
+        "title": "Dauphin de France",
+        "summary": "Seul fils légitime survivant de Louis XIV. Il mourut de la variole quatre ans avant son père.",
+        "wikipedia": "Louis_de_France_(1661-1711)",
+        "short": "Grand dauphin",
+        "spouses": [
+          "Marie-Anne-Victoire de Bavière"
+        ]
+      },
+      "philippe-regent": {
+        "name": "Philippe II, duc d'Orléans",
+        "title": "Régent de France",
+        "summary": "Il gouverna la France comme régent pendant la minorité de Louis XV, période connue sous le nom de Régence.",
+        "wikipedia": "Philippe_II_d'Orléans",
+        "short": "Le Régent",
+        "spouses": [
+          "Françoise-Marie de Bourbon"
+        ],
+        "events": [
+          "Régence, 1715–1723",
+          "Bulle de la Compagnie du Mississippi, 1720"
+        ]
+      },
+      "duke-burgundy": {
+        "name": "Louis, duc de Bourgogne",
+        "title": "Dauphin de France",
+        "summary": "Héritier moins d'un an ; il mourut de la rougeole une semaine après son épouse. Père de Louis XV.",
+        "wikipedia": "Louis_de_France_(1682-1712)",
+        "short": "Duc de Bourgogne",
+        "spouses": [
+          "Marie-Adélaïde de Savoie"
+        ]
+      },
+      "louis-xv": {
+        "name": "Louis XV",
+        "title": "Roi de France et de Navarre",
+        "summary": "Populaire dans sa jeunesse, il perdit la Nouvelle-France et l'Inde face à la Grande-Bretagne pendant la guerre de Sept Ans et mourut très impopulaire.",
+        "wikipedia": "Louis_XV",
+        "epithet": "le Bien-Aimé",
+        "accession": "Succéda à son arrière-grand-père Louis XIV à l'âge de cinq ans.",
+        "spouses": [
+          "Marie Leszczyńska"
+        ],
+        "events": [
+          "Guerre de Succession d'Autriche",
+          "Guerre de Sept Ans, 1756–1763",
+          "Annexion de la Lorraine, 1766"
+        ]
+      },
+      "dauphin-louis": {
+        "name": "Louis, dauphin de France",
+        "title": "Dauphin de France",
+        "summary": "Fils de Louis XV mort de la tuberculose avant son père. Trois de ses fils devinrent rois.",
+        "wikipedia": "Louis_de_France_(1729-1765)",
+        "short": "Dauphin Louis",
+        "spouses": [
+          "Marie-Thérèse-Raphaëlle d'Espagne",
+          "Marie-Josèphe de Saxe"
+        ]
+      },
+      "philippe-egalite": {
+        "name": "Louis-Philippe II, duc d'Orléans",
+        "title": "Duc d'Orléans",
+        "summary": "Arrière-petit-fils du Régent, deux générations omises ici. Il soutint la Révolution, vota la mort de Louis XVI et fut guillotiné.",
+        "wikipedia": "Louis-Philippe_II_d'Orléans",
+        "short": "Philippe Égalité",
+        "spouses": [
+          "Louise-Marie-Adélaïde de Bourbon-Penthièvre"
+        ]
+      },
+      "louis-xvi": {
+        "name": "Louis XVI",
+        "title": "Roi de France et de Navarre, puis roi des Français",
+        "summary": "Il convoqua les États généraux en 1789. Après la fuite à Varennes la monarchie fut abolie en 1792 ; il fut jugé et guillotiné en janvier 1793.",
+        "wikipedia": "Louis_XVI",
+        "accession": "Succéda à son grand-père Louis XV.",
+        "spouses": [
+          "Marie-Antoinette"
+        ],
+        "events": [
+          "Guerre d'indépendance américaine",
+          "Prise de la Bastille, 1789",
+          "Exécuté le 21 janvier 1793"
+        ]
+      },
+      "louis-xvii": {
+        "name": "Louis XVII",
+        "title": "Roi titulaire de France",
+        "summary": "Reconnu roi par les royalistes après l'exécution de son père. Il mourut enfant prisonnier au Temple à Paris.",
+        "wikipedia": "Louis_XVII"
+      },
+      "carlo-buonaparte": {
+        "name": "Carlo Buonaparte",
+        "title": "Avocat corse",
+        "summary": "Avocat et noble corse. Père de Napoléon et des rois Joseph, Louis et Jérôme.",
+        "wikipedia": "Carlo_Buonaparte",
+        "spouses": [
+          "Letizia Ramolino"
+        ]
+      },
+      "napoleon-i": {
+        "name": "Napoléon Ier",
+        "title": "Empereur des Français",
+        "summary": "Général révolutionnaire qui se fit empereur et domina l'Europe. Il revint de l'île d'Elbe pour les Cent-Jours et fut définitivement vaincu à Waterloo.",
+        "wikipedia": "Napoléon_Ier",
+        "accession": "Premier consul après le coup du 18 brumaire ; proclamé empereur en 1804.",
+        "spouses": [
+          "Joséphine de Beauharnais",
+          "Marie-Louise d'Autriche"
+        ],
+        "events": [
+          "Code civil, 1804",
+          "Bataille d'Austerlitz, 1805",
+          "Bataille de Waterloo, 1815"
+        ],
+        "reignText": "1804–1814, 1815"
+      },
+      "louis-bonaparte": {
+        "name": "Louis Bonaparte",
+        "title": "Roi de Hollande",
+        "summary": "Frère cadet de Napoléon, roi de Hollande de 1806 à 1810. Père de Napoléon III.",
+        "wikipedia": "Louis_Bonaparte",
+        "spouses": [
+          "Hortense de Beauharnais"
+        ]
+      },
+      "louis-xviii": {
+        "name": "Louis XVIII",
+        "title": "Roi de France et de Navarre",
+        "summary": "Frère de Louis XVI. Il accorda la Charte de 1814 et s'enfuit à Gand pendant les Cent-Jours.",
+        "wikipedia": "Louis_XVIII",
+        "epithet": "le Désiré",
+        "accession": "Restauré par les Alliés après l'abdication de Napoléon.",
+        "spouses": [
+          "Marie-Joséphine de Savoie"
+        ],
+        "events": [
+          "Charte de 1814",
+          "Cent-Jours, 1815"
+        ],
+        "reignText": "1814–1815, 1815–1824"
+      },
+      "napoleon-ii": {
+        "name": "Napoléon II",
+        "title": "Roi de Rome, duc de Reichstadt",
+        "summary": "Empereur nominal pendant deux semaines après Waterloo. Il grandit à la cour d'Autriche et mourut de la tuberculose à 21 ans.",
+        "wikipedia": "Napoléon_II"
+      },
+      "charles-x": {
+        "name": "Charles X",
+        "title": "Roi de France et de Navarre",
+        "summary": "Dernier roi couronné à Reims. Ses ordonnances de juillet provoquèrent la révolution de 1830 ; il abdiqua en exil.",
+        "wikipedia": "Charles_X",
+        "accession": "Succéda à son frère Louis XVIII.",
+        "spouses": [
+          "Marie-Thérèse de Savoie"
+        ],
+        "events": [
+          "Couronnement à Reims, 1825",
+          "Révolution de Juillet, 1830"
+        ]
+      },
+      "louis-philippe": {
+        "name": "Louis-Philippe Ier",
+        "title": "Roi des Français",
+        "summary": "Monarque constitutionnel qui régna sur la monarchie de Juillet jusqu'à la révolution de 1848. Dernier roi de France.",
+        "wikipedia": "Louis-Philippe_Ier",
+        "short": "Louis-Philippe",
+        "epithet": "le Roi citoyen",
+        "accession": "La couronne lui fut offerte par la Chambre des députés après la révolution de Juillet.",
+        "spouses": [
+          "Marie-Amélie de Naples et Sicile"
+        ],
+        "events": [
+          "Monarchie de Juillet",
+          "Révolution de 1848"
+        ]
+      },
+      "napoleon-iii": {
+        "name": "Napoléon III",
+        "title": "Empereur des Français",
+        "summary": "Neveu de Napoléon Ier. Le Second Empire reconstruisit Paris sous Haussmann ; il s'effondra lorsqu'il fut capturé à Sedan. Dernier monarque français.",
+        "wikipedia": "Napoléon_III",
+        "accession": "Élu président en 1848, il s'empara du pouvoir en 1851 et fut proclamé empereur en 1852.",
+        "spouses": [
+          "Eugénie de Montijo"
+        ],
+        "events": [
+          "Coup d'État du 2 décembre 1851",
+          "Reconstruction de Paris",
+          "Bataille de Sedan, 1870"
+        ]
+      }
+    }
+  }
+}
