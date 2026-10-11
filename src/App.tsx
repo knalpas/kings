@@ -56,7 +56,7 @@ export default function App() {
   const [kingdom, setKingdom] = useState<Kingdom>(initial.kingdom)
   const [selectedId, setSelectedId] = useState<string | null>(initial.id)
   const [houseFocus, setHouseFocus] = useState<string | null>(null)
-  const [showSuccession, setShowSuccession] = useState(false)
+  const [showSuccession, setShowSuccession] = useState(true)
   const viewport = useMemo(() => createViewport(), [])
   const api = useRef<ChartApi>(null)
   const wide = useWide()

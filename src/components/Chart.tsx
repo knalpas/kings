@@ -239,6 +239,18 @@ export function Chart({
           <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
             <feDropShadow dx="0" dy="1.5" stdDeviation="2" floodColor="#2a2116" floodOpacity="0.18" />
           </filter>
+          <marker
+            id="succ-arrow"
+            viewBox="0 0 10 10"
+            refX="2"
+            refY="5"
+            markerWidth="3.2"
+            markerHeight="3.2"
+            markerUnits="strokeWidth"
+            orient="auto"
+          >
+            <path d="M0,0.6L9.4,5L0,9.4L2.4,5Z" className="succession__arrow" />
+          </marker>
         </defs>
         <g ref={gRef}>
           <Backdrop layout={layout} title={title} subtitle={subtitle} />
@@ -329,15 +341,39 @@ const Links = memo(function Links({
   )
 })
 
+function successionPath(a: ChartNode, b: ChartNode): string {
+  const gap = 7
+  const top = b.monarch && !b.person.protector ? 24 : gap
+  if (b.y - a.y > a.r + b.r + 40) {
+    const y0 = a.y + a.r
+    const y1 = b.y - b.r - top
+    const my = (y0 + y1) / 2
+    return `M${a.x},${y0}C${a.x},${my} ${b.x},${my} ${b.x},${y1}`
+  }
+  const dir = b.x >= a.x ? 1 : -1
+  const x0 = a.x + dir * a.r
+  const x1 = b.x - dir * (b.r + gap)
+  const mx = (x0 + x1) / 2
+  return `M${x0},${a.y}C${mx},${a.y} ${mx},${b.y} ${x1},${b.y}`
+}
+
 const Succession = memo(function Succession({ layout }: { layout: Layout }) {
-  const parts: string[] = []
+  const segments: { key: string; d: string }[] = []
   for (let i = 0; i + 1 < layout.chain.length; i++) {
     const a = layout.byId.get(layout.chain[i].id)!
     const b = layout.byId.get(layout.chain[i + 1].id)!
-    const my = (a.y + b.y) / 2
-    parts.push(`M${a.x},${a.y}C${a.x},${my} ${b.x},${my} ${b.x},${b.y}`)
+    segments.push({ key: `${a.id}-${b.id}`, d: successionPath(a, b) })
   }
-  return <path className="succession" d={parts.join('')} />
+  return (
+    <g className="succession">
+      {segments.map((s) => (
+        <path key={`c-${s.key}`} className="succession__casing" d={s.d} />
+      ))}
+      {segments.map((s) => (
+        <path key={s.key} className="succession__line" d={s.d} markerEnd="url(#succ-arrow)" />
+      ))}
+    </g>
+  )
 })
 
 type NodesProps = {
@@ -444,16 +480,21 @@ const NodeMark = memo(function NodeMark({
           </text>
         </>
       )}
-      {node.ordinal != null && (
-        <g className="node__ordinal" transform={`translate(0,${r})`}>
-          <rect x={-13} y={-8} width={26} height={16} rx={8} fill={color} />
-          <text dy="0.35em">{node.ordinal}</text>
+      {monarch && !person.protector && (
+        <g transform={`translate(0,${-r - 3})`}>
+          <path className="node__crown" d="M-11,0L-13,-13L-5.5,-6.5L0,-15L5.5,-6.5L13,-13L11,0Z" />
         </g>
       )}
-      {person.protector && (
-        <g className="node__ordinal" transform={`translate(0,${r})`}>
-          <rect x={-17} y={-8} width={34} height={16} rx={8} fill={color} />
-          <text dy="0.35em">LP</text>
+      {(node.ordinal != null || person.protector) && (
+        <g transform={`translate(0,${r})`}>
+          <g className="node__ordinal">
+            {person.protector ? (
+              <rect x={-17} y={-8} width={34} height={16} rx={8} fill={color} />
+            ) : (
+              <rect x={-13} y={-8} width={26} height={16} rx={8} fill={color} />
+            )}
+            <text dy="0.35em">{person.protector ? 'LP' : node.ordinal}</text>
+          </g>
         </g>
       )}
       <text className="node__name" y={r + (monarch ? 24 : 15)}>

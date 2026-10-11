@@ -57,9 +57,9 @@ export function Header({
         <Search kingdom={kingdom} people={people} houses={houses} onPick={onPick} />
         <button type="button" className={`toggle${showSuccession ? ' is-on' : ''}`} aria-pressed={showSuccession} onClick={onToggleSuccession} title={t.successionTitle}>
           <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true">
-            <path d="M4 3c0 6 12 5 12 14" stroke="currentColor" strokeWidth="1.7" strokeDasharray="2 3" fill="none" strokeLinecap="round" />
+            <path d="M4 3c0 6 12 4 12 10" stroke="currentColor" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+            <path d="M12.5 12.5L16 18l3.5-5.5z" fill="currentColor" />
             <circle cx="4" cy="3" r="2" fill="currentColor" />
-            <circle cx="16" cy="17" r="2" fill="currentColor" />
           </svg>
           <span>{t.succession}</span>
         </button>
@@ -222,8 +222,9 @@ function Key() {
           <ul>
             <li>
               <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
-                <circle cx="20" cy="18" r="14" fill="#fffdf8" stroke="#2d4f8f" strokeWidth="3" />
-                <rect x="13" y="27" width="14" height="10" rx="5" fill="#2d4f8f" />
+                <path d="M14.5 9L13 1.5l4 3.5L20 0l3 5 4-3.5L25.5 9z" fill="#a7843c" />
+                <circle cx="20" cy="21" r="11" fill="#fffdf8" stroke="#2d4f8f" strokeWidth="3" />
+                <rect x="14" y="29" width="12" height="9" rx="4.5" fill="#2d4f8f" />
               </svg>
               <span>
                 <b>{t.keyMonarch}</b> {t.keyMonarchBody}
@@ -273,7 +274,8 @@ function Key() {
             </li>
             <li>
               <svg viewBox="0 0 40 20" width="36" height="18" aria-hidden="true">
-                <path d="M2 10h36" stroke="#b08a3e" strokeWidth="2" strokeDasharray="1 5" strokeLinecap="round" />
+                <path d="M2 10h28" stroke="#a7843c" strokeWidth="2.6" strokeLinecap="round" />
+                <path d="M29 5l9 5-9 5z" fill="#a7843c" />
               </svg>
               <span>
                 <b>{t.keySuccession}</b>
