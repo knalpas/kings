@@ -1487,6 +1487,205 @@
         "title": "Second dans l'ordre de succession",
         "summary": "Fils aîné du prince et de la princesse de Galles, second dans l'ordre de succession au trône.",
         "wikipedia": "George_de_Galles"
+      },
+      "matilda-flanders": {
+        "name": "Mathilde de Flandre",
+        "title": "Reine d'Angleterre",
+        "wikipedia": "Mathilde_de_Flandre",
+        "summary": "Fille du comte Baudouin V de Flandre et descendante d'Alfred le Grand. Couronnée reine en 1068, elle gouverna la Normandie pendant que Guillaume était en Angleterre. Mère de Robert Courteheuse, de Guillaume II et d'Henri Ier."
+      },
+      "philippa-hainault": {
+        "name": "Philippa de Hainaut",
+        "title": "Reine d'Angleterre",
+        "wikipedia": "Philippa_de_Hainaut",
+        "summary": "Reine d'Édouard III pendant plus de quarante ans. Parmi leurs treize enfants figuraient le Prince noir, Lionel d'Anvers, Jean de Gand et Edmond de Langley, dont les descendants s'affrontèrent pendant la guerre des Deux-Roses.",
+        "events": [
+          "Intercède pour les bourgeois de Calais, 1347"
+        ]
+      },
+      "lionel-antwerp": {
+        "name": "Lionel d'Anvers, duc de Clarence",
+        "short": "Lionel d'Anvers",
+        "title": "Duc de Clarence",
+        "wikipedia": "Lionel_d'Anvers",
+        "summary": "Deuxième fils survivant d'Édouard III. Par sa fille Philippa, les Mortimer puis la maison d'York revendiquèrent la primauté sur la branche lancastrienne de son cadet Jean de Gand."
+      },
+      "philippa-clarence": {
+        "name": "Philippa, comtesse d'Ulster",
+        "short": "Philippa de Clarence",
+        "title": "Comtesse de March et d'Ulster",
+        "wikipedia": "Philippa_de_Clarence",
+        "summary": "Fille unique de Lionel d'Anvers. Son mariage avec Edmond Mortimer, comte de March, fit passer la revendication de son père aux Mortimer."
+      },
+      "roger-mortimer": {
+        "name": "Roger Mortimer, 4e comte de March",
+        "short": "Roger Mortimer",
+        "title": "Comte de March, héritier présomptif",
+        "wikipedia": "Roger_Mortimer_(4e_comte_de_March)",
+        "fate": "Tué au combat en Irlande, 1398",
+        "summary": "Petit-fils de Lionel d'Anvers et héritier présomptif de Richard II, sans enfant. Sa mort, un an avant la déposition de Richard, ouvrit la voie à Henri de Bolingbroke."
+      },
+      "anne-mortimer": {
+        "name": "Anne Mortimer",
+        "title": "Comtesse de Cambridge",
+        "wikipedia": "Anne_Mortimer",
+        "summary": "Fille de Roger Mortimer. Par elle, son fils Richard, duc d'York, hérita de la revendication aînée de Lionel d'Anvers, fondement de la cause yorkiste."
+      },
+      "katherine-swynford": {
+        "name": "Catherine Swynford",
+        "title": "Duchesse de Lancastre",
+        "wikipedia": "Katherine_Swynford",
+        "summary": "Maîtresse puis troisième épouse de Jean de Gand. Leurs enfants, les Beaufort, furent légitimés en 1397 ; la revendication d'Henri VII passait par eux."
+      },
+      "margaret-anjou": {
+        "name": "Marguerite d'Anjou",
+        "title": "Reine d'Angleterre",
+        "wikipedia": "Marguerite_d'Anjou_(1430-1482)",
+        "summary": "Reine d'Henri VI. Pendant les accès de folie du roi, elle mena le parti lancastrien dans la guerre des Deux-Roses, jusqu'à la mort de son fils unique à Tewkesbury en 1471.",
+        "events": [
+          "Bataille de Wakefield, 1460",
+          "Bataille de Tewkesbury, 1471"
+        ]
+      },
+      "owen-tudor": {
+        "name": "Owen Tudor",
+        "title": "Courtisan gallois",
+        "wikipedia": "Owen_Tudor",
+        "fate": "Décapité après la bataille de Mortimer’s Cross, 1461",
+        "summary": "Écuyer gallois qui épousa en secret Catherine de Valois, veuve d'Henri V. Grand-père d'Henri VII, il donna son nom aux Tudor."
+      },
+      "elizabeth-woodville": {
+        "name": "Élisabeth Woodville",
+        "title": "Reine d'Angleterre",
+        "wikipedia": "Élisabeth_Woodville",
+        "summary": "Veuve qui épousa Édouard IV en secret en 1464. Mère des princes de la Tour et d'Élisabeth d'York ; l'ascension de sa famille poussa Richard III à s'emparer du trône."
+      },
+      "catherine-aragon": {
+        "name": "Catherine d'Aragon",
+        "title": "Reine d'Angleterre",
+        "wikipedia": "Catherine_d'Aragon",
+        "fate": "Mariage annulé, 1533",
+        "summary": "Fille de Ferdinand et Isabelle d'Espagne, veuve d'Arthur Tudor puis première épouse d'Henri VIII. Le désir du roi de faire annuler ce mariage provoqua la rupture avec Rome. Mère de Marie Ire."
+      },
+      "anne-boleyn": {
+        "name": "Anne Boleyn",
+        "title": "Reine d'Angleterre",
+        "wikipedia": "Anne_Boleyn",
+        "fate": "Décapitée à la tour de Londres, 1536",
+        "summary": "Deuxième épouse d'Henri VIII ; leur mariage exigea la rupture avec Rome. Mère d'Élisabeth Ire."
+      },
+      "jane-seymour": {
+        "name": "Jeanne Seymour",
+        "title": "Reine d'Angleterre",
+        "wikipedia": "Jeanne_Seymour",
+        "fate": "Morte après la naissance d'Édouard VI, 1537",
+        "summary": "Troisième épouse d'Henri VIII et mère de son seul fils légitime, Édouard VI."
+      },
+      "philip-ii-spain": {
+        "name": "Philippe II d'Espagne",
+        "title": "Roi d'Espagne, roi d'Angleterre par mariage",
+        "wikipedia": "Philippe_II_(roi_d'Espagne)",
+        "summary": "Époux de Marie Ire et roi d'Angleterre par mariage de 1554 à 1558. Le couple n'eut pas d'enfant ; roi d'Espagne, il lança plus tard l'Armada contre Élisabeth Ire.",
+        "events": [
+          "Invincible Armada, 1588"
+        ]
+      },
+      "darnley": {
+        "name": "Henry Stuart, lord Darnley",
+        "short": "Lord Darnley",
+        "title": "Roi consort d’Écosse",
+        "wikipedia": "Henry_Stuart_(Lord_Darnley)",
+        "fate": "Assassiné à Kirk o’ Field, 1567",
+        "summary": "Petit-fils de Marguerite Tudor et second mari de Marie Stuart. Leur fils Jacques réunit les deux revendications Tudor et devint Jacques Ier d'Angleterre."
+      },
+      "henrietta-maria": {
+        "name": "Henriette-Marie de France",
+        "short": "Henriette-Marie",
+        "title": "Reine d'Angleterre",
+        "wikipedia": "Henriette-Marie_de_France",
+        "summary": "Fille d'Henri IV de France et reine de Charles Ier. Son catholicisme nourrit la méfiance envers la cour avant la guerre civile. Mère de Charles II et de Jacques II."
+      },
+      "anne-hyde": {
+        "name": "Anne Hyde",
+        "title": "Duchesse d'York",
+        "wikipedia": "Anne_Hyde",
+        "summary": "Roturière et première épouse du futur Jacques II. Leurs filles, élevées dans le protestantisme, devinrent Marie II et la reine Anne."
+      },
+      "mary-modena": {
+        "name": "Marie de Modène",
+        "title": "Reine d'Angleterre",
+        "wikipedia": "Marie_de_Modène",
+        "summary": "Seconde épouse, catholique, de Jacques II. La naissance de leur fils en 1688 annonçait une dynastie catholique et déclencha la Glorieuse Révolution."
+      },
+      "victoria-princess-royal": {
+        "name": "Victoria, princesse royale",
+        "short": "Princesse Victoria",
+        "title": "Impératrice allemande",
+        "wikipedia": "Victoria_du_Royaume-Uni_(1840-1901)",
+        "summary": "Aînée de la reine Victoria. Elle épousa Frédéric III d'Allemagne et fut la mère de l'empereur Guillaume II."
+      },
+      "alexandra-denmark": {
+        "name": "Alexandra de Danemark",
+        "title": "Reine du Royaume-Uni",
+        "wikipedia": "Alexandra_de_Danemark",
+        "summary": "Princesse danoise et reine d'Édouard VII. Mère du prince Albert Victor et de George V."
+      },
+      "mary-teck": {
+        "name": "Mary de Teck",
+        "title": "Reine du Royaume-Uni",
+        "wikipedia": "Mary_de_Teck",
+        "summary": "D'abord fiancée au prince Albert Victor, elle épousa son frère George après la mort de celui-ci. Mère d'Édouard VIII et de George VI."
+      },
+      "wallis-simpson": {
+        "name": "Wallis Simpson",
+        "title": "Duchesse de Windsor",
+        "wikipedia": "Wallis_Simpson",
+        "summary": "Américaine deux fois divorcée qu'Édouard VIII voulait épouser. Il abdiqua en décembre 1936 pour le faire.",
+        "events": [
+          "Crise d'abdication, 1936"
+        ]
+      },
+      "elizabeth-bowes-lyon": {
+        "name": "Elizabeth Bowes-Lyon, reine mère",
+        "short": "La reine mère",
+        "title": "Reine du Royaume-Uni",
+        "wikipedia": "Elizabeth_Bowes-Lyon",
+        "summary": "Épouse de George VI et reine pendant la Seconde Guerre mondiale. Mère d'Élisabeth II et de la princesse Margaret."
+      },
+      "princess-margaret": {
+        "name": "Margaret, comtesse de Snowdon",
+        "short": "Princesse Margaret",
+        "title": "Comtesse de Snowdon",
+        "wikipedia": "Margaret_du_Royaume-Uni",
+        "summary": "Fille cadette de George VI et unique sœur d'Élisabeth II."
+      },
+      "princess-anne": {
+        "name": "Anne, princesse royale",
+        "short": "Princesse Anne",
+        "title": "Princesse royale",
+        "wikipedia": "Anne_du_Royaume-Uni",
+        "summary": "Fille unique d'Élisabeth II et du prince Philip."
+      },
+      "diana": {
+        "name": "Diana, princesse de Galles",
+        "short": "Princesse Diana",
+        "title": "Princesse de Galles",
+        "wikipedia": "Diana_Spencer",
+        "fate": "Tuée dans un accident de voiture à Paris, 1997",
+        "summary": "Première épouse du futur Charles III, mariée en 1981 et divorcée en 1996. Mère des princes William et Harry."
+      },
+      "camilla": {
+        "name": "La reine Camilla",
+        "title": "Reine du Royaume-Uni",
+        "wikipedia": "Camilla_Parker_Bowles",
+        "summary": "Épouse Charles en 2005 et est couronnée reine à ses côtés en 2023."
+      },
+      "prince-harry": {
+        "name": "Le prince Harry, duc de Sussex",
+        "short": "Prince Harry",
+        "title": "Duc de Sussex",
+        "wikipedia": "Henry_de_Sussex",
+        "summary": "Fils cadet de Charles III et de Diana. Il s'est retiré des fonctions royales en 2020."
       }
     }
   },
@@ -2672,6 +2871,113 @@
         "fate": "Tué pendant la guerre anglo-zouloue, en 1879",
         "summary": "Seul fils de Napoléon III. En exil, il servit dans l'armée britannique et fut tué par des guerriers zoulous en Afrique du Sud, mettant fin aux espoirs bonapartistes.",
         "wikipedia": "Louis-Napoléon_(prince_impérial)"
+      },
+      "pepin-herstal": {
+        "name": "Pépin de Herstal",
+        "title": "Maire du palais",
+        "wikipedia": "Pépin_de_Herstal",
+        "summary": "Maire du palais qui gouverna les royaumes francs au nom de rois mérovingiens sans pouvoir. Père de Charles Martel."
+      },
+      "charles-martel": {
+        "name": "Charles Martel",
+        "title": "Maire du palais",
+        "wikipedia": "Charles_Martel",
+        "summary": "Maire du palais et maître des Francs sauf de nom. Sa victoire près de Poitiers en 732 arrêta l'avancée omeyyade ; son fils Pépin prit la couronne.",
+        "events": [
+          "Bataille de Poitiers, 732"
+        ]
+      },
+      "bertrada": {
+        "name": "Berthe au Grand Pied",
+        "title": "Reine des Francs",
+        "wikipedia": "Berthe_au_Grand_Pied",
+        "summary": "Reine de Pépin le Bref et mère de Charlemagne et de Carloman Ier. Elle tenta en vain de maintenir la paix entre ses deux fils."
+      },
+      "hildegard": {
+        "name": "Hildegarde de Vintzgau",
+        "short": "Hildegarde",
+        "title": "Reine des Francs",
+        "wikipedia": "Hildegarde_de_Vintzgau",
+        "summary": "Épouse de Charlemagne à partir de 771 et mère de neuf de ses enfants, dont Louis le Pieux."
+      },
+      "judith-bavaria": {
+        "name": "Judith de Bavière",
+        "title": "Impératrice des Francs",
+        "wikipedia": "Judith_de_Bavière_(797-843)",
+        "summary": "Seconde épouse de Louis le Pieux. Sa lutte pour assurer un royaume à son fils Charles le Chauve déclencha les guerres civiles qui divisèrent l'empire."
+      },
+      "anne-kiev": {
+        "name": "Anne de Kiev",
+        "title": "Reine des Francs",
+        "wikipedia": "Anne_de_Kiev",
+        "summary": "Fille du grand-prince Iaroslav le Sage de Kiev et reine d'Henri Ier. Elle donna à son fils Philippe Ier un prénom grec inédit à la cour de France."
+      },
+      "isabella-hainaut": {
+        "name": "Isabelle de Hainaut",
+        "title": "Reine de France",
+        "wikipedia": "Isabelle_de_Hainaut",
+        "fate": "Morte en couches, 1190",
+        "summary": "Première épouse de Philippe Auguste et descendante de Charlemagne. Par elle, leur fils Louis VIII réunit les sangs capétien et carolingien."
+      },
+      "isabeau-bavaria": {
+        "name": "Isabeau de Bavière",
+        "title": "Reine de France",
+        "wikipedia": "Isabeau_de_Bavière",
+        "summary": "Reine de Charles VI le Fol, elle présida le conseil de régence pendant sa maladie. Elle soutint le traité de Troyes, qui déshéritait son fils Charles VII au profit d'Henri V d'Angleterre.",
+        "events": [
+          "Traité de Troyes, 1420"
+        ]
+      },
+      "anne-france": {
+        "name": "Anne de France",
+        "title": "Régente de France",
+        "wikipedia": "Anne_de_France",
+        "summary": "Fille aînée de Louis XI. Avec son mari Pierre de Beaujeu, elle gouverna la France pour son jeune frère Charles VIII de 1483 à 1491."
+      },
+      "jeanne-albret": {
+        "name": "Jeanne d’Albret",
+        "title": "Reine de Navarre",
+        "wikipedia": "Jeanne_d'Albret",
+        "summary": "Reine de Navarre et chef du parti protestant. Mère d'Henri IV, qui hérita d'elle la Navarre et de son père la France."
+      },
+      "maria-theresa-spain": {
+        "name": "Marie-Thérèse d'Autriche",
+        "title": "Reine de France",
+        "wikipedia": "Marie-Thérèse_d'Autriche_(1638-1683)",
+        "summary": "Fille de Philippe IV d'Espagne et reine de Louis XIV. Par elle, leur petit-fils Philippe V hérita du trône d'Espagne en 1700."
+      },
+      "marie-leszczynska": {
+        "name": "Marie Leszczynska",
+        "title": "Reine de France",
+        "wikipedia": "Marie_Leszczynska",
+        "summary": "Fille du roi détrôné de Pologne et reine de Louis XV pendant 43 ans. Grand-mère de Louis XVI, Louis XVIII et Charles X."
+      },
+      "madame-royale": {
+        "name": "Marie-Thérèse de France",
+        "short": "Madame Royale",
+        "title": "Duchesse d'Angoulême",
+        "wikipedia": "Marie-Thérèse_de_France_(1778-1851)",
+        "fate": "Seule enfant de Louis XVI à survivre à la Révolution",
+        "summary": "Aînée de Louis XVI et de Marie-Antoinette. Libérée de la prison du Temple en 1795, elle épousa son cousin le duc d'Angoulême, fils de Charles X."
+      },
+      "letizia": {
+        "name": "Letizia Bonaparte",
+        "title": "Madame Mère",
+        "wikipedia": "Letizia_Bonaparte",
+        "summary": "Épouse de Charles Bonaparte et mère de treize enfants, dont huit survécurent, parmi lesquels Napoléon, Joseph et Louis. Sous l'Empire, elle fut appelée Madame Mère."
+      },
+      "joseph-bonaparte": {
+        "name": "Joseph Bonaparte",
+        "title": "Roi de Naples, puis d’Espagne",
+        "wikipedia": "Joseph_Bonaparte",
+        "summary": "Frère aîné de Napoléon, qui le fit roi de Naples en 1806 puis d'Espagne en 1808. Il perdit l'Espagne après la défaite de Vitoria en 1813."
+      },
+      "count-paris": {
+        "name": "Philippe d'Orléans, comte de Paris",
+        "short": "Comte de Paris",
+        "title": "Prétendant orléaniste",
+        "wikipedia": "Philippe_d'Orléans_(1838-1894)",
+        "summary": "Petit-fils de Louis-Philippe et héritier orléaniste. À la mort du comte de Chambord en 1883, la plupart des royalistes le reconnurent comme roi légitime."
       }
     }
   }

@@ -12,7 +12,7 @@ const CAPTION = 40
 const PAD_LEFT = 150
 const PAD_RIGHT = 140
 const TOP = 210
-const COMPONENT_GAP = 70
+const COMPONENT_GAP = 36
 
 export const CURRENT_YEAR = new Date().getFullYear()
 
@@ -175,20 +175,68 @@ export function computeLayout(people: Person[], houses: House[], gaps: Interval[
     comps.push({ nodes: desc, x0, x1, y0, y1 })
   }
 
-  // Pack separate bloodlines side by side, reusing columns that are free in time.
-  comps.sort((a, b) => b.nodes.length - a.nodes.length)
-  const placed: { x0: number; x1: number; y0: number; y1: number }[] = []
+  // Pack separate bloodlines side by side, each as close as possible to the monarchs it
+  // succeeds or precedes, so the succession line never has to cross the whole chart.
+  const compOf = new Map<string, Comp>()
+  for (const c of comps) for (const d of c.nodes) compOf.set(d.data.id, c)
+  // Ties between bloodlines: [own, other, weight]. Succession outweighs marriage.
+  const ties: [string, string, number][] = []
+  chain.forEach((p, i) => {
+    const q = chain[i + 1]
+    if (q) ties.push([p.id, q.id, 3], [q.id, p.id, 3])
+  })
+  for (const p of people)
+    for (const q of [p.otherParent, ...(p.spouseOf ?? [])]) if (q && compOf.has(q)) ties.push([p.id, q, 1], [q, p.id, 1])
+  const tiesOf = (c: Comp) => ties.filter(([own, other]) => compOf.get(own) === c && compOf.get(other) !== c)
+  const minDx = SLOT + COMPONENT_GAP
+  const base = new Map(comps.map((c) => [c, c.nodes.map((d) => ({ x: pos.get(d.data.id)!.x - c.x0, y: pos.get(d.data.id)!.y }))]))
+
+  /** Place bloodlines in the given order, each at the free spot nearest its ties; returns x offsets. */
+  const pack = (order: Comp[]) => {
+    const placed: { x: number; y: number }[] = []
+    const x0 = new Map<Comp, number>()
+    const xOf = (id: string) => x0.get(compOf.get(id)!)! + base.get(compOf.get(id)!)![compIndex.get(id)!].x
+    for (const c of order) {
+      const own = base.get(c)!
+      const live = tiesOf(c).filter(([, other]) => x0.has(compOf.get(other)!))
+      const weight = live.reduce((s, t) => s + t[2], 0)
+      const desired = weight
+        ? live.reduce((s, [mine, other, w]) => s + w * (xOf(other) - own[compIndex.get(mine)!].x), 0) / weight
+        : 0
+      const candidates = [desired]
+      for (const p of placed)
+        for (const m of own) if (Math.abs(p.y - m.y) < ROW_H) candidates.push(p.x + minDx - m.x, p.x - minDx - m.x)
+      candidates.sort((a, b) => Math.abs(a - desired) - Math.abs(b - desired))
+      const fits = (x: number) =>
+        own.every((m) => placed.every((p) => Math.abs(p.y - m.y) >= ROW_H || Math.abs(p.x - (x + m.x)) >= minDx - 0.5))
+      const x = candidates.find(fits) ?? desired
+      x0.set(c, x)
+      for (const m of own) placed.push({ x: x + m.x, y: m.y })
+    }
+    let cost = 0
+    for (const [a, b, w] of ties) if (w === 3 && compOf.get(a) !== compOf.get(b)) cost += Math.abs(xOf(a) - xOf(b))
+    const xs = placed.map((p) => p.x)
+    cost += 0.5 * (Math.max(...xs) - Math.min(...xs))
+    return { x0, cost }
+  }
+  const compIndex = new Map<string, number>()
+  for (const c of comps) c.nodes.forEach((d, i) => compIndex.set(d.data.id, i))
+  const [main, ...minor] = [...comps].sort((a, b) => b.nodes.length - a.nodes.length)
+  const orders: Comp[][] = []
+  const permute = (rest: Comp[], acc: Comp[]) => {
+    if (orders.length >= 720) return
+    if (!rest.length) orders.push(acc)
+    rest.forEach((c, i) => permute([...rest.slice(0, i), ...rest.slice(i + 1)], [...acc, c]))
+  }
+  permute(minor, [])
+  let best = pack([main, ...(orders[0] ?? [])])
+  for (const o of orders.slice(1)) {
+    const r = pack([main, ...o])
+    if (r.cost < best.cost) best = r
+  }
   for (const c of comps) {
-    const w = c.x1 - c.x0
-    const candidates = [0]
-    for (const p of placed) candidates.push(p.x1 + COMPONENT_GAP, p.x0 - COMPONENT_GAP - w)
-    candidates.sort((a, b) => Math.abs(a) - Math.abs(b))
-    const fits = (x: number) =>
-      placed.every((p) => x + w <= p.x0 - COMPONENT_GAP / 2 || x >= p.x1 + COMPONENT_GAP / 2 || c.y1 < p.y0 - 30 || c.y0 > p.y1 + 30)
-    const x = candidates.find(fits) ?? 0
-    const shift = x - c.x0
-    for (const d of c.nodes) pos.get(d.data.id)!.x += shift
-    placed.push({ x0: x, x1: x + w, y0: c.y0, y1: c.y1 })
+    const x = best.x0.get(c)!
+    c.nodes.forEach((d, i) => (pos.get(d.data.id)!.x = x + base.get(c)![i].x))
   }
 
   let minX = Infinity
@@ -252,40 +300,56 @@ export function computeLayout(people: Person[], houses: House[], gaps: Interval[
   }
 }
 
-/** Push apart nodes whose discs or captions would overlap, moving whole subtrees sideways. */
+/**
+ * Push apart nodes whose discs or captions would overlap. Two colliding relatives are separated by
+ * moving the branches below their nearest common ancestor, keeping the branches in tree order, so
+ * siblings never swap sides and the separation only grows.
+ */
 function relax(desc: HierarchyPointNode<TreeDatum>[], pos: Map<string, { x: number; y: number }>) {
-  const isAncestor = (a: HierarchyPointNode<TreeDatum>, b: HierarchyPointNode<TreeDatum>) => {
-    for (let p = b.parent; p; p = p.parent) if (p === a) return true
-    return false
-  }
   const minDx = SLOT - 6
-  for (let pass = 0; pass < 600; pass++) {
+  const at = (n: HierarchyPointNode<TreeDatum>) => pos.get(n.data.id)!
+  const shift = (n: HierarchyPointNode<TreeDatum>, by: number) => {
+    for (const d of n.descendants()) at(d).x += by
+  }
+  const pathUp = (n: HierarchyPointNode<TreeDatum>) => {
+    const out: HierarchyPointNode<TreeDatum>[] = []
+    for (let p: HierarchyPointNode<TreeDatum> | null = n; p; p = p.parent) out.push(p)
+    return out
+  }
+  for (let pass = 0; pass < 400; pass++) {
     let moved = false
-    const sorted = [...desc].sort((a, b) => pos.get(a.data.id)!.y - pos.get(b.data.id)!.y)
+    const sorted = [...desc].sort((a, b) => at(a).y - at(b).y)
     for (let i = 0; i < sorted.length; i++) {
       for (let j = i + 1; j < sorted.length; j++) {
-        const a = pos.get(sorted[i].data.id)!
-        const b = pos.get(sorted[j].data.id)!
+        const a = at(sorted[i])
+        const b = at(sorted[j])
         if (b.y - a.y >= ROW_H) break
-        const dx = b.x - a.x
-        if (Math.abs(dx) >= minDx) continue
-        const left = dx >= 0 ? sorted[i] : sorted[j]
-        const right = left === sorted[i] ? sorted[j] : sorted[i]
-        const gap = minDx - Math.abs(dx)
-        const shift = (n: HierarchyPointNode<TreeDatum>, by: number) => {
-          for (const d of n.descendants()) pos.get(d.data.id)!.x += by
-        }
-        const branch = (anc: HierarchyPointNode<TreeDatum>, desc: HierarchyPointNode<TreeDatum>) => {
-          let n = desc
-          while (n.parent && n.parent !== anc) n = n.parent
-          return n
-        }
-        if (isAncestor(left, right)) shift(branch(left, right), gap)
-        else if (isAncestor(right, left)) shift(branch(right, left), -gap)
-        else {
-          // Splitting the push stops a node wedged between relatives from bouncing back and forth.
-          shift(right, gap / 2 + 0.5)
-          shift(left, -gap / 2 - 0.5)
+        if (Math.abs(b.x - a.x) >= minDx) continue
+        const upA = pathUp(sorted[i])
+        const upB = pathUp(sorted[j])
+        const setB = new Set(upB)
+        const lca = upA.find((n) => setB.has(n))!
+        const ba = upA[upA.indexOf(lca) - 1]
+        const bb = upB[upB.indexOf(lca) - 1]
+        if (!ba || !bb) {
+          // One is an ancestor of the other: move the descendant (and its own line) to its side.
+          const anc = ba ? sorted[j] : sorted[i]
+          const branch = ba ?? bb!
+          const node = ba ? sorted[i] : sorted[j]
+          const dx = at(node).x - at(anc).x
+          const dir = dx !== 0 ? Math.sign(dx) : (lca.children!.indexOf(branch) < lca.children!.length / 2 ? -1 : 1)
+          // Climb while moving would only push the node into its own parent.
+          let k = node
+          while (k.parent && k.parent !== anc && Math.sign(at(k.parent).x - at(k).x) === dir) k = k.parent
+          shift(k, dir * (minDx - Math.abs(dx)) + dir * 0.5)
+        } else {
+          const kids = lca.children!
+          const aLeft = kids.indexOf(ba) < kids.indexOf(bb)
+          const [lb, rb, ln, rn] = aLeft ? [ba, bb, a, b] : [bb, ba, b, a]
+          const need = minDx - (rn.x - ln.x)
+          if (need <= 0) continue
+          shift(rb, need / 2 + 0.5)
+          shift(lb, -need / 2 - 0.5)
         }
         moved = true
       }

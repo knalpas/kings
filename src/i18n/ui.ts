@@ -86,8 +86,8 @@ const en = {
   roleStatus: {
     heir: 'Heir to the throne who never reigned.',
     claimant: 'Claimed the throne but never reigned.',
-    consort: 'Royal consort. Married into the line.',
-    regent: 'Consort and regent. Governed on behalf of a king.',
+    consort: 'Royal spouse. Married into the line.',
+    regent: 'Regent. Governed on behalf of a king.',
   } as Record<'heir' | 'claimant' | 'consort' | 'regent', string>,
   marriedTo: 'Married to',
   husband: 'husband',
@@ -185,8 +185,8 @@ const fr: Ui = {
   roleStatus: {
     heir: 'Héritier du trône qui n’a jamais régné.',
     claimant: 'A revendiqué le trône sans jamais régner.',
-    consort: 'Conjoint royal, entré dans la lignée par mariage.',
-    regent: 'Conjoint et régent : a gouverné au nom d’un roi.',
+    consort: 'Entré dans la lignée royale par mariage.',
+    regent: 'Régence : a gouverné au nom d’un roi.',
   },
   marriedTo: 'Marié à',
   husband: 'mari',

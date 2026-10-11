@@ -584,12 +584,14 @@ kbd {
 }
 
 .plate-title {
+  text-anchor: middle;
   font: 600 46px var(--display);
   fill: var(--ink);
   letter-spacing: 0.01em;
 }
 
 .plate-subtitle {
+  text-anchor: middle;
   font: italic 20px var(--serif);
   fill: var(--ink-3);
 }
@@ -638,13 +640,13 @@ kbd {
 
 .succession__casing {
   stroke: var(--canvas);
-  stroke-width: 7;
-  opacity: 0.85;
+  stroke-width: 5.5;
+  opacity: 0.8;
 }
 
 .succession__line {
   stroke: var(--gold);
-  stroke-width: 3;
+  stroke-width: 2.2;
 }
 
 .succession__arrow {
@@ -652,19 +654,19 @@ kbd {
 }
 
 .chart__svg[data-lod='mid'] .succession__casing {
-  stroke-width: 10;
+  stroke-width: 7;
 }
 
 .chart__svg[data-lod='mid'] .succession__line {
-  stroke-width: 4.5;
+  stroke-width: 3;
 }
 
 .chart__svg[data-lod='far'] .succession__casing {
-  stroke-width: 18;
+  stroke-width: 10;
 }
 
 .chart__svg[data-lod='far'] .succession__line {
-  stroke-width: 9;
+  stroke-width: 4.5;
 }
 
 .node {
@@ -793,24 +795,22 @@ kbd {
   transform-origin: 50% 50%;
 }
 
-.chart__svg[data-lod='mid'] .node__crown {
-  transform: scale(1.5);
-}
+
 
 .chart__svg[data-lod='mid'] .node--ancestor:not(.is-dim):not(.is-selected) {
   opacity: 0.7;
 }
 
 .chart__svg[data-lod='far'] .node__crown {
-  transform: scale(3);
+  transform: scale(1.45);
 }
 
 .chart__svg[data-lod='far'] .node__ordinal {
-  transform: scale(1.9);
+  transform: scale(1.4);
 }
 
 .chart__svg[data-lod='far'] .node--monarch .node__ring {
-  stroke-width: 7px;
+  stroke-width: 5px;
 }
 
 .chart__svg[data-lod='far'] .node--ancestor:not(.is-selected) {
@@ -826,9 +826,9 @@ kbd {
 }
 
 .chart__svg[data-lod='far'] .node--monarch .node__name {
-  font-size: 30px;
-  stroke-width: 7px;
-  transform: translateY(14px);
+  font-size: 24px;
+  stroke-width: 6px;
+  transform: translateY(6px);
 }
 
 .chart__svg[data-lod='far'] .plate-title,

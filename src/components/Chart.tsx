@@ -242,10 +242,10 @@ export function Chart({
           <marker
             id="succ-arrow"
             viewBox="0 0 10 10"
-            refX="2"
+            refX="8.5"
             refY="5"
-            markerWidth="3.2"
-            markerHeight="3.2"
+            markerWidth="3.4"
+            markerHeight="3.4"
             markerUnits="strokeWidth"
             orient="auto"
           >
@@ -253,7 +253,7 @@ export function Chart({
           </marker>
         </defs>
         <g ref={gRef}>
-          <Backdrop layout={layout} title={title} subtitle={subtitle} />
+          <Backdrop layout={layout} title={title} subtitle={subtitle} anchorX={firstMonarch?.x ?? layout.width / 2} />
           <Links layout={layout} lineage={lineage} houseFocus={houseFocus} />
           {showSuccession && <Succession layout={layout} />}
           <Nodes
@@ -276,7 +276,17 @@ export function Chart({
   )
 }
 
-const Backdrop = memo(function Backdrop({ layout, title, subtitle }: { layout: Layout; title: string; subtitle: string }) {
+const Backdrop = memo(function Backdrop({
+  layout,
+  title,
+  subtitle,
+  anchorX,
+}: {
+  layout: Layout
+  title: string
+  subtitle: string
+  anchorX: number
+}) {
   const lines: { y: number; major: boolean }[] = []
   for (let yr = Math.ceil(layout.minYear / 50) * 50; yr <= layout.maxYear; yr += 50) {
     lines.push({ y: layout.yearToY(yr), major: yr % 100 === 0 })
@@ -306,10 +316,10 @@ const Backdrop = memo(function Backdrop({ layout, title, subtitle }: { layout: L
           y2={l.y}
         />
       ))}
-      <text className="plate-title" x={150} y={92}>
+      <text className="plate-title" x={anchorX} y={92}>
         {title}
       </text>
-      <text className="plate-subtitle" x={152} y={124}>
+      <text className="plate-subtitle" x={anchorX} y={124}>
         {subtitle}
       </text>
     </g>
@@ -343,7 +353,7 @@ const Links = memo(function Links({
 
 function successionPath(a: ChartNode, b: ChartNode): string {
   const gap = 7
-  const top = b.monarch && !b.person.protector ? 24 : gap
+  const top = b.monarch && !b.person.protector ? 26 : gap
   if (b.y - a.y > a.r + b.r + 40) {
     const y0 = a.y + a.r
     const y1 = b.y - b.r - top

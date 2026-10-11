@@ -475,6 +475,114 @@
     "src": "portraits/england/george-wales.webp",
     "wiki": "Prince_George_of_Wales"
   },
+  "england/matilda-flanders": {
+    "src": "portraits/england/matilda-flanders.webp",
+    "wiki": "Matilda_of_Flanders"
+  },
+  "england/philippa-hainault": {
+    "src": "portraits/england/philippa-hainault.webp",
+    "wiki": "Philippa_of_Hainault"
+  },
+  "england/lionel-antwerp": {
+    "src": "portraits/england/lionel-antwerp.webp",
+    "wiki": "Lionel_of_Antwerp,_Duke_of_Clarence"
+  },
+  "england/philippa-clarence": {
+    "src": "portraits/england/philippa-clarence.webp",
+    "wiki": "Philippa,_5th_Countess_of_Ulster"
+  },
+  "england/roger-mortimer": {
+    "src": "portraits/england/roger-mortimer.webp",
+    "wiki": "Roger_Mortimer,_4th_Earl_of_March"
+  },
+  "england/katherine-swynford": {
+    "src": "portraits/england/katherine-swynford.webp",
+    "wiki": "Katherine_Swynford"
+  },
+  "england/margaret-anjou": {
+    "src": "portraits/england/margaret-anjou.webp",
+    "wiki": "Margaret_of_Anjou"
+  },
+  "england/owen-tudor": {
+    "src": "portraits/england/owen-tudor.webp",
+    "wiki": "Owen_Tudor"
+  },
+  "england/elizabeth-woodville": {
+    "src": "portraits/england/elizabeth-woodville.webp",
+    "wiki": "Elizabeth_Woodville"
+  },
+  "england/catherine-aragon": {
+    "src": "portraits/england/catherine-aragon.webp",
+    "wiki": "Catherine_of_Aragon"
+  },
+  "england/anne-boleyn": {
+    "src": "portraits/england/anne-boleyn.webp",
+    "wiki": "Anne_Boleyn"
+  },
+  "england/jane-seymour": {
+    "src": "portraits/england/jane-seymour.webp",
+    "wiki": "Jane_Seymour"
+  },
+  "england/philip-ii-spain": {
+    "src": "portraits/england/philip-ii-spain.webp",
+    "wiki": "Philip_II_of_Spain"
+  },
+  "england/darnley": {
+    "src": "portraits/england/darnley.webp",
+    "wiki": "Henry_Stuart,_Lord_Darnley"
+  },
+  "england/henrietta-maria": {
+    "src": "portraits/england/henrietta-maria.webp",
+    "wiki": "Henrietta_Maria"
+  },
+  "england/anne-hyde": {
+    "src": "portraits/england/anne-hyde.webp",
+    "wiki": "Anne_Hyde"
+  },
+  "england/mary-modena": {
+    "src": "portraits/england/mary-modena.webp",
+    "wiki": "Mary_of_Modena"
+  },
+  "england/victoria-princess-royal": {
+    "src": "portraits/england/victoria-princess-royal.webp",
+    "wiki": "Victoria,_Princess_Royal"
+  },
+  "england/alexandra-denmark": {
+    "src": "portraits/england/alexandra-denmark.webp",
+    "wiki": "Alexandra_of_Denmark"
+  },
+  "england/mary-teck": {
+    "src": "portraits/england/mary-teck.webp",
+    "wiki": "Mary_of_Teck"
+  },
+  "england/wallis-simpson": {
+    "src": "portraits/england/wallis-simpson.webp",
+    "wiki": "Wallis_Simpson"
+  },
+  "england/elizabeth-bowes-lyon": {
+    "src": "portraits/england/elizabeth-bowes-lyon.webp",
+    "wiki": "Queen_Elizabeth_The_Queen_Mother"
+  },
+  "england/princess-margaret": {
+    "src": "portraits/england/princess-margaret.webp",
+    "wiki": "Princess_Margaret,_Countess_of_Snowdon"
+  },
+  "england/princess-anne": {
+    "src": "portraits/england/princess-anne.webp",
+    "wiki": "Anne,_Princess_Royal"
+  },
+  "england/diana": {
+    "src": "portraits/england/diana.webp",
+    "wiki": "Diana,_Princess_of_Wales"
+  },
+  "england/camilla": {
+    "src": "portraits/england/camilla.webp",
+    "wiki": "Queen_Camilla"
+  },
+  "england/prince-harry": {
+    "src": "portraits/england/prince-harry.webp",
+    "wiki": "Prince_Harry,_Duke_of_Sussex"
+  },
   "france/pepin": {
     "src": "portraits/france/pepin.webp",
     "wiki": "Pepin_the_Short"
@@ -870,5 +978,69 @@
   "france/prince-imperial": {
     "src": "portraits/france/prince-imperial.webp",
     "wiki": "Louis-Napoléon,_Prince_Imperial"
+  },
+  "france/pepin-herstal": {
+    "src": "portraits/france/pepin-herstal.webp",
+    "wiki": "Pepin_of_Herstal"
+  },
+  "france/charles-martel": {
+    "src": "portraits/france/charles-martel.webp",
+    "wiki": "Charles_Martel"
+  },
+  "france/bertrada": {
+    "src": "portraits/france/bertrada.webp",
+    "wiki": "Bertrada_of_Laon"
+  },
+  "france/hildegard": {
+    "src": "portraits/france/hildegard.webp",
+    "wiki": "Hildegard_of_the_Vinzgau"
+  },
+  "france/judith-bavaria": {
+    "src": "portraits/france/judith-bavaria.webp",
+    "wiki": "Judith_of_Bavaria_(died_843)"
+  },
+  "france/anne-kiev": {
+    "src": "portraits/france/anne-kiev.webp",
+    "wiki": "Anne_of_Kiev"
+  },
+  "france/isabella-hainaut": {
+    "src": "portraits/france/isabella-hainaut.webp",
+    "wiki": "Isabella_of_Hainault"
+  },
+  "france/isabeau-bavaria": {
+    "src": "portraits/france/isabeau-bavaria.webp",
+    "wiki": "Isabeau_of_Bavaria"
+  },
+  "france/anne-france": {
+    "src": "portraits/france/anne-france.webp",
+    "wiki": "Anne_of_France"
+  },
+  "france/jeanne-albret": {
+    "src": "portraits/france/jeanne-albret.webp",
+    "wiki": "Jeanne_III_of_Navarre"
+  },
+  "france/maria-theresa-spain": {
+    "src": "portraits/france/maria-theresa-spain.webp",
+    "wiki": "Maria_Theresa_of_Spain"
+  },
+  "france/marie-leszczynska": {
+    "src": "portraits/france/marie-leszczynska.webp",
+    "wiki": "Marie_Leszczyńska"
+  },
+  "france/madame-royale": {
+    "src": "portraits/france/madame-royale.webp",
+    "wiki": "Marie-Thérèse_of_France"
+  },
+  "france/letizia": {
+    "src": "portraits/france/letizia.webp",
+    "wiki": "Letizia_Bonaparte"
+  },
+  "france/joseph-bonaparte": {
+    "src": "portraits/france/joseph-bonaparte.webp",
+    "wiki": "Joseph_Bonaparte"
+  },
+  "france/count-paris": {
+    "src": "portraits/france/count-paris.webp",
+    "wiki": "Prince_Philippe,_Count_of_Paris"
   }
 }
