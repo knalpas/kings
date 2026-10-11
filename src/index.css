@@ -614,6 +614,18 @@ kbd {
   opacity: 0.14;
 }
 
+.link--marriage {
+  stroke: #b08a3e;
+  stroke-width: 1.6;
+  stroke-dasharray: 1.5 4;
+  stroke-linecap: round;
+}
+
+.link--marriage.is-on {
+  stroke: #8a6a28;
+  stroke-width: 2.2;
+}
+
 .succession {
   fill: none;
   stroke: var(--gold);
@@ -708,7 +720,25 @@ kbd {
   font-size: 10.5px;
 }
 
-.chart__svg[data-lod='mid'] .node--ancestor .node__years {
+.node__role {
+  font: 600 8.5px var(--sans);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  fill: var(--gold);
+  paint-order: stroke;
+  stroke: var(--canvas);
+  stroke-width: 3px;
+}
+
+.node__role--consort,
+.node__role--regent {
+  fill: var(--ink-3);
+}
+
+.chart__svg[data-lod='mid'] .node--ancestor .node__years,
+.chart__svg[data-lod='mid'] .node__role,
+.chart__svg[data-lod='far'] .node__role {
   display: none;
 }
 
@@ -881,6 +911,22 @@ kbd {
   margin-top: 2px;
   font-size: 12px;
   color: var(--ink-3);
+}
+
+.hovercard__fate {
+  margin-top: 3px;
+  max-width: 260px;
+  font: italic 13px/1.3 var(--serif);
+  color: var(--ink-2);
+  white-space: normal;
+}
+
+.fact__fate {
+  display: block;
+  margin-top: 6px;
+  font: 600 15px/1.35 var(--display);
+  font-style: normal;
+  color: var(--ink);
 }
 
 .dot {
@@ -1080,6 +1126,34 @@ kbd {
   font-size: 12.5px;
   line-height: 1.4;
   color: var(--ink-3);
+}
+
+.status {
+  margin-top: 22px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: var(--paper);
+  border-left: 3px solid var(--house);
+}
+
+.status__label {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.status__text {
+  margin: 4px 0 0;
+  font: italic 15.5px/1.4 var(--serif);
+  color: var(--ink-2);
+}
+
+.status__fate {
+  margin: 6px 0 0;
+  font: 600 18px/1.25 var(--display);
+  color: var(--ink);
 }
 
 .facts {

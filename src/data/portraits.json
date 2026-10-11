@@ -319,6 +319,162 @@
     "src": "portraits/england/charles-iii.webp",
     "wiki": "Charles_III"
   },
+  "england/aethelwulf": {
+    "src": "portraits/england/aethelwulf.webp",
+    "wiki": "Æthelwulf,_King_of_Wessex"
+  },
+  "england/aethelflaed": {
+    "src": "portraits/england/aethelflaed.webp",
+    "wiki": "Æthelflæd"
+  },
+  "england/edward-exile": {
+    "src": "portraits/england/edward-exile.webp",
+    "wiki": "Edward_the_Exile"
+  },
+  "england/edgar-atheling": {
+    "src": "portraits/england/edgar-atheling.webp",
+    "wiki": "Edgar_Ætheling"
+  },
+  "england/margaret-scotland": {
+    "src": "portraits/england/margaret-scotland.webp",
+    "wiki": "Saint_Margaret_of_Scotland"
+  },
+  "england/matilda-scotland": {
+    "src": "portraits/england/matilda-scotland.webp",
+    "wiki": "Matilda_of_Scotland"
+  },
+  "england/edith-wessex": {
+    "src": "portraits/england/edith-wessex.webp",
+    "wiki": "Edith_of_Wessex"
+  },
+  "england/tostig": {
+    "src": "portraits/england/tostig.webp",
+    "wiki": "Tostig_Godwinson"
+  },
+  "england/rollo": {
+    "src": "portraits/england/rollo.webp",
+    "wiki": "Rollo"
+  },
+  "england/william-longsword": {
+    "src": "portraits/england/william-longsword.webp",
+    "wiki": "William_I_Longsword"
+  },
+  "england/richard-i-normandy": {
+    "src": "portraits/england/richard-i-normandy.webp",
+    "wiki": "Richard_I_of_Normandy"
+  },
+  "england/richard-ii-normandy": {
+    "src": "portraits/england/richard-ii-normandy.webp",
+    "wiki": "Richard_II,_Duke_of_Normandy"
+  },
+  "england/emma": {
+    "src": "portraits/england/emma.webp",
+    "wiki": "Emma_of_Normandy"
+  },
+  "england/robert-magnificent": {
+    "src": "portraits/england/robert-magnificent.webp",
+    "wiki": "Robert_I,_Duke_of_Normandy"
+  },
+  "england/robert-curthose": {
+    "src": "portraits/england/robert-curthose.webp",
+    "wiki": "Robert_Curthose"
+  },
+  "england/william-adelin": {
+    "src": "portraits/england/william-adelin.webp",
+    "wiki": "William_Adelin"
+  },
+  "england/geoffrey-anjou": {
+    "src": "portraits/england/geoffrey-anjou.webp",
+    "wiki": "Geoffrey_Plantagenet,_Count_of_Anjou"
+  },
+  "england/eleanor-aquitaine": {
+    "src": "portraits/england/eleanor-aquitaine.webp",
+    "wiki": "Eleanor_of_Aquitaine"
+  },
+  "england/henry-young-king": {
+    "src": "portraits/england/henry-young-king.webp",
+    "wiki": "Henry_the_Young_King"
+  },
+  "england/geoffrey-brittany": {
+    "src": "portraits/england/geoffrey-brittany.webp",
+    "wiki": "Geoffrey_II,_Duke_of_Brittany"
+  },
+  "england/arthur-brittany": {
+    "src": "portraits/england/arthur-brittany.webp",
+    "wiki": "Arthur_I,_Duke_of_Brittany"
+  },
+  "england/isabella-france": {
+    "src": "portraits/england/isabella-france.webp",
+    "wiki": "Isabella_of_France"
+  },
+  "england/edward-westminster": {
+    "src": "portraits/england/edward-westminster.webp",
+    "wiki": "Edward_of_Westminster,_Prince_of_Wales"
+  },
+  "england/catherine-valois": {
+    "src": "portraits/england/catherine-valois.webp",
+    "wiki": "Catherine_of_Valois"
+  },
+  "england/edmund-tudor": {
+    "src": "portraits/england/edmund-tudor.webp",
+    "wiki": "Edmund_Tudor,_1st_Earl_of_Richmond"
+  },
+  "england/george-clarence": {
+    "src": "portraits/england/george-clarence.webp",
+    "wiki": "George_Plantagenet,_Duke_of_Clarence"
+  },
+  "england/richard-shrewsbury": {
+    "src": "portraits/england/richard-shrewsbury.webp",
+    "wiki": "Richard_of_Shrewsbury,_Duke_of_York"
+  },
+  "england/elizabeth-york": {
+    "src": "portraits/england/elizabeth-york.webp",
+    "wiki": "Elizabeth_of_York"
+  },
+  "england/arthur-tudor": {
+    "src": "portraits/england/arthur-tudor.webp",
+    "wiki": "Arthur,_Prince_of_Wales"
+  },
+  "england/henry-frederick": {
+    "src": "portraits/england/henry-frederick.webp",
+    "wiki": "Henry_Frederick,_Prince_of_Wales"
+  },
+  "england/james-old-pretender": {
+    "src": "portraits/england/james-old-pretender.webp",
+    "wiki": "James_Francis_Edward_Stuart"
+  },
+  "england/charles-edward-stuart": {
+    "src": "portraits/england/charles-edward-stuart.webp",
+    "wiki": "Charles_Edward_Stuart"
+  },
+  "england/william-gloucester": {
+    "src": "portraits/england/william-gloucester.webp",
+    "wiki": "Prince_William,_Duke_of_Gloucester"
+  },
+  "england/charlotte-wales": {
+    "src": "portraits/england/charlotte-wales.webp",
+    "wiki": "Princess_Charlotte_of_Wales_(1796–1817)"
+  },
+  "england/albert": {
+    "src": "portraits/england/albert.webp",
+    "wiki": "Albert,_Prince_Consort"
+  },
+  "england/albert-victor": {
+    "src": "portraits/england/albert-victor.webp",
+    "wiki": "Prince_Albert_Victor,_Duke_of_Clarence_and_Avondale"
+  },
+  "england/philip": {
+    "src": "portraits/england/philip.webp",
+    "wiki": "Prince_Philip,_Duke_of_Edinburgh"
+  },
+  "england/william-wales": {
+    "src": "portraits/england/william-wales.webp",
+    "wiki": "William,_Prince_of_Wales"
+  },
+  "england/george-wales": {
+    "src": "portraits/england/george-wales.webp",
+    "wiki": "Prince_George_of_Wales"
+  },
   "france/pepin": {
     "src": "portraits/france/pepin.webp",
     "wiki": "Pepin_the_Short"
@@ -610,5 +766,109 @@
   "france/napoleon-iii": {
     "src": "portraits/france/napoleon-iii.webp",
     "wiki": "Napoleon_III"
+  },
+  "france/carloman-i": {
+    "src": "portraits/france/carloman-i.webp",
+    "wiki": "Carloman_I"
+  },
+  "france/lothair-i": {
+    "src": "portraits/france/lothair-i.webp",
+    "wiki": "Lothair_I"
+  },
+  "france/philip-co-king": {
+    "src": "portraits/france/philip-co-king.webp",
+    "wiki": "Philip_of_France_(1116–1131)"
+  },
+  "france/eleanor-aquitaine": {
+    "src": "portraits/france/eleanor-aquitaine.webp",
+    "wiki": "Eleanor_of_Aquitaine"
+  },
+  "france/blanche-castile": {
+    "src": "portraits/france/blanche-castile.webp",
+    "wiki": "Blanche_of_Castile"
+  },
+  "france/jeanne-navarre": {
+    "src": "portraits/france/jeanne-navarre.webp",
+    "wiki": "Joan_II_of_Navarre"
+  },
+  "france/isabella-france": {
+    "src": "portraits/france/isabella-france.webp",
+    "wiki": "Isabella_of_France"
+  },
+  "france/louis-guyenne": {
+    "src": "portraits/france/louis-guyenne.webp",
+    "wiki": "Louis,_Duke_of_Guyenne"
+  },
+  "france/catherine-valois": {
+    "src": "portraits/france/catherine-valois.webp",
+    "wiki": "Catherine_of_Valois"
+  },
+  "france/anne-brittany": {
+    "src": "portraits/france/anne-brittany.webp",
+    "wiki": "Anne_of_Brittany"
+  },
+  "france/claude-france": {
+    "src": "portraits/france/claude-france.webp",
+    "wiki": "Claude_of_France"
+  },
+  "france/francis-dauphin": {
+    "src": "portraits/france/francis-dauphin.webp",
+    "wiki": "Francis_III,_Duke_of_Brittany"
+  },
+  "france/catherine-medici": {
+    "src": "portraits/france/catherine-medici.webp",
+    "wiki": "Catherine_de_Medici"
+  },
+  "france/margaret-valois": {
+    "src": "portraits/france/margaret-valois.webp",
+    "wiki": "Margaret_of_Valois"
+  },
+  "france/marie-medici": {
+    "src": "portraits/france/marie-medici.webp",
+    "wiki": "Marie_de_Medici"
+  },
+  "france/anne-austria": {
+    "src": "portraits/france/anne-austria.webp",
+    "wiki": "Anne_of_Austria"
+  },
+  "france/marie-antoinette": {
+    "src": "portraits/france/marie-antoinette.webp",
+    "wiki": "Marie_Antoinette"
+  },
+  "france/louis-joseph": {
+    "src": "portraits/france/louis-joseph.webp",
+    "wiki": "Louis_Joseph,_Dauphin_of_France"
+  },
+  "france/duke-berry": {
+    "src": "portraits/france/duke-berry.webp",
+    "wiki": "Charles_Ferdinand,_Duke_of_Berry"
+  },
+  "france/henri-chambord": {
+    "src": "portraits/france/henri-chambord.webp",
+    "wiki": "Henri,_Count_of_Chambord"
+  },
+  "france/ferdinand-philippe": {
+    "src": "portraits/france/ferdinand-philippe.webp",
+    "wiki": "Prince_Ferdinand_Philippe,_Duke_of_Orléans"
+  },
+  "france/josephine": {
+    "src": "portraits/france/josephine.webp",
+    "wiki": "Joséphine_de_Beauharnais"
+  },
+  "france/hortense": {
+    "src": "portraits/france/hortense.webp",
+    "wiki": "Hortense_de_Beauharnais"
+  },
+  "france/marie-louise": {
+    "src": "portraits/france/marie-louise.webp",
+    "wiki": "Marie_Louise,_Duchess_of_Parma"
+  },
+  "france/eugenie": {
+    "src": "portraits/france/eugenie.webp",
+    "wiki": "Empress_Eugénie"
+  },
+  "france/prince-imperial": {
+    "src": "portraits/france/prince-imperial.webp",
+    "wiki": "Louis-Napoléon,_Prince_Imperial"
   }
 }

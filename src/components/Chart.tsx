@@ -5,7 +5,7 @@ import 'd3-transition'
 import type { House, Kingdom } from '../types'
 import type { ChartNode, Layout } from '../lib/layout'
 import { useViewport, type Viewport } from '../lib/viewport'
-import { reignText, lifeText } from '../lib/genealogy'
+import { reignText, lifeText, roleLabel } from '../lib/genealogy'
 import { useLocale } from '../i18n/locale'
 import { initials, portraitSrc } from '../data/portraits'
 import { TimeOverlay, RULER_W } from './TimeOverlay'
@@ -194,7 +194,14 @@ export function Chart({
     if (!selectedId) return null
     const set = new Set<string>([selectedId])
     const people = new Map(layout.nodes.map((n) => [n.id, n.person]))
-    for (let p = people.get(selectedId); p?.parent; p = people.get(p.parent)) set.add(p.parent)
+    const up = [selectedId]
+    while (up.length) {
+      const p = people.get(up.pop()!)
+      for (const id of [p?.parent, p?.otherParent]) if (id && !set.has(id)) {
+        set.add(id)
+        up.push(id)
+      }
+    }
     const stack = [selectedId]
     while (stack.length) {
       const id = stack.pop()!
@@ -203,6 +210,9 @@ export function Chart({
         stack.push(n.id)
       }
     }
+    const me = people.get(selectedId)
+    for (const id of me?.spouseOf ?? []) set.add(id)
+    for (const n of layout.nodes) if (n.person.spouseOf?.includes(selectedId)) set.add(n.id)
     return set
   }, [selectedId, layout])
 
@@ -308,15 +318,12 @@ const Links = memo(function Links({
       {layout.links.map((l) => {
         const on = lineage ? lineage.has(l.parent) && lineage.has(l.child) : false
         const child = layout.byId.get(l.child)!
+        const parent = layout.byId.get(l.parent)!
         const dim =
-          (lineage && !on) || (houseFocus != null && child.person.house !== houseFocus)
-        return (
-          <path
-            key={l.child}
-            d={l.d}
-            className={`link${l.distant ? ' link--distant' : ''}${on ? ' is-on' : ''}${dim ? ' is-dim' : ''}`}
-          />
-        )
+          (lineage && !on) ||
+          (houseFocus != null && child.person.house !== houseFocus && (l.kind === 'descent' || parent.person.house !== houseFocus))
+        const cls = l.kind === 'marriage' ? 'link link--marriage' : `link${l.distant ? ' link--distant' : ''}`
+        return <path key={`${l.kind}-${l.parent}-${l.child}`} d={l.d} className={`${cls}${on ? ' is-on' : ''}${dim ? ' is-dim' : ''}`} />
       })}
     </g>
   )
@@ -410,7 +417,14 @@ const NodeMark = memo(function NodeMark({
       onBlur={() => onHover(null)}
     >
       <circle className="node__halo" r={r + 7} />
-      <circle className="node__ring" r={r} fill="#fffdf8" stroke={color} strokeWidth={monarch ? 3.5 : 2} />
+      <circle
+        className="node__ring"
+        r={r}
+        fill="#fffdf8"
+        stroke={color}
+        strokeWidth={monarch ? 3.5 : 2}
+        strokeDasharray={person.role === 'consort' || person.role === 'regent' ? '3 2.5' : undefined}
+      />
       {src ? (
         <image
           href={src}
@@ -448,6 +462,11 @@ const NodeMark = memo(function NodeMark({
       <text className="node__years" y={r + (monarch ? 39 : 28)}>
         {years}
       </text>
+      {person.role && !monarch && (
+        <text className={`node__role node__role--${person.role}`} y={r + 41}>
+          {roleLabel(person, locale)}
+        </text>
+      )}
     </g>
   )
 })
@@ -480,8 +499,9 @@ function HoverCard({
         </div>
         <div className="hovercard__meta">
           {p.reign ? `${t.reigned} ${reignText(p, locale)}` : lifeText(p, locale)}
-          {!p.reign && ` · ${t.didNotReign}`}
+          {!p.reign && ` · ${p.role ? roleLabel(p, locale) : t.didNotReign}`}
         </div>
+        {p.fate && <div className="hovercard__fate">{p.fate}</div>}
       </div>
     </div>
   )

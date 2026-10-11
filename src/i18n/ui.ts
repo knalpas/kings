@@ -82,6 +82,20 @@ const en = {
   langFr: 'FR',
   houseOfPrefix: 'House of ',
   reignLength: (n: number) => (n < 1 ? 'under a year' : `${n} year${n === 1 ? '' : 's'}`),
+  role: { heir: 'Heir', claimant: 'Claimant', consort: 'Consort', regent: 'Regent' } as Record<'heir' | 'claimant' | 'consort' | 'regent', string>,
+  roleStatus: {
+    heir: 'Heir to the throne who never reigned.',
+    claimant: 'Claimed the throne but never reigned.',
+    consort: 'Royal consort. Married into the line.',
+    regent: 'Consort and regent. Governed on behalf of a king.',
+  } as Record<'heir' | 'claimant' | 'consort' | 'regent', string>,
+  marriedTo: 'Married to',
+  husband: 'husband',
+  wife: 'wife',
+  keyConsort: 'Consort or regent.',
+  keyConsortBody: 'Dashed ring; a dotted line joins husband and wife.',
+  keyHeir: 'Heir or claimant.',
+  keyHeirBody: 'Labelled under the name, with how their story ended.',
 }
 
 export type Ui = typeof en
@@ -167,6 +181,20 @@ const fr: Ui = {
   langFr: 'FR',
   houseOfPrefix: 'Maison ',
   reignLength: (n) => (n < 1 ? 'moins d’un an' : `${n} an${n === 1 ? '' : 's'}`),
+  role: { heir: 'Héritier', claimant: 'Prétendant', consort: 'Conjoint', regent: 'Régent' },
+  roleStatus: {
+    heir: 'Héritier du trône qui n’a jamais régné.',
+    claimant: 'A revendiqué le trône sans jamais régner.',
+    consort: 'Conjoint royal, entré dans la lignée par mariage.',
+    regent: 'Conjoint et régent : a gouverné au nom d’un roi.',
+  },
+  marriedTo: 'Marié à',
+  husband: 'mari',
+  wife: 'épouse',
+  keyConsort: 'Conjoint ou régent.',
+  keyConsortBody: 'Anneau en tirets ; un pointillé relie les époux.',
+  keyHeir: 'Héritier ou prétendant.',
+  keyHeirBody: 'Indiqué sous le nom, avec le destin de la personne.',
 }
 
 export const ui: Record<Locale, Ui> = { en, fr }

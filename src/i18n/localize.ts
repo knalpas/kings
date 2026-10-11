@@ -14,6 +14,7 @@ export type PersonL10n = {
   events?: string[]
   reignText?: string
   wikipedia?: string
+  fate?: string
 }
 
 type KingdomL10n = {
@@ -42,6 +43,7 @@ function localizePerson(p: Person, locale: Locale, kingdom: Kingdom): Person {
     summary: o.summary ?? p.summary,
     events: o.events ?? p.events,
     reignText: o.reignText ?? p.reignText,
+    fate: o.fate ?? p.fate,
     wikipedia: o.wikipedia ?? p.wikipedia,
   }
 }
@@ -84,13 +86,14 @@ export function wikiUrl(person: Person, locale: Locale): string {
 
 export function houseShortLabel(label: string, locale: Locale): string {
   if (locale === 'fr') {
-    return label
+    const short = label
       .replace(/^Maison de /, '')
       .replace(/^Maison d’/, '')
       .replace(/^Maison d'/, '')
       .replace(/^Maison /, '')
       .replace(/^Dynastie /, '')
       .replace(/^Le /, '')
+    return short.charAt(0).toUpperCase() + short.slice(1)
   }
   return label.replace(/^House of /, '').replace(/^The /, '')
 }

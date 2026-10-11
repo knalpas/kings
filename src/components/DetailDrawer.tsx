@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import type { House, Interval, Kingdom, Person } from '../types'
 import { initials, portraitSrc } from '../data/portraits'
-import { ageLabel, children, kinship, lifeText, reignLength, reignText, relationPhrase, yearText } from '../lib/genealogy'
+import { ageLabel, kinship, lifeText, reignLength, reignText, relationPhrase, roleLabel, spousesOnChart, yearText } from '../lib/genealogy'
 import { useLocale } from '../i18n/locale'
 import { wikiUrl } from '../i18n/localize'
 
@@ -33,7 +33,8 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
   const prev = pos > 0 ? chain[pos - 1] : undefined
   const next = pos >= 0 && pos + 1 < chain.length ? chain[pos + 1] : undefined
   const parent = p.parent ? index.get(p.parent) : undefined
-  const kids = children(p.id, people)
+  const otherParent = p.otherParent ? index.get(p.otherParent) : undefined
+  const kids = people.filter((q) => q.parent === p.id || q.otherParent === p.id)
   const ordinal = pos >= 0 && !p.protector ? chain.slice(0, pos + 1).filter((c) => !c.protector).length : null
 
   const interregnum =
@@ -41,7 +42,8 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
       ? gaps.find((g) => g.start >= prev.reign![1]! - 1 && g.end <= p.reign![0] + 1)
       : undefined
 
-  const relation = (other: Person) => relationPhrase(p, kinship(p.id, other.id, index, locale), locale, t.noRelation)
+  const relation = (other: Person) => relationPhrase(p, kinship(p.id, other.id, index, locale), locale, t.noRelation, other, index)
+  const partners = spousesOnChart(p, people)
 
   const acceededAge = p.reign ? ageLabel(p, p.reign[0], locale) : ''
   const diedAge = p.died != null ? ageLabel(p, p.died, locale) : ''
@@ -86,6 +88,14 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
           </div>
         </header>
 
+        {!p.reign && (
+          <div className="status">
+            <div className="status__label">{p.role ? roleLabel(p, locale) : t.status}</div>
+            <p className="status__text">{p.role ? t.roleStatus[p.role] : t.didNotReignStatus}</p>
+            {p.fate && <p className="status__fate">{p.fate}</p>}
+          </div>
+        )}
+
         <dl className="facts">
           {p.reign ? (
             <>
@@ -101,12 +111,7 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
                 <dd>{acceededAge || '—'}</dd>
               </div>
             </>
-          ) : (
-            <div className="fact fact--wide">
-              <dt>{t.status}</dt>
-              <dd className="fact__muted">{t.didNotReignStatus}</dd>
-            </div>
-          )}
+          ) : null}
           <div className="fact">
             <dt>{t.born}</dt>
             <dd>{yearText(p.born, p.bornCirca, locale)}</dd>
@@ -114,7 +119,7 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
           <div className="fact">
             <dt>{t.died}</dt>
             <dd>
-              {p.died ?? (p.born != null ? t.living : '—')}
+              {p.died != null ? yearText(p.died, p.diedCirca, locale) : p.born != null ? t.living : '—'}
               {diedAge && <small>{t.aged(diedAge)}</small>}
             </dd>
           </div>
@@ -153,6 +158,12 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
                 <PersonLink kingdom={kingdom} person={parent} color={houses.get(parent.house)?.color} onSelect={onSelect} />
               </div>
             )}
+            {otherParent && (
+              <div className="family__row">
+                <div className="family__label">{otherParent.female ? t.mother : t.father}</div>
+                <PersonLink kingdom={kingdom} person={otherParent} color={houses.get(otherParent.house)?.color} onSelect={onSelect} />
+              </div>
+            )}
             {kids.length > 0 && (
               <div className="family__row">
                 <div className="family__label">{kids.length === 1 ? t.childOnChart : t.childrenOnChart}</div>
@@ -163,13 +174,23 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
                 </div>
               </div>
             )}
+            {partners.length > 0 && (
+              <div className="family__row">
+                <div className="family__label">{t.marriedTo}</div>
+                <div className="family__links">
+                  {partners.map((s) => (
+                    <PersonLink key={s.id} kingdom={kingdom} person={s} color={houses.get(s.house)?.color} onSelect={onSelect} />
+                  ))}
+                </div>
+              </div>
+            )}
             {p.spouses && p.spouses.length > 0 && (
               <div className="family__row">
                 <div className="family__label">{p.spouses.length === 1 ? t.spouse : t.spouses}</div>
                 <div className="family__spouses">{p.spouses.join(' · ')}</div>
               </div>
             )}
-            {!parent && kids.length === 0 && !p.spouses?.length && <p className="fact__muted">{t.noFamily}</p>}
+            {!parent && kids.length === 0 && !p.spouses?.length && !partners.length && <p className="fact__muted">{t.noFamily}</p>}
           </div>
         </section>
 

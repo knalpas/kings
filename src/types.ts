@@ -8,6 +8,8 @@ export type Person = {
   title: string
   house: string
   parent: string | null
+  /** The other parent, when they are on the chart (used for kinship and family links, not drawn as descent). */
+  otherParent?: string
   /** The parent link skips generations that are not drawn. */
   distant?: boolean
   /** Accession and end of reign; absent for ancestors who never reigned. */
@@ -19,7 +21,14 @@ export type Person = {
   born?: number
   bornCirca?: boolean
   died?: number
+  diedCirca?: boolean
   female?: boolean
+  /** Why a non-reigning person matters to the succession. */
+  role?: 'heir' | 'claimant' | 'consort' | 'regent'
+  /** Partners drawn on the chart; a spouse without a parent is placed beside the first partner. */
+  spouseOf?: string[]
+  /** One-line note on how their story ended, e.g. "Drowned in the White Ship, 1120". */
+  fate?: string
   epithet?: string
   /** How the crown was obtained, when not a plain inheritance. */
   accession?: string

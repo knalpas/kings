@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { House, Kingdom, Person } from '../types'
 import { kingdomOrder } from '../data'
 import { initials, portraitSrc } from '../data/portraits'
-import { lifeText, reignText } from '../lib/genealogy'
+import { lifeText, reignText, roleLabel } from '../lib/genealogy'
 import { useLocale } from '../i18n/locale'
 import type { Locale } from '../i18n/types'
 import { houseShortLabel } from '../i18n/localize'
@@ -185,7 +185,7 @@ function Search({ kingdom, people, houses, onPick }: { kingdom: Kingdom; people:
                   <span className="search__text">
                     <span className="search__name">{p.name}</span>
                     <span className="search__meta">
-                      {p.reign ? reignText(p, locale) : `${lifeText(p, locale)} · ${t.didNotReign}`} · {house ? houseShortLabel(house.label, locale) : ''}
+                      {p.reign ? reignText(p, locale) : `${lifeText(p, locale)} · ${p.role ? roleLabel(p, locale) : t.didNotReign}`} · {house ? houseShortLabel(house.label, locale) : ''}
                     </span>
                   </span>
                 </button>
@@ -235,6 +235,24 @@ function Key() {
               </svg>
               <span>
                 <b>{t.keyAncestor}</b> {t.keyAncestorBody}
+              </span>
+            </li>
+            <li>
+              <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
+                <circle cx="20" cy="20" r="9" fill="#fffdf8" stroke="#8a847a" strokeWidth="2" strokeDasharray="3 2.5" />
+              </svg>
+              <span>
+                <b>{t.keyConsort}</b> {t.keyConsortBody}
+              </span>
+            </li>
+            <li>
+              <svg viewBox="0 0 40 20" width="36" height="18" aria-hidden="true">
+                <text x="20" y="13" textAnchor="middle" fontSize="8.5" fontWeight="600" fill="#a7843c" letterSpacing="0.08em">
+                  HEIR
+                </text>
+              </svg>
+              <span>
+                <b>{t.keyHeir}</b> {t.keyHeirBody}
               </span>
             </li>
             <li>

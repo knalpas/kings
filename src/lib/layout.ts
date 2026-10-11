@@ -27,6 +27,7 @@ export type ChartNode = {
 }
 
 export type ChartLink = {
+  kind: 'descent' | 'marriage'
   parent: string
   child: string
   distant: boolean
@@ -100,10 +101,19 @@ export function computeLayout(people: Person[], houses: House[], gaps: Interval[
   const data = new Map<string, TreeDatum>()
   const root: TreeDatum = { id: '__root__', person: null, children: [] }
   for (const p of people) data.set(p.id, { id: p.id, person: p, children: [] })
+  // Spouses without a drawn parent hang beside their partner so the couple stays together.
+  const anchorOf = new Map<string, string>()
   for (const p of people) {
-    const parent = p.parent ? data.get(p.parent) : undefined
+    if (p.parent) continue
+    const partner = p.spouseOf?.find((id) => data.has(id))
+    if (partner) anchorOf.set(p.id, partner)
+  }
+  for (const p of people) {
+    const parentId = p.parent ?? anchorOf.get(p.id)
+    const parent = parentId ? data.get(parentId) : undefined
     ;(parent ?? root).children.push(data.get(p.id)!)
   }
+  const isConsortSlot = (id: string) => anchorOf.has(id)
   const sortKids = (n: TreeDatum) => {
     n.children.sort((a, b) => naturalYear(a.person!) - naturalYear(b.person!))
     n.children.forEach(sortKids)
@@ -124,23 +134,30 @@ export function computeLayout(people: Person[], houses: House[], gaps: Interval[
   for (const c of components) {
     const desc = c.descendants()
 
-    // Monarchs sit exactly at their accession year; ancestors sit between parent and children.
-    for (const d of desc) {
+    // Monarchs sit exactly at their accession year; ancestors sit between parent and children;
+    // spouses without a parent sit level with (or after) their partner.
+    const place = (d: HierarchyPointNode<TreeDatum>, initial: boolean) => {
       const p = d.data.person!
-      let y = yearToY(naturalYear(p))
-      if (!isMonarch(p) && d.parent?.data.person) {
-        y = Math.max(y, pos.get(d.parent.data.id)!.y + MIN_GEN)
-      }
-      pos.set(d.data.id, { x: d.x, y })
+      const here = pos.get(d.data.id)
+      let y = initial || !here ? yearToY(naturalYear(p)) : here.y
+      const up = d.parent?.data.person ? pos.get(d.parent.data.id)!.y : null
+      if (up != null && isConsortSlot(d.data.id)) y = Math.max(yearToY(naturalYear(p)), up)
+      else if (up != null && !isMonarch(p)) y = Math.max(y, up + MIN_GEN)
+      if (here) here.y = y
+      else pos.set(d.data.id, { x: d.x, y })
     }
+    for (const d of desc) place(d, true)
     for (const d of [...desc].reverse()) {
       const p = d.data.person!
-      if (isMonarch(p) || !d.children) continue
-      const minChild = Math.min(...d.children.map((k) => pos.get(k.data.id)!.y))
+      if (isMonarch(p) || isConsortSlot(d.data.id) || !d.children) continue
+      const blood = d.children.filter((k) => !isConsortSlot(k.data.id))
+      if (!blood.length) continue
+      const minChild = Math.min(...blood.map((k) => pos.get(k.data.id)!.y))
       const here = pos.get(d.data.id)!
       const lower = d.parent?.data.person ? pos.get(d.parent.data.id)!.y + 4 * PX_PER_YEAR : -Infinity
       if (here.y > minChild - MIN_GEN) here.y = Math.max(lower, minChild - MIN_GEN)
     }
+    for (const d of desc) if (d.parent?.data.person && !isMonarch(d.data.person!)) place(d, false)
 
     relax(desc, pos)
 
@@ -207,7 +224,15 @@ export function computeLayout(people: Person[], houses: House[], gaps: Interval[
     const a = byId.get(person.parent)
     const b = byId.get(person.id)
     if (!a || !b) continue
-    links.push({ parent: a.id, child: b.id, distant: Boolean(person.distant), d: descentPath(a, b) })
+    links.push({ kind: 'descent', parent: a.id, child: b.id, distant: Boolean(person.distant), d: descentPath(a, b) })
+  }
+  for (const person of people) {
+    for (const partner of person.spouseOf ?? []) {
+      const a = byId.get(partner)
+      const b = byId.get(person.id)
+      if (!a || !b) continue
+      links.push({ kind: 'marriage', parent: a.id, child: b.id, distant: false, d: marriagePath(a, b) })
+    }
   }
 
   const bands = computeBands(chain, houseById, gaps, lastReignEnd, yearToY)
@@ -234,7 +259,7 @@ function relax(desc: HierarchyPointNode<TreeDatum>[], pos: Map<string, { x: numb
     return false
   }
   const minDx = SLOT - 6
-  for (let pass = 0; pass < 200; pass++) {
+  for (let pass = 0; pass < 600; pass++) {
     let moved = false
     const sorted = [...desc].sort((a, b) => pos.get(a.data.id)!.y - pos.get(b.data.id)!.y)
     for (let i = 0; i < sorted.length; i++) {
@@ -244,20 +269,38 @@ function relax(desc: HierarchyPointNode<TreeDatum>[], pos: Map<string, { x: numb
         if (b.y - a.y >= ROW_H) break
         const dx = b.x - a.x
         if (Math.abs(dx) >= minDx) continue
-        let mover = dx >= 0 ? sorted[j] : sorted[i]
-        let other = mover === sorted[j] ? sorted[i] : sorted[j]
-        let dir = 1
-        if (isAncestor(mover, other)) {
-          ;[mover, other] = [other, mover]
-          dir = -1
+        const left = dx >= 0 ? sorted[i] : sorted[j]
+        const right = left === sorted[i] ? sorted[j] : sorted[i]
+        const gap = minDx - Math.abs(dx)
+        const shift = (n: HierarchyPointNode<TreeDatum>, by: number) => {
+          for (const d of n.descendants()) pos.get(d.data.id)!.x += by
         }
-        const need = (minDx - Math.abs(dx)) * dir
-        for (const d of mover.descendants()) pos.get(d.data.id)!.x += need
+        const branch = (anc: HierarchyPointNode<TreeDatum>, desc: HierarchyPointNode<TreeDatum>) => {
+          let n = desc
+          while (n.parent && n.parent !== anc) n = n.parent
+          return n
+        }
+        if (isAncestor(left, right)) shift(branch(left, right), gap)
+        else if (isAncestor(right, left)) shift(branch(right, left), -gap)
+        else {
+          // Splitting the push stops a node wedged between relatives from bouncing back and forth.
+          shift(right, gap / 2 + 0.5)
+          shift(left, -gap / 2 - 0.5)
+        }
         moved = true
       }
     }
     if (!moved) break
   }
+}
+
+function marriagePath(a: ChartNode, b: ChartNode): string {
+  const dir = b.x >= a.x ? 1 : -1
+  const sx = a.x + dir * (a.r + 3)
+  const ex = b.x - dir * (b.r + 3)
+  if (Math.abs(a.y - b.y) < 4) return `M${sx},${a.y}H${ex}`
+  const mx = (sx + ex) / 2
+  return `M${sx},${a.y}C${mx},${a.y} ${mx},${b.y} ${ex},${b.y}`
 }
 
 function descentPath(a: ChartNode, b: ChartNode): string {
