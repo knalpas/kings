@@ -3516,11 +3516,23 @@
   "spain": {
     "label": "Espagne",
     "title": "Les rois et reines d'Espagne",
-    "subtitle": "D'Isabelle et Ferdinand à Felipe VI, de 1474 à nos jours",
+    "subtitle": "De Pélage à Felipe VI, de 718 à nos jours",
     "houses": {
+      "asturleonese": {
+        "label": "Maison asturo-léonaise",
+        "note": "De Pélage, élu en 718, à Bermude III, tué en 1037. Le royaume fut partagé en 910, et Fruela II réunit les Asturies au León."
+      },
+      "jimenez": {
+        "label": "Maison Jiménez",
+        "note": "Dynastie navarraise. Ferdinand Ier, fils de Sanche III de Navarre, devint roi de León en 1037. Dans les couronnes de l'ouest, elle s'éteignit en ligne masculine avec Urraque."
+      },
+      "ivrea": {
+        "label": "Maison d'Ivrée",
+        "note": "Maison bourguignonne de Raymond, époux d'Urraque. De leur fils Alphonse VII jusqu'à la mort de Pierre en 1369. La Castille et le León furent séparés de 1157 à 1230."
+      },
       "trastamara": {
         "label": "Maison de Trastamare",
-        "note": "Dynastie castillane, également sur le trône d'Aragon après 1412. Isabelle et Ferdinand réunissent les deux couronnes dans une même famille. Les royaumes gardent chacun leurs lois."
+        "note": "Dynastie castillane fondée par Henri II en 1369, également sur le trône d'Aragon après 1412. Isabelle et Ferdinand réunirent les deux couronnes dans une même famille. Les royaumes gardèrent chacun leurs lois."
       },
       "habsburg": {
         "label": "Maison de Habsbourg",
@@ -3550,6 +3562,499 @@
       "1931-1975": "République et dictature"
     },
     "people": {
+      "peter-cantabria": {
+        "name": "Pierre de Cantabrie",
+        "short": "Pierre de Cantabrie",
+        "title": "Duc de Cantabrie",
+        "summary": "Duc de Cantabrie, père d'Alphonse Ier et de Fruela. Des chroniques tardives lui donnèrent des ancêtres rois wisigoths. Les sources anciennes ne nomment pas ses parents.",
+        "wikipedia": "Pierre_de_Cantabrie"
+      },
+      "fruela-cantabria": {
+        "name": "Fruela de Cantabrie",
+        "short": "Fruela de Cantabrie",
+        "title": "Fils de Pierre de Cantabrie",
+        "summary": "Fils de Pierre de Cantabrie et frère d'Alphonse Ier. Père des rois Aurèle et Bermude Ier.",
+        "wikipedia": "en:Fruela_of_Cantabria"
+      },
+      "pelagius": {
+        "name": "Pélage",
+        "title": "Roi des Asturies",
+        "accession": "Élu princeps par les Asturiens en 718.",
+        "summary": "Noble wisigoth, élu princeps en 718. La tradition postérieure fit de lui le vainqueur de Covadonga et le premier roi des Asturies, et data la Reconquista de son règne. Il mourut en 737.",
+        "wikipedia": "Pélage_le_Conquérant"
+      },
+      "ermesinda": {
+        "name": "Ermesinda",
+        "title": "Reine des Asturies",
+        "summary": "Fille de Pélage et épouse d'Alphonse Ier. Après la mort de son frère Favila, Alphonse prit le trône par ce mariage.",
+        "wikipedia": "Ermesinda"
+      },
+      "favila": {
+        "name": "Favila",
+        "title": "Roi des Asturies",
+        "fate": "Tué par un ours, 739",
+        "summary": "Fils unique de Pélage. Élu princeps en 737, il fut tué par un ours à la chasse en 739 et ne laissa pas d'enfant.",
+        "wikipedia": "Favila_(roi_des_Asturies)"
+      },
+      "alfonso-i": {
+        "name": "Alphonse Ier",
+        "title": "Roi des Asturies",
+        "epithet": "le Catholique",
+        "accession": "Succéda à son beau-frère Favila, comme époux d'Ermesinda.",
+        "spouses": [
+          "Ermesinda"
+        ],
+        "summary": "Fils de Pierre de Cantabrie et époux d'Ermesinda, fille de Pélage. Il fut le premier souverain des Asturies appelé roi de son vivant, et porta la frontière vers le sud à travers la Galice et le León.",
+        "wikipedia": "Alphonse_Ier_(roi_des_Asturies)"
+      },
+      "fruela-i": {
+        "name": "Fruela Ier",
+        "title": "Roi des Asturies",
+        "epithet": "le Cruel",
+        "fate": "Assassiné, 768",
+        "summary": "Fils aîné d'Alphonse Ier et d'Ermesinda. Il poursuivit la guerre contre les Maures et fut assassiné par les siens en 768.",
+        "wikipedia": "Fruela_Ier"
+      },
+      "adosinda": {
+        "name": "Audesinde",
+        "title": "Reine des Asturies",
+        "summary": "Fille d'Alphonse Ier et d'Ermesinda, et épouse de Silo. Elle n'eut pas d'enfant. Après la mort de Silo, elle soutint son neveu Alphonse II, et en 783 Mauregat l'enferma au monastère de San Juan de Pravia.",
+        "wikipedia": "Audesinde"
+      },
+      "aurelius": {
+        "name": "Aurèle",
+        "title": "Roi des Asturies",
+        "summary": "Fils de Fruela de Cantabrie et cousin de Fruela Ier. Les nobles l'élurent après l'assassinat. Aucun enfant de lui n'est connu.",
+        "wikipedia": "Aurelio_(roi_des_Asturies)"
+      },
+      "silo": {
+        "name": "Silo",
+        "title": "Roi des Asturies",
+        "accession": "Élu en 774, comme époux d'Audesinde.",
+        "spouses": [
+          "Audesinde"
+        ],
+        "summary": "Époux d'Audesinde, fille d'Alphonse Ier. Il transféra la capitale de Cangas de Onís à Pravia et mourut en 783 sans enfant.",
+        "wikipedia": "Silo_(roi_des_Asturies)"
+      },
+      "mauregatus": {
+        "name": "Mauregat",
+        "title": "Roi des Asturies",
+        "epithet": "l'Usurpateur",
+        "accession": "S'empara du trône au détriment d'Alphonse II, qui avait été élu.",
+        "summary": "Fils illégitime d'Alphonse Ier. Les nobles avaient élu Alphonse II, mais Mauregat leva une armée et prit la couronne en 783. Il mourut en 788.",
+        "wikipedia": "Mauregat_(roi_des_Asturies)"
+      },
+      "bermudo-i": {
+        "name": "Bermude Ier",
+        "title": "Roi des Asturies",
+        "epithet": "le Diacre",
+        "accession": "Élu après la mort de Mauregat ; il abdiqua en 791.",
+        "summary": "Fils de Fruela de Cantabrie et frère d'Aurèle. Élu en 788, il abdiqua en 791 après une défaite et vécut ensuite en moine jusqu'en 797.",
+        "wikipedia": "Bermude_Ier"
+      },
+      "alfonso-ii": {
+        "name": "Alphonse II",
+        "title": "Roi des Asturies",
+        "epithet": "le Chaste",
+        "accession": "Rétabli en 791. Il avait d'abord été élu en 783, puis chassé par Mauregat.",
+        "summary": "Fils de Fruela Ier. Élu en 783 et chassé par Mauregat, il fut rétabli en 791 et régna jusqu'en 842. Il mourut sans enfant. Sous son règne, le tombeau présumé de saint Jacques fut signalé à Compostelle.",
+        "events": [
+          "Tombeau de saint Jacques signalé à Compostelle"
+        ],
+        "wikipedia": "Alphonse_II_(roi_des_Asturies)"
+      },
+      "nepotian": {
+        "name": "Népotien",
+        "title": "Roi des Asturies",
+        "accession": "S'empara du trône en 842 pendant l'absence de Ramire Ier.",
+        "fate": "Déposé, aveuglé et emprisonné, 842",
+        "summary": "Comte du palais sous Alphonse II. À la mort d'Alphonse, Ramire était absent, et Népotien prit le trône. Ramire revint, le vainquit, le fit aveugler et emprisonner. On ignore s'il était parent d'Alphonse.",
+        "wikipedia": "Népotien_(Asturies)"
+      },
+      "ramiro-i": {
+        "name": "Ramire Ier",
+        "title": "Roi des Asturies",
+        "accession": "Héritier désigné par Alphonse II. Il vainquit Népotien la même année.",
+        "summary": "Fils de Bermude Ier et héritier désigné par Alphonse II, mort sans enfant. Il vainquit Népotien en 842. Son palais de Santa María del Naranco, au-dessus d'Oviedo, annonce l'architecture romane.",
+        "wikipedia": "Ramire_Ier_(roi_des_Asturies)"
+      },
+      "ordono-i": {
+        "name": "Ordoño Ier",
+        "title": "Roi des Asturies",
+        "summary": "Fils de Ramire Ier. Il succéda en 850 sans élection, le premier roi asturien dans ce cas. Sous son règne, le royaume commença à être appelé León.",
+        "wikipedia": "Ordoño_Ier"
+      },
+      "alfonso-iii": {
+        "name": "Alphonse III",
+        "title": "Roi des Asturies",
+        "epithet": "le Grand",
+        "summary": "Fils d'Ordoño Ier. En 910, ses fils le forcèrent à abdiquer et se partagèrent le royaume : García reçut le León, Ordoño la Galice et Fruela les Asturies. Alphonse mourut la même année.",
+        "wikipedia": "Alphonse_III_(roi_des_Asturies)"
+      },
+      "garcia-i": {
+        "name": "García Ier",
+        "title": "Roi de León",
+        "summary": "Fils aîné d'Alphonse III et premier roi du royaume séparé de León, issu du partage de 910. Il mourut en 914 sans enfant, et le León passa à son frère Ordoño.",
+        "wikipedia": "García_Ier_(roi_de_León)"
+      },
+      "ordono-ii": {
+        "name": "Ordoño II",
+        "title": "Roi de Galice et de León",
+        "accession": "Roi de Galice à partir de 910 ; il hérita du León en 914.",
+        "summary": "Fils d'Alphonse III. Roi de Galice à partir de 910, et du León aussi à partir de 914, à la mort de García. À sa mort en 924, ses fils furent écartés, et son frère Fruela prit le León.",
+        "wikipedia": "Ordoño_II"
+      },
+      "fruela-ii": {
+        "name": "Fruela II",
+        "title": "Roi des Asturies et de León",
+        "accession": "Roi des Asturies à partir de 910, et du León à partir de 924.",
+        "summary": "Fils cadet d'Alphonse III. Il tint les Asturies dès le partage de 910, puis le León et la Galice à la mort d'Ordoño II en 924. On le compte comme le dernier roi des Asturies, réunies alors au León. Il mourut en 925.",
+        "wikipedia": "Fruela_II"
+      },
+      "alfonso-froilaz": {
+        "name": "Alphonse Fróilaz",
+        "short": "Alphonse Fróilaz",
+        "title": "Roi de León",
+        "epithet": "le Bossu",
+        "fate": "Déposé, 926",
+        "summary": "Fils de Fruela II. Il succéda en juillet 925 et fut chassé dans l'année par ses cousins Sanche, Alphonse et Ramire, fils d'Ordoño II. En 932, on le força à entrer dans un monastère.",
+        "wikipedia": "en:Alfonso_Fróilaz"
+      },
+      "alfonso-iv": {
+        "name": "Alphonse IV",
+        "title": "Roi de León",
+        "epithet": "le Moine",
+        "fate": "Abdiqua, 931",
+        "summary": "Fils d'Ordoño II. Avec ses frères, il renversa Alphonse Fróilaz. Il tint le León à partir de 925, et la Galice à partir de 929. Son frère Ramire le força à abdiquer en 931, et il mourut moine en 933.",
+        "wikipedia": "Alphonse_IV_(roi_de_León)"
+      },
+      "ramiro-ii": {
+        "name": "Ramire II",
+        "title": "Roi de León",
+        "summary": "Fils d'Ordoño II. Il déposa son frère Alphonse IV en 931 et fit aveugler les fils d'Alphonse afin qu'ils ne pussent réclamer la couronne. Il vainquit Abd al-Rahman III à Simancas en 939.",
+        "events": [
+          "Bataille de Simancas, 939"
+        ],
+        "wikipedia": "Ramire_II_(roi_de_León)"
+      },
+      "ordono-iii": {
+        "name": "Ordoño III",
+        "title": "Roi de León",
+        "summary": "Fils aîné de Ramire II. Son demi-frère Sanche lui disputa la couronne, avec l'appui de la Navarre et de la Castille. Il mourut en 956 sans enfant survivant.",
+        "wikipedia": "Ordoño_III"
+      },
+      "sancho-i-leon": {
+        "name": "Sanche Ier",
+        "title": "Roi de León",
+        "epithet": "le Gros",
+        "summary": "Fils de Ramire II et demi-frère d'Ordoño III. Les nobles l'expulsèrent en 958 à cause de son obésité, et Ordoño IV prit le trône. Sanche revint en 960 et régna jusqu'à sa mort en 966.",
+        "wikipedia": "Sanche_Ier_(roi_de_León)"
+      },
+      "ordono-iv": {
+        "name": "Ordoño IV",
+        "title": "Roi de León",
+        "epithet": "le Mauvais",
+        "summary": "Fils d'Alphonse IV. Les nobles le mirent sur le trône quand ils chassèrent Sanche Ier en 958. Sanche le chassa en 960, et il mourut à Cordoue vers 962.",
+        "wikipedia": "Ordoño_IV"
+      },
+      "ramiro-iii": {
+        "name": "Ramire III",
+        "title": "Roi de León",
+        "summary": "Fils de Sanche Ier. Il devint roi en 966, vers l'âge de cinq ans. Après des défaites face à Almanzor, les nobles galiciens firent de Bermude II leur roi en 982, et Bermude prit aussi le León en 984.",
+        "wikipedia": "Ramire_III"
+      },
+      "bermudo-ii": {
+        "name": "Bermude II",
+        "title": "Roi de León",
+        "epithet": "le Goutteux",
+        "accession": "Roi de Galice à partir de 982, et du León à partir de 984.",
+        "summary": "Fils d'Ordoño III. Une révolte galicienne le fit roi de Galice en 982 et du León en 984. Les campagnes d'Almanzor marquèrent le règne. Il mourut en 999.",
+        "wikipedia": "Bermude_II"
+      },
+      "alfonso-v": {
+        "name": "Alphonse V",
+        "title": "Roi de León",
+        "fate": "Tué à un siège, 1028",
+        "summary": "Fils de Bermude II. Roi à partir de 999, encore enfant, avec pour régents sa mère Elvire García et le comte Menendo González jusqu'en 1008. Il fut tué au cours d'un siège en 1028.",
+        "wikipedia": "Alphonse_V_(roi_de_León)"
+      },
+      "bermudo-iii": {
+        "name": "Bermude III",
+        "title": "Roi de León",
+        "fate": "Tué au combat, 1037",
+        "summary": "Fils d'Alphonse V et dernier roi de la lignée asturo-léonaise. Sanche III de Navarre le chassa du León en 1034 ; il revint. Il fut tué le 4 septembre 1037 au combat contre son beau-frère Ferdinand, et ne laissa pas d'enfant.",
+        "wikipedia": "Bermude_III"
+      },
+      "sancha-leon": {
+        "name": "Sancha de León",
+        "short": "Sancha de León",
+        "title": "Reine de León",
+        "summary": "Fille d'Alphonse V et sœur de Bermude III. Son époux Ferdinand devint roi de León après la mort de Bermude en 1037. Elle est la mère de Sanche II, d'Alphonse VI et de García.",
+        "wikipedia": "Sancha_de_León"
+      },
+      "sancho-iii-navarre": {
+        "name": "Sanche III de Navarre",
+        "short": "Sanche III de Navarre",
+        "title": "Roi de Navarre, 1004–1035",
+        "epithet": "le Grand",
+        "summary": "Roi de Pampelune de 1004 à 1035. Il tint la Castille par mariage et prit la ville de León en 1034. Son fils Ferdinand hérita de la Castille et devint roi de León.",
+        "wikipedia": "Sanche_III_(roi_de_Pampelune)"
+      },
+      "ferdinand-i": {
+        "name": "Ferdinand Ier",
+        "title": "Roi de León et de Castille",
+        "epithet": "le Grand",
+        "accession": "Comte de Castille à partir de 1029 ; roi de León après la mort de Bermude III en 1037.",
+        "spouses": [
+          "Sancha de León"
+        ],
+        "summary": "Fils de Sanche III de Navarre et époux de Sancha, sœur de Bermude III. Il devint roi de León en 1037 et éleva la Castille au rang de royaume. Il partagea ses États : Sanche reçut la Castille, Alphonse le León et García la Galice.",
+        "wikipedia": "Ferdinand_Ier_(roi_de_León)"
+      },
+      "sancho-ii": {
+        "name": "Sanche II",
+        "title": "Roi de Castille",
+        "epithet": "le Fort",
+        "fate": "Assassiné, 1072",
+        "summary": "Fils aîné de Ferdinand Ier. Roi de Castille à partir de 1065, il prit ensuite la Galice puis, en 1072, le León. Il fut assassiné la même année et ne laissa pas d'enfant.",
+        "wikipedia": "Sanche_II_(roi_de_Castille)"
+      },
+      "garcia-ii": {
+        "name": "García II",
+        "title": "Roi de Galice, 1065–1071",
+        "summary": "Fils cadet de Ferdinand Ier. Roi de Galice à partir de 1065, jusqu'à ce que ses frères lui prennent le royaume en 1071. Alphonse VI le fit emprisonner. Il mourut en 1090.",
+        "wikipedia": "García_II_(roi_de_Galice)"
+      },
+      "alfonso-vi": {
+        "name": "Alphonse VI",
+        "title": "Roi de León et de Castille",
+        "epithet": "le Brave",
+        "accession": "Roi de León à partir de 1065. À partir de 1072, après la mort de Sanche II, il tint le León, la Castille et la Galice.",
+        "summary": "Fils de Ferdinand Ier. Roi de León à partir de 1065, il perdit le León au profit de Sanche pendant une partie de 1072 et le reprit quand Sanche fut tué. Il emprisonna García, prit Tolède en 1085, et sa fille Urraque lui succéda après la mort de son fils Sanche en 1108.",
+        "events": [
+          "Prise de Tolède, 1085"
+        ],
+        "wikipedia": "Alphonse_VI_(roi_de_León)"
+      },
+      "sancho-alfonso": {
+        "name": "Sanche Alphonse",
+        "short": "Sanche Alphonse",
+        "title": "Héritier de León et de Castille",
+        "fate": "Tué à Uclés, 1108",
+        "summary": "Fils unique d'Alphonse VI, né de la princesse Zaida. Héritier à partir de 1107, il fut tué à la bataille d'Uclés en 1108. Sa demi-sœur Urraque succéda à leur père.",
+        "wikipedia": "Sancho_Alfónsez"
+      },
+      "urraca": {
+        "name": "Urraque",
+        "title": "Reine de León et de Castille",
+        "epithet": "la Téméraire",
+        "spouses": [
+          "Raymond de Bourgogne",
+          "Alphonse Ier d'Aragon"
+        ],
+        "summary": "Fille d'Alphonse VI. Reine de León, de Castille et de Galice à partir de 1109. Son mariage avec Alphonse Ier d'Aragon resta sans enfant, et il lui fit la guerre jusqu'à leur divorce en 1114. Son fils, né de Raymond de Bourgogne, lui succéda.",
+        "wikipedia": "Urraque_Ire"
+      },
+      "raymond-burgundy": {
+        "name": "Raymond de Bourgogne",
+        "short": "Raymond",
+        "title": "Comte de Galice",
+        "summary": "Prince bourguignon, époux d'Urraque et père d'Alphonse VII. Il gouverna la Galice sous Alphonse VI d'environ 1090 jusqu'à sa mort en 1107, avant qu'Urraque ne devînt reine.",
+        "wikipedia": "Raymond_de_Bourgogne"
+      },
+      "alfonso-vii": {
+        "name": "Alphonse VII",
+        "title": "Roi de León et de Castille",
+        "epithet": "l'Empereur",
+        "summary": "Fils d'Urraque et de Raymond de Bourgogne, le premier de la maison d'Ivrée à régner en Espagne. Roi de Galice à partir de 1111 et de León et de Castille à partir de 1126, il fut couronné empereur de toute l'Espagne à León en 1135. À sa mort, la Castille alla à Sanche et le León à Ferdinand.",
+        "events": [
+          "Couronnement impérial à León, 1135"
+        ],
+        "wikipedia": "Alphonse_VII"
+      },
+      "sancho-iii-castile": {
+        "name": "Sanche III",
+        "title": "Roi de Castille",
+        "epithet": "le Désiré",
+        "summary": "Fils aîné d'Alphonse VII. Il n'hérita que de la Castille, en 1157, et mourut l'année suivante. Le León et la Galice allèrent à son frère Ferdinand. Son fils Alphonse VIII lui succéda.",
+        "wikipedia": "Sanche_III_(roi_de_Castille)"
+      },
+      "ferdinand-ii-leon": {
+        "name": "Ferdinand II de León",
+        "short": "Ferdinand II de León",
+        "title": "Roi de León, 1157–1188",
+        "summary": "Second fils survivant d'Alphonse VII. Roi de León et de Galice de 1157 à 1188, tandis que son frère Sanche, puis son neveu Alphonse VIII, régnaient sur la Castille. Il est le père d'Alphonse IX.",
+        "wikipedia": "Ferdinand_II_(roi_de_León)"
+      },
+      "alfonso-viii": {
+        "name": "Alphonse VIII",
+        "title": "Roi de Castille",
+        "epithet": "le Noble",
+        "summary": "Fils de Sanche III. Il devint roi en 1158 à l'âge de deux ans, et la régence fut disputée jusqu'à ses quinze ans. Vaincu à Alarcos en 1195, il conduisit la coalition chrétienne qui brisa les Almohades à Las Navas de Tolosa en 1212.",
+        "events": [
+          "Bataille de Las Navas de Tolosa, 1212"
+        ],
+        "wikipedia": "Alphonse_VIII"
+      },
+      "henry-i-castile": {
+        "name": "Henri Ier",
+        "title": "Roi de Castille",
+        "summary": "Fils d'Alphonse VIII et d'Aliénor d'Angleterre. Roi à dix ans, d'abord sous sa sœur Bérengère, puis sous le comte Álvaro Núñez de Lara. Il mourut en 1217, à treize ans, et Bérengère hérita de la Castille.",
+        "wikipedia": "Henri_Ier_(roi_de_Castille)"
+      },
+      "alfonso-ix": {
+        "name": "Alphonse IX",
+        "title": "Roi de León, 1188–1230",
+        "summary": "Fils de Ferdinand II. Roi de León de 1188 à 1230. Son mariage avec Bérengère de Castille fut annulé, mais leur fils Ferdinand III hérita de la Castille en 1217. Alphonse laissa le León aux filles de son premier mariage ; en décembre 1230, elles y renoncèrent et Ferdinand prit le royaume.",
+        "events": [
+          "Cortès de León, 1188"
+        ],
+        "wikipedia": "Alphonse_IX"
+      },
+      "berengaria": {
+        "name": "Bérengère",
+        "title": "Reine de Castille",
+        "epithet": "la Grande",
+        "accession": "Hérita de la Castille en juin 1217 et fit couronner son fils Ferdinand la même année.",
+        "spouses": [
+          "Alphonse IX de León"
+        ],
+        "summary": "Fille d'Alphonse VIII. Reine de León par son mariage avec Alphonse IX, de 1197 jusqu'à l'annulation prononcée par Innocent III en 1204. Elle hérita de la Castille à la mort de son frère Henri en 1217, fit couronner son fils avec elle, et mourut en 1246.",
+        "wikipedia": "Bérengère_Ire_(reine_de_Castille)"
+      },
+      "sancha-heiress": {
+        "name": "Sancha, héritière de León",
+        "title": "Héritière de León",
+        "fate": "Renonça au León, 1230",
+        "summary": "Fille aînée d'Alphonse IX et de Thérèse de Portugal. En septembre 1230, elle et sa sœur Douce reçurent le León. En quelques semaines, elles y renoncèrent en faveur de leur demi-frère Ferdinand III, contre des terres et de l'argent. Elle mourut avant 1243.",
+        "wikipedia": "en:Sancha,_heiress_of_León"
+      },
+      "dulce-leon": {
+        "name": "Douce de León",
+        "short": "Douce",
+        "title": "Héritière de León",
+        "fate": "Renonça au León, 1230",
+        "summary": "Fille cadette d'Alphonse IX et de Thérèse de Portugal. Avec sa sœur Sancha, elle reçut le León en 1230, et la même année elles y renoncèrent en faveur de Ferdinand III.",
+        "wikipedia": "en:Dulce_of_León"
+      },
+      "ferdinand-iii": {
+        "name": "Ferdinand III",
+        "title": "Roi de Castille et de León",
+        "epithet": "le Saint",
+        "accession": "Couronné roi de Castille avec sa mère en 1217. Il hérita du León en décembre 1230.",
+        "summary": "Fils d'Alphonse IX de León et de Bérengère de Castille. Roi de Castille à partir de 1217, et du León à partir de 1230, après la renonciation de ses demi-sœurs Sancha et Douce. Les deux couronnes restèrent unies. Il prit Cordoue en 1236 et Séville en 1248.",
+        "events": [
+          "Prise de Cordoue, 1236",
+          "Prise de Séville, 1248"
+        ],
+        "wikipedia": "Ferdinand_III_(roi_de_Castille)"
+      },
+      "alfonso-x": {
+        "name": "Alphonse X",
+        "title": "Roi de Castille et de León",
+        "epithet": "le Sage",
+        "summary": "Fils aîné de Ferdinand III. Roi à partir de 1252. Une faction l'élut roi de Germanie en 1257 ; il n'y régna jamais et renonça à cette prétention en 1275. Il patronna les tables alphonsines et un vaste corps de droit et d'histoire. Son héritier Ferdinand de la Cerda mourut en 1275, et un fils cadet, Sanche, prit la couronne avant les enfants de Ferdinand.",
+        "wikipedia": "Alphonse_X"
+      },
+      "fernando-cerda": {
+        "name": "Ferdinand de la Cerda",
+        "short": "Ferdinand de la Cerda",
+        "title": "Héritier de Castille",
+        "fate": "Mort avant son père, 1275",
+        "summary": "Fils aîné d'Alphonse X et héritier de Castille. Il mourut en 1275, en campagne. Ses fils furent écartés au profit de leur oncle Sanche IV.",
+        "wikipedia": "Ferdinand_de_la_Cerda"
+      },
+      "alfonso-cerda": {
+        "name": "Alphonse de la Cerda",
+        "short": "Alphonse de la Cerda",
+        "title": "Prétendant à la Castille",
+        "fate": "Renonça à ses droits, 1331",
+        "summary": "Fils aîné de Ferdinand de la Cerda, dit le Déshérité. Il revendiqua la Castille sous Sanche IV, Ferdinand IV et Alphonse XI, et renonça à ses droits en 1331.",
+        "wikipedia": "Alphonse_de_la_Cerda"
+      },
+      "sancho-iv": {
+        "name": "Sanche IV",
+        "title": "Roi de Castille et de León",
+        "epithet": "le Brave",
+        "summary": "Fils d'Alphonse X. Il n'était pas l'aîné : son frère Ferdinand de la Cerda était mort en 1275, et en 1284 Sanche prit le trône avant Alphonse, le jeune fils de Ferdinand.",
+        "wikipedia": "Sanche_IV_(roi_de_Castille)"
+      },
+      "ferdinand-iv": {
+        "name": "Ferdinand IV",
+        "title": "Roi de Castille et de León",
+        "epithet": "l'Ajourné",
+        "summary": "Fils de Sanche IV. Roi à neuf ans, tandis que sa mère Marie de Molina défendait ses droits contre des prétentions rivales. Il régna en personne à partir de 1301 et mourut en 1312.",
+        "wikipedia": "Ferdinand_IV_(roi_de_Castille)"
+      },
+      "alfonso-xi": {
+        "name": "Alphonse XI",
+        "title": "Roi de Castille et de León",
+        "epithet": "le Justicier",
+        "fate": "Mort de la peste à Gibraltar, 1350",
+        "summary": "Fils de Ferdinand IV. Roi encore enfant, il prit le pouvoir en 1325. Il vainquit les Mérinides au Río Salado en 1340 et mourut de la peste en 1350 pendant le siège de Gibraltar. D'Éléonore de Guzmán il eut plusieurs enfants, parmi lesquels le futur Henri II.",
+        "events": [
+          "Bataille du Río Salado, 1340"
+        ],
+        "wikipedia": "Alphonse_XI"
+      },
+      "peter-castile": {
+        "name": "Pierre Ier",
+        "title": "Roi de Castille et de León",
+        "epithet": "le Cruel",
+        "fate": "Tué par Henri de Trastamare, 1369",
+        "summary": "Fils légitime d'Alphonse XI, et dernier roi de la branche principale d'Ivrée. On l'appelle aussi Pierre le Juste. Une révolte menée par son demi-frère Henri commença en 1366, et Henri le tua en 1369.",
+        "wikipedia": "Pierre_Ier_(roi_de_Castille)"
+      },
+      "henry-ii": {
+        "name": "Henri II",
+        "title": "Roi de Castille et de León",
+        "epithet": "le Fratricide",
+        "accession": "Proclamé en 1366. Il tint le royaume à partir de 1369, quand il tua Pierre.",
+        "summary": "Fils illégitime d'Alphonse XI et d'Éléonore de Guzmán, et fondateur de la maison de Trastamare. Il vainquit et tua son demi-frère Pierre en 1369.",
+        "wikipedia": "Henri_II_(roi_de_Castille)"
+      },
+      "john-i-castile": {
+        "name": "Jean Ier",
+        "title": "Roi de Castille et de León",
+        "summary": "Fils d'Henri II. Il revendiqua le Portugal par son épouse Béatrice et fut vaincu à Aljubarrota en 1385. Jean de Gand, époux d'une fille de Pierre, fit valoir une prétention rivale ; elle fut réglée par le mariage de Catherine de Lancastre, fille de Gand, avec Henri, fils de Jean.",
+        "events": [
+          "Bataille d'Aljubarrota, 1385"
+        ],
+        "wikipedia": "Jean_Ier_(roi_de_Castille)"
+      },
+      "ferdinand-i-aragon": {
+        "name": "Ferdinand Ier d'Aragon",
+        "short": "Ferdinand d'Aragon",
+        "title": "Roi d'Aragon, 1412–1416",
+        "summary": "Fils de Jean Ier de Castille. Avec Catherine de Lancastre, il fut régent de Castille pour son neveu Jean II, de 1406 jusqu'à sa propre mort. Le compromis de Caspe le fit roi d'Aragon en 1412. Il est le père de Jean II d'Aragon.",
+        "wikipedia": "Ferdinand_Ier_(roi_d'Aragon)"
+      },
+      "henry-iii": {
+        "name": "Henri III",
+        "title": "Roi de Castille et de León",
+        "epithet": "l'Infirme",
+        "spouses": [
+          "Catherine de Lancastre"
+        ],
+        "summary": "Fils de Jean Ier et d'Éléonore d'Aragon. Roi à onze ans, il prit le pouvoir à treize. Il épousa Catherine de Lancastre, petite-fille de Pierre, et mourut en 1406.",
+        "wikipedia": "Henri_III_(roi_de_Castille)"
+      },
+      "catherine-lancaster": {
+        "name": "Catherine de Lancastre",
+        "short": "Catherine",
+        "title": "Reine de Castille",
+        "summary": "Fille de Jean de Gand et de Constance de Castille, elle-même fille de Pierre. Reine d'Henri III, et régente pour leur fils Jean II de 1406 jusqu'à sa mort en 1418, d'abord avec son beau-frère Ferdinand d'Aragon.",
+        "wikipedia": "Catherine_de_Lancastre"
+      },
+      "alfonso-castile-1468": {
+        "name": "Alphonse de Castille",
+        "short": "Alphonse de Castille",
+        "title": "Prince des Asturies",
+        "fate": "Mort avant Henri IV, 1468",
+        "summary": "Fils de Jean II et d'Isabelle de Portugal, et frère germain d'Isabelle Ire. En 1464, les nobles forcèrent Henri IV à le reconnaître pour héritier. Il mourut en 1468, et la prétention passa à Isabelle.",
+        "wikipedia": "Alphonse_de_Castille"
+      },
       "john-ii-castile": {
         "name": "Jean II de Castille",
         "title": "Roi de Castille, 1406–1454",
@@ -3557,7 +4062,7 @@
           "Marie d'Aragon",
           "Isabelle de Portugal"
         ],
-        "summary": "Roi de Castille et de León de 1406 à 1454. Père d'Henri IV et, de sa seconde épouse Isabelle de Portugal, d'Isabelle Ire. La succession numérotée de ce tableau commence quand la Castille et l'Aragon sont réunies.",
+        "summary": "Fils aîné d'Henri III. Roi de Castille et de León à partir de 1406, pendant une longue minorité où sa mère Catherine et son oncle Ferdinand d'Aragon furent régents. Père d'Henri IV et, d'Isabelle de Portugal, d'Isabelle Ire et de l'infant Alphonse.",
         "wikipedia": "Jean_II_(roi_de_Castille)"
       },
       "isabella-portugal-castile": {
@@ -3575,7 +4080,7 @@
           "Blanche de Navarre",
           "Jeanne de Portugal"
         ],
-        "summary": "Roi de Castille et de León de 1454 jusqu'à sa mort, le 11 décembre 1474. Il ne laissa aucun fils dont la légitimité fût incontestée, et sa demi-sœur Isabelle prit la couronne. Sa fille Jeanne la lui disputa.",
+        "summary": "Roi de Castille et de León de 1454 jusqu'à sa mort, le 11 décembre 1474. Il ne laissa aucun fils dont la légitimité fût incontestée. En 1464, les nobles lui firent reconnaître pour héritier son demi-frère Alphonse. Alphonse mourut en 1468, et Isabelle prit la couronne. Sa fille Jeanne la lui disputa.",
         "wikipedia": "Henri_IV_(roi_de_Castille)"
       },
       "joanna-beltraneja": {
@@ -3594,7 +4099,7 @@
           "Blanche Ire de Navarre",
           "Jeanne Enríquez"
         ],
-        "summary": "Roi d'Aragon de 1458 à 1479, et roi de Navarre par sa première épouse, Blanche. Père de Ferdinand II. Il appartient à la génération d'avant l'union des couronnes.",
+        "summary": "Fils de Ferdinand Ier d'Aragon. Roi d'Aragon de 1458 à 1479, et roi de Navarre par sa première épouse, Blanche. Père de Ferdinand II.",
         "wikipedia": "Jean_II_(roi_d'Aragon)"
       },
       "juana-enriquez": {

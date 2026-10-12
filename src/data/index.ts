@@ -26,7 +26,7 @@ export const kingdoms: Record<Kingdom, KingdomData> = {
     id: 'spain',
     label: 'Spain',
     title: 'The Kings and Queens of Spain',
-    subtitle: 'From Isabella and Ferdinand to Felipe VI, 1474 to the present',
+    subtitle: 'From Pelagius to Felipe VI, 718 to the present',
     houses: spainHouses,
     people: spainPeople,
     gaps: spainGaps,

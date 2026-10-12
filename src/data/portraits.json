@@ -1323,6 +1323,230 @@
     "src": "portraits/france/galswintha.webp",
     "wiki": "Galswintha"
   },
+  "spain/fruela-cantabria": {
+    "src": "portraits/spain/fruela-cantabria.webp",
+    "wiki": "Fruela_of_Cantabria"
+  },
+  "spain/pelagius": {
+    "src": "portraits/spain/pelagius.webp",
+    "wiki": "Pelagius_of_Asturias"
+  },
+  "spain/ermesinda": {
+    "src": "portraits/spain/ermesinda.webp",
+    "wiki": "Ermesinda"
+  },
+  "spain/favila": {
+    "src": "portraits/spain/favila.webp",
+    "wiki": "Favila_of_Asturias"
+  },
+  "spain/fruela-i": {
+    "src": "portraits/spain/fruela-i.webp",
+    "wiki": "Fruela_I_of_Asturias"
+  },
+  "spain/adosinda": {
+    "src": "portraits/spain/adosinda.webp",
+    "wiki": "Adosinda"
+  },
+  "spain/aurelius": {
+    "src": "portraits/spain/aurelius.webp",
+    "wiki": "Aurelius_of_Asturias"
+  },
+  "spain/silo": {
+    "src": "portraits/spain/silo.webp",
+    "wiki": "Silo_of_Asturias"
+  },
+  "spain/mauregatus": {
+    "src": "portraits/spain/mauregatus.webp",
+    "wiki": "Mauregatus"
+  },
+  "spain/bermudo-i": {
+    "src": "portraits/spain/bermudo-i.webp",
+    "wiki": "Bermudo_I_of_Asturias"
+  },
+  "spain/alfonso-ii": {
+    "src": "portraits/spain/alfonso-ii.webp",
+    "wiki": "Alfonso_II_of_Asturias"
+  },
+  "spain/ramiro-i": {
+    "src": "portraits/spain/ramiro-i.webp",
+    "wiki": "Ramiro_I_of_Asturias"
+  },
+  "spain/ordono-i": {
+    "src": "portraits/spain/ordono-i.webp",
+    "wiki": "Ordoño_I_of_Asturias"
+  },
+  "spain/alfonso-iii": {
+    "src": "portraits/spain/alfonso-iii.webp",
+    "wiki": "Alfonso_III_of_Asturias"
+  },
+  "spain/garcia-i": {
+    "src": "portraits/spain/garcia-i.webp",
+    "wiki": "García_I_of_León"
+  },
+  "spain/ordono-ii": {
+    "src": "portraits/spain/ordono-ii.webp",
+    "wiki": "Ordoño_II_of_León"
+  },
+  "spain/fruela-ii": {
+    "src": "portraits/spain/fruela-ii.webp",
+    "wiki": "Fruela_II_of_Asturias"
+  },
+  "spain/alfonso-froilaz": {
+    "src": "portraits/spain/alfonso-froilaz.webp",
+    "wiki": "Alfonso_Fróilaz"
+  },
+  "spain/alfonso-iv": {
+    "src": "portraits/spain/alfonso-iv.webp",
+    "wiki": "Alfonso_IV_of_León"
+  },
+  "spain/ramiro-ii": {
+    "src": "portraits/spain/ramiro-ii.webp",
+    "wiki": "Ramiro_II_of_León"
+  },
+  "spain/ordono-iii": {
+    "src": "portraits/spain/ordono-iii.webp",
+    "wiki": "Ordoño_III_of_León"
+  },
+  "spain/sancho-i-leon": {
+    "src": "portraits/spain/sancho-i-leon.webp",
+    "wiki": "Sancho_I_of_León"
+  },
+  "spain/ordono-iv": {
+    "src": "portraits/spain/ordono-iv.webp",
+    "wiki": "Ordoño_IV_of_León"
+  },
+  "spain/ramiro-iii": {
+    "src": "portraits/spain/ramiro-iii.webp",
+    "wiki": "Ramiro_III_of_León"
+  },
+  "spain/bermudo-ii": {
+    "src": "portraits/spain/bermudo-ii.webp",
+    "wiki": "Bermudo_II_of_León"
+  },
+  "spain/alfonso-v": {
+    "src": "portraits/spain/alfonso-v.webp",
+    "wiki": "Alfonso_V_of_León"
+  },
+  "spain/bermudo-iii": {
+    "src": "portraits/spain/bermudo-iii.webp",
+    "wiki": "Bermudo_III_of_León"
+  },
+  "spain/sancha-leon": {
+    "src": "portraits/spain/sancha-leon.webp",
+    "wiki": "Sancha_of_León"
+  },
+  "spain/sancho-iii-navarre": {
+    "src": "portraits/spain/sancho-iii-navarre.webp",
+    "wiki": "Sancho_III_of_Pamplona"
+  },
+  "spain/ferdinand-i": {
+    "src": "portraits/spain/ferdinand-i.webp",
+    "wiki": "Ferdinand_I_of_León"
+  },
+  "spain/sancho-ii": {
+    "src": "portraits/spain/sancho-ii.webp",
+    "wiki": "Sancho_II_of_Castile_and_León"
+  },
+  "spain/garcia-ii": {
+    "src": "portraits/spain/garcia-ii.webp",
+    "wiki": "García_II_of_Galicia"
+  },
+  "spain/alfonso-vi": {
+    "src": "portraits/spain/alfonso-vi.webp",
+    "wiki": "Alfonso_VI_of_León_and_Castile"
+  },
+  "spain/urraca": {
+    "src": "portraits/spain/urraca.webp",
+    "wiki": "Urraca_of_León_and_Castile"
+  },
+  "spain/raymond-burgundy": {
+    "src": "portraits/spain/raymond-burgundy.webp",
+    "wiki": "Raymond_of_Burgundy"
+  },
+  "spain/alfonso-vii": {
+    "src": "portraits/spain/alfonso-vii.webp",
+    "wiki": "Alfonso_VII_of_León_and_Castile"
+  },
+  "spain/sancho-iii-castile": {
+    "src": "portraits/spain/sancho-iii-castile.webp",
+    "wiki": "Sancho_III_of_Castile"
+  },
+  "spain/ferdinand-ii-leon": {
+    "src": "portraits/spain/ferdinand-ii-leon.webp",
+    "wiki": "Ferdinand_II_of_León"
+  },
+  "spain/henry-i-castile": {
+    "src": "portraits/spain/henry-i-castile.webp",
+    "wiki": "Henry_I_of_Castile"
+  },
+  "spain/alfonso-ix": {
+    "src": "portraits/spain/alfonso-ix.webp",
+    "wiki": "Alfonso_IX_of_León"
+  },
+  "spain/berengaria": {
+    "src": "portraits/spain/berengaria.webp",
+    "wiki": "Berengaria_of_Castile"
+  },
+  "spain/dulce-leon": {
+    "src": "portraits/spain/dulce-leon.webp",
+    "wiki": "Dulce_of_León"
+  },
+  "spain/ferdinand-iii": {
+    "src": "portraits/spain/ferdinand-iii.webp",
+    "wiki": "Ferdinand_III_of_Castile"
+  },
+  "spain/alfonso-x": {
+    "src": "portraits/spain/alfonso-x.webp",
+    "wiki": "Alfonso_X_of_Castile"
+  },
+  "spain/fernando-cerda": {
+    "src": "portraits/spain/fernando-cerda.webp",
+    "wiki": "Fernando_de_la_Cerda_(1255–1275)"
+  },
+  "spain/alfonso-cerda": {
+    "src": "portraits/spain/alfonso-cerda.webp",
+    "wiki": "Alfonso_de_la_Cerda"
+  },
+  "spain/sancho-iv": {
+    "src": "portraits/spain/sancho-iv.webp",
+    "wiki": "Sancho_IV_of_Castile"
+  },
+  "spain/ferdinand-iv": {
+    "src": "portraits/spain/ferdinand-iv.webp",
+    "wiki": "Ferdinand_IV_of_Castile"
+  },
+  "spain/alfonso-xi": {
+    "src": "portraits/spain/alfonso-xi.webp",
+    "wiki": "Alfonso_XI_of_Castile"
+  },
+  "spain/peter-castile": {
+    "src": "portraits/spain/peter-castile.webp",
+    "wiki": "Peter_of_Castile"
+  },
+  "spain/henry-ii": {
+    "src": "portraits/spain/henry-ii.webp",
+    "wiki": "Henry_II_of_Castile"
+  },
+  "spain/john-i-castile": {
+    "src": "portraits/spain/john-i-castile.webp",
+    "wiki": "John_I_of_Castile"
+  },
+  "spain/ferdinand-i-aragon": {
+    "src": "portraits/spain/ferdinand-i-aragon.webp",
+    "wiki": "Ferdinand_I_of_Aragon"
+  },
+  "spain/henry-iii": {
+    "src": "portraits/spain/henry-iii.webp",
+    "wiki": "Henry_III_of_Castile"
+  },
+  "spain/catherine-lancaster": {
+    "src": "portraits/spain/catherine-lancaster.webp",
+    "wiki": "Catherine_of_Lancaster"
+  },
+  "spain/alfonso-castile-1468": {
+    "src": "portraits/spain/alfonso-castile-1468.webp",
+    "wiki": "Alfonso,_Prince_of_Asturias_(1453–1468)"
+  },
   "spain/john-ii-castile": {
     "src": "portraits/spain/john-ii-castile.webp",
     "wiki": "John_II_of_Castile"

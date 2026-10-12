@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import type { House, Interval, Kingdom, Person } from '../types'
 import { initials, portraitSrc } from '../data/portraits'
 import { ageLabel, kinship, lifeText, reignLength, reignText, relationPhrase, roleLabel, spousesOnChart, yearText } from '../lib/genealogy'
+import { CURRENT_YEAR } from '../lib/layout'
 import { useLocale } from '../i18n/locale'
 import { wikiUrl } from '../i18n/localize'
 
@@ -119,7 +120,7 @@ export function DetailDrawer({ kingdom, person: p, people, index, houses, chain,
           <div className="fact">
             <dt>{t.died}</dt>
             <dd>
-              {p.died != null ? yearText(p.died, p.diedCirca, locale) : p.born != null ? t.living : '—'}
+              {p.died != null ? yearText(p.died, p.diedCirca, locale) : p.born != null && p.born >= CURRENT_YEAR - 100 ? t.living : '—'}
               {diedAge && <small>{t.aged(diedAge)}</small>}
             </dd>
           </div>

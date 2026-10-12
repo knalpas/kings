@@ -1,6 +1,6 @@
 # Kings · Rois
 
-Zoomable, time-scaled genealogical charts of the monarchs of **England** (Alfred the Great to Charles III), **France** (Childeric I to Napoleon III) and **Spain** (Isabella I and Ferdinand II to Felipe VI). Available in **English** and **French**.
+Zoomable, time-scaled genealogical charts of the monarchs of **England** (Alfred the Great to Charles III), **France** (Childeric I to Napoleon III) and **Spain** (Pelagius to Felipe VI). Available in **English** and **French**.
 
 **Live:** https://knalpas.github.io/kings/
 
