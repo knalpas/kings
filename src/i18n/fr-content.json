@@ -3512,5 +3512,704 @@
         "summary": "Dernier roi mérovingien. Sa filiation est incertaine. Pépin le Bref et son frère Carloman le placèrent sur le trône en 743 ; en 751 Pépin le déposa, le fit tondre et l'enferma dans un monastère. Pépin fut sacré roi à sa place."
       }
     }
+  },
+  "spain": {
+    "label": "Espagne",
+    "title": "Les rois et reines d'Espagne",
+    "subtitle": "D'Isabelle et Ferdinand à Felipe VI, de 1474 à nos jours",
+    "houses": {
+      "trastamara": {
+        "label": "Maison de Trastamare",
+        "note": "Dynastie castillane, également sur le trône d'Aragon après 1412. Isabelle et Ferdinand réunissent les deux couronnes dans une même famille. Les royaumes gardent chacun leurs lois."
+      },
+      "habsburg": {
+        "label": "Maison de Habsbourg",
+        "note": "De Philippe Ier, roi de Castille en 1506, à Charles II, mort sans enfant en 1700."
+      },
+      "bourbon": {
+        "label": "Maison de Bourbon",
+        "note": "Branche espagnole fondée par Philippe V, petit-fils de Louis XIV. Elle règne encore, avec des interruptions pour Joseph Bonaparte, Amédée de Savoie, deux républiques et la dictature de 1939 à 1975."
+      },
+      "bonaparte": {
+        "label": "Maison Bonaparte",
+        "note": "Joseph, frère aîné de Napoléon, roi de 1808 à 1813. Un gouvernement à Cadix continue de reconnaître Ferdinand VII."
+      },
+      "savoy": {
+        "label": "Maison de Savoie",
+        "note": "Amédée Ier, second fils de Victor-Emmanuel II d'Italie, élu roi en 1870. Il abdiqua en 1873."
+      },
+      "wittelsbach": {
+        "label": "Maison de Wittelsbach",
+        "note": "Maison bavaroise de Joseph-Ferdinand, héritier désigné par Charles II. Il mourut en 1699, avant que le trône ne soit vacant."
+      }
+    },
+    "gaps": {
+      "1868-1870": "Gouvernement provisoire",
+      "1873-1874": "Première République",
+      "1885-1886": "Régence",
+      "1931-1975": "République et dictature"
+    },
+    "people": {
+      "john-ii-castile": {
+        "name": "Jean II de Castille",
+        "title": "Roi de Castille, 1406–1454",
+        "spouses": [
+          "Marie d'Aragon",
+          "Isabelle de Portugal"
+        ],
+        "summary": "Roi de Castille et de León de 1406 à 1454. Père d'Henri IV et, de sa seconde épouse Isabelle de Portugal, d'Isabelle Ire. La succession numérotée de ce tableau commence quand la Castille et l'Aragon sont réunies.",
+        "wikipedia": "Jean_II_(roi_de_Castille)"
+      },
+      "isabella-portugal-castile": {
+        "name": "Isabelle de Portugal",
+        "short": "Isabelle",
+        "title": "Reine de Castille",
+        "summary": "Infante portugaise et seconde épouse de Jean II de Castille. Mère d'Isabelle Ire et de l'infant Alphonse, mort jeune.",
+        "wikipedia": "Isabelle_de_Portugal_(1428-1496)"
+      },
+      "henry-iv": {
+        "name": "Henri IV de Castille",
+        "short": "Henri IV",
+        "title": "Roi de Castille, 1454–1474",
+        "spouses": [
+          "Blanche de Navarre",
+          "Jeanne de Portugal"
+        ],
+        "summary": "Roi de Castille et de León de 1454 jusqu'à sa mort, le 11 décembre 1474. Il ne laissa aucun fils dont la légitimité fût incontestée, et sa demi-sœur Isabelle prit la couronne. Sa fille Jeanne la lui disputa.",
+        "wikipedia": "Henri_IV_(roi_de_Castille)"
+      },
+      "joanna-beltraneja": {
+        "name": "Jeanne la Beltraneja",
+        "short": "Jeanne",
+        "title": "Prétendante à la Castille",
+        "fate": "Renonce à ses droits, 1479",
+        "summary": "Reconnue dans son enfance comme fille et héritière d'Henri IV, puis écartée au profit de sa demi-sœur Isabelle. Ses rivaux la surnommèrent la Beltraneja, d'après la rumeur qui lui donnait pour père Beltrán de la Cueva ; cette rumeur n'a jamais été prouvée. Elle perdit la guerre de 1475–1479 et renonça à ses droits au traité d'Alcáçovas.",
+        "wikipedia": "Jeanne_de_Castille"
+      },
+      "john-ii-aragon": {
+        "name": "Jean II d'Aragon",
+        "title": "Roi d'Aragon, 1458–1479",
+        "epithet": "le Grand",
+        "spouses": [
+          "Blanche Ire de Navarre",
+          "Jeanne Enríquez"
+        ],
+        "summary": "Roi d'Aragon de 1458 à 1479, et roi de Navarre par sa première épouse, Blanche. Père de Ferdinand II. Il appartient à la génération d'avant l'union des couronnes.",
+        "wikipedia": "Jean_II_(roi_d'Aragon)"
+      },
+      "juana-enriquez": {
+        "name": "Jeanne Enríquez",
+        "short": "Jeanne",
+        "title": "Reine d'Aragon",
+        "summary": "Seconde épouse de Jean II d'Aragon et mère de Ferdinand II. Elle gouverna l'Aragon pendant l'absence de son mari au cours de la guerre civile de Catalogne, et mourut en 1468.",
+        "wikipedia": "Jeanne_Enríquez"
+      },
+      "isabella-i": {
+        "name": "Isabelle Ire",
+        "title": "Reine de Castille",
+        "epithet": "la Catholique",
+        "accession": "Proclamée à Ségovie deux jours après la mort d'Henri IV.",
+        "spouses": [
+          "Ferdinand II d'Aragon"
+        ],
+        "summary": "Reine de Castille et de León à partir de 1474, et reine consort d'Aragon à partir de 1479. Avec Ferdinand, elle conquit Grenade, envoya Christophe Colomb et réunit les couronnes dans une même famille. La Castille et l'Aragon gardèrent leurs lois propres jusqu'aux décrets de Nueva Planta de Philippe V.",
+        "events": [
+          "Conquête de Grenade, 1492",
+          "Premier voyage de Colomb, 1492",
+          "Expulsion des juifs, 1492"
+        ],
+        "wikipedia": "Isabelle_la_Catholique"
+      },
+      "ferdinand-ii": {
+        "name": "Ferdinand II",
+        "title": "Roi d'Aragon et de Castille",
+        "epithet": "le Catholique",
+        "accession": "Roi de Castille avec Isabelle à partir de 1475 ; il hérite de l'Aragon en 1479.",
+        "spouses": [
+          "Isabelle Ire de Castille",
+          "Germaine de Foix"
+        ],
+        "summary": "Roi d'Aragon de 1479 à sa mort, et roi de Castille, sous le nom de Ferdinand V, de 1475 à la mort d'Isabelle en 1504. Il gouverna ensuite la Castille pour leur fille Jeanne, sauf pendant les mois de Philippe Ier en 1506. En Castille, on le numérote Ferdinand V.",
+        "events": [
+          "Conquête de Grenade, 1492",
+          "Annexion de la Navarre, 1512"
+        ],
+        "wikipedia": "Ferdinand_le_Catholique"
+      },
+      "john-asturias": {
+        "name": "Jean, prince des Asturies",
+        "short": "Jean",
+        "title": "Prince des Asturies",
+        "fate": "Mort de tuberculose, 1497",
+        "spouses": [
+          "Marguerite d'Autriche"
+        ],
+        "summary": "Fils unique d'Isabelle et de Ferdinand, et héritier des deux couronnes. Il mourut de tuberculose en 1497. La succession passa alors par ses sœurs, puis, après la mort de son neveu Miguel, à Jeanne.",
+        "wikipedia": "Jean_d'Aragon_(1478-1497)"
+      },
+      "isabella-asturias": {
+        "name": "Isabelle d'Aragon",
+        "short": "Isabelle d'Aragon",
+        "title": "Reine de Portugal",
+        "fate": "Morte en couches, 1498",
+        "spouses": [
+          "Alphonse de Portugal",
+          "Manuel Ier de Portugal"
+        ],
+        "summary": "Fille aînée d'Isabelle et de Ferdinand. Après la mort de son frère Jean, elle fut héritière de Castille et d'Aragon, et reine de Portugal comme épouse de Manuel Ier. Elle mourut en 1498 en donnant le jour à Miguel.",
+        "wikipedia": "Isabelle_d'Aragon_(1470-1498)"
+      },
+      "miguel-paz": {
+        "name": "Miguel de la Paz",
+        "short": "Miguel",
+        "title": "Prince des Asturies",
+        "fate": "Mort à un an, 1500",
+        "summary": "Fils de Manuel Ier de Portugal et d'Isabelle d'Aragon. Il fut héritier de la Castille, de l'Aragon et du Portugal. Il mourut en 1500, avant ses deux ans, et Jeanne devint l'héritière.",
+        "wikipedia": "Miguel_de_la_Paz"
+      },
+      "joanna": {
+        "name": "Jeanne Ire",
+        "title": "Reine de Castille et d'Aragon",
+        "epithet": "la Folle",
+        "accession": "Reine de Castille à partir de 1504, et d'Aragon à partir de 1516, jusqu'à sa mort.",
+        "spouses": [
+          "Philippe Ier de Castille"
+        ],
+        "summary": "Reine de Castille à la mort de sa mère en 1504, et d'Aragon à la mort de son père en 1516, jusqu'à sa propre mort en 1555. À partir de 1509, elle fut enfermée à Tordesillas. Son père, son mari, puis son fils gouvernèrent, et à partir de 1516 Charles fut roi conjointement avec elle. Le surnom « la Folle » est traditionnel ; il servit aussi à justifier qu'elle restât écartée du gouvernement.",
+        "wikipedia": "Jeanne_Ire_de_Castille"
+      },
+      "catherine-aragon": {
+        "name": "Catherine d'Aragon",
+        "short": "Catherine",
+        "title": "Reine d'Angleterre",
+        "fate": "Mariage annulé, 1533",
+        "spouses": [
+          "Arthur, prince de Galles",
+          "Henri VIII d'Angleterre"
+        ],
+        "summary": "Dernière fille d'Isabelle et de Ferdinand. Reine d'Angleterre comme première épouse d'Henri VIII, après un bref mariage avec son frère Arthur. L'annulation de ce mariage sépara l'Angleterre de Rome. Elle est la mère de Marie Ire.",
+        "wikipedia": "Catherine_d'Aragon"
+      },
+      "philip-i": {
+        "name": "Philippe Ier",
+        "title": "Roi de Castille",
+        "epithet": "le Beau",
+        "accession": "Roi de Castille par le droit de sa femme.",
+        "spouses": [
+          "Jeanne de Castille"
+        ],
+        "summary": "Archiduc de Habsbourg et souverain des Pays-Bas bourguignons, fils de Maximilien Ier et de Marie de Bourgogne. Reconnu roi de Castille en juin 1506, il mourut le 25 septembre de la même année. Il est le père de l'empereur Charles Quint et de l'empereur Ferdinand Ier.",
+        "wikipedia": "Philippe_Ier_le_Beau"
+      },
+      "charles-i": {
+        "name": "Charles Ier",
+        "title": "Roi d'Espagne, empereur",
+        "epithet": "Charles Quint",
+        "accession": "Proclamé roi conjointement avec sa mère, qui reste reine jusqu'en 1555.",
+        "spouses": [
+          "Isabelle de Portugal"
+        ],
+        "summary": "Fils de Jeanne et de Philippe. Proclamé roi de Castille et d'Aragon en 1516 avec sa mère, et élu empereur du Saint-Empire en 1519. Il abdiqua en 1556, laissa l'Espagne à son fils Philippe II et l'Empire à son frère Ferdinand, et mourut à Yuste en 1558.",
+        "events": [
+          "Élu empereur, 1519",
+          "Abdication, 1556"
+        ],
+        "wikipedia": "Charles_Quint"
+      },
+      "ferdinand-emperor": {
+        "name": "Ferdinand Ier",
+        "short": "Ferdinand Ier",
+        "title": "Empereur du Saint-Empire, 1556–1564",
+        "spouses": [
+          "Anne de Bohême et de Hongrie"
+        ],
+        "summary": "Frère cadet de Charles Ier. Il reçut les terres autrichiennes et fut élu empereur quand Charles abdiqua en 1556. Les branches espagnole et autrichienne des Habsbourg se séparèrent avec lui.",
+        "wikipedia": "Ferdinand_Ier_(empereur_du_Saint-Empire)"
+      },
+      "isabella-portugal": {
+        "name": "Isabelle de Portugal",
+        "short": "Isabelle",
+        "title": "Reine d'Espagne, impératrice",
+        "summary": "Épouse de Charles Ier et mère de Philippe II. Elle gouverna l'Espagne pendant les longues absences de Charles dans l'Empire, et mourut en 1539.",
+        "wikipedia": "Isabelle_de_Portugal_(1503-1539)"
+      },
+      "philip-ii": {
+        "name": "Philippe II",
+        "title": "Roi d'Espagne",
+        "epithet": "le Prudent",
+        "spouses": [
+          "Marie-Manuelle de Portugal",
+          "Marie Ire d'Angleterre",
+          "Élisabeth de Valois",
+          "Anne d'Autriche"
+        ],
+        "summary": "Fils de Charles Ier et d'Isabelle de Portugal. Roi d'Espagne à partir de 1556, roi d'Angleterre par le droit de son épouse Marie de 1554 à 1558, et roi de Portugal à partir de 1580. Il fit bâtir l'Escurial, combattit la révolte des Pays-Bas et envoya l'Invincible Armada contre l'Angleterre en 1588.",
+        "events": [
+          "Bataille de Lépante, 1571",
+          "Roi de Portugal, 1580",
+          "Invincible Armada, 1588"
+        ],
+        "wikipedia": "Philippe_II_(roi_d'Espagne)"
+      },
+      "carlos-asturias": {
+        "name": "Charles, prince des Asturies",
+        "short": "Don Carlos",
+        "title": "Prince des Asturies",
+        "fate": "Mort en captivité, 1568",
+        "summary": "Fils aîné de Philippe II et de Marie-Manuelle de Portugal, et héritier jusqu'à sa mort. Philippe le fit enfermer en 1568, et il mourut en captivité la même année. Sa mère était morte quelques jours après sa naissance.",
+        "wikipedia": "Charles_d'Autriche_(1545-1568)"
+      },
+      "anna-austria": {
+        "name": "Anne d'Autriche",
+        "short": "Anne",
+        "title": "Reine d'Espagne",
+        "summary": "Nièce et quatrième épouse de Philippe II, et mère de Philippe III. Elle mourut en 1580, l'année où Philippe devint aussi roi de Portugal.",
+        "wikipedia": "Anne_d'Autriche_(1549-1580)"
+      },
+      "philip-iii": {
+        "name": "Philippe III",
+        "title": "Roi d'Espagne",
+        "epithet": "le Pieux",
+        "spouses": [
+          "Marguerite d'Autriche"
+        ],
+        "summary": "Fils de Philippe II et d'Anne d'Autriche. Roi d'Espagne et de Portugal à partir de 1598. Il laissa le gouvernement au duc de Lerme et, en 1609, ordonna l'expulsion des morisques.",
+        "events": [
+          "Expulsion des morisques, 1609"
+        ],
+        "wikipedia": "Philippe_III_(roi_d'Espagne)"
+      },
+      "margaret-austria": {
+        "name": "Marguerite d'Autriche",
+        "short": "Marguerite",
+        "title": "Reine d'Espagne",
+        "summary": "Épouse de Philippe III et mère de Philippe IV. Elle mourut en 1611.",
+        "wikipedia": "Marguerite_d'Autriche-Styrie"
+      },
+      "philip-iv": {
+        "name": "Philippe IV",
+        "title": "Roi d'Espagne",
+        "epithet": "le Roi-Planète",
+        "spouses": [
+          "Élisabeth de France",
+          "Marie-Anne d'Autriche"
+        ],
+        "summary": "Fils de Philippe III et de Marguerite d'Autriche. Roi d'Espagne à partir de 1621, et de Portugal jusqu'à la révolte de 1640. Le comte-duc d'Olivares dirigea le début de son gouvernement. La paix des Pyrénées, en 1659, maria sa fille Marie-Thérèse à Louis XIV.",
+        "events": [
+          "Perte du Portugal, 1640",
+          "Paix des Pyrénées, 1659"
+        ],
+        "wikipedia": "Philippe_IV_(roi_d'Espagne)"
+      },
+      "elisabeth-france": {
+        "name": "Élisabeth de France",
+        "short": "Élisabeth",
+        "title": "Reine d'Espagne",
+        "summary": "Fille d'Henri IV de France et première épouse de Philippe IV. Mère de Balthazar-Charles et de Marie-Thérèse, reine de France. Elle fut régente pendant une partie de la révolte de Catalogne. Par Marie-Thérèse, elle est l'ancêtre de tous les rois Bourbons d'Espagne qui suivent.",
+        "wikipedia": "Élisabeth_de_France_(1602-1644)"
+      },
+      "balthasar-charles": {
+        "name": "Balthazar-Charles",
+        "short": "Balthazar",
+        "title": "Prince des Asturies",
+        "fate": "Mort avant de pouvoir régner, 1646",
+        "summary": "Fils de Philippe IV et d'Élisabeth de France, et héritier dès sa naissance. Il mourut en 1646. Philippe épousa alors Marie-Anne d'Autriche, qui était destinée à Balthazar, et elle est la mère de Charles II.",
+        "wikipedia": "Balthazar-Charles_d'Autriche"
+      },
+      "mariana-austria": {
+        "name": "Marie-Anne d'Autriche",
+        "short": "Marie-Anne",
+        "title": "Reine d'Espagne",
+        "summary": "Nièce et seconde épouse de Philippe IV, mère de Charles II et de l'impératrice Marguerite-Thérèse. Elle fut régente de 1665 à 1675, pendant la minorité de son fils, et resta puissante jusqu'à sa mort en 1696.",
+        "wikipedia": "Marie-Anne_d'Autriche_(1634-1696)"
+      },
+      "maria-theresa": {
+        "name": "Marie-Thérèse d'Autriche",
+        "short": "Marie-Thérèse",
+        "title": "Reine de France",
+        "summary": "Fille de Philippe IV et d'Élisabeth de France, et épouse de Louis XIV. Son contrat de mariage renonça à la succession d'Espagne pour ses descendants, en échange d'une dot que l'Espagne ne paya jamais. Louis XIV s'appuya ensuite sur cette renonciation non exécutée pour réclamer la couronne au profit de leur petit-fils Philippe V.",
+        "events": [
+          "Mariage et renonciation, 1660"
+        ],
+        "wikipedia": "Marie-Thérèse_d'Autriche_(1638-1683)"
+      },
+      "charles-ii": {
+        "name": "Charles II",
+        "title": "Roi d'Espagne",
+        "epithet": "l'Ensorcelé",
+        "spouses": [
+          "Marie-Louise d'Orléans",
+          "Marie-Anne de Neubourg"
+        ],
+        "summary": "Dernier roi Habsbourg d'Espagne, fils de Philippe IV et de sa nièce Marie-Anne d'Autriche. Souvent malade, fruit de générations de mariages dans la même famille, il mourut le 1er novembre 1700 sans enfant. Son testament laissa toute la monarchie à Philippe d'Anjou.",
+        "events": [
+          "Mort sans héritier, 1700"
+        ],
+        "wikipedia": "Charles_II_(roi_d'Espagne)"
+      },
+      "joseph-ferdinand": {
+        "name": "Joseph-Ferdinand de Bavière",
+        "short": "Joseph-Ferdinand",
+        "title": "Héritier d'Espagne",
+        "fate": "Mort avant que le trône ne soit vacant, 1699",
+        "summary": "Arrière-petit-fils de Philippe IV, par Marguerite-Thérèse, épouse de l'empereur Léopold, et par leur fille Marie-Antoinette. Charles II le désigna comme héritier, de même que le traité de partage de 1698. Il mourut en 1699, à six ans, et la succession fut de nouveau ouverte.",
+        "wikipedia": "Joseph-Ferdinand_de_Bavière"
+      },
+      "louis-xiv": {
+        "name": "Louis XIV",
+        "title": "Roi de France, 1643–1715",
+        "epithet": "le Roi-Soleil",
+        "spouses": [
+          "Marie-Thérèse d'Autriche"
+        ],
+        "summary": "Roi de France de 1643 à 1715. Son épouse Marie-Thérèse est une fille de Philippe IV d'Espagne, et leur petit-fils devint Philippe V. Il accepta le testament de Charles II et refusa le partage de l'Espagne.",
+        "wikipedia": "Louis_XIV"
+      },
+      "grand-dauphin": {
+        "name": "Louis, le Grand Dauphin",
+        "short": "Grand Dauphin",
+        "title": "Dauphin de France",
+        "fate": "Mort avant son père, 1711",
+        "spouses": [
+          "Marie-Anne-Victoire de Bavière"
+        ],
+        "summary": "Seul fils légitime survivant de Louis XIV et de Marie-Thérèse, et héritier de France. Il mourut en 1711, avant son père. Son deuxième fils est Philippe V d'Espagne.",
+        "wikipedia": "Louis_de_France_(1661-1711)"
+      },
+      "maria-anna-bavaria": {
+        "name": "Marie-Anne de Bavière",
+        "short": "Marie-Anne",
+        "title": "Dauphine de France",
+        "summary": "Épouse du Grand Dauphin et mère de Philippe V. Elle mourut en 1690, dix ans avant que son fils ne soit appelé au trône d'Espagne.",
+        "wikipedia": "Marie-Anne_de_Bavière_(1660-1690)"
+      },
+      "philip-v": {
+        "name": "Philippe V",
+        "title": "Roi d'Espagne",
+        "epithet": "l'Animoso",
+        "reignText": "1700–1724, 1724–1746",
+        "accession": "Désigné héritier par le testament de Charles II.",
+        "spouses": [
+          "Marie-Louise-Gabrielle de Savoie",
+          "Élisabeth Farnèse"
+        ],
+        "summary": "Petit-fils de Louis XIV et de Marie-Thérèse, fille de Philippe IV. Le testament de Charles II lui laissa l'Espagne, ce qui ouvrit la guerre de Succession d'Espagne. À Utrecht, il renonça au trône de France. Il abdiqua en faveur de son fils Louis en janvier 1724 et reprit la couronne à la mort de Louis, en août. Ses décrets de Nueva Planta abolirent les lois propres de la couronne d'Aragon.",
+        "events": [
+          "Guerre de Succession d'Espagne, 1701–1714",
+          "Traité d'Utrecht, 1713",
+          "Décrets de Nueva Planta, 1707–1716"
+        ],
+        "wikipedia": "Philippe_V_(roi_d'Espagne)"
+      },
+      "archduke-charles": {
+        "name": "Archiduc Charles",
+        "short": "Charles d'Autriche",
+        "title": "Empereur du Saint-Empire, 1711–1740",
+        "fate": "Renonce à la couronne d'Espagne, 1714",
+        "spouses": [
+          "Élisabeth-Christine de Brunswick"
+        ],
+        "summary": "Fils de l'empereur Léopold Ier et arrière-petit-fils de Philippe III, par Marie-Anne d'Espagne. Pendant la guerre de Succession d'Espagne, il fut proclamé roi contre Philippe V et reconnu en Catalogne, mais il ne gouverna jamais toute l'Espagne. Il devint l'empereur Charles VI en 1711 et abandonna la revendication espagnole à Rastatt en 1714.",
+        "events": [
+          "Proclamé contre Philippe V, 1703",
+          "Paix de Rastatt, 1714"
+        ],
+        "wikipedia": "Charles_VI_(empereur_du_Saint-Empire)"
+      },
+      "maria-luisa-savoy": {
+        "name": "Marie-Louise-Gabrielle de Savoie",
+        "short": "Marie-Louise",
+        "title": "Reine d'Espagne",
+        "summary": "Première épouse de Philippe V et mère de Louis Ier et de Ferdinand VI. Elle fut régente en 1702–1703 pendant l'absence de Philippe au cours de la guerre de Succession, et mourut en 1714.",
+        "wikipedia": "Marie-Louise-Gabrielle_de_Savoie"
+      },
+      "elisabeth-farnese": {
+        "name": "Élisabeth Farnèse",
+        "short": "Élisabeth Farnèse",
+        "title": "Reine d'Espagne",
+        "summary": "Seconde épouse de Philippe V et mère de Charles III. À partir de 1714, elle dirigea une grande part de la politique espagnole, surtout pour placer ses fils sur des trônes italiens. Elle fut régente quelques mois en 1759, après la mort de Ferdinand VI et avant l'arrivée de Charles depuis Naples.",
+        "wikipedia": "Élisabeth_Farnèse"
+      },
+      "louis-i": {
+        "name": "Louis Ier",
+        "title": "Roi d'Espagne",
+        "spouses": [
+          "Louise-Élisabeth d'Orléans"
+        ],
+        "summary": "Fils aîné de Philippe V et de Marie-Louise-Gabrielle de Savoie. Il régna du 15 janvier 1724 jusqu'à sa mort, le 31 août, et son père reprit la couronne.",
+        "wikipedia": "Louis_Ier_(roi_d'Espagne)"
+      },
+      "ferdinand-vi": {
+        "name": "Ferdinand VI",
+        "title": "Roi d'Espagne",
+        "epithet": "le Juste",
+        "spouses": [
+          "Barbe de Portugal"
+        ],
+        "summary": "Fils de Philippe V et de Marie-Louise-Gabrielle de Savoie. Il tint l'Espagne à l'écart des grandes guerres de son temps. Sa reine, Barbe de Portugal, mourut en 1758, et il ne laissa pas d'enfant. La couronne passa à son demi-frère Charles.",
+        "wikipedia": "Ferdinand_VI"
+      },
+      "charles-iii": {
+        "name": "Charles III",
+        "title": "Roi d'Espagne",
+        "accession": "Laisse le trône de Naples à un fils quand il hérite de l'Espagne.",
+        "spouses": [
+          "Marie-Amélie de Saxe"
+        ],
+        "summary": "Fils aîné de Philippe V et d'Élisabeth Farnèse. Il fut duc de Parme, puis roi de Naples et de Sicile, et en 1759 il laissa Naples à son fils Ferdinand plutôt que de l'unir à l'Espagne. Son règne fut l'apogée des réformes bourboniennes.",
+        "events": [
+          "Roi de Naples et de Sicile, 1735–1759"
+        ],
+        "wikipedia": "Charles_III_(roi_d'Espagne)"
+      },
+      "maria-amalia": {
+        "name": "Marie-Amélie de Saxe",
+        "short": "Marie-Amélie",
+        "title": "Reine d'Espagne",
+        "summary": "Épouse de Charles III et mère de Charles IV. Elle a été reine de Naples, et elle mourut en 1760, un an après que Charles fut devenu roi d'Espagne.",
+        "wikipedia": "Marie-Amélie_de_Saxe"
+      },
+      "charles-iv": {
+        "name": "Charles IV",
+        "title": "Roi d'Espagne",
+        "fate": "Abdication, 1808",
+        "spouses": [
+          "Marie-Louise de Bourbon-Parme"
+        ],
+        "summary": "Fils de Charles III et de Marie-Amélie. Le tumulte d'Aranjuez le força à abdiquer en faveur de son fils Ferdinand le 19 mars 1808. À Bayonne, en mai, lui et Ferdinand cédèrent tous deux la couronne à Napoléon. Il mourut à Rome en 1819.",
+        "events": [
+          "Abdication d'Aranjuez, 1808",
+          "Abdications de Bayonne, 1808"
+        ],
+        "wikipedia": "Charles_IV_(roi_d'Espagne)"
+      },
+      "maria-luisa-parma": {
+        "name": "Marie-Louise de Parme",
+        "short": "Marie-Louise",
+        "title": "Reine d'Espagne",
+        "summary": "Épouse de Charles IV et mère de Ferdinand VII et de l'infant Charles. Son favori Manuel Godoy domina le gouvernement, et elle partit en exil avec Charles après Bayonne. Elle mourut à Rome en 1819.",
+        "wikipedia": "Marie-Louise_de_Bourbon-Parme_(1751-1819)"
+      },
+      "ferdinand-vii": {
+        "name": "Ferdinand VII",
+        "title": "Roi d'Espagne",
+        "epithet": "le Désiré",
+        "reignText": "1808, 1813–1833",
+        "spouses": [
+          "Marie-Antoinette de Naples",
+          "Marie-Isabelle de Portugal",
+          "Marie-Josèphe de Saxe",
+          "Marie-Christine des Deux-Siciles"
+        ],
+        "summary": "Roi pendant quelques semaines en 1808, jusqu'aux abdications de Bayonne. Napoléon le retient en France, tandis que les Cortes de Cadix le reconnaissent toujours. Rétabli en décembre 1813, il écarta la constitution de 1812. En 1830, il publia la Pragmatique Sanction, qui met de côté la succession masculine instituée par Philippe V en 1713, pour que sa fille Isabelle hérite plutôt que son frère Charles. Après son retour, beaucoup l'appelèrent le roi félon.",
+        "events": [
+          "Abdications de Bayonne, 1808",
+          "Rétabli, 1813",
+          "Pragmatique Sanction, 1830"
+        ],
+        "wikipedia": "Ferdinand_VII"
+      },
+      "carlos-molina": {
+        "name": "Charles, comte de Molina",
+        "short": "Comte de Molina",
+        "title": "Prétendant carliste",
+        "fate": "Revendique la couronne comme Charles V, 1833",
+        "summary": "Frère cadet de Ferdinand VII. Il rejeta la Pragmatique Sanction et, à la mort de Ferdinand, revendiqua la couronne sous le nom de Charles V. Ce fut le début de la première guerre carliste (1833–1840). Il ne régna jamais depuis Madrid. Les prétendants carlistes suivants descendent de lui.",
+        "events": [
+          "Première guerre carliste, 1833–1840"
+        ],
+        "wikipedia": "Charles_de_Bourbon_(1788-1855)"
+      },
+      "maria-cristina-sicilies": {
+        "name": "Marie-Christine des Deux-Siciles",
+        "short": "Marie-Christine",
+        "title": "Reine d'Espagne",
+        "fate": "Fin de la régence, 1840",
+        "summary": "Quatrième épouse de Ferdinand VII et mère d'Isabelle II. Elle fut régente à partir de 1833, quand sa fille devint reine à deux ans, jusqu'en 1840, lorsque le général Espartero la chassa de la régence.",
+        "wikipedia": "Marie-Christine_de_Bourbon-Siciles_(1806-1878)"
+      },
+      "joseph-bonaparte": {
+        "name": "Joseph Bonaparte",
+        "short": "Joseph Ier",
+        "title": "Roi d'Espagne",
+        "accession": "Installé par Napoléon après les abdications de Bayonne.",
+        "spouses": [
+          "Julie Clary"
+        ],
+        "summary": "Frère aîné de Napoléon, et déjà roi de Naples. Il fut fait roi d'Espagne en juin 1808. Une grande partie du pays le refusa, et un gouvernement à Cadix continua de reconnaître Ferdinand VII. Il quitta l'Espagne en décembre 1813. Ses adversaires l'appelèrent l'Intrus.",
+        "events": [
+          "Guerre d'Espagne, 1808–1814"
+        ],
+        "wikipedia": "Joseph_Bonaparte"
+      },
+      "isabella-ii": {
+        "name": "Isabelle II",
+        "title": "Reine d'Espagne",
+        "epithet": "aux tristes destins",
+        "spouses": [
+          "François d'Assise, duc de Cadix"
+        ],
+        "summary": "Fille de Ferdinand VII et de Marie-Christine. Elle devint reine à deux ans, et son oncle Charles lui disputa la succession dans les guerres carlistes. Elle est la seule femme à avoir régné de son propre droit sur le royaume uni d'Espagne. Une révolution la déposa le 30 septembre 1868. En 1870, elle abdiqua en faveur de son fils Alphonse.",
+        "events": [
+          "Première guerre carliste, 1833–1840",
+          "Déposée, 1868"
+        ],
+        "wikipedia": "Isabelle_II"
+      },
+      "francisco-asis": {
+        "name": "François d'Assise",
+        "short": "François",
+        "title": "Roi consort d'Espagne",
+        "summary": "Époux et double cousin germain d'Isabelle II, et roi consort de leur mariage en 1846 jusqu'à la déposition de la reine. Il est le père légal d'Alphonse XII.",
+        "wikipedia": "François_d'Assise_de_Bourbon"
+      },
+      "amadeo": {
+        "name": "Amédée Ier",
+        "title": "Roi d'Espagne",
+        "epithet": "le Roi chevalier",
+        "accession": "Élu par les Cortes en novembre 1870, il prête serment à Madrid le 2 janvier 1871.",
+        "spouses": [
+          "Marie-Victoire dal Pozzo"
+        ],
+        "summary": "Second fils de Victor-Emmanuel II d'Italie, et duc d'Aoste. Après la déposition d'Isabelle II, les Cortes l'élurent roi. Il abdiqua le 11 février 1873, et la Première République fut proclamée le jour même.",
+        "events": [
+          "Abdication, 1873"
+        ],
+        "wikipedia": "Amédée_Ier_(roi_d'Espagne)"
+      },
+      "alfonso-xii": {
+        "name": "Alphonse XII",
+        "title": "Roi d'Espagne",
+        "epithet": "le Pacificateur",
+        "accession": "Rétabli par le pronunciamiento de Martínez Campos.",
+        "spouses": [
+          "Mercedes d'Orléans",
+          "Marie-Christine d'Autriche"
+        ],
+        "summary": "Fils d'Isabelle II et de François d'Assise. Il fut rétabli le 29 décembre 1874, ce qui mit fin à la Première République, et il acheva la troisième guerre carliste en 1876. Il mourut le 25 novembre 1885, laissant sa reine enceinte.",
+        "events": [
+          "Restauration, 1874",
+          "Fin de la troisième guerre carliste, 1876"
+        ],
+        "wikipedia": "Alphonse_XII"
+      },
+      "maria-cristina-austria": {
+        "name": "Marie-Christine d'Autriche",
+        "short": "Marie-Christine",
+        "title": "Reine d'Espagne",
+        "summary": "Seconde épouse d'Alphonse XII et mère d'Alphonse XIII et de Mercedes, princesse des Asturies. De la mort du roi, en novembre 1885, à la naissance de leur fils, en mai 1886, elle fut à la tête de l'État, et elle resta régente jusqu'à la majorité d'Alphonse en 1902.",
+        "wikipedia": "Marie-Christine_d'Autriche_(1858-1929)"
+      },
+      "mercedes-asturias": {
+        "name": "Mercedes, princesse des Asturies",
+        "short": "Mercedes",
+        "title": "Princesse des Asturies",
+        "fate": "Morte héritière présomptive, 1904",
+        "summary": "Fille aînée d'Alphonse XII et de Marie-Christine. Elle fut héritière présomptive, et serait devenue reine si l'enfant que portait sa mère avait été une fille. L'enfant fut un garçon, Alphonse XIII. Elle resta héritière jusqu'à sa mort en 1904.",
+        "wikipedia": "María_de_las_Mercedes_de_Bourbon_(1880-1904)"
+      },
+      "alfonso-xiii": {
+        "name": "Alphonse XIII",
+        "title": "Roi d'Espagne",
+        "accession": "Roi dès sa naissance. Sa mère est régente jusqu'en 1902.",
+        "spouses": [
+          "Victoire-Eugénie de Battenberg"
+        ],
+        "summary": "Né roi le 17 mai 1886, six mois après la mort de son père. Il prit le pouvoir le jour de ses seize ans, en 1902. Il quitta l'Espagne quand la Deuxième République fut proclamée le 14 avril 1931, sans abdiquer. Le 15 janvier 1941, il renonça à ses droits en faveur de son troisième fils, Juan, et mourut le mois suivant.",
+        "events": [
+          "Majorité, 1902",
+          "Proclamation de la Deuxième République, 1931",
+          "Renonce à ses droits, 1941"
+        ],
+        "wikipedia": "Alphonse_XIII"
+      },
+      "victoria-eugenie": {
+        "name": "Victoire-Eugénie de Battenberg",
+        "short": "Victoire-Eugénie",
+        "title": "Reine d'Espagne",
+        "summary": "Petite-fille de la reine Victoria, et reine consort de 1906 à 1931. Elle transmit l'hémophilie à la famille. Son fils aîné Alphonse et son dernier fils Gonzalve en furent atteints.",
+        "wikipedia": "Victoire-Eugénie_de_Battenberg"
+      },
+      "alfonso-asturias": {
+        "name": "Alphonse, prince des Asturies",
+        "short": "Prince Alphonse",
+        "title": "Prince des Asturies",
+        "fate": "Renonce à ses droits, 1933",
+        "summary": "Fils aîné d'Alphonse XIII et de Victoire-Eugénie, et héritier jusqu'à la chute de la monarchie en 1931. Il était hémophile. Le 11 juin 1933, il renonça à ses droits pour se marier, et il mourut en 1938.",
+        "wikipedia": "Alphonse_de_Bourbon_(1907-1938)"
+      },
+      "jaime": {
+        "name": "Infant Jacques",
+        "short": "Jacques",
+        "title": "Duc de Ségovie",
+        "fate": "Renonce à ses droits, 1933",
+        "summary": "Deuxième fils d'Alphonse XIII. Le 21 juin 1933, il renonça à ses droits au trône d'Espagne parce qu'il était sourd, et il contesta plus tard cette renonciation. Le droit reconnu au retour de la monarchie passa par son frère Juan.",
+        "wikipedia": "Jacques-Henri_de_Bourbon"
+      },
+      "juan-barcelona": {
+        "name": "Juan, comte de Barcelone",
+        "short": "Comte de Barcelone",
+        "title": "Héritier dynastique",
+        "fate": "Renonce en faveur de son fils, 1977",
+        "summary": "Troisième fils d'Alphonse XIII, et héritier dynastique après les renonciations de ses frères. Il revendiqua la couronne sous le nom de Juan III. Franco l'écarta et, en 1969, désigna le fils de Juan, Juan Carlos, comme futur roi. Juan renonça à sa propre revendication le 14 mai 1977.",
+        "wikipedia": "Juan_de_Borbón_y_Battenberg"
+      },
+      "mercedes-barcelona": {
+        "name": "Mercedes, comtesse de Barcelone",
+        "short": "Comtesse de Barcelone",
+        "title": "Comtesse de Barcelone",
+        "summary": "Princesse de Bourbon-Siciles, épouse de Juan, comte de Barcelone, et mère de Juan Carlos Ier. Elle partagea son exil et mourut en 2000.",
+        "wikipedia": "María_de_las_Mercedes_de_Borbón_y_Orleans"
+      },
+      "juan-carlos": {
+        "name": "Juan Carlos Ier",
+        "title": "Roi d'Espagne",
+        "accession": "Succède à Franco comme chef de l'État. Son père renonce à la revendication dynastique en 1977.",
+        "spouses": [
+          "Sophie de Grèce"
+        ],
+        "summary": "Petit-fils d'Alphonse XIII, né en exil à Rome. Franco le désigna comme successeur en 1969, avec le titre de prince d'Espagne, en passant outre son père. Il devint roi le 22 novembre 1975, deux jours après la mort de Franco, et conduisit le retour à la démocratie. Il abdiqua en faveur de son fils Felipe le 19 juin 2014.",
+        "events": [
+          "Désigné successeur, 1969",
+          "Constitution de 1978",
+          "Abdication, 2014"
+        ],
+        "wikipedia": "Juan_Carlos_Ier"
+      },
+      "sofia": {
+        "name": "Sophie de Grèce",
+        "short": "Sophie",
+        "title": "Reine d'Espagne",
+        "summary": "Princesse de Grèce et de Danemark, fille du roi Paul et de la reine Frédérique. Reine consort de 1975 à l'abdication de Juan Carlos en 2014, et mère de Felipe VI.",
+        "wikipedia": "Sophie_de_Grèce_(1938)"
+      },
+      "felipe-vi": {
+        "name": "Felipe VI",
+        "title": "Roi d'Espagne",
+        "accession": "Proclamé roi à l'abdication de son père.",
+        "spouses": [
+          "Letizia Ortiz"
+        ],
+        "summary": "Fils unique de Juan Carlos Ier et de Sophie. Prince des Asturies à partir de 1977, il devint roi quand son père abdiqua le 19 juin 2014. Son héritière est sa fille aînée, Leonor.",
+        "events": [
+          "Proclamé roi, 2014"
+        ],
+        "wikipedia": "Felipe_VI"
+      },
+      "letizia": {
+        "name": "Letizia Ortiz",
+        "short": "Letizia",
+        "title": "Reine d'Espagne",
+        "summary": "Reine d'Espagne depuis 2014. Elle était journaliste, et elle épousa Felipe, alors prince des Asturies, en 2004. Mère de Leonor, princesse des Asturies, et de l'infante Sofia.",
+        "wikipedia": "Letizia_Ortiz"
+      },
+      "leonor": {
+        "name": "Leonor, princesse des Asturies",
+        "short": "Leonor",
+        "title": "Princesse des Asturies",
+        "summary": "Fille aînée de Felipe VI et de la reine Letizia, et princesse des Asturies depuis que son père est roi. Elle est héritière présomptive : selon la Constitution, un frère né plus tard passerait avant elle.",
+        "wikipedia": "Leonor_de_Borbón_y_Ortiz"
+      }
+    }
   }
 }

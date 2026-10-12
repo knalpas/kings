@@ -1,4 +1,4 @@
-export type Kingdom = 'england' | 'france'
+export type Kingdom = 'england' | 'france' | 'spain'
 
 export type Person = {
   id: string

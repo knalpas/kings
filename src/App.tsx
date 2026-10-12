@@ -84,7 +84,8 @@ export default function App() {
   const index = useMemo(() => new Map(data.people.map((p) => [p.id, p])), [data])
   const selected = selectedId ? index.get(selectedId) ?? null : null
   const kingdomLabels = useMemo(
-    () => ({ england: ui[locale].england, france: ui[locale].france }) satisfies Record<Kingdom, string>,
+    () =>
+      ({ england: ui[locale].england, france: ui[locale].france, spain: ui[locale].spain }) satisfies Record<Kingdom, string>,
     [locale],
   )
 

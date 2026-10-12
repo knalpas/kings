@@ -7,7 +7,7 @@ const root = path.resolve(import.meta.dirname, '..')
 const jsonPath = path.join(root, 'src/data/portraits.json')
 const portraits = JSON.parse(await readFile(jsonPath, 'utf8'))
 
-for (const kingdom of ['england', 'france']) {
+for (const kingdom of ['england', 'france', 'spain']) {
   const dir = path.join(root, 'public/portraits', kingdom)
   for (const file of await readdir(dir)) {
     if (file.endsWith('.webp')) continue

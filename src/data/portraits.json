@@ -1322,5 +1322,257 @@
   "france/galswintha": {
     "src": "portraits/france/galswintha.webp",
     "wiki": "Galswintha"
+  },
+  "spain/john-ii-castile": {
+    "src": "portraits/spain/john-ii-castile.webp",
+    "wiki": "John_II_of_Castile"
+  },
+  "spain/isabella-portugal-castile": {
+    "src": "portraits/spain/isabella-portugal-castile.webp",
+    "wiki": "Isabella_of_Portugal,_Queen_of_Castile"
+  },
+  "spain/henry-iv": {
+    "src": "portraits/spain/henry-iv.webp",
+    "wiki": "Henry_IV_of_Castile"
+  },
+  "spain/joanna-beltraneja": {
+    "src": "portraits/spain/joanna-beltraneja.webp",
+    "wiki": "Joanna_la_Beltraneja"
+  },
+  "spain/john-ii-aragon": {
+    "src": "portraits/spain/john-ii-aragon.webp",
+    "wiki": "John_II_of_Aragon"
+  },
+  "spain/juana-enriquez": {
+    "src": "portraits/spain/juana-enriquez.webp",
+    "wiki": "Juana_Enríquez"
+  },
+  "spain/isabella-i": {
+    "src": "portraits/spain/isabella-i.webp",
+    "wiki": "Isabella_I_of_Castile"
+  },
+  "spain/ferdinand-ii": {
+    "src": "portraits/spain/ferdinand-ii.webp",
+    "wiki": "Ferdinand_II_of_Aragon"
+  },
+  "spain/john-asturias": {
+    "src": "portraits/spain/john-asturias.webp",
+    "wiki": "John,_Prince_of_Asturias"
+  },
+  "spain/isabella-asturias": {
+    "src": "portraits/spain/isabella-asturias.webp",
+    "wiki": "Isabella_of_Aragon,_Queen_of_Portugal"
+  },
+  "spain/miguel-paz": {
+    "src": "portraits/spain/miguel-paz.webp",
+    "wiki": "Miguel_da_Paz,_Prince_of_Portugal"
+  },
+  "spain/joanna": {
+    "src": "portraits/spain/joanna.webp",
+    "wiki": "Joanna_of_Castile"
+  },
+  "spain/catherine-aragon": {
+    "src": "portraits/spain/catherine-aragon.webp",
+    "wiki": "Catherine_of_Aragon"
+  },
+  "spain/philip-i": {
+    "src": "portraits/spain/philip-i.webp",
+    "wiki": "Philip_the_Handsome"
+  },
+  "spain/charles-i": {
+    "src": "portraits/spain/charles-i.webp",
+    "wiki": "Charles_V,_Holy_Roman_Emperor"
+  },
+  "spain/ferdinand-emperor": {
+    "src": "portraits/spain/ferdinand-emperor.webp",
+    "wiki": "Ferdinand_I,_Holy_Roman_Emperor"
+  },
+  "spain/isabella-portugal": {
+    "src": "portraits/spain/isabella-portugal.webp",
+    "wiki": "Isabella_of_Portugal"
+  },
+  "spain/philip-ii": {
+    "src": "portraits/spain/philip-ii.webp",
+    "wiki": "Philip_II_of_Spain"
+  },
+  "spain/carlos-asturias": {
+    "src": "portraits/spain/carlos-asturias.webp",
+    "wiki": "Carlos,_Prince_of_Asturias"
+  },
+  "spain/anna-austria": {
+    "src": "portraits/spain/anna-austria.webp",
+    "wiki": "Anna_of_Austria,_Queen_of_Spain"
+  },
+  "spain/philip-iii": {
+    "src": "portraits/spain/philip-iii.webp",
+    "wiki": "Philip_III_of_Spain"
+  },
+  "spain/margaret-austria": {
+    "src": "portraits/spain/margaret-austria.webp",
+    "wiki": "Margaret_of_Austria,_Queen_of_Spain"
+  },
+  "spain/philip-iv": {
+    "src": "portraits/spain/philip-iv.webp",
+    "wiki": "Philip_IV_of_Spain"
+  },
+  "spain/elisabeth-france": {
+    "src": "portraits/spain/elisabeth-france.webp",
+    "wiki": "Elisabeth_of_France,_Queen_of_Spain"
+  },
+  "spain/balthasar-charles": {
+    "src": "portraits/spain/balthasar-charles.webp",
+    "wiki": "Balthasar_Charles,_Prince_of_Asturias"
+  },
+  "spain/mariana-austria": {
+    "src": "portraits/spain/mariana-austria.webp",
+    "wiki": "Mariana_of_Austria"
+  },
+  "spain/maria-theresa": {
+    "src": "portraits/spain/maria-theresa.webp",
+    "wiki": "Maria_Theresa_of_Spain"
+  },
+  "spain/charles-ii": {
+    "src": "portraits/spain/charles-ii.webp",
+    "wiki": "Charles_II_of_Spain"
+  },
+  "spain/joseph-ferdinand": {
+    "src": "portraits/spain/joseph-ferdinand.webp",
+    "wiki": "Joseph_Ferdinand_of_Bavaria"
+  },
+  "spain/louis-xiv": {
+    "src": "portraits/spain/louis-xiv.webp",
+    "wiki": "Louis_XIV"
+  },
+  "spain/grand-dauphin": {
+    "src": "portraits/spain/grand-dauphin.webp",
+    "wiki": "Louis,_Grand_Dauphin"
+  },
+  "spain/maria-anna-bavaria": {
+    "src": "portraits/spain/maria-anna-bavaria.webp",
+    "wiki": "Maria_Anna_Victoria_of_Bavaria"
+  },
+  "spain/philip-v": {
+    "src": "portraits/spain/philip-v.webp",
+    "wiki": "Philip_V_of_Spain"
+  },
+  "spain/archduke-charles": {
+    "src": "portraits/spain/archduke-charles.webp",
+    "wiki": "Charles_VI,_Holy_Roman_Emperor"
+  },
+  "spain/maria-luisa-savoy": {
+    "src": "portraits/spain/maria-luisa-savoy.webp",
+    "wiki": "Maria_Luisa_Gabriella_of_Savoy"
+  },
+  "spain/elisabeth-farnese": {
+    "src": "portraits/spain/elisabeth-farnese.webp",
+    "wiki": "Elisabeth_Farnese"
+  },
+  "spain/louis-i": {
+    "src": "portraits/spain/louis-i.webp",
+    "wiki": "Louis_I_of_Spain"
+  },
+  "spain/ferdinand-vi": {
+    "src": "portraits/spain/ferdinand-vi.webp",
+    "wiki": "Ferdinand_VI"
+  },
+  "spain/charles-iii": {
+    "src": "portraits/spain/charles-iii.webp",
+    "wiki": "Charles_III_of_Spain"
+  },
+  "spain/maria-amalia": {
+    "src": "portraits/spain/maria-amalia.webp",
+    "wiki": "Maria_Amalia_of_Saxony"
+  },
+  "spain/charles-iv": {
+    "src": "portraits/spain/charles-iv.webp",
+    "wiki": "Charles_IV_of_Spain"
+  },
+  "spain/maria-luisa-parma": {
+    "src": "portraits/spain/maria-luisa-parma.webp",
+    "wiki": "Maria_Luisa_of_Parma"
+  },
+  "spain/ferdinand-vii": {
+    "src": "portraits/spain/ferdinand-vii.webp",
+    "wiki": "Ferdinand_VII"
+  },
+  "spain/carlos-molina": {
+    "src": "portraits/spain/carlos-molina.webp",
+    "wiki": "Infante_Carlos_María_Isidro_of_Spain"
+  },
+  "spain/maria-cristina-sicilies": {
+    "src": "portraits/spain/maria-cristina-sicilies.webp",
+    "wiki": "Maria_Christina_of_the_Two_Sicilies"
+  },
+  "spain/joseph-bonaparte": {
+    "src": "portraits/spain/joseph-bonaparte.webp",
+    "wiki": "Joseph_Bonaparte"
+  },
+  "spain/isabella-ii": {
+    "src": "portraits/spain/isabella-ii.webp",
+    "wiki": "Isabella_II"
+  },
+  "spain/francisco-asis": {
+    "src": "portraits/spain/francisco-asis.webp",
+    "wiki": "Francisco_de_Asís,_Duke_of_Cádiz"
+  },
+  "spain/amadeo": {
+    "src": "portraits/spain/amadeo.webp",
+    "wiki": "Amadeo_I_of_Spain"
+  },
+  "spain/alfonso-xii": {
+    "src": "portraits/spain/alfonso-xii.webp",
+    "wiki": "Alfonso_XII"
+  },
+  "spain/maria-cristina-austria": {
+    "src": "portraits/spain/maria-cristina-austria.webp",
+    "wiki": "Maria_Christina_of_Austria"
+  },
+  "spain/mercedes-asturias": {
+    "src": "portraits/spain/mercedes-asturias.webp",
+    "wiki": "María_de_las_Mercedes,_Princess_of_Asturias"
+  },
+  "spain/alfonso-xiii": {
+    "src": "portraits/spain/alfonso-xiii.webp",
+    "wiki": "Alfonso_XIII"
+  },
+  "spain/victoria-eugenie": {
+    "src": "portraits/spain/victoria-eugenie.webp",
+    "wiki": "Victoria_Eugenie_of_Battenberg"
+  },
+  "spain/alfonso-asturias": {
+    "src": "portraits/spain/alfonso-asturias.webp",
+    "wiki": "Alfonso,_Prince_of_Asturias_(1907–1938)"
+  },
+  "spain/jaime": {
+    "src": "portraits/spain/jaime.webp",
+    "wiki": "Infante_Jaime,_Duke_of_Segovia"
+  },
+  "spain/juan-barcelona": {
+    "src": "portraits/spain/juan-barcelona.webp",
+    "wiki": "Infante_Juan,_Count_of_Barcelona"
+  },
+  "spain/mercedes-barcelona": {
+    "src": "portraits/spain/mercedes-barcelona.webp",
+    "wiki": "Princess_María_de_las_Mercedes_of_Bourbon-Two_Sicilies"
+  },
+  "spain/juan-carlos": {
+    "src": "portraits/spain/juan-carlos.webp",
+    "wiki": "Juan_Carlos_I"
+  },
+  "spain/sofia": {
+    "src": "portraits/spain/sofia.webp",
+    "wiki": "Queen_Sofía_of_Spain"
+  },
+  "spain/felipe-vi": {
+    "src": "portraits/spain/felipe-vi.webp",
+    "wiki": "Felipe_VI"
+  },
+  "spain/letizia": {
+    "src": "portraits/spain/letizia.webp",
+    "wiki": "Queen_Letizia_of_Spain"
+  },
+  "spain/leonor": {
+    "src": "portraits/spain/leonor.webp",
+    "wiki": "Leonor,_Princess_of_Asturias"
   }
 }

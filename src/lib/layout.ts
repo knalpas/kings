@@ -410,11 +410,26 @@ function computeBands(
     start: r.start,
     end: i + 1 < runs.length ? runs[i + 1].start : lastEnd,
   }))
+  // A gap inside one house (the same dynasty before and after) must split that band.
+  // Truncating it would drop every year of the house that follows the gap.
   for (const g of gaps) {
-    for (const s of segs) if (s.start < g.start && g.start < s.end) s.end = g.start
-    segs.push({ kind: 'gap', label: g.label, start: g.start, end: g.end })
+    const next: typeof segs = []
+    let placed = false
+    for (const s of segs) {
+      const cuts = s.kind === 'house' && s.start <= g.start && g.start < s.end
+      if (!cuts) {
+        next.push(s)
+        continue
+      }
+      if (s.start < g.start) next.push({ ...s, end: g.start })
+      next.push({ kind: 'gap', label: g.label, start: g.start, end: g.end })
+      if (g.end < s.end) next.push({ ...s, start: g.end })
+      placed = true
+    }
+    if (!placed) next.push({ kind: 'gap', label: g.label, start: g.start, end: g.end })
+    segs = next
   }
-  segs = segs.filter((s) => s.end > s.start).sort((a, b) => a.start - b.start)
+  segs = segs.filter((s) => s.end > s.start).sort((a, b) => a.start - b.start || (a.kind === 'gap' ? -1 : 1))
 
   const merged: typeof segs = []
   for (const s of segs) {

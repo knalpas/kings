@@ -1,6 +1,7 @@
 import type { Kingdom, KingdomData } from '../types'
 import { englandGaps, englandHouses, englandPeople } from './england'
 import { franceGaps, franceHouses, francePeople } from './france'
+import { spainGaps, spainHouses, spainPeople } from './spain'
 
 export const kingdoms: Record<Kingdom, KingdomData> = {
   england: {
@@ -21,6 +22,15 @@ export const kingdoms: Record<Kingdom, KingdomData> = {
     people: francePeople,
     gaps: franceGaps,
   },
+  spain: {
+    id: 'spain',
+    label: 'Spain',
+    title: 'The Kings and Queens of Spain',
+    subtitle: 'From Isabella and Ferdinand to Felipe VI, 1474 to the present',
+    houses: spainHouses,
+    people: spainPeople,
+    gaps: spainGaps,
+  },
 }
 
-export const kingdomOrder: Kingdom[] = ['england', 'france']
+export const kingdomOrder: Kingdom[] = ['england', 'france', 'spain']

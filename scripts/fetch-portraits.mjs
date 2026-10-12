@@ -18,12 +18,14 @@ function parsePeople(kingdom, source) {
 const entries = [
   ...parsePeople('england', await readFile(path.join(root, 'src/data/england.ts'), 'utf8')),
   ...parsePeople('france', await readFile(path.join(root, 'src/data/france.ts'), 'utf8')),
+  ...parsePeople('spain', await readFile(path.join(root, 'src/data/spain.ts'), 'utf8')),
 ]
 
 const outDir = path.join(root, 'public/portraits')
 const jsonPath = path.join(root, 'src/data/portraits.json')
 await mkdir(path.join(outDir, 'england'), { recursive: true })
 await mkdir(path.join(outDir, 'france'), { recursive: true })
+await mkdir(path.join(outDir, 'spain'), { recursive: true })
 
 let previous = {}
 try {
