@@ -3274,7 +3274,7 @@
         "title": "Roi d'Orléans",
         "wikipedia": "Clodomir",
         "fate": "Tué à la bataille de Vézeronce, 524",
-        "summary": "Deuxième fils de Clovis et roi de la part d'Orléans. Il mourut en campagne contre les Burgondes, et ses frères firent tuer ses jeunes fils."
+        "summary": "Deuxième fils de Clovis et roi de la part d'Orléans. Il mourut en campagne contre les Burgondes, et Childebert et Clotaire firent tuer ses jeunes fils."
       },
       "childebert-i": {
         "name": "Childebert Ier",
@@ -3338,7 +3338,7 @@
         "name": "Frédégonde",
         "title": "Reine de Neustrie",
         "wikipedia": "Frédégonde",
-        "summary": "Reine de Chilpéric Ier et rivale de Brunehaut, qu'elle rendit responsable du meurtre de sa sœur Galswinthe. Elle fut régente pour son fils enfant, Clotaire II."
+        "summary": "Reine de Chilpéric Ier. On la tint pour responsable du meurtre de Galswinthe, sœur de Brunehaut et précédente épouse de Chilpéric, et la querelle qui suivit divisa les royaumes francs. Elle fut régente pour son fils enfant, Clotaire II."
       },
       "chilperic-i": {
         "name": "Chilpéric Ier",
@@ -3346,7 +3346,7 @@
         "title": "Roi de Neustrie",
         "wikipedia": "Chilpéric_Ier_(roi_des_Francs)",
         "fate": "Assassiné à Chelles, 584",
-        "summary": "Roi de Neustrie, établi à Soissons. Son mariage avec Frédégonde et le meurtre de sa précédente épouse Galswinthe ouvrirent la longue guerre contre son frère Sigebert et contre Brunehaut."
+        "summary": "Roi de Neustrie, établi à Soissons. Il épousa Galswinthe, sœur de Brunehaut, puis la fit tuer et épousa Frédégonde. Ce meurtre ouvrit la longue guerre contre Sigebert et Brunehaut."
       },
       "childebert-ii": {
         "name": "Childebert II",
@@ -3379,7 +3379,7 @@
         "short": "Thierry II",
         "title": "Roi de Bourgogne",
         "wikipedia": "Thierry_II_(roi)",
-        "summary": "Fils cadet de Childebert II et roi de Bourgogne. Élevé par Brunehaut, il se retourna contre elle : après avoir vaincu son frère, il la livra à Clotaire II, et mourut la même année."
+        "summary": "Fils cadet de Childebert II et roi de Bourgogne. Élevé par Brunehaut, il vainquit son frère Théodebert, puis mourut de maladie en 613. Les grands livrèrent alors Brunehaut à Clotaire II."
       },
       "nanthild": {
         "name": "Nantilde",
@@ -3494,6 +3494,13 @@
         "title": "Roi des Francs",
         "wikipedia": "Thierry_IV",
         "summary": "Fils de Dagobert III, tiré de l'abbaye de Chelles pour être roi sous Charles Martel. Après sa mort, les Francs restèrent six ans sans roi."
+      },
+      "galswintha": {
+        "name": "Galswinthe",
+        "title": "Reine de Neustrie",
+        "wikipedia": "Galswinthe",
+        "fate": "Assassinée, 568",
+        "summary": "Princesse wisigothe et sœur de Brunehaut. Chilpéric l'épousa en 567, et elle fut assassinée en quelques mois. Brunehaut en rendit Frédégonde responsable, et leur querelle divisa les royaumes francs."
       },
       "childeric-iii": {
         "name": "Childéric III",

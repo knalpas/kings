@@ -2149,7 +2149,7 @@ export const francePeople: Person[] = [
     died: 524,
     fate: 'Killed at the Battle of Vézeronce, 524',
     summary:
-      'Second son of Clovis and king of the Orléans share. He died on campaign against the Burgundians, and his brothers killed his young sons.',
+      'Second son of Clovis and king of the Orléans share. He died on campaign against the Burgundians, and Childebert and Chlothar had his young sons killed.',
     wikipedia: 'Chlodomer',
   },
   {
@@ -2289,7 +2289,7 @@ export const francePeople: Person[] = [
     female: true,
     spouseOf: ['chilperic-i'],
     summary:
-      'Queen of Chilperic I and rival of Brunhilda, whom she blamed for the murder of her sister Galswintha. She was regent for her infant son Chlothar II.',
+      'Queen of Chilperic I. She was blamed for the murder of Galswintha, Brunhilda’s sister and Chilperic’s previous wife, and the feud that followed split the Frankish kingdoms. She was regent for her infant son Chlothar II.',
     wikipedia: 'Fredegund',
   },
   {
@@ -2305,7 +2305,7 @@ export const francePeople: Person[] = [
     died: 584,
     fate: 'Assassinated at Chelles, 584',
     summary:
-      'King of Neustria, based at Soissons. His marriage to Fredegund and the killing of his previous wife Galswintha began the long war with his brother Sigebert and with Brunhilda.',
+      'King of Neustria, based at Soissons. He married Galswintha, Brunhilda’s sister, then had her killed and married Fredegund. That murder began the long war with Sigebert and Brunhilda.',
     wikipedia: 'Chilperic_I',
   },
   {
@@ -2347,7 +2347,7 @@ export const francePeople: Person[] = [
     title: 'King of Austrasia',
     house: 'merovingian',
     parent: 'childebert-ii',
-    reign: [595, 612],
+    reign: [596, 612],
     born: 586,
     died: 612,
     summary:
@@ -2361,11 +2361,11 @@ export const francePeople: Person[] = [
     title: 'King of Burgundy',
     house: 'merovingian',
     parent: 'childebert-ii',
-    reign: [595, 613],
+    reign: [596, 613],
     born: 587,
     died: 613,
     summary:
-      'Younger son of Childebert II and king of Burgundy. Raised by Brunhilda, he turned on her: after defeating his brother he handed her to Chlothar II, and died the same year.',
+      'Younger son of Childebert II and king of Burgundy. Raised by Brunhilda, he defeated his brother Theudebert and died of illness in 613. The nobles then betrayed Brunhilda to Chlothar II.',
     wikipedia: 'Theuderic_II',
   },
   {
@@ -2614,5 +2614,22 @@ export const francePeople: Person[] = [
     summary:
       'Last Merovingian king. His parentage is uncertain. Pepin the Short and his brother Carloman set him up in 743; in 751 Pepin deposed him, had him tonsured, and shut him in a monastery. Pepin was anointed king in his place.',
     wikipedia: 'Childeric_III',
+  },
+  {
+    id: 'galswintha',
+    name: 'Galswintha',
+    title: 'Queen of Neustria',
+    house: 'merovingian',
+    parent: null,
+    role: 'consort',
+    born: 540,
+    bornCirca: true,
+    died: 568,
+    female: true,
+    spouseOf: ['chilperic-i'],
+    fate: 'Murdered, 568',
+    summary:
+      'Visigothic princess and sister of Brunhilda. Chilperic married her in 567, and she was murdered within months. Brunhilda held Fredegund responsible, and the feud between them split the Frankish kingdoms.',
+    wikipedia: 'Galswintha',
   },
 ]
