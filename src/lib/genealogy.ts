@@ -27,8 +27,7 @@ const REMOVED_EN = ['', 'once', 'twice', 'three times', 'four times', 'five time
 function greats(n: number, locale: Locale): string {
   if (n <= 0) return ''
   if (locale === 'fr') {
-    if (n === 1) return 'arrière-'
-    return `arrière-${n}× `
+    return 'arrière-'.repeat(n)
   }
   if (n === 1) return 'great-'
   return `${n}× great-`
@@ -58,7 +57,12 @@ export function kinship(a: string, b: string, index: Index, locale: Locale = 'en
   const female = Boolean(index.get(b)?.female)
   const fr = locale === 'fr'
 
-  if (distant) return ia === 0 ? (fr ? 'descendant éloigné' : 'distant descendant') : fr ? 'cousin éloigné' : 'distant cousin'
+  if (distant) {
+    const e = female ? 'e' : ''
+    if (ia === 0) return fr ? `descendant${e} éloigné${e}` : 'distant descendant'
+    if (ib === 0) return fr ? `ancêtre éloigné${e}` : 'distant ancestor'
+    return fr ? `cousin${e} éloigné${e}` : 'distant cousin'
+  }
 
   if (ia === 0 && ib === 0) return fr ? 'la même personne' : 'same person'
   if (ia === 0) {
@@ -70,8 +74,14 @@ export function kinship(a: string, b: string, index: Index, locale: Locale = 'en
     return `${greats(ia - 2, locale)}${female ? (fr ? 'grand-mère' : 'grandmother') : fr ? 'grand-père' : 'grandfather'}`
   }
   if (ia === 1 && ib === 1) return female ? (fr ? 'sœur' : 'sister') : fr ? 'frère' : 'brother'
-  if (ia === 1) return `${greats(ib - 2, locale)}${female ? (fr ? 'nièce' : 'niece') : fr ? 'neveu' : 'nephew'}`
-  if (ib === 1) return `${greats(ia - 2, locale)}${female ? (fr ? 'tante' : 'aunt') : fr ? 'oncle' : 'uncle'}`
+  if (ia === 1) {
+    if (fr) return ib === 2 ? (female ? 'nièce' : 'neveu') : `${greats(ib - 3, locale)}${female ? 'petite-nièce' : 'petit-neveu'}`
+    return `${greats(ib - 2, locale)}${female ? 'niece' : 'nephew'}`
+  }
+  if (ib === 1) {
+    if (fr) return ia === 2 ? (female ? 'tante' : 'oncle') : `${greats(ia - 3, locale)}${female ? 'grand-tante' : 'grand-oncle'}`
+    return `${greats(ia - 2, locale)}${female ? 'aunt' : 'uncle'}`
+  }
   const degree = Math.min(ia, ib) - 1
   const removed = Math.abs(ia - ib)
   if (fr) {
@@ -110,7 +120,7 @@ export function reignLength(p: Person, locale: Locale = 'en'): string {
 
 export function lifeText(p: Person, locale: Locale = 'en'): string {
   const born = yearText(p.born, p.bornCirca, locale)
-  if (p.died == null) return p.born != null ? ui[locale].bornPrefix(born) : ''
+  if (p.died == null) return p.born != null ? (locale === 'fr' && p.female ? `née en ${born}` : ui[locale].bornPrefix(born)) : ''
   return `${born}–${yearText(p.died, p.diedCirca, locale)}`
 }
 
@@ -169,7 +179,7 @@ function inLaw(subject: Person, other: Person, index: Index, locale: Locale): st
   return null
 }
 
-const FEMININE_FR = /^(fille|sœur|mère|nièce|tante|grand-mère|petite-fille|cousine|belle-|épouse)/
+const FEMININE_FR = /^(arrière-)*(fille|sœur|mère|nièce|tante|grand-mère|grand-tante|petite-fille|petite-nièce|cousine|descendante|belle-|épouse)|éloignée$/
 
 /** How `other` is related to `subject`, phrased from the subject's side: "his father", "her husband", "his brother-in-law". */
 export function relationPhrase(subject: Person, kinshipTerm: string | null, locale: Locale, none: string, other?: Person, index?: Index): string {

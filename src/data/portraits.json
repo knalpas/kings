@@ -379,6 +379,10 @@
     "src": "portraits/england/robert-curthose.webp",
     "wiki": "Robert_Curthose"
   },
+  "england/richard-normandy": {
+    "src": "portraits/england/richard-normandy.webp",
+    "wiki": "Richard_(son_of_William_the_Conqueror)"
+  },
   "england/william-adelin": {
     "src": "portraits/england/william-adelin.webp",
     "wiki": "William_Adelin"
@@ -583,6 +587,50 @@
     "src": "portraits/england/prince-harry.webp",
     "wiki": "Prince_Harry,_Duke_of_Sussex"
   },
+  "england/cecily-neville": {
+    "src": "portraits/england/cecily-neville.webp",
+    "wiki": "Cecily_Neville,_Duchess_of_York"
+  },
+  "england/blanche-lancaster": {
+    "src": "portraits/england/blanche-lancaster.webp",
+    "wiki": "Blanche_of_Lancaster"
+  },
+  "england/margaret-douglas": {
+    "src": "portraits/england/margaret-douglas.webp",
+    "wiki": "Margaret_Douglas,_Countess_of_Lennox"
+  },
+  "england/james-iv": {
+    "src": "portraits/england/james-iv.webp",
+    "wiki": "James_IV_of_Scotland"
+  },
+  "england/edmund-mortimer": {
+    "src": "portraits/england/edmund-mortimer.webp",
+    "wiki": "Edmund_Mortimer,_3rd_Earl_of_March"
+  },
+  "england/anne-denmark": {
+    "src": "portraits/england/anne-denmark.webp",
+    "wiki": "Anne_of_Denmark"
+  },
+  "england/charlotte-mecklenburg": {
+    "src": "portraits/england/charlotte-mecklenburg.webp",
+    "wiki": "Charlotte_of_Mecklenburg-Strelitz"
+  },
+  "england/victoria-saxe-coburg": {
+    "src": "portraits/england/victoria-saxe-coburg.webp",
+    "wiki": "Princess_Victoria_of_Saxe-Coburg-Saalfeld"
+  },
+  "england/joan-kent": {
+    "src": "portraits/england/joan-kent.webp",
+    "wiki": "Joan_of_Kent"
+  },
+  "england/ernest-augustus": {
+    "src": "portraits/england/ernest-augustus.webp",
+    "wiki": "Ernest_Augustus,_Elector_of_Hanover"
+  },
+  "england/catherine-wales": {
+    "src": "portraits/england/catherine-wales.webp",
+    "wiki": "Catherine,_Princess_of_Wales"
+  },
   "france/pepin": {
     "src": "portraits/france/pepin.webp",
     "wiki": "Pepin_the_Short"
@@ -750,6 +798,10 @@
   "france/charles-vii": {
     "src": "portraits/france/charles-vii.webp",
     "wiki": "Charles_VII_of_France"
+  },
+  "france/charles-orleans": {
+    "src": "portraits/france/charles-orleans.webp",
+    "wiki": "Charles_I,_Duke_of_Orléans"
   },
   "france/john-angouleme": {
     "src": "portraits/france/john-angouleme.webp",
@@ -1042,5 +1094,49 @@
   "france/count-paris": {
     "src": "portraits/france/count-paris.webp",
     "wiki": "Prince_Philippe,_Count_of_Paris"
+  },
+  "france/charles-lorraine": {
+    "src": "portraits/france/charles-lorraine.webp",
+    "wiki": "Charles,_Duke_of_Lower_Lorraine"
+  },
+  "france/beatrice-bourbon": {
+    "src": "portraits/france/beatrice-bourbon.webp",
+    "wiki": "Beatrice_of_Burgundy,_Lady_of_Bourbon"
+  },
+  "france/valentina-visconti": {
+    "src": "portraits/france/valentina-visconti.webp",
+    "wiki": "Valentina_Visconti,_Duchess_of_Orléans"
+  },
+  "france/marie-cleves": {
+    "src": "portraits/france/marie-cleves.webp",
+    "wiki": "Marie_of_Cleves,_Duchess_of_Orléans"
+  },
+  "france/louise-savoy": {
+    "src": "portraits/france/louise-savoy.webp",
+    "wiki": "Louise_of_Savoy"
+  },
+  "france/gaston-orleans": {
+    "src": "portraits/france/gaston-orleans.webp",
+    "wiki": "Gaston,_Duke_of_Orléans"
+  },
+  "france/philip-v-spain": {
+    "src": "portraits/france/philip-v-spain.webp",
+    "wiki": "Philip_V_of_Spain"
+  },
+  "france/marie-adelaide-savoy": {
+    "src": "portraits/france/marie-adelaide-savoy.webp",
+    "wiki": "Marie_Adélaïde_of_Savoy"
+  },
+  "france/maria-josepha-saxony": {
+    "src": "portraits/france/maria-josepha-saxony.webp",
+    "wiki": "Maria_Josepha_of_Saxony,_Dauphine_of_France"
+  },
+  "france/louise-marie-adelaide": {
+    "src": "portraits/france/louise-marie-adelaide.webp",
+    "wiki": "Louise_Marie_Adélaïde_de_Bourbon"
+  },
+  "france/louis-antoine-angouleme": {
+    "src": "portraits/france/louis-antoine-angouleme.webp",
+    "wiki": "Louis_Antoine,_Duke_of_Angoulême"
   }
 }
