@@ -35,6 +35,10 @@
     "src": "portraits/england/ethelred.webp",
     "wiki": "Æthelred_the_Unready"
   },
+  "england/sweyn": {
+    "src": "portraits/england/sweyn.webp",
+    "wiki": "Sweyn_Forkbeard"
+  },
   "england/edmund-ironside": {
     "src": "portraits/england/edmund-ironside.webp",
     "wiki": "Edmund_Ironside"
@@ -631,6 +635,18 @@
     "src": "portraits/england/catherine-wales.webp",
     "wiki": "Catherine,_Princess_of_Wales"
   },
+  "england/ecgberht": {
+    "src": "portraits/england/ecgberht.webp",
+    "wiki": "Ecgberht,_King_of_Wessex"
+  },
+  "england/gorm": {
+    "src": "portraits/england/gorm.webp",
+    "wiki": "Gorm_the_Old"
+  },
+  "england/harald-bluetooth": {
+    "src": "portraits/england/harald-bluetooth.webp",
+    "wiki": "Harald_Bluetooth"
+  },
   "france/pepin": {
     "src": "portraits/france/pepin.webp",
     "wiki": "Pepin_the_Short"
@@ -1099,6 +1115,10 @@
     "src": "portraits/france/charles-lorraine.webp",
     "wiki": "Charles,_Duke_of_Lower_Lorraine"
   },
+  "france/adelaide-paris": {
+    "src": "portraits/france/adelaide-paris.webp",
+    "wiki": "Adelaide_of_Paris"
+  },
   "france/beatrice-bourbon": {
     "src": "portraits/france/beatrice-bourbon.webp",
     "wiki": "Beatrice_of_Burgundy,_Lady_of_Bourbon"
@@ -1138,5 +1158,21 @@
   "france/louis-antoine-angouleme": {
     "src": "portraits/france/louis-antoine-angouleme.webp",
     "wiki": "Louis_Antoine,_Duke_of_Angoulême"
+  },
+  "france/arnulf-metz": {
+    "src": "portraits/france/arnulf-metz.webp",
+    "wiki": "Arnulf_of_Metz"
+  },
+  "france/pepin-landen": {
+    "src": "portraits/france/pepin-landen.webp",
+    "wiki": "Pepin_of_Landen"
+  },
+  "france/ansegisel": {
+    "src": "portraits/france/ansegisel.webp",
+    "wiki": "Ansegisel"
+  },
+  "france/begga": {
+    "src": "portraits/france/begga.webp",
+    "wiki": "Begga"
   }
 }

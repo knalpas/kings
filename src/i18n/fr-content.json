@@ -1773,6 +1773,32 @@
         "title": "Princesse de Galles",
         "summary": "Épouse du prince William depuis 2011. Mère du prince George, de la princesse Charlotte et du prince Louis.",
         "wikipedia": "Catherine_Middleton"
+      },
+      "ecgberht": {
+        "name": "Ecgberht",
+        "title": "Roi du Wessex, 802–839",
+        "wikipedia": "Ecgberht_(roi_du_Wessex)",
+        "summary": "Roi du Wessex et père d'Æthelwulf. Sa victoire à Ellendun en 825 mit fin à la suprématie mercienne, et la lignée des rois d'Angleterre descend de lui par Alfred.",
+        "events": [
+          "Bataille d'Ellendun, 825"
+        ]
+      },
+      "gorm": {
+        "name": "Gorm l'Ancien",
+        "short": "Gorm",
+        "title": "Roi de Danemark",
+        "wikipedia": "Gorm_l'Ancien",
+        "summary": "Premier roi de Danemark historiquement attesté, et père d'Harald à la Dent bleue. Il fut inhumé dans le tertre royal de Jelling."
+      },
+      "harald-bluetooth": {
+        "name": "Harald à la Dent bleue",
+        "short": "Harald",
+        "title": "Roi de Danemark",
+        "wikipedia": "Harald_à_la_Dent_bleue",
+        "summary": "Roi de Danemark et de Norvège, et père de Sven à la Barbe fourchue. Il reçut le baptême vers 965 ; son fils conquit l'Angleterre en 1013.",
+        "events": [
+          "Baptême, vers 965"
+        ]
       }
     }
   },
@@ -3169,6 +3195,33 @@
         ],
         "fate": "Renonce à la couronne quelques minutes après l'abdication de son père, 1830",
         "wikipedia": "Louis_de_France_(1775-1844)"
+      },
+      "arnulf-metz": {
+        "name": "Arnoul de Metz",
+        "short": "Arnoul",
+        "title": "Évêque de Metz",
+        "wikipedia": "Arnoul_de_Metz",
+        "summary": "Évêque de Metz et conseiller à la cour mérovingienne d'Austrasie. Les Carolingiens descendent de lui par son fils Ansegisel."
+      },
+      "pepin-landen": {
+        "name": "Pépin de Landen",
+        "short": "Pépin l'Ancien",
+        "title": "Maire du palais d'Austrasie",
+        "wikipedia": "Pépin_de_Landen",
+        "summary": "Maire du palais d'Austrasie, le plus ancien de la famille sur ce tableau. Père de Begga, dont le fils Pépin de Herstal rendit la charge quasi héréditaire."
+      },
+      "ansegisel": {
+        "name": "Ansegisel",
+        "title": "Duc en Austrasie",
+        "wikipedia": "Ansegisel",
+        "fate": "Assassiné, 662",
+        "summary": "Fils d'Arnoul de Metz et époux de Begga. Leur fils fut Pépin de Herstal, grand-père de Charlemagne."
+      },
+      "begga": {
+        "name": "Begga",
+        "title": "Fondatrice d'Andenne",
+        "wikipedia": "Begge_d'Andenne",
+        "summary": "Fille de Pépin de Landen et épouse d'Ansegisel. Mère de Pépin de Herstal, elle fonda l'abbaye d'Andenne."
       }
     }
   }
