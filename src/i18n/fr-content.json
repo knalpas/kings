@@ -1805,8 +1805,12 @@
   "france": {
     "label": "France",
     "title": "Les rois et empereurs de France",
-    "subtitle": "De Pépin le Bref à Napoléon III, 751–1870",
+    "subtitle": "De Childéric Ier à Napoléon III, 457–1870",
     "houses": {
+      "merovingian": {
+        "label": "Dynastie mérovingienne",
+        "note": "Dynastie franque qui tire son nom de Mérovée. Rois des Francs, de Childéric Ier jusqu'à la déposition de Childéric III par Pépin le Bref en 751."
+      },
       "carolingian": {
         "label": "Dynastie carolingienne",
         "note": "Dynastie franque de Pépin le Bref et de Charlemagne ; rois de Francie occidentale jusqu'en 987."
@@ -1841,6 +1845,7 @@
       }
     },
     "gaps": {
+      "737-743": "Sans roi",
       "1792-1804": "Première République",
       "1848-1852": "Deuxième République"
     },
@@ -3222,6 +3227,282 @@
         "title": "Fondatrice d'Andenne",
         "wikipedia": "Begge_d'Andenne",
         "summary": "Fille de Pépin de Landen et épouse d'Ansegisel. Mère de Pépin de Herstal, elle fonda l'abbaye d'Andenne."
+      },
+      "merovech": {
+        "name": "Mérovée",
+        "title": "Roi des Francs saliens",
+        "wikipedia": "Mérovée",
+        "summary": "Éponyme de la dynastie mérovingienne et père de Childéric Ier. Peu de choses sont sûres à son sujet ; la légende en fit plus tard le fils d'un monstre marin."
+      },
+      "childeric-i": {
+        "name": "Childéric Ier",
+        "short": "Childéric Ier",
+        "title": "Roi des Francs saliens",
+        "wikipedia": "Childéric_Ier",
+        "summary": "Roi des Francs saliens à Tournai et père de Clovis. Sa tombe, découverte en 1653, contenait de l'or romain, une épée et les abeilles célèbres.",
+        "events": [
+          "Tombe de Tournai, redécouverte en 1653"
+        ]
+      },
+      "clotilde": {
+        "name": "Clotilde",
+        "title": "Reine des Francs",
+        "wikipedia": "Clotilde_(épouse_de_Clovis_Ier)",
+        "summary": "Princesse burgonde et reine chrétienne de Clovis. Elle poussa à son baptême et fut la mère de Clodomir, de Childebert Ier et de Clotaire Ier."
+      },
+      "clovis-i": {
+        "name": "Clovis Ier",
+        "short": "Clovis Ier",
+        "title": "Roi des Francs",
+        "wikipedia": "Clovis_Ier",
+        "accession": "Unifia les royaumes francs.",
+        "summary": "Premier roi de l'ensemble des Francs. Il vainquit Syagrius et les Wisigoths, et son baptême à Reims, traditionnellement daté de 496, lia la monarchie à l'Église catholique. Le royaume fut partagé entre ses quatre fils.",
+        "events": [
+          "Défaite de Syagrius à Soissons, 486",
+          "Bataille de Vouillé, 507"
+        ]
+      },
+      "theuderic-i": {
+        "name": "Thierry Ier",
+        "short": "Thierry Ier",
+        "title": "Roi de Reims",
+        "wikipedia": "Thierry_Ier",
+        "summary": "Fils aîné de Clovis, né d'une concubine et non de Clotilde. Il reçut le royaume oriental, autour de Reims, et fut le père de Théodebert Ier."
+      },
+      "chlodomer": {
+        "name": "Clodomir",
+        "title": "Roi d'Orléans",
+        "wikipedia": "Clodomir",
+        "fate": "Tué à la bataille de Vézeronce, 524",
+        "summary": "Deuxième fils de Clovis et roi de la part d'Orléans. Il mourut en campagne contre les Burgondes, et ses frères firent tuer ses jeunes fils."
+      },
+      "childebert-i": {
+        "name": "Childebert Ier",
+        "short": "Childebert Ier",
+        "title": "Roi de Paris",
+        "wikipedia": "Childebert_Ier",
+        "summary": "Roi de Paris. Avec Clotaire Ier, il détruisit le royaume burgonde, et il mourut sans fils, laissant ses terres à Clotaire.",
+        "events": [
+          "Conquête de la Bourgogne, 534"
+        ]
+      },
+      "chlothar-i": {
+        "name": "Clotaire Ier",
+        "short": "Clotaire Ier",
+        "title": "Roi des Francs",
+        "wikipedia": "Clotaire_Ier",
+        "summary": "Fils cadet de Clovis. Depuis Soissons, il survécut à ses frères et, à partir de 558, régna de nouveau sur tous les Francs. Le royaume fut partagé une seconde fois à sa mort."
+      },
+      "theudebert-i": {
+        "name": "Théodebert Ier",
+        "short": "Théodebert Ier",
+        "title": "Roi d'Austrasie",
+        "wikipedia": "Théodebert_Ier",
+        "summary": "Roi d'Austrasie. Il intervint dans les guerres gothiques en Italie et fut le premier Mérovingien à frapper des monnaies d'or à son nom."
+      },
+      "theudebald": {
+        "name": "Théodebald",
+        "title": "Roi d'Austrasie",
+        "wikipedia": "Thibaut_(roi_des_Francs)",
+        "summary": "Roi enfant d'Austrasie. Il mourut sans héritier, et son royaume passa à son grand-oncle Clotaire Ier."
+      },
+      "charibert-i": {
+        "name": "Caribert Ier",
+        "short": "Caribert Ier",
+        "title": "Roi de Paris",
+        "wikipedia": "Caribert_Ier",
+        "summary": "Fils aîné survivant de Clotaire Ier et roi de Paris. Il mourut sans fils légitime, et ses frères se partagèrent son royaume."
+      },
+      "guntram": {
+        "name": "Gontran",
+        "title": "Roi de Bourgogne",
+        "wikipedia": "Gontran_(roi)",
+        "summary": "Roi de Bourgogne, établi à Orléans et à Chalon. Il protégea son neveu Childebert II pendant les guerres contre Chilpéric, et l'Église le vénéra plus tard comme un saint."
+      },
+      "brunhilda": {
+        "name": "Brunehaut",
+        "title": "Reine d'Austrasie",
+        "wikipedia": "Brunehaut_(reine)",
+        "fate": "Exécutée sur l'ordre de Clotaire II, 613",
+        "summary": "Princesse wisigothe et reine de Sigebert Ier. Pendant quarante ans elle gouverna pour son fils et ses petits-fils, dans une querelle avec Frédégonde qui divisa les royaumes francs. Clotaire II la fit exécuter en 613."
+      },
+      "sigebert-i": {
+        "name": "Sigebert Ier",
+        "short": "Sigebert Ier",
+        "title": "Roi d'Austrasie",
+        "wikipedia": "Sigebert_Ier",
+        "fate": "Assassiné à Vitry, 575",
+        "summary": "Roi d'Austrasie. Il épousa la princesse wisigothe Brunehaut. L'entourage de son frère Chilpéric le fit assassiner à Vitry-en-Artois."
+      },
+      "fredegund": {
+        "name": "Frédégonde",
+        "title": "Reine de Neustrie",
+        "wikipedia": "Frédégonde",
+        "summary": "Reine de Chilpéric Ier et rivale de Brunehaut, qu'elle rendit responsable du meurtre de sa sœur Galswinthe. Elle fut régente pour son fils enfant, Clotaire II."
+      },
+      "chilperic-i": {
+        "name": "Chilpéric Ier",
+        "short": "Chilpéric Ier",
+        "title": "Roi de Neustrie",
+        "wikipedia": "Chilpéric_Ier_(roi_des_Francs)",
+        "fate": "Assassiné à Chelles, 584",
+        "summary": "Roi de Neustrie, établi à Soissons. Son mariage avec Frédégonde et le meurtre de sa précédente épouse Galswinthe ouvrirent la longue guerre contre son frère Sigebert et contre Brunehaut."
+      },
+      "childebert-ii": {
+        "name": "Childebert II",
+        "short": "Childebert II",
+        "title": "Roi d'Austrasie",
+        "wikipedia": "Childebert_II",
+        "summary": "Fils de Sigebert Ier et de Brunehaut. Il devint roi d'Austrasie à cinq ans, sous le gouvernement de sa mère, puis aussi roi de Bourgogne."
+      },
+      "chlothar-ii": {
+        "name": "Clotaire II",
+        "short": "Clotaire II",
+        "title": "Roi des Francs",
+        "wikipedia": "Clotaire_II",
+        "accession": "Seul roi après la chute de Brunehaut, 613.",
+        "summary": "Fils de Chilpéric Ier et de Frédégonde, roi de Neustrie dès l'enfance. En 613 il abattit le parti de Brunehaut et réunit les royaumes francs. Son édit de Paris confirma le pouvoir de l'aristocratie et des maires du palais.",
+        "events": [
+          "Exécution de Brunehaut, 613",
+          "Édit de Paris, 614"
+        ]
+      },
+      "theudebert-ii": {
+        "name": "Théodebert II",
+        "short": "Théodebert II",
+        "title": "Roi d'Austrasie",
+        "wikipedia": "Thibert_II",
+        "summary": "Fils aîné de Childebert II et roi d'Austrasie. Il guerroyait contre son frère Thierry II, qui le vainquit et le fit tuer."
+      },
+      "theuderic-ii": {
+        "name": "Thierry II",
+        "short": "Thierry II",
+        "title": "Roi de Bourgogne",
+        "wikipedia": "Thierry_II_(roi)",
+        "summary": "Fils cadet de Childebert II et roi de Bourgogne. Élevé par Brunehaut, il se retourna contre elle : après avoir vaincu son frère, il la livra à Clotaire II, et mourut la même année."
+      },
+      "nanthild": {
+        "name": "Nantilde",
+        "title": "Reine des Francs",
+        "wikipedia": "Nantilde",
+        "summary": "Reine de Dagobert Ier et mère de Clovis II. Après la mort de Dagobert, elle fut régente de Neustrie et de Bourgogne pour son jeune fils."
+      },
+      "dagobert-i": {
+        "name": "Dagobert Ier",
+        "short": "Dagobert Ier",
+        "title": "Roi des Francs",
+        "wikipedia": "Dagobert_Ier",
+        "summary": "Roi d'Austrasie à partir de 623 et de tous les Francs à partir de 629. Dernier Mérovingien à gouverner en personne, il fit de Paris sa capitale et fut le protecteur de l'abbaye de Saint-Denis, où il fut inhumé.",
+        "events": [
+          "Seul roi, 629"
+        ]
+      },
+      "charibert-ii": {
+        "name": "Caribert II",
+        "short": "Caribert II",
+        "title": "Roi d'Aquitaine",
+        "wikipedia": "Caribert_II",
+        "summary": "Frère cadet de Dagobert Ier. Il reçut un royaume en Aquitaine et mourut trois ans plus tard ; Dagobert reprit alors la région."
+      },
+      "sigebert-iii": {
+        "name": "Sigebert III",
+        "short": "Sigebert III",
+        "title": "Roi d'Austrasie",
+        "wikipedia": "Sigebert_III",
+        "summary": "Fils de Dagobert Ier, fait roi d'Austrasie enfant. Le pouvoir réel appartenait déjà au maire du palais. L'Église le vénéra comme un saint."
+      },
+      "clovis-ii": {
+        "name": "Clovis II",
+        "short": "Clovis II",
+        "title": "Roi de Neustrie et de Bourgogne",
+        "wikipedia": "Clovis_II",
+        "summary": "Fils de Dagobert Ier et de Nantilde. Il fut roi de Neustrie et de Bourgogne dès l'enfance, tandis que les maires du palais gouvernaient."
+      },
+      "chlothar-iii": {
+        "name": "Clotaire III",
+        "short": "Clotaire III",
+        "title": "Roi de Neustrie et de Bourgogne",
+        "wikipedia": "Clotaire_III",
+        "summary": "Fils aîné de Clovis II. Il régna en Neustrie et en Bourgogne sous le maire du palais Ébroïn, et mourut encore jeune."
+      },
+      "childeric-ii": {
+        "name": "Childéric II",
+        "short": "Childéric II",
+        "title": "Roi des Francs",
+        "wikipedia": "Childéric_II",
+        "fate": "Assassiné, 675",
+        "summary": "Fils cadet de Clovis II. Roi d'Austrasie à partir de 662, il devint seul roi en 673 et fut assassiné avec son épouse Bilichilde. Leur fils, élevé sous le nom de moine Daniel, régna plus tard sous le nom de Chilpéric II."
+      },
+      "theuderic-iii": {
+        "name": "Thierry III",
+        "short": "Thierry III",
+        "title": "Roi des Francs",
+        "wikipedia": "Thierry_III",
+        "summary": "Fils cadet de Clovis II. Après la bataille de Tertry en 687, Pépin de Herstal gouverna tous les royaumes francs en son nom. Il fut le père de Clovis IV et de Childebert IV.",
+        "events": [
+          "Bataille de Tertry, 687"
+        ]
+      },
+      "dagobert-ii": {
+        "name": "Dagobert II",
+        "short": "Dagobert II",
+        "title": "Roi d'Austrasie",
+        "wikipedia": "Dagobert_II",
+        "fate": "Assassiné, 679",
+        "summary": "Fils de Sigebert III. Exilé enfant, il fut ramené en Austrasie en 676 et assassiné trois ans plus tard, dans les luttes autour du maire du palais."
+      },
+      "clovis-iv": {
+        "name": "Clovis IV",
+        "short": "Clovis IV",
+        "title": "Roi des Francs",
+        "wikipedia": "Clovis_IV",
+        "summary": "Fils de Thierry III. Il régna sous la mairie du palais de Pépin de Herstal. Si l'on écarte un bref prétendant de 675, on le numérote parfois Clovis III."
+      },
+      "childebert-iii": {
+        "name": "Childebert IV",
+        "short": "Childebert IV",
+        "title": "Roi des Francs",
+        "wikipedia": "Childebert_IV",
+        "epithet": "le Juste",
+        "summary": "Fils de Thierry III, surnommé le Juste, et compté aussi comme Childebert III. Il régna tandis que Pépin de Herstal détenait le pouvoir, et fut le père de Dagobert III."
+      },
+      "dagobert-iii": {
+        "name": "Dagobert III",
+        "short": "Dagobert III",
+        "title": "Roi des Francs",
+        "wikipedia": "Dagobert_III",
+        "summary": "Fils de Childebert IV. Il mourut vers seize ans, et la succession tourna à la guerre entre les maires du palais."
+      },
+      "chilperic-ii": {
+        "name": "Chilpéric II",
+        "short": "Chilpéric II",
+        "title": "Roi des Francs",
+        "wikipedia": "Chilpéric_II_(roi_des_Francs)",
+        "summary": "Fils de Childéric II, tiré d'un monastère où il était le moine Daniel pour devenir roi de Neustrie. Charles Martel vainquit ses partisans, et il mourut roi d'un royaume réunifié en titre seulement."
+      },
+      "chlothar-iv": {
+        "name": "Clotaire IV",
+        "short": "Clotaire IV",
+        "title": "Roi d'Austrasie",
+        "wikipedia": "Clotaire_IV",
+        "accession": "Placé sur le trône par Charles Martel.",
+        "summary": "Roi d'Austrasie pendant environ un an, installé par Charles Martel contre Chilpéric II. Sa place dans la famille est inconnue, et il mourut en 718."
+      },
+      "theuderic-iv": {
+        "name": "Thierry IV",
+        "short": "Thierry IV",
+        "title": "Roi des Francs",
+        "wikipedia": "Thierry_IV",
+        "summary": "Fils de Dagobert III, tiré de l'abbaye de Chelles pour être roi sous Charles Martel. Après sa mort, les Francs restèrent six ans sans roi."
+      },
+      "childeric-iii": {
+        "name": "Childéric III",
+        "short": "Childéric III",
+        "title": "Roi des Francs",
+        "wikipedia": "Childéric_III",
+        "fate": "Déposé et tondu, 751",
+        "accession": "Placé sur le trône par les maires du palais.",
+        "summary": "Dernier roi mérovingien. Sa filiation est incertaine. Pépin le Bref et son frère Carloman le placèrent sur le trône en 743 ; en 751 Pépin le déposa, le fit tondre et l'enferma dans un monastère. Pépin fut sacré roi à sa place."
       }
     }
   }

@@ -1,6 +1,6 @@
 # Kings · Rois
 
-Zoomable, time-scaled genealogical charts of the monarchs of **England** (Alfred the Great to Charles III) and **France** (Pepin the Short to Napoleon III). Available in **English** and **French**.
+Zoomable, time-scaled genealogical charts of the monarchs of **England** (Alfred the Great to Charles III) and **France** (Childeric I to Napoleon III). Available in **English** and **French**.
 
 **Live:** https://knalpas.github.io/kings/
 

@@ -16,7 +16,7 @@ export const kingdoms: Record<Kingdom, KingdomData> = {
     id: 'france',
     label: 'France',
     title: 'The Kings and Emperors of France',
-    subtitle: 'From Pepin the Short to Napoleon III, 751–1870',
+    subtitle: 'From Childeric I to Napoleon III, 457–1870',
     houses: franceHouses,
     people: francePeople,
     gaps: franceGaps,

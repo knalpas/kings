@@ -1174,5 +1174,149 @@
   "france/begga": {
     "src": "portraits/france/begga.webp",
     "wiki": "Begga"
+  },
+  "france/merovech": {
+    "src": "portraits/france/merovech.webp",
+    "wiki": "Merovech"
+  },
+  "france/childeric-i": {
+    "src": "portraits/france/childeric-i.webp",
+    "wiki": "Childeric_I"
+  },
+  "france/clotilde": {
+    "src": "portraits/france/clotilde.webp",
+    "wiki": "Clotilde"
+  },
+  "france/clovis-i": {
+    "src": "portraits/france/clovis-i.webp",
+    "wiki": "Clovis_I"
+  },
+  "france/theuderic-i": {
+    "src": "portraits/france/theuderic-i.webp",
+    "wiki": "Theuderic_I"
+  },
+  "france/chlodomer": {
+    "src": "portraits/france/chlodomer.webp",
+    "wiki": "Chlodomer"
+  },
+  "france/childebert-i": {
+    "src": "portraits/france/childebert-i.webp",
+    "wiki": "Childebert_I"
+  },
+  "france/chlothar-i": {
+    "src": "portraits/france/chlothar-i.webp",
+    "wiki": "Chlothar_I"
+  },
+  "france/theudebert-i": {
+    "src": "portraits/france/theudebert-i.webp",
+    "wiki": "Theudebert_I"
+  },
+  "france/theudebald": {
+    "src": "portraits/france/theudebald.webp",
+    "wiki": "Theudebald"
+  },
+  "france/charibert-i": {
+    "src": "portraits/france/charibert-i.webp",
+    "wiki": "Charibert_I"
+  },
+  "france/guntram": {
+    "src": "portraits/france/guntram.webp",
+    "wiki": "Guntram"
+  },
+  "france/sigebert-i": {
+    "src": "portraits/france/sigebert-i.webp",
+    "wiki": "Sigebert_I"
+  },
+  "france/chilperic-i": {
+    "src": "portraits/france/chilperic-i.webp",
+    "wiki": "Chilperic_I"
+  },
+  "france/childebert-ii": {
+    "src": "portraits/france/childebert-ii.webp",
+    "wiki": "Childebert_II"
+  },
+  "france/chlothar-ii": {
+    "src": "portraits/france/chlothar-ii.webp",
+    "wiki": "Chlothar_II"
+  },
+  "france/theudebert-ii": {
+    "src": "portraits/france/theudebert-ii.webp",
+    "wiki": "Theudebert_II"
+  },
+  "france/theuderic-ii": {
+    "src": "portraits/france/theuderic-ii.webp",
+    "wiki": "Theuderic_II"
+  },
+  "france/nanthild": {
+    "src": "portraits/france/nanthild.webp",
+    "wiki": "Nanthild"
+  },
+  "france/dagobert-i": {
+    "src": "portraits/france/dagobert-i.webp",
+    "wiki": "Dagobert_I"
+  },
+  "france/charibert-ii": {
+    "src": "portraits/france/charibert-ii.webp",
+    "wiki": "Charibert_II"
+  },
+  "france/sigebert-iii": {
+    "src": "portraits/france/sigebert-iii.webp",
+    "wiki": "Sigebert_III"
+  },
+  "france/clovis-ii": {
+    "src": "portraits/france/clovis-ii.webp",
+    "wiki": "Clovis_II"
+  },
+  "france/chlothar-iii": {
+    "src": "portraits/france/chlothar-iii.webp",
+    "wiki": "Chlothar_III"
+  },
+  "france/childeric-ii": {
+    "src": "portraits/france/childeric-ii.webp",
+    "wiki": "Childeric_II"
+  },
+  "france/theuderic-iii": {
+    "src": "portraits/france/theuderic-iii.webp",
+    "wiki": "Theuderic_III"
+  },
+  "france/dagobert-ii": {
+    "src": "portraits/france/dagobert-ii.webp",
+    "wiki": "Dagobert_II"
+  },
+  "france/clovis-iv": {
+    "src": "portraits/france/clovis-iv.webp",
+    "wiki": "Clovis_IV"
+  },
+  "france/childebert-iii": {
+    "src": "portraits/france/childebert-iii.webp",
+    "wiki": "Childebert_III"
+  },
+  "france/dagobert-iii": {
+    "src": "portraits/france/dagobert-iii.webp",
+    "wiki": "Dagobert_III"
+  },
+  "france/chilperic-ii": {
+    "src": "portraits/france/chilperic-ii.webp",
+    "wiki": "Chilperic_II"
+  },
+  "france/chlothar-iv": {
+    "src": "portraits/france/chlothar-iv.webp",
+    "wiki": "Chlothar_IV"
+  },
+  "france/theuderic-iv": {
+    "src": "portraits/france/theuderic-iv.webp",
+    "wiki": "Theuderic_IV"
+  },
+  "france/childeric-iii": {
+    "src": "portraits/france/childeric-iii.webp",
+    "wiki": "Childeric_III"
+  },
+  "france/brunhilda": {
+    "src": "portraits/france/brunhilda.webp",
+    "wiki": "Brunhilda_of_Austrasia"
+  },
+  "france/fredegund": {
+    "src": "portraits/france/fredegund.webp",
+    "wiki": "Fredegund"
   }
 }
